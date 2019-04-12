@@ -30,13 +30,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2019-04-12T02:03:45.676Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2019-04-12T02:03:45.676Z</lastmod>
@@ -45,6 +38,13 @@
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2019-04-12T02:03:45.676Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2019-04-12T02:03:45.676Z</lastmod>
     
