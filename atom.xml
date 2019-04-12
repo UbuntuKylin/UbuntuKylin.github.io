@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-12T02:35:54.875Z</updated>
+  <updated>2019-04-12T03:38:01.719Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>装机教程</title>
+    <link href="http://yoursite.com/wiki/%E8%A3%85%E6%9C%BA/%E8%A3%85%E6%9C%BA/"/>
+    <id>http://yoursite.com/wiki/装机/装机/</id>
+    <published>2019-04-12T03:38:01.719Z</published>
+    <updated>2019-04-12T03:38:01.719Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>aaaaa</p><ul><li>a</li><li>b</li></ul><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><h2 id="第三部"><a href="#第三部" class="headerlink" title="第三部"></a>第三部</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;第一步&quot;&gt;&lt;a href=&quot;#第一步&quot; class=&quot;headerlink&quot; title=&quot;第一步&quot;&gt;&lt;/a&gt;第一步&lt;/h2&gt;&lt;p&gt;aaaaa&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a&lt;/li&gt;
+&lt;li&gt;b&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;第二步&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="装机" scheme="http://yoursite.com/categories/%E8%A3%85%E6%9C%BA/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>ukui-panel</title>
@@ -95,7 +123,7 @@
     <link href="http://yoursite.com/wiki/Test/test-md/"/>
     <id>http://yoursite.com/wiki/Test/test-md/</id>
     <published>2019-04-12T02:19:08.000Z</published>
-    <updated>2019-04-12T02:29:36.439Z</updated>
+    <updated>2019-04-12T03:35:28.273Z</updated>
     
     <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
     

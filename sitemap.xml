@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/wiki/%E8%A3%85%E6%9C%BA/%E8%A3%85%E6%9C%BA/</loc>
+    
+    <lastmod>2019-04-12T03:38:01.719Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/wiki/Test/test-md/</loc>
+    
+    <lastmod>2019-04-12T03:35:28.273Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/wiki/UKUI/ukui-panel/ukui-panel/</loc>
     
     <lastmod>2019-04-12T02:35:54.875Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/wiki/welcome/</loc>
     
     <lastmod>2019-04-12T02:33:42.530Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/wiki/Test/test-md/</loc>
-    
-    <lastmod>2019-04-12T02:29:36.439Z</lastmod>
     
   </url>
   
