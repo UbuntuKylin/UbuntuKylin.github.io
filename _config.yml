@@ -1,0 +1,64 @@
+# Hexo Configuration
+# URL
+title: UbuntuKylin wiki
+subtitle: 自主桌面操作系统
+
+
+permalink: wiki/:title/
+
+# Directory
+skip_render:
+  - README.md
+  - '_posts/**/embed_page/**'
+
+# Writing
+new_post_name: :title.md # File name of new posts
+
+## Markdown
+## https://github.com/hexojs/hexo-renderer-marked
+marked:
+  gfm: true
+  
+## Plugins: https://hexo.io/plugins/
+### JsonContent
+jsonContent:
+  meta: false
+  pages:
+    title: true
+    date: true
+    path: true
+    text: true
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    tags: true
+    categories: true
+  ignore:
+    - 404.html
+    
+### Creat sitemap
+sitemap:
+  path: sitemap.xml
+
+### Adds nofollow attribute to all external links in your hexo blog posts automatically.
+nofollow:
+  enable: true
+  exclude:
+    - <your site url domain> # eg: zthxxx.me
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: Wikitten
+
+per_page: 1
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/ukui/ukui.github.io.git
+  branch: master
+
+cnzz: 1277082673
