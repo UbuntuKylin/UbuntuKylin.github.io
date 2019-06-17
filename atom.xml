@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-16T01:47:33.254Z</updated>
+  <updated>2019-05-20T08:25:21.316Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,107 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/wiki/Test/hello-world/"/>
-    <id>http://yoursite.com/wiki/Test/hello-world/</id>
-    <published>2019-05-16T01:47:33.254Z</published>
-    <updated>2019-05-16T01:47:33.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" rel="external nofollow noopener noreferrer" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noopener noreferrer" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" rel="external nofollow noopener noreferrer" target="_blank">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" rel="external nofollow noopener noreferrer" target="_blank">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" rel="external nofollow noopener noreferrer" target="_blank">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" rel="external nofollow noopener noreferrer" target="_blank">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" rel="external nofollow noopener noreferrer" target="_blank">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.
-      
-    
-    </summary>
-    
-      <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test2</title>
-    <link href="http://yoursite.com/wiki/Test/test2/"/>
-    <id>http://yoursite.com/wiki/Test/test2/</id>
-    <published>2019-05-16T01:47:33.254Z</published>
-    <updated>2019-05-16T01:47:33.254Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>装机教程</title>
-    <link href="http://yoursite.com/wiki/%E8%A3%85%E6%9C%BA/%E8%A3%85%E6%9C%BA/"/>
-    <id>http://yoursite.com/wiki/装机/装机/</id>
-    <published>2019-05-16T01:47:33.254Z</published>
-    <updated>2019-05-16T01:47:33.254Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>aaaaa</p><ul><li>a</li><li>b</li></ul><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><h2 id="第三部"><a href="#第三部" class="headerlink" title="第三部"></a>第三部</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;第一步&quot;&gt;&lt;a href=&quot;#第一步&quot; class=&quot;headerlink&quot; title=&quot;第一步&quot;&gt;&lt;/a&gt;第一步&lt;/h2&gt;&lt;p&gt;aaaaa&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a&lt;/li&gt;
-&lt;li&gt;b&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;第二步&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="装机" scheme="http://yoursite.com/categories/%E8%A3%85%E6%9C%BA/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ukui-panel</title>
-    <link href="http://yoursite.com/wiki/UKUI/ukui-panel/ukui-panel/"/>
-    <id>http://yoursite.com/wiki/UKUI/ukui-panel/ukui-panel/</id>
-    <published>2019-04-12T02:35:54.000Z</published>
-    <updated>2019-05-16T01:47:33.254Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
-      
-    
-    </summary>
-    
-      <category term="UKUI" scheme="http://yoursite.com/categories/UKUI/"/>
-    
-      <category term="ukui-panel" scheme="http://yoursite.com/categories/UKUI/ukui-panel/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>欢迎来到UbuntuKylin Wiki</title>
     <link href="http://yoursite.com/wiki/welcome/"/>
     <id>http://yoursite.com/wiki/welcome/</id>
-    <published>2019-04-12T02:28:28.000Z</published>
-    <updated>2019-05-16T01:47:33.254Z</updated>
+    <published>2019-05-20T08:48:22.749Z</published>
+    <updated>2019-05-20T08:25:21.316Z</updated>
     
     <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！</p>]]></content>
     
@@ -135,28 +39,446 @@
   </entry>
   
   <entry>
-    <title>test.md</title>
-    <link href="http://yoursite.com/wiki/Test/test-md/"/>
-    <id>http://yoursite.com/wiki/Test/test-md/</id>
-    <published>2019-04-12T02:19:08.000Z</published>
-    <updated>2019-05-16T01:47:33.254Z</updated>
+    <title>设置隐藏无线网络</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%AE%BE%E7%BD%AE%E9%9A%90%E8%97%8F%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/"/>
+    <id>http://yoursite.com/wiki/快速入门/设置隐藏无线网络/</id>
+    <published>2019-05-20T08:47:00.000Z</published>
+    <updated>2019-05-24T02:26:05.780Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="设置隐藏无线网络"><a href="#设置隐藏无线网络" class="headerlink" title="设置隐藏无线网络"></a>设置隐藏无线网络</h2><p><strong>设置隐藏无线网络</strong></p><p>您可将无线网络设置为“隐藏”。隐藏网络不会在单击顶部面板中的网络菜单时显示的网络列表中出现，也不会在其他任何计算机上的无线网络列表中出现。  </p><ol><li>单击顶部面板中的网络菜单并选择连接到隐藏的无线网络。  </li><li>要连接到隐藏的无线网络，请单击顶部面板中的网络菜单并选择连接到隐藏的无线网络。在出现的窗口中，键入网络名称、选择无线安全类型，然后单击连接。  </li></ol><p>您可能要检查无线基站/路由器的设置才能确定网络名称。有时称为 BSSID(基本服务集标识符)，看起来类似于：02:00:01:02:03:04。<br>您还要检查无线基站的安全设置；查找说明中的 WEP 和 WPA 等术语。<br>您可能认为隐藏无线网络可防止不知道网络的人连接到该网络，从而提高安全性。实际情况并非如此，虽然查找隐藏网络略有难度，但它仍可被检测到。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;设置隐藏无线网络&quot;&gt;&lt;a href=&quot;#设置隐藏无线网络&quot; class=&quot;headerlink&quot; title=&quot;设置隐藏无线网络&quot;&gt;&lt;/a&gt;设置隐藏无线网络&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;设置隐藏无线网络&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;您可将无线网络设置为“隐藏
       
     
     </summary>
     
-      <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>列表找不到无线网络</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%88%97%E8%A1%A8%E6%89%BE%E4%B8%8D%E5%88%B0%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/"/>
+    <id>http://yoursite.com/wiki/快速入门/列表找不到无线网络/</id>
+    <published>2019-05-20T08:46:41.000Z</published>
+    <updated>2019-05-24T02:23:30.529Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="列表中找不到我的无线网络"><a href="#列表中找不到我的无线网络" class="headerlink" title="列表中找不到我的无线网络"></a>列表中找不到我的无线网络</h2><p><strong>列表中找不到我的无线网络</strong></p><p>在单击顶部工具栏中的网络图标时显示的网络列表时，您看不到您的无线网络的原因有很多种。</p><ul><li>如果列表中不显示任何网络，则表明您的无线硬件已关闭或工作不正常。确保打开无线硬件。</li><li>如果附近有很多无线网络，则您要查找的网络可能未显示在列表的第一页。在此情况下，请查看箭头指向右方的列表的底部并将鼠标悬停于箭头之上，以显示剩余的无线网络。</li><li>您可能处在网络覆盖范围之外。尝试移至距离无线基站/路由器更近的地方，并在稍后确定网络是否出现在列表中。</li><li>更新无线网络列表需要一段时间。如果刚打开计算机或移至不同的地点，请等待几分钟，然后检查所需网络是否出现在列表中。</li><li>网络可能隐藏。如果网络隐藏，您需要以不同的方式连接。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;列表中找不到我的无线网络&quot;&gt;&lt;a href=&quot;#列表中找不到我的无线网络&quot; class=&quot;headerlink&quot; title=&quot;列表中找不到我的无线网络&quot;&gt;&lt;/a&gt;列表中找不到我的无线网络&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;列表中找不到我的无线网络&lt;/strong&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>编辑无线连接</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%BC%96%E8%BE%91%E6%97%A0%E7%BA%BF%E8%BF%9E%E6%8E%A5/"/>
+    <id>http://yoursite.com/wiki/快速入门/编辑无线连接/</id>
+    <published>2019-05-20T08:46:18.000Z</published>
+    <updated>2019-05-24T02:16:04.826Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="编辑无线连接"><a href="#编辑无线连接" class="headerlink" title="编辑无线连接"></a>编辑无线连接</h2><h3 id="编辑无线连接-1"><a href="#编辑无线连接-1" class="headerlink" title="编辑无线连接"></a>编辑无线连接</h3><p>本主题描述您在编辑无线网络连接时可用的所有选项。要编辑连接，请单击顶部面板中的网络菜单并选择编辑连接。</p><p>如果保留这些设置的默认值，多数网络都可正常工作，因此您可能无需更改任何默认值。此处系统还提供了很多其他选项，使您可以更好地控制更高级的网络。<br>对所有用户可用/自动连接</p><h3 id="自动连接"><a href="#自动连接" class="headerlink" title="自动连接"></a>自动连接</h3><p>如果您想让计算机在处于无线网络覆盖范围内时尝试自动连接到该网络，请选中此选项。<br>如果设置为自动连接的多个网络均有覆盖，计算机将连接到网络连接窗口无线选项卡中显示的第一个网络。它不会从一个可用网络断开而连接到刚进入搜索范围的其他网络。  </p><h3 id="对所有用户可用"><a href="#对所有用户可用" class="headerlink" title="对所有用户可用"></a>对所有用户可用</h3><p>如果您想让计算机上的所有用户均可访问此无线网络，请选中此选项。如果该网络有 WEP/WPA 密码并且您已选中了此选项，则您只需输入一次密码。计算机上的其他所有用户将可连接到该网络，而无需知道密码。<br>如果选中此选项，您需要以管理员身份更改该网络的设置。系统可能会要求您输入管理员密码。</p><h3 id="无线"><a href="#无线" class="headerlink" title="无线"></a>无线</h3><p><strong>SSID</strong><br>当前连接的无线网络的名称。除非您更改了无线网络的名称(例如，更改了无线路由器或基站的名称)，否则请勿更改此名称。<br><strong>模式</strong><br>使用这个来指定选择哪一种连接到 基础 网络(一个计算机无线连接到中心基站或者路由器的地方)或者 自组 网络(无需基站，通过在网计算机相互连接)。大多数网络都是基础网络，您也许希望 设置您自己的自组网络 。<br>如果选择 Ad-hoc，您将看到其他两个选项：波段和频道。这些选项决定了 ad-hoc 无线网络工作时使用的无线频率波段。有些计算机只能在特定波段工作(例如，仅 A 或仅 B/G)，因此您可能要挑选一个 ad-hoc 网络中的所有计算机均可使用的波段。在繁华场所，可能有多个无线网络共享同一频道，这可能会导致您的连接变慢，您也可以通过更改频道来解决这一问题。<br><strong>BSSID</strong><br>SSID 是用户看到的网络名称，而 BSSID 是计算机理解的名称(是一个由字母和数字组成的字符串，假定为无线网络上的唯一名称)。如果网络隐藏，则无 SSID 而使用 BSSID。<br><strong>设备 MAC 地址</strong><br>MAC 地址是标识网络硬件(例如无线适配器、以太网网卡或路由器)的代码。可以连接到网络的每个设备都有一个在工厂预设的唯一 MAC 地址。<br>此选项可用于更改网卡的 MAC 地址。<br><strong>克隆 MAC 地址</strong><br>您的网络硬件(无线适配器)可假装具有不同的 MAC 地址。如果您的某个设备或服务仅与特定的 MAC 地址(例如有线宽带调制解调器)通信，则此功能非常有用。如果将该 MAC 地址置于克隆 MAC 地址框中，设备/服务会将网卡的 MAC 地址识别为克隆后的值(而非真实的 MAC 地址)。<br><strong>MTU</strong><br>此设置更改最大传输单元，即可通过网络发送的数据块的最大尺寸。通过网络发送文件时，数据被拆分为多个小数据块(或数据包)。适于您网络的最佳 MTU 取决于数据包丢失率(连接噪声导致)和连接速度。通常，您无需更改此设置。</p><p><strong>亦见</strong><br> 设置隐藏无线网络 — 单击顶部面板中的网络菜单并选择连接到隐藏的无线网络。</p><h3 id="无线安全"><a href="#无线安全" class="headerlink" title="无线安全"></a>无线安全</h3><p><strong>安全</strong><br>此选项定义您的无线网络使用的加密类型。加密的连接有助于防止无线连接被入侵，以使其他人无法“侦听”和查看您正在访问的网站及其他信息。<br>有些加密类型功能较强，但较旧的无线网络装置可能不支持。通常您只需键入连接密码；更复杂的安全类型可能还要求提供用户名和数字“证书”。有关主要无线加密类型的详细信息，请参见WEP 和 WPA 是什么？。</p><h3 id="IPv4-设置"><a href="#IPv4-设置" class="headerlink" title="IPv4 设置"></a>IPv4 设置</h3><p>使用此选项卡定义计算机的 IP 地址及其要使用的 DNS 服务器等信息。更改方法以查看获取/设置此信息的不同方式。</p><p>以下方法可用：</p><p><strong>自动 (DHCP)</strong><br>从 DHCP 服务器获取要使用的 IP 地址和 DNS 服务器等信息。DHCP 服务器是一台连接到网络的计算机(或其他设备，如路由器)，它决定了您计算机应具备的网络设置 — 当您首次连接到网络时，系统会自动为您分配正确的设置。多数网络都使用 DHCP。<br><strong>自动 (DHCP) 仅地址</strong><br>如果选择此设置，您的计算机将从 DHCP 服务器获取 IP 地址，但您必须手动定义其他详情(如要使用的 DNS 服务器)。<br><strong>手动</strong><br>如果要自己定义所有网络设置(包括计算机要使用的 IP 地址)，请选择此选项。<br><strong>仅本地链接</strong><br>本地链接是将网络上的计算机连接起来的一种方式，但不需要 DHCP 服务器或手动定义 IP 地址和其他信息。如果连接到本地链接网络，网络上的计算机将自行决定要使用的 IP 地址等信息。如果您想临时将几台计算机连接起来以便相互通信，此选项则非常有用。<br><strong>已禁用</strong><br> 此选项将禁用网络连接并阻止您连接到网络。请注意，IPv4 和 IPv6 即使用于同一网卡，也将被视为单独的连接。如果已启用其中一个，您可能需要将另一个也设为禁用。</p><h3 id="IPv6-设置"><a href="#IPv6-设置" class="headerlink" title="IPv6 设置"></a>IPv6 设置</h3><p>此选项与IPv4 选项卡类似，不同之处在于IPv6 标准更新。较新的网络都使用 IPv6，但目前IPv4 仍很流行。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;编辑无线连接&quot;&gt;&lt;a href=&quot;#编辑无线连接&quot; class=&quot;headerlink&quot; title=&quot;编辑无线连接&quot;&gt;&lt;/a&gt;编辑无线连接&lt;/h2&gt;&lt;h3 id=&quot;编辑无线连接-1&quot;&gt;&lt;a href=&quot;#编辑无线连接-1&quot; class=&quot;headerlink&quot; 
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关闭无线（飞行模式）</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%85%B3%E9%97%AD%E6%97%A0%E7%BA%BF%EF%BC%88%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F%EF%BC%89/"/>
+    <id>http://yoursite.com/wiki/快速入门/关闭无线（飞行模式）/</id>
+    <published>2019-05-20T08:46:01.000Z</published>
+    <updated>2019-05-24T01:15:46.487Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="关闭无线（飞行模式）"><a href="#关闭无线（飞行模式）" class="headerlink" title="关闭无线（飞行模式）"></a>关闭无线（飞行模式）</h2><p><strong>关闭无线(飞行模式)</strong></p><p>如果您携带计算机乘坐飞机(或其他一些不允许使用无线连接的交通设备和地点)，应将无线关闭。有时您可能也需要关闭无线连接以节省电量。</p><p>要进行这项操作，点击顶部菜单栏中的 网络菜单，反选 启用无线网络。这将关闭无线连接，直到您再次将其开启。</p><p>要重新打开无线，单击顶部面板上的网络菜单 并选中 启用无线网络。</p><p>如果未关闭蓝牙，您的笔记本电脑仍将广播无线信号。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;关闭无线（飞行模式）&quot;&gt;&lt;a href=&quot;#关闭无线（飞行模式）&quot; class=&quot;headerlink&quot; title=&quot;关闭无线（飞行模式）&quot;&gt;&lt;/a&gt;关闭无线（飞行模式）&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;关闭无线(飞行模式)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果您
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无线网络故障排除</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    <id>http://yoursite.com/wiki/快速入门/无线网络故障排除/</id>
+    <published>2019-05-20T08:45:45.000Z</published>
+    <updated>2019-05-24T01:02:00.345Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="无线故障排除"><a href="#无线故障排除" class="headerlink" title="无线故障排除"></a>无线故障排除</h2><h3 id="无线网络故障排除程序"><a href="#无线网络故障排除程序" class="headerlink" title="无线网络故障排除程序"></a>无线网络故障排除程序</h3><p>这是一个手把手的调试指南，帮助您查找并解决无线问题。如果您无法连接到无线网络，请尝试以下指导。<br>我们将通过以下步骤将您的计算机连接到 Internet：  </p><ul><li>执行初始检查  </li><li>收集硬件相关信息  </li><li>检查硬盘  </li><li>尝试连接到无线路由器  </li><li>对调制解调器和路由器进行检查  </li><li>要开始操作，请单击页面右上角的下一步链接。此链接及后续页面上的类似链接将带领您完成本指南中的各个步骤。<br><strong>使用命令行</strong><br>该指南中的一些指令要求您输入命令到 命令行 (终端)。您可以在 Dash 中找到终端应用程序。<br>如果您不熟悉使用命令行，请不要担心，这个指南将在每一步给出详细的指导。您只需记住，所有命令都是区分大小写的，所以输入的命令必须和这个指南中显示的完全一样，最后要在输入命令的最后按下回车执行。<br><strong>执行初始检查</strong><br>在这一步中您将检查关于无线网络链接的一些基本信息。这将帮助您解决由简单问题导致的联网问题，例如无线网络连接被关闭等，并为接下来的调试步骤做准备。  </li></ul><ol><li>请确保您的笔记本电脑未连接到有线网络连接。  </li><li>如果您有外部无线适配器(如无线 USB 适配器或 PCMCIA 卡)，请确保已将其插入您计算机上的相应插槽中。  </li><li>如果无线卡在您的计算机内部，请确保无线适配器开关已打开。  </li><li>单击顶部面板上的网络菜单且确保已选中启用无线网络设置。  </li><li>打开终端，输入 nm-tool 并按回车。  </li><li>这将显示您的网络硬件和连接状态信息。查看信息列表，寻找有关无线网卡的部分，每个网络设备的信息均被一排破折号隔开。如果您在您的无线网卡部分发现了 State: connected 这一行，这就意味着它已经开始工作并且连接到了您的无线路由。</li></ol><p>如果您已连接到无线路由器，但仍无法访问网络，则您的路由器设置可能错误或互联网服务提供商 (ISP) 可能遇到了一些技术问题。请复核您的路由器和 ISP 安装指南，或与您的 ISP 联系以获取支持。</p><p>如果 nm-tool 命令的输出未告诉您是否已连接到网络，则请继续到故障诊断指南的下一部分。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;无线故障排除&quot;&gt;&lt;a href=&quot;#无线故障排除&quot; class=&quot;headerlink&quot; title=&quot;无线故障排除&quot;&gt;&lt;/a&gt;无线故障排除&lt;/h2&gt;&lt;h3 id=&quot;无线网络故障排除程序&quot;&gt;&lt;a href=&quot;#无线网络故障排除程序&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无线网络断开状态</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%96%AD%E5%BC%80%E7%8A%B6%E6%80%81/"/>
+    <id>http://yoursite.com/wiki/快速入门/无线网络断开状态/</id>
+    <published>2019-05-20T08:45:26.000Z</published>
+    <updated>2019-05-24T00:53:32.911Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="无线网络断开状态"><a href="#无线网络断开状态" class="headerlink" title="无线网络断开状态"></a>无线网络断开状态</h2><p><strong>为什么我的无线网络一直处于断开状态？</strong>  </p><p>您可能会发现您的无线连接经常断开。通常情况下，一旦断开连接，您的计算机就会尝试重新连接到网络(尝试重新连接时，顶部工具栏中的网络图标将旋转)，这可能会对您造成不便。  </p><p><strong>弱无线信号</strong>  </p><p>从无线网络断开链接的常见原因是信号太弱。无线网络的覆盖范围有限，因此，如果距离无线基站太远，您获得的信号强度可能不足以保持连接。您和基站之间的墙壁或其他物体也会减弱信号。<br>顶部工具栏中的网络图标显示了无线信号的强度。如果信号较弱，请尝试移至距离无线基站较近的位置。  </p><p><strong>无法建立网络连接</strong>  </p><p>有时，当您连接到无线网络时，开始时可能显示您已成功连接，但随后又会断开。这种情况通常是因为您的计算机未完全成功连接到网络，它设法建立连接，但因某种原因而无法最终确定连接状态，因此会断开。<br>一种可能的原因是您输入了错误的无线密码，或者您的计算机不被允许访问网络(例如，网络可能要求使用用户名进行登录)。  </p><p><strong>没有可用的无线硬件驱动程序</strong>  </p><p>有些无线网络硬件可能不太可靠。无线网络很复杂，因此无线适配器和基站偶尔会出现小问题并失去连接。这种情况会造成很大不便，但在很多设备上却很常见。如果您经常从无线连接断开，这可能会是一个重要原因。如果频繁发生，您要考虑使用不同的硬件。  </p><p><strong>繁忙无线网络</strong>  </p><p>流量密集地区(例如大学和咖啡厅的无线网络)通常有很多计算机同时尝试连接到网络。有时，这些网络太繁忙而无法应付所有尝试连接的计算机，因此有些计算机会断开连接。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;无线网络断开状态&quot;&gt;&lt;a href=&quot;#无线网络断开状态&quot; class=&quot;headerlink&quot; title=&quot;无线网络断开状态&quot;&gt;&lt;/a&gt;无线网络断开状态&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;为什么我的无线网络一直处于断开状态？&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;您
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>手动设置网络连接</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%89%8B%E5%8A%A8%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/"/>
+    <id>http://yoursite.com/wiki/快速入门/手动设置网络连接/</id>
+    <published>2019-05-20T08:45:14.000Z</published>
+    <updated>2019-05-23T03:35:19.503Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="手动设置网络连接"><a href="#手动设置网络连接" class="headerlink" title="手动设置网络连接"></a>手动设置网络连接</h2><p><strong>手动设置网络设置</strong></p><p>如果您的网络不为计算机自动分配网络设置，则您可能必须手动输入设置。本主题假定您已了解要使用的正确设置。如果不了解，您可能要咨询网络管理员或查看路由器或交换机的设置。</p><p>  <strong>手动设置网络连接：</strong></p><ol><li>单击顶部面板中的网络菜单，然后单击编辑连接。</li><li>查找您要手动设置的网络连接。例如，如果通过网线接入网络，请查看有线选项卡。</li><li>从列表中选择您想要编辑的连接，然后单击编辑。</li><li>转到IPv4 设置选项卡，然后更改方式设置手动。</li><li>单击 添加 并在 地址 列表的相应栏中键入 IP 地址、子网掩码 和 默认网关。键入每个地址后按 回车。</li><li>这三个地址必须是 IP 地址；也就是说，它们必须是分隔开的四段数字 (例如：123.45.6.78) 。</li><li>键入您要使用的 DNS 服务器的 IP 地址，地址间用英文逗号分隔。</li><li>单击保存。如果未连接到网络，请转到顶部工具栏中的“网络”图标并连接到网络。您可以通过访问网站或查看共享文件来检验您的网络设置。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;手动设置网络连接&quot;&gt;&lt;a href=&quot;#手动设置网络连接&quot; class=&quot;headerlink&quot; title=&quot;手动设置网络连接&quot;&gt;&lt;/a&gt;手动设置网络连接&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;手动设置网络设置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果您的网络不为计算机自动
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>WEP和WPA介绍</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/WEP%E5%92%8CWPA%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/wiki/快速入门/WEP和WPA介绍/</id>
+    <published>2019-05-20T08:44:55.000Z</published>
+    <updated>2019-05-23T03:13:43.439Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="WEP和WPA介绍"><a href="#WEP和WPA介绍" class="headerlink" title="WEP和WPA介绍"></a>WEP和WPA介绍</h2><p>WEP 和 WPA 是什么？</p><p>WEP 和 WPA(及 WPA2)是用于保护无线连接的不同加密工具的名称。例如，通过加密来混淆网络连接信息，以防止他人对其进行窃听或偷窥您正在查看的网页。WEP 表示有线等效加密，WPA 表示无线保护访问。WPA2 是 WPA 标准的第二个版本。</p><p>使用加密总比未加密摇安全一些，但 WEP 是这些标准中最不安全的，请尽量避免使用此标准。WPA2 是这三种版本中最安全的标准。如果您的无线卡和路由器都支持 WPA2，则您应使用它设置无线网络。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;WEP和WPA介绍&quot;&gt;&lt;a href=&quot;#WEP和WPA介绍&quot; class=&quot;headerlink&quot; title=&quot;WEP和WPA介绍&quot;&gt;&lt;/a&gt;WEP和WPA介绍&lt;/h2&gt;&lt;p&gt;WEP 和 WPA 是什么？&lt;/p&gt;
+&lt;p&gt;WEP 和 WPA(及 WPA2)是用于
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>密码正确无法链接</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%AF%86%E7%A0%81%E6%AD%A3%E7%A1%AE%E6%97%A0%E6%B3%95%E9%93%BE%E6%8E%A5/"/>
+    <id>http://yoursite.com/wiki/快速入门/密码正确无法链接/</id>
+    <published>2019-05-20T08:44:14.000Z</published>
+    <updated>2019-05-23T03:12:42.701Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="密码正确无法连接"><a href="#密码正确无法连接" class="headerlink" title="密码正确无法连接"></a>密码正确无法连接</h2><h3 id="我输入了正确的密码，但仍无法连接。"><a href="#我输入了正确的密码，但仍无法连接。" class="headerlink" title="我输入了正确的密码，但仍无法连接。"></a>我输入了正确的密码，但仍无法连接。</h3><p>如果您确定输入的无线密码正确，但仍无法成功连接到无线网络，请尝试以下某些操作：  </p><ul><li>检查确认您输入了正确的密码<br>密码区分大小写(区分字母大小写)，因此请确保所有字母的大小写都正确。  </li><li>尝试使用十六进制或 ASCII 通行码<br>您输入的密码也可以其他形式表示，即作为十六进制的字符串(数字 0-9 和字母 a-f)。如果您可访问通行码和密码/口令，请尝试键入通行码。确保在系统询问密码时选择正确的无线安全选项(例如，如果在为WEP 加密连接键入 40 个字符的通行码，则选择WEP 40/128 位密钥)。  </li><li>尝试关闭无线适配器，然后再重新打开。<br>无线适配器有时会出现故障或者遇到导致无法连接的小问题。关闭网卡再重新打开以进行重置。有关详细信息，请参见无线网络故障排除程序。</li><li>检查您使用的无线安全类型是否正确<br>提示您输入无线安全密码时，您可选择要使用的无线安全类型。确保选择路由器或无线基站使用的无线安全类型。默认情况下应已选择无线安全类型，但有时因某种原因而未选中。如果不知是何种安全类型，请依次c尝试不同的选项。  </li><li>检查您的无线网卡是否被良好支持<br>有些无线适配器未得到很好的支持。它们能显示无线连接，但因其驱动程序功能缺失而无法连接到网络。确定您是否可获得替代的无线驱动程序，或者是否需要执行附加设置(如安装不同的固件)。有关详细信息，请参见无线网络故障排除程序。</li></ul><p><strong>更多信息</strong>  </p><p>无线网络 — 连接到 WIFI 网络、隐藏网络、编辑连接设置 和 断开…</p><p><strong>亦见</strong>  </p><p>连接到无线网络 — 以无线方式连接到 Internet。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;密码正确无法连接&quot;&gt;&lt;a href=&quot;#密码正确无法连接&quot; class=&quot;headerlink&quot; title=&quot;密码正确无法连接&quot;&gt;&lt;/a&gt;密码正确无法连接&lt;/h2&gt;&lt;h3 id=&quot;我输入了正确的密码，但仍无法连接。&quot;&gt;&lt;a href=&quot;#我输入了正确的密码，但仍
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>连接到无线网络</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9E%E6%8E%A5%E5%88%B0%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/"/>
+    <id>http://yoursite.com/wiki/快速入门/连接到无线网络/</id>
+    <published>2019-05-20T08:43:48.000Z</published>
+    <updated>2019-05-23T03:03:56.330Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="连接到无线网络"><a href="#连接到无线网络" class="headerlink" title="连接到无线网络"></a>连接到无线网络</h2><p>如果您的计算机启用了无线，则可在处于无线网线覆盖范围时连接到该网络，以访问 Internet、查看网络上的共享文件以及执行其他操作。</p><ol><li>如果计算机上有无线硬件开关，请确保打开该开关。  </li><li>单击顶部面板中的网络菜单，然后查找所需的网络。</li><li>如果您的无线网络名称未出现在列表中，请单击更多网络，以查看该网络是否在列表的下方。如果仍未看到该网络，您可能超出了网络覆盖范围或该网络可能已隐藏。  </li><li>如果网络受到(密码)保护，请在出现提示时输入密码并单击连接。  </li><li>如果不知道密钥，它可能写在无线路由器或基站设备的底部、说明手册中，或者您可向无线网络管理员咨询。  </li><li>计算机尝试连接到网络时，网络图标的外观将更改。  </li><li>如果连接成功，该图标将更改为类似 wifi 标志的图标。图标上的信号格数越多，表示与网络的连接越强。如果信号格数很少，则表示连接较弱且可能不太稳定。</li></ol><p>如果连接不成功， 也许会要求您再次输入密码 或者它可能会告诉您连接已断开。有很多事情可能会造成这种情况发生，例如：可能是您输错了密码、无线信号太弱或者您计算机的无线网卡出问题了。查阅 无线网络故障排除程序 获取更多帮助。</p><p>较强的无线网络连接并不一定意味着Internet 连接速度更快，或者您的下载速度更快。无线连接将您的计算机连接到提供 Internet 连接的设备(如路由器或调制解调器)，但设备本身所提供无线信号的强度与网速无关。  </p><p><strong>更多信息</strong><br>无线网络 — 连接到 WIFI 网络、隐藏网络、编辑连接设置 和 断开…</p><p><strong>亦见</strong><br> 为什么我的无线网络一直处于断开状态？ — 信号太弱，或者网络不允许您正常连接。<br> 我输入了正确的密码，但仍无法连接。 — 复查密码，尝试使用密钥替代密码，关闭无线网卡后重启…<br> 无线网络故障排除程序 — 确定和解决无线连接问题</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;连接到无线网络&quot;&gt;&lt;a href=&quot;#连接到无线网络&quot; class=&quot;headerlink&quot; title=&quot;连接到无线网络&quot;&gt;&lt;/a&gt;连接到无线网络&lt;/h2&gt;&lt;p&gt;如果您的计算机启用了无线，则可在处于无线网线覆盖范围时连接到该网络，以访问 Internet、查看网
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>最大化（恢复）和取消</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%9C%80%E5%A4%A7%E5%8C%96%EF%BC%88%E6%81%A2%E5%A4%8D%EF%BC%89%E5%92%8C%E5%8F%96%E6%B6%88/"/>
+    <id>http://yoursite.com/wiki/快速入门/最大化（恢复）和取消/</id>
+    <published>2019-05-20T08:43:37.000Z</published>
+    <updated>2019-05-23T02:54:17.824Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="最大（恢复）和取消"><a href="#最大（恢复）和取消" class="headerlink" title="最大（恢复）和取消"></a>最大（恢复）和取消</h2><h3 id="最大化和取消最大化-恢复-窗口。"><a href="#最大化和取消最大化-恢复-窗口。" class="headerlink" title="最大化和取消最大化(恢复)窗口。"></a>最大化和取消最大化(恢复)窗口。</h3><p>可以将窗口最大化以使其使用桌面地全部空间或者取消窗口最大化以将其恢复正常大小。也可以沿屏幕地左边或右边将窗口垂直最大化，以便同时看两个床。查看 平铺窗口 获取更多信息。<br>要最大化窗口，抓住其标题栏然后拖动到屏幕的顶端，或者双击标题栏。要使用键盘最大化窗口，按住 Ctrl 和 Super 再按 ↑。<br>要将窗口恢复到其非最大化时的大小，将它拖离屏幕边缘。如果窗口是完全最大化的，可以双击标题栏来恢复大小。您也可以使用键盘快捷键 Ctrl Super 和 ↓  </p><p>按住 Alt 键并拖动窗口的任何地方可以移动窗口。<br><strong>更多信息</strong><br>使用窗口<br><strong>亦见</strong><br>平铺窗口 — 并排最大化两个窗口</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;最大（恢复）和取消&quot;&gt;&lt;a href=&quot;#最大（恢复）和取消&quot; class=&quot;headerlink&quot; title=&quot;最大（恢复）和取消&quot;&gt;&lt;/a&gt;最大（恢复）和取消&lt;/h2&gt;&lt;h3 id=&quot;最大化和取消最大化-恢复-窗口。&quot;&gt;&lt;a href=&quot;#最大化和取消最大化
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>窗口和工作区</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%AA%97%E5%8F%A3%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8C%BA/"/>
+    <id>http://yoursite.com/wiki/快速入门/窗口和工作区/</id>
+    <published>2019-05-20T08:43:19.000Z</published>
+    <updated>2019-05-22T08:19:52.309Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="窗口和工作区"><a href="#窗口和工作区" class="headerlink" title="窗口和工作区"></a>窗口和工作区</h2><h3 id="窗口和工作区-1"><a href="#窗口和工作区-1" class="headerlink" title="窗口和工作区"></a>窗口和工作区</h3><p>如其他桌面环境一样，Unity 也使用窗口来显示正在运行的程序。通过同时使用 Dash 和 启动器，可以启动新程序并控制那个窗口活动。<br>除窗口之外，您还可在工作区中将您的应用程序组合到一起。访问下面窗口和工作区的帮助主题，以更好的了解如何使用这些功能。  </p><h3 id="使用窗口"><a href="#使用窗口" class="headerlink" title="使用窗口"></a>使用窗口</h3><p>—————————————————————————————————————————————————————————————————<br>在窗口间进行切换  </p><ul><li>按Alt+Tab<br>平铺窗口  </li><li>并排最大化两个窗口<br>最大化和取消最大化(恢复)窗口  </li><li>双击或拖动标题栏以最大化或恢复窗口<br>窗口操作  </li><li>恢复、调整、排列和隐藏。  <h3 id="使用工作区工作"><a href="#使用工作区工作" class="headerlink" title="使用工作区工作"></a>使用工作区工作</h3>—————————————————————————————————————————————————————————————————<br>工作区是什么，它对我有何帮助？  </li><li>工作区是将您桌面上的窗口分组的一种方法。<br>在工作区之间进行切换  </li><li>打开工作区切换器并双击其中一个工作区。<br>将窗口移动到另一个工作区<br>打开工作区切换器并将该窗口托动到不同的工作区。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;窗口和工作区&quot;&gt;&lt;a href=&quot;#窗口和工作区&quot; class=&quot;headerlink&quot; title=&quot;窗口和工作区&quot;&gt;&lt;/a&gt;窗口和工作区&lt;/h2&gt;&lt;h3 id=&quot;窗口和工作区-1&quot;&gt;&lt;a href=&quot;#窗口和工作区-1&quot; class=&quot;headerlink&quot; 
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在窗口间进行切换</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9C%A8%E7%AA%97%E5%8F%A3%E9%97%B4%E8%BF%9B%E8%A1%8C%E5%88%87%E6%8D%A2/"/>
+    <id>http://yoursite.com/wiki/快速入门/在窗口间进行切换/</id>
+    <published>2019-05-20T08:43:07.000Z</published>
+    <updated>2019-05-22T08:10:09.563Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="在窗口进行切换"><a href="#在窗口进行切换" class="headerlink" title="在窗口进行切换"></a>在窗口进行切换</h2><h3 id="从启动器"><a href="#从启动器" class="headerlink" title="从启动器"></a>从启动器</h3><ol><li>将鼠标移动到屏幕的左上角可以显示 启动器。  </li><li>正在运行的应用程序左侧有一个白色小三角箭头。点击正在运行的应用程序图标可以切换到该应用程序。  </li><li>如果正在运行的应用程序打开了多个窗口，则左侧会有多个白色箭头。两次单击应用程序图标，可以显示缩小了的所有打开的窗口。点击您想切换到的窗口。</li></ol><h3 id="从键盘"><a href="#从键盘" class="headerlink" title="从键盘"></a>从键盘</h3><ul><li>按 Alt+Tab 可以呼出 窗口切换器。<ul><li>释放 Alt 在切换器中选择下一个高亮窗口。</li><li>或者，仍然是按住 Alt 键， 按 Tab 以在打开的窗口列表中循环，或者 Shift+Tab 反向循环。  </li><li>窗口切换器中的窗口是按程序分组的。有多个窗口的程序的预览可以在点击时显示。  </li><li>也可以使用 → 或 ← 在窗口切换器的应用图标中切换。或者选择使用鼠标选择一个。</li><li>只有一个窗口的程序的预览可以使用 ↓ 键来显示。</li><li>将只显示当前工作区的窗口。要显示其他工作区的窗口，按住 Ctrl 和 Alt 键并再按Tab 或Shift+Tab。  </li></ul></li><li>按 Super+W 缩小显示所有打开的窗口。  <ul><li>点击您想切换到的窗口。</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;在窗口进行切换&quot;&gt;&lt;a href=&quot;#在窗口进行切换&quot; class=&quot;headerlink&quot; title=&quot;在窗口进行切换&quot;&gt;&lt;/a&gt;在窗口进行切换&lt;/h2&gt;&lt;h3 id=&quot;从启动器&quot;&gt;&lt;a href=&quot;#从启动器&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>禁用滚动条</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%A6%81%E7%94%A8%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
+    <id>http://yoursite.com/wiki/快速入门/禁用滚动条/</id>
+    <published>2019-05-20T08:42:53.000Z</published>
+    <updated>2019-05-22T08:06:05.221Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="禁用滚动条"><a href="#禁用滚动条" class="headerlink" title="禁用滚动条"></a>禁用滚动条</h2><h3 id="即现式滚动条是什么？"><a href="#即现式滚动条是什么？" class="headerlink" title="即现式滚动条是什么？"></a>即现式滚动条是什么？</h3><p>Ubuntu 包括 即现式滚动条，其比传统的滚动条少占用空间，给内容留下更多的空间。虽然是受到不用滚动条的移动设备启发，Ubuntu的即现式滚动条设计为可以使用鼠标非常好地操作。</p><p>一些应用程序，比如 Firefox 和 LbireOffice 还不支持新滚动条。</p><h3 id="使用滚动条"><a href="#使用滚动条" class="headerlink" title="使用滚动条"></a>使用滚动条</h3><p>即现式滚动条以橙色西条出现在可滚动区域的边缘。滚动条的位置表示屏幕在可滚动内容中的位置。细条的长途与内容长度有关：内容越长，细条越短。</p><p>将鼠标移动到滚动区域的任意位置，即可让滚动手柄显示出来。<br>使用滚动条的方法：  </p><ul><li>点击滚动手柄的上半部分向上滚动页面，点击下半部分向下滚动页面。  </li><li>上下拖拽滚动手柄，使页面到达您想要的位置。  </li><li>中键单击 on the thumb slider to move the screen’s position without needing to drag or scroll page by page. This is especially useful in long documents.</li></ul><h3 id="禁用滚动条-1"><a href="#禁用滚动条-1" class="headerlink" title="禁用滚动条"></a>禁用滚动条</h3><p>您可以禁用新滚动条，如果您更喜欢传统滚动条：<br>要打开 终端，您可以按下 Ctrl+Alt+t 或直接在 Dash 中搜索 终端。<br>键入以下内容，然后按回车：  </p><ol><li>gsettings set com.canonical.desktop.interface scrollbar-mode normal  </li><li>如果您改变了主意，想要重新启用滚动条，运行此命令：  </li><li>gsettings reset com.canonical.desktop.interface scrollbar-mode</li></ol><p>将您的主题设置为 高对比度 将禁用即现式滚动条。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;禁用滚动条&quot;&gt;&lt;a href=&quot;#禁用滚动条&quot; class=&quot;headerlink&quot; title=&quot;禁用滚动条&quot;&gt;&lt;/a&gt;禁用滚动条&lt;/h2&gt;&lt;h3 id=&quot;即现式滚动条是什么？&quot;&gt;&lt;a href=&quot;#即现式滚动条是什么？&quot; class=&quot;headerlink&quot; 
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>启动有限制的客人会话</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%90%AF%E5%8A%A8%E6%9C%89%E9%99%90%E5%88%B6%E7%9A%84%E5%AE%A2%E4%BA%BA%E4%BC%9A%E8%AF%9D/"/>
+    <id>http://yoursite.com/wiki/快速入门/启动有限制的客人会话/</id>
+    <published>2019-05-20T08:42:38.000Z</published>
+    <updated>2019-05-22T07:44:29.316Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="启动有限制的客人会话"><a href="#启动有限制的客人会话" class="headerlink" title="启动有限制的客人会话　　"></a>启动有限制的客人会话　　</h2><p>具有权限限制的临时会话</p><p>有时，亲戚朋友或者同事可能需要借用您的计算机。Ubuntu 的 来宾回话 功能提供了一种方便且高度安全的将计算机借给他人的方式。来宾回话可以从登录界面或在普通回话中启动。如果已经登录了，点击 菜单栏最右端的图标然后选择 来宾会话，将锁定自己现在会话的的屏幕并启动来宾会话。</p><p>来宾不能查看其他用户的主目录，默认上任何存储的数据和更改的设置都将在注销时删除或重置。这意味着会话每次启动时都是一个新环境，不受以前的来宾做了什么的影响。<br>自定义</p><p>自定义来宾会话 在线教程解释了如何自定义外观和行为。<br>禁用此功能</p><p>如果不希望来宾访问计算机，可以禁用 来宾会话 功能。如果要这样，按 Ctrl+Alt+T 来打开终端窗口，然后允许此命令(这是一个长命令，即使是在屏幕上换行了 － 复制粘贴即可)：</p><p>sudo sh -c ‘printf “[SeatDefaults]\nallow-guest=false\n” &gt;/usr/share/lightdm/lightdm.conf.d/50-no-guest.conf’</p><p>此命令创建一个小地配置文件。要重新启用 来宾回话，只需删除此文件：</p><p>sudo rm /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf</p><ul><li>更多信息　　</li><li>桌面　　</li><li>管理用户帐户</li></ul><p>亦见　　　　</p><ul><li>添加新用户帐户 — 添加新用户以便其他人可登录该计算机。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;启动有限制的客人会话&quot;&gt;&lt;a href=&quot;#启动有限制的客人会话&quot; class=&quot;headerlink&quot; title=&quot;启动有限制的客人会话　　&quot;&gt;&lt;/a&gt;启动有限制的客人会话　　&lt;/h2&gt;&lt;p&gt;具有权限限制的临时会话&lt;/p&gt;
+&lt;p&gt;有时，亲戚朋友或者同事可能需要
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日程事件</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%97%A5%E7%A8%8B%E4%BA%8B%E4%BB%B6/"/>
+    <id>http://yoursite.com/wiki/快速入门/日程事件/</id>
+    <published>2019-05-20T08:42:22.000Z</published>
+    <updated>2019-05-22T06:00:00.626Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="日程事件"><a href="#日程事件" class="headerlink" title="日程事件"></a>日程事件</h2><p>如果您使用名为 Evolution 的邮件和日历应用程序，则可通过单击面板上的时钟，管理您的日程事件。</p><p>如果您已安装 Evolution，单击顶栏的时钟，然后单击添加事件即可开始添加日程。日程添加后，当您单击时钟时，即会显示在日历下方。</p><p>要快速转到完整的 Evolution 日历，单击时钟，然后单击显示当日日期的第一行。</p><p>这仅在您已拥有 Evolution 帐户时有效。否则，会出现一个窗口，显示添加首个帐户需要的步骤。<br>关闭 Evolution 日历集成</p><p>如果有必要，您也可以关闭该功能。   </p><ol><li>单击时钟，然后选择时间和日期设置。   </li><li>现在，转到时钟标签页。  </li><li>取消选中 Evolution 日历中即将到来的事件。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;日程事件&quot;&gt;&lt;a href=&quot;#日程事件&quot; class=&quot;headerlink&quot; title=&quot;日程事件&quot;&gt;&lt;/a&gt;日程事件&lt;/h2&gt;&lt;p&gt;如果您使用名为 Evolution 的邮件和日历应用程序，则可通过单击面板上的时钟，管理您的日程事件。&lt;/p&gt;
+&lt;p&gt;如果您
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HUD介绍</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/HUD%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/wiki/快速入门/HUD介绍/</id>
+    <published>2019-05-20T08:42:06.000Z</published>
+    <updated>2019-05-22T03:46:44.062Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="HUD介绍"><a href="#HUD介绍" class="headerlink" title="HUD介绍"></a>HUD介绍</h2><p>HUD 是什么？</p><p>HUD 或 Heads Up Display 是一个基于搜索的菜单快速定位和选择系统，是传统菜单体系的一种进化，最早在 Ubuntu 12.04 LTS 中投入使用。</p><p>一些应用程序，比如 Gimp 或 Inkscape 有非常多的菜单项。如果您使用那样的应用程序，您可能记住了菜单项的名字，但是忘记了它们在哪里。</p><p>您可以通过搜索框检索的方式快速定位菜单项，比传统菜单体系更为快捷。对于部分无法精确控制鼠标指针的用户来说，HUD 也比传统菜单体系更加方便。<br><strong>使用 HUD</strong></p><p>要使用 HUD 菜单：</p><ul><li><p>按住 Alt 调出 HUD。</p></li><li><p>开始输入。</p></li><li><p>当您在候选结果中看到需要使用的选项，只需通过上下方向键进行选定，然后按下 回车 即可，您也可以直接单击搜索结果。</p></li><li><p>要退出 HUD 菜单，只需再次单击 Alt 键，或单击 Esc 键即可。点击 HUD 菜单之外的任意区域也可以将其关闭。</p></li></ul><p>HUD 跟踪您输入的内容，并且会自动调整搜索结果以让您用起来更加方便。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;HUD介绍&quot;&gt;&lt;a href=&quot;#HUD介绍&quot; class=&quot;headerlink&quot; title=&quot;HUD介绍&quot;&gt;&lt;/a&gt;HUD介绍&lt;/h2&gt;&lt;p&gt;HUD 是什么？&lt;/p&gt;
+&lt;p&gt;HUD 或 Heads Up Display 是一个基于搜索的菜单快速定位和选择系统
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>键盘快捷键设置</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/wiki/快速入门/键盘快捷键设置/</id>
+    <published>2019-05-20T08:41:51.000Z</published>
+    <updated>2019-05-22T03:44:18.962Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p> 此页面提供了可以让你更有效地使用桌面和应用程序的键盘快捷键的总览。如果不能使用鼠标或其他指点设备，查看 键盘导航 来获取更多关于只使用键盘浏览用户界面的信息。<br>桌面常用快捷键</p><ul><li>Alt+F4</li></ul><p>关闭当前窗口。</p><ul><li>Alt+F2</li></ul><p>弹出命令行窗口(永远快速运行命令行)</p><ul><li>Alt+Tab</li></ul><p>在窗口之间快速切换。按住Shift可反向排序。</p><ul><li>Alt+`</li></ul><p>在同一个应用程序的不同窗口或Alt+Tab后选中的程序间切换</p><p>此快捷键使用美国键盘上的 `，这个键在 Tab 上方。在全部其它键盘上，这个快捷键是Alt 加 Tab 上方那个键。</p><ul><li>Super+S</li></ul><p>激活工作区切换器。缩小所有工作区。</p><ul><li>Super+W</li></ul><p>激活“Expo”模式。显示当前工作区的所有窗口。</p><ul><li>Ctrl+Alt+方向键</li></ul><p>在工作区之间切换。</p><ul><li>Ctrl+Alt+Shift+方向键</li></ul><p>将当前窗口移至其他工作区。</p><ul><li>Ctrl+Alt+Delete</li></ul><p>注销。</p><ul><li>Ctrl+Super+D</li></ul><p>隐藏所有窗口并显示桌面。再次按下按钮可以恢复窗口。</p><ul><li>Ctrl+Alt+L</li></ul><p>锁定屏幕。<br>常用编辑快捷方式</p><ul><li>Ctrl+A</li></ul><p>在列表中选择所有文本或项目。</p><ul><li>Ctrl+X</li></ul><p>剪切(移除)选中文本或项目并将其置于剪贴板。</p><ul><li>Ctrl+C</li></ul><p>复制选中文本或项目并将其置于剪贴板。</p><ul><li>Ctrl+V</li></ul><p>粘贴剪贴板内的内容。</p><ul><li>Ctrl+Z</li></ul><p>撤销最近一次操作。<br>从屏幕捕捉</p><ul><li>Print Screen</li></ul><p>获取屏幕截图。</p><ul><li>Alt+Print Screen</li></ul><p>获取窗口的截图。</p><ul><li>Shift+Print Screen</li></ul><p>获取屏幕上某个区域的截图。光标变为十字。点击并拖动选择区域。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt; 此页面提供了可以让你更有效地使用桌面和应用程序的键盘快捷键的总览。如果不能使用鼠标或其他指点设备，查看 键盘导航 来获取更
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>注销、关机、切换用户</title>
+    <link href="http://yoursite.com/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%B3%A8%E9%94%80%E3%80%81%E5%85%B3%E6%9C%BA%E3%80%81%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7/"/>
+    <id>http://yoursite.com/wiki/快速入门/注销、关机、切换用户/</id>
+    <published>2019-05-20T08:41:31.000Z</published>
+    <updated>2019-05-22T03:39:10.157Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="注销、关机、切换用户"><a href="#注销、关机、切换用户" class="headerlink" title="注销、关机、切换用户"></a>注销、关机、切换用户</h2><p>您使用完计算机后，可以将其关闭、挂起(以节能)或保持开机并注销。  </p><h3 id="注销或切换用户"><a href="#注销或切换用户" class="headerlink" title="注销或切换用户**"></a>注销或切换用户**</h3><p>要使其他用户使用您的计算机，您可以注销或保持自身的登录，仅切换用户即可。如果您仅切换用户，则所有应用程序将继续运行，您再次登录时，一切将保留原样。</p><p>要注销或切换用户，点击菜单栏的右上角处的 系统菜单 并选择相应的操作。  </p><h3 id="锁定屏幕"><a href="#锁定屏幕" class="headerlink" title="锁定屏幕"></a>锁定屏幕</h3><p>如果您要离开计算机一小段时间，则应该锁定屏幕以防止其他人访问您的文件和运行应用程序。您返回后，只需输入密码即可重新登录。如果您未锁定屏幕，则它将在一段特定时间后自动锁定。</p><p>要锁定屏幕，请单击顶部面板上的会话菜单并选择锁定屏幕。</p><p>屏幕锁定后，其他用户可以通过单击密码屏幕上的切换用户登录到其各自的帐户。他们用完后，您可以切回到桌面。<br>亦见</p><ul><li>屏幕锁定地太快 — 在 亮度和锁定 设置中更改锁屏前等待的时间。  </li><li>自动锁定您的屏幕 — 防止其他人趁您离开时偷偷使用您的电脑。</li></ul><h3 id="挂起"><a href="#挂起" class="headerlink" title="挂起"></a>挂起</h3><p>要节能，请在不使用时挂起计算机。如果是笔记本，合上盖子的时候 Ubuntu将会自动挂起。这可以将您的状态保存到计算机内存中并关闭大部分功能。暂停期间，仍有极少量的耗电量。</p><p>要手工挂起您的计算机，单击菜单栏中的系统菜单并选择挂起。<br>亦见  </p><ul><li>挂起或休眠计算机时会发生什么？ — 挂起将使您的电脑进入睡眠状态，使用较少的电能。</li></ul><h3 id="关机或重启"><a href="#关机或重启" class="headerlink" title="关机或重启"></a>关机或重启</h3><p>如果您要彻底地关闭电源，或进行一次重启，点击 系统菜单 并选择 关机。</p><p>如果有其他用户已登录，则将不允许您关闭或重新启动计算机，因为这样会中断他们的会话。如果您是管理员用户，则需要使用密码关机。<br>亦见  </p><ul><li>降低能耗，提高电池寿命 — 减少您计算机能耗的技巧。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;注销、关机、切换用户&quot;&gt;&lt;a href=&quot;#注销、关机、切换用户&quot; class=&quot;headerlink&quot; title=&quot;注销、关机、切换用户&quot;&gt;&lt;/a&gt;注销、关机、切换用户&lt;/h2&gt;&lt;p&gt;您使用完计算机后，可以将其关闭、挂起(以节能)或保持开机并注销。  &lt;/p&gt;
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="http://yoursite.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
     
   </entry>
