@@ -1,1 +1,4 @@
-deploy:  type: git repo: https://github.com/github-name/github-name.github.io.git branch: master
+deploy:  
+type: git 
+repo: https://github.com/github-name/github-name.github.io.git 
+branch: master
