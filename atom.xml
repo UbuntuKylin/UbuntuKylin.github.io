@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-18T02:36:14.154Z</updated>
+  <updated>2019-06-20T02:16:01.545Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>欢迎来到UbuntuKylin Wiki</title>
+    <link href="http://yoursite.com/wiki/welcome/"/>
+    <id>http://yoursite.com/wiki/welcome/</id>
+    <published>2019-06-20T02:16:01.545Z</published>
+    <updated>2019-06-20T02:16:01.545Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>UKUI图标切换</title>
@@ -268,9 +290,9 @@
     <link href="http://yoursite.com/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/UKUI/"/>
     <id>http://yoursite.com/wiki/软件应用/UKUI/</id>
     <published>2019-06-18T02:05:14.000Z</published>
-    <updated>2019-06-18T02:05:14.246Z</updated>
+    <updated>2019-06-20T02:25:32.242Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a><br>werewr</li></ul></blockquote>]]></content>
     
     <summary type="html">
     
@@ -279,8 +301,7 @@
         &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;br&gt;werew
       
     
     </summary>
@@ -490,29 +511,6 @@
       
       
         &lt;h2 id=&quot;WPS办公套件&quot;&gt;&lt;a href=&quot;#WPS办公套件&quot; class=&quot;headerlink&quot; title=&quot;WPS办公套件&quot;&gt;&lt;/a&gt;WPS办公套件&lt;/h2&gt;&lt;p&gt;WPS 文字处理系统是一款集成了文字、表格、演示、网页浏览、图片浏览等功能的办公软件套件，提供免费的
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>金山快盘</title>
-    <link href="http://yoursite.com/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E9%87%91%E5%B1%B1%E5%BF%AB%E7%9B%98/"/>
-    <id>http://yoursite.com/wiki/软件应用/金山快盘/</id>
-    <published>2019-06-18T02:02:41.000Z</published>
-    <updated>2019-06-18T09:03:02.458Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="金山快盘"><a href="#金山快盘" class="headerlink" title="金山快盘"></a>金山快盘</h2><p>金山快盘是 Ubuntu Kylin 团队与金山云公司合作，共同开发的金山快盘 Linux 客户端，具备文件同步、备份和共享功能，能够为您提供安全可控、跨平台的一站式文件管理体验。</p><p>金山快盘可免费使用，但默认情况下没有包含在 Ubuntu Kylin 发行版中，请 安装 以开始使用。<br>首次运行金山快盘第一次运行金山快盘时进行设置。</p><h3 id="快盘同步控制"><a href="#快盘同步控制" class="headerlink" title="快盘同步控制"></a>快盘同步控制</h3><p><strong>查看</strong><br>通过系统托盘查看同步文件夹、账户信息及同步状态。<br><strong>暂停 &amp; 恢复</strong><br>暂停或恢复文件同步。<br><strong>解除绑定</strong><br>解除金山快盘与本计算机的绑定。</p><h3 id="快盘功能选项"><a href="#快盘功能选项" class="headerlink" title="快盘功能选项"></a>快盘功能选项</h3><p><strong>代理服务器设置设置</strong><br>金山快盘使用的网络代理服务器。<br><strong>占用带宽设置</strong><br>限制同步所能使用的最大上传/下载带宽。<br><strong>桌面通知 &amp; 开机启动</strong><br>开启或关闭同步信息的桌面通知，设置开机自启动快盘。<br><strong>选择性同步 &amp; 本地文件过滤</strong><br>选择从云端同步到本地的文件夹，过滤不同步的本地文件/文件夹。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;金山快盘&quot;&gt;&lt;a href=&quot;#金山快盘&quot; class=&quot;headerlink&quot; title=&quot;金山快盘&quot;&gt;&lt;/a&gt;金山快盘&lt;/h2&gt;&lt;p&gt;金山快盘是 Ubuntu Kylin 团队与金山云公司合作，共同开发的金山快盘 Linux 客户端，具备文件同步、备份和共享
       
     
     </summary>
