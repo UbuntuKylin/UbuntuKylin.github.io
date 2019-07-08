@@ -7,5 +7,4 @@ categories:
 ---
 
 
-这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！！！
-
+这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！
