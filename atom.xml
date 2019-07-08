@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-08T12:27:36.289Z</updated>
+  <updated>2019-07-08T12:32:37.203Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,16 +20,16 @@
     <title>欢迎来到UbuntuKylin Wiki</title>
     <link href="http://yoursite.com/wiki/welcome/"/>
     <id>http://yoursite.com/wiki/welcome/</id>
-    <published>2019-07-08T12:27:36.289Z</published>
-    <updated>2019-07-08T12:27:36.289Z</updated>
+    <published>2019-07-08T12:32:37.203Z</published>
+    <updated>2019-07-08T12:32:37.203Z</updated>
     
-    <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！</p>]]></content>
+    <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！!!!!</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！&lt;/p&gt;
+        &lt;p&gt;这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！!!!!&lt;/p&gt;
 
       
     
