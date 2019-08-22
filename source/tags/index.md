@@ -1,3 +1,1 @@
-title: "Tags"
-layout: "tags"
----
+
