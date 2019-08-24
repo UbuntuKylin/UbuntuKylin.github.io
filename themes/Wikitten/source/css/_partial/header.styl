@@ -1,18 +1,21 @@
 #header
     @extend $block
-    background: white
+    background: #04123d
     position: relative
+    height:85px
     a, a:visited
         white-space: nowrap
         transition: 0.2s ease
-        color: color-default
+        color: white
+        margin-top:20px
+        font-size:18px
     a:hover
-        color: color-link
+        color: #82e8fb
 
 $header-block
     height: logo-height
     line-height: logo-height
-    padding: ((header-height - logo-height)/2) 15px
+    padding: ((header-height - logo-height)/2) 25px
 
 $header-block-left
     float: left
@@ -23,15 +26,16 @@ $header-block-right
 .header-inner
     height: 100%
     position: relative
+    margin:0 auto
     #logo
         @extend $header-block
         @extend $header-block-left
         display: inline-block
         .logo
-            margin-right: 5px
+            margin-right: 85px
             display: inline-block
         .site-title
-            font-size: 16px
+            font-size: 36px
             display: inline-block
             vertical-align: top
             font-weight: 600
@@ -121,6 +125,7 @@ $nav-link
             line-height: logo-height
 
 #search-form-wrap
+    background:#006ead
     @media mq-mini
         display: none
     @extend $header-block
@@ -160,13 +165,13 @@ $nav-link
     padding: 0
     width: 200px
     box-shadow: none
-    color: color-default
+    color: black
     transition: 0.2s ease
     box-sizing: border-box
     height: auto !important
     line-height: line-height
     outline: none !important
-    background: none !important
+    background: white
     font: font-size font-sans
     border: 1px solid color-border !important
     &:focus
