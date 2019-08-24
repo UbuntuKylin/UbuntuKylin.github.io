@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>UbuntuKylin wiki</title>
+  <title>UbuntuKylin Wiki</title>
   
   <subtitle>自主桌面操作系统</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-07-08T12:32:37.203Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://UbuntuKylin.github.io/"/>
+  <updated>2019-08-24T03:12:42.924Z</updated>
+  <id>https://UbuntuKylin.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,19 +18,19 @@
   
   <entry>
     <title>欢迎来到UbuntuKylin Wiki</title>
-    <link href="http://yoursite.com/wiki/welcome/"/>
-    <id>http://yoursite.com/wiki/welcome/</id>
-    <published>2019-07-08T12:32:37.203Z</published>
-    <updated>2019-07-08T12:32:37.203Z</updated>
+    <link href="https://UbuntuKylin.github.io/wiki/welcome/"/>
+    <id>https://UbuntuKylin.github.io/wiki/welcome/</id>
+    <published>2019-08-24T03:12:42.924Z</published>
+    <updated>2019-08-24T03:12:42.924Z</updated>
     
-    <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！!!!!</p>]]></content>
+    <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!<br>Ubuntu Kylin 介绍</p><p>Ubuntu Kylin是基于Ubuntu的开源操作系统，目标是创建更适合中文用户的Linux发行版，并将成果反馈到全球用户。我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，Ubuntu Kylin 已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将Ubuntu Kylin应用于日常办公、企业生产和专业开发的人员或团队。Ubuntu Kylin最新的长期支持版是我们于2014年7月25日发布的4.04.1 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将Ubuntu Kylin应用于个人娱乐、办公体验或开发学习的人员或团队。Ubuntu Kylin最新的短期支持版是我们于2014年10月23日发布的14.10版本！ </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这是UbuntuKylin Wiki，你可以在这里找到你需要的资料！!!!!&lt;/p&gt;
-
+        &lt;p&gt;这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!&lt;br&gt;Ubuntu Kylin 介绍&lt;/p&gt;
+&lt;p&gt;Ubuntu Kylin是基于Ubuntu的开源操作系统，目标是创建更适合中文用户的Linux发行版，并将成果反馈到全球用户。我们将持续努力为用户
       
     
     </summary>
@@ -40,143 +40,123 @@
   
   <entry>
     <title>快速检查电脑是否配备USB 3.0</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%BF%AB%E9%80%9F%E6%A3%80%E6%9F%A5%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E9%85%8D%E5%A4%87USB-3-0/"/>
-    <id>http://yoursite.com/wiki/精选文章/快速检查电脑是否配备USB-3-0/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%BF%AB%E9%80%9F%E6%A3%80%E6%9F%A5%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E9%85%8D%E5%A4%87USB-3-0/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/快速检查电脑是否配备USB-3-0/</id>
     <published>2019-06-29T03:53:54.000Z</published>
-    <updated>2019-06-29T03:53:54.698Z</updated>
+    <updated>2019-08-21T08:13:13.389Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="小技巧：快速检查电脑是否配备USB-3-0"><a href="#小技巧：快速检查电脑是否配备USB-3-0" class="headerlink" title="小技巧：快速检查电脑是否配备USB 3.0"></a>小技巧：快速检查电脑是否配备USB 3.0</h2><pre><code> 越来越多的电脑开始配备USB 3.0端口，但是如何知道您的电脑是否带有3.0端口以及哪个端口是3.0呢？方法如下： 打开终端，使用以下命令： $ lsusb该命令显示系统中的USB相关信息，检查结果，如果发现乐死“3.0 root hub”字样，表明系统带有USB 3.0。优麒麟（Ubuntu Kylin）接下来，如何识别哪个端口为USB 3.0呢？通常USB 3.0端口带有SS标记（Super Speed的缩写）。如果硬件厂商没有标记SS或USB 3，则检查端口内部的颜色，USB 3.0通常为蓝色。优麒麟（Ubuntu Kylin）</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;小技巧：快速检查电脑是否配备USB-3-0&quot;&gt;&lt;a href=&quot;#小技巧：快速检查电脑是否配备USB-3-0&quot; class=&quot;headerlink&quot; title=&quot;小技巧：快速检查电脑是否配备USB 3.0&quot;&gt;&lt;/a&gt;小技巧：快速检查电脑是否配备USB 3.0&lt;/
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>如何让你的“笨兔”更像苹果？</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E2%80%9C%E7%AC%A8%E5%85%94%E2%80%9D%E6%9B%B4%E5%83%8F%E8%8B%B9%E6%9E%9C%EF%BC%9F/"/>
-    <id>http://yoursite.com/wiki/精选文章/如何让你的“笨兔”更像苹果？/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E2%80%9C%E7%AC%A8%E5%85%94%E2%80%9D%E6%9B%B4%E5%83%8F%E8%8B%B9%E6%9E%9C%EF%BC%9F/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/如何让你的“笨兔”更像苹果？/</id>
     <published>2019-06-29T03:53:35.000Z</published>
-    <updated>2019-06-29T03:53:35.785Z</updated>
+    <updated>2019-08-21T08:19:31.547Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="每周一帖：如何让你的“笨兔”更像苹果？"><a href="#每周一帖：如何让你的“笨兔”更像苹果？" class="headerlink" title="每周一帖：如何让你的“笨兔”更像苹果？"></a>每周一帖：如何让你的“笨兔”更像苹果？</h2><pre><code> 嗨，如果您是“笨兔”（Ubuntu）系统的忠实粉丝，可是也很喜欢苹果系统（Mac OS X）的界面风格，肿么办？小编给你支一招——无需花钱去购置昂贵的苹果也能让你的“笨兔”14.04看起来更像Mac！ 为了让“笨兔”穿上Mac的外衣，您需要的是Zukimac主题，请跟随小编做如下课间运动：1. 获取Zukimac主题：http://pan.baidu.com/s/1hq1MKZE2. 解压下载的zip文件，将Zukitwo-mac、Zukiwi-mac和Zulomo目录拷贝到当前用户主目录的.themes下    通过文件浏览器进入主目录，按下Ctrl+H键显示所有隐藏目录。如果没有的话就创建一个）</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>  3. 使用Unity Tweak工具更改主题安装Unity Tweak Tool       sudo apt-get install unity-tweak-tool打开Unity Tweak Tool</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>选择主题</code></pre><p>优麒麟（Ubuntu Kylin）</p><p>优麒麟（Ubuntu Kylin）</p><pre><code>如何，是不是很有鸟枪换炮的赶脚？</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>   接下来，如果您愿意还可以您的“笨兔”使用起来感觉更像Mac一点——换个程序启动面板试试</code></pre><p>sudo add-apt-repository ppa:ricotz/docky<br>sudo apt-get update<br>sudo apt-get install plank</p><pre><code>换个指示器看看</code></pre><p>sudo add-apt-repository ppa:noobslab/apps<br>sudo apt-get update<br>sudo apt-get install indicator-synapse</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;每周一帖：如何让你的“笨兔”更像苹果？&quot;&gt;&lt;a href=&quot;#每周一帖：如何让你的“笨兔”更像苹果？&quot; class=&quot;headerlink&quot; title=&quot;每周一帖：如何让你的“笨兔”更像苹果？&quot;&gt;&lt;/a&gt;每周一帖：如何让你的“笨兔”更像苹果？&lt;/h2&gt;&lt;pre&gt;
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
   </entry>
   
   <entry>
     <title>如何修复Ubuntu Kylin 14.04丢失系统设置问题</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8DUbuntu-Kylin-14-04%E4%B8%A2%E5%A4%B1%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/wiki/精选文章/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8DUbuntu-Kylin-14-04%E4%B8%A2%E5%A4%B1%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/</id>
     <published>2019-06-29T03:53:18.000Z</published>
-    <updated>2019-06-29T03:53:18.153Z</updated>
+    <updated>2019-08-21T08:18:09.790Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题"><a href="#每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题" class="headerlink" title="每周一贴：如何修复Ubuntu Kylin 14.04丢失系统设置问题"></a>每周一贴：如何修复Ubuntu Kylin 14.04丢失系统设置问题</h2><pre><code>最近有不少童鞋在安装搜狗输入法之后，决定卸载ibus输入法，结果导致系统设置变成如下这个“惨淡”景象，其它小伙伴都到哪里去了？</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>解决方法是：打开终端，然后执行以下命令 ——      sudo apt-get install ubuntu-desktop这相当于重新安装了Unity，该方法同样能够解决没有Unity启动器和指示面板的情形。</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题&quot;&gt;&lt;a href=&quot;#每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何修复Ubuntu Kylin 
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
   </entry>
   
   <entry>
     <title>如何在Ubuntu Kylin中添加多个时区</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-Kylin%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%A4%9A%E4%B8%AA%E6%97%B6%E5%8C%BA/"/>
-    <id>http://yoursite.com/wiki/精选文章/如何在Ubuntu-Kylin中添加多个时区/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-Kylin%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%A4%9A%E4%B8%AA%E6%97%B6%E5%8C%BA/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/如何在Ubuntu-Kylin中添加多个时区/</id>
     <published>2019-06-29T03:52:18.000Z</published>
-    <updated>2019-06-29T03:52:18.272Z</updated>
+    <updated>2019-08-21T08:11:30.129Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="每周一贴：如何在Ubuntu-Kylin中添加多个时区"><a href="#每周一贴：如何在Ubuntu-Kylin中添加多个时区" class="headerlink" title="每周一贴：如何在Ubuntu Kylin中添加多个时区"></a>每周一贴：如何在Ubuntu Kylin中添加多个时区</h2><pre><code>当我们在日常工作中需要使用多个时区时，如果桌面时钟能够显示多个时间将会非常方便。比如，当我们观看世界杯时就需要同时关注北京时间和巴西里约热内卢时间。在Ubuntu Kylin中我们能够非常方便的改变设置显示多个时区。打开系统设置面板，然后找到“时间与日期”。点击“时钟”标签页，选中“其他地区的时间”，再点击“选择位置(L)...”按钮。</code></pre><p>优麒麟（Ubuntu Kylin） 优麒麟（Ubuntu Kylin）</p><pre><code>在打开的对话框中输入一个城市名字，如“Rio”，系统将自动显示匹配的地区。选择我们需要的，点击底部的“+”号就可以添加了。看看最后的结果吧，点击面板栏上的时间指示器，可以发现我们已经成功添加了里约热内卢时间。</code></pre><p>优麒麟（Ubuntu Kylin）</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;每周一贴：如何在Ubuntu-Kylin中添加多个时区&quot;&gt;&lt;a href=&quot;#每周一贴：如何在Ubuntu-Kylin中添加多个时区&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何在Ubuntu Kylin中添加多个时区&quot;&gt;&lt;/a&gt;每周一贴：
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
-    <id>http://yoursite.com/wiki/精选文章/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
     <published>2019-06-29T03:51:59.000Z</published>
-    <updated>2019-06-29T03:51:59.500Z</updated>
+    <updated>2019-08-21T08:10:34.053Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复"><a href="#每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复" class="headerlink" title="每周一贴：Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复"></a>每周一贴：Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</h2><p>Ubuntu Kylin 中的声音问题是一个老生常谈的问题。</p><p>在这里我们所使用的环境为Ubuntu Kylin 14.04版，安装完之后第一次启动系统没有声音。经过排查发现alsamixer状态怪异:</p><p>优麒麟（Ubuntu Kylin）</p><p>如图所示：alsamixer中默认情况下设置的是HDMI。这意味着默认情况下，声音输出为HDMI，而不是内置扬声器。所以在系统中我们找不到内置扬声器设置。</p><p>打开终端，使用以下命令检查alsamixer状态：</p><p>alsamixer</p><p>如果alsamixer中默认情况下为HDMI或其他音频输出设置，请继续阅读下文看如何可以修复它。</p><p>现在我们要做的是强制Ubuntu Kylin默认使用模拟输出而不是HDMI接口，在这里我们需要一些信息。打开终端，然后输入下面的命令：</p><p>aplay -l</p><p>终端将列出设备，卡号等信息。记下卡号和模拟输出设备号。我的输出结果是这样的：</p><p>优麒麟（Ubuntu Kylin）</p><p>一旦你有需要的卡和设备编号，就可以做出这样一个新的配置文件：</p><p>sudo gedit /etc/asound.conf</p><p>上面的命令也将打开该文件。当然，用你的卡和设备号替换添加以下几行：</p><p>defaults.pcm.card 1</p><p>defaults.pcm.device 0</p><p>保存文件并重新启动计算机。你现在应该可以听到声音了。值得注意的是，这个问题的修复适用于所有的Linux发行版，如Linux Mint的，Elementary OS，Fedora，Arch Linux等。当然，这种“无声音修复”仅适用于当HDMI是默认设置的情况下。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复&quot;&gt;&lt;a href=&quot;#每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：Ubu
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>如何在优麒麟桌面上显示歌词 </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F%E6%A1%8C%E9%9D%A2%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%AD%8C%E8%AF%8D/"/>
-    <id>http://yoursite.com/wiki/精选文章/如何在优麒麟桌面上显示歌词/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F%E6%A1%8C%E9%9D%A2%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%AD%8C%E8%AF%8D/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/如何在优麒麟桌面上显示歌词/</id>
     <published>2019-06-29T03:51:45.000Z</published>
     <updated>2019-06-29T03:51:45.676Z</updated>
     
@@ -195,42 +175,38 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
-    <id>http://yoursite.com/wiki/精选文章/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
     <published>2019-06-29T03:51:23.000Z</published>
-    <updated>2019-06-29T03:51:23.627Z</updated>
+    <updated>2019-08-21T08:08:39.031Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示"><a href="#每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示" class="headerlink" title="每周一贴：如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示]"></a>每周一贴：如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示]</h2><p>新手们也许都喜欢保持自己的系统是最新的，无论是安全更新、系统更新或应用程序更新。并且不喜欢等一个星期。是的，在默认情况下，Ubuntu Kylin的更新管理器会自动的在每周弹出一次，除非它是个安全更新。</p><p>如果你也想保持自己的系统更新更频繁，你可以更改更新设置。在这个初学者技巧中，我们将看到怎样使你的Ubuntu Kylin桌面更加频繁地更新。</p><p>在Ubuntu Kylin 14.04 中更改更新频率</p><p>进入Dash搜索“更新”或“update”，点击“软件和更新”：</p><p>优麒麟（Ubuntu Kylin）</p><p>在“软件和更新”中，进入“更新”选项卡。新手可以看到用于更新系统的设置。比如对于你自己来说，默认设置是每天检查更新，但普通的更新每周只显示一次，然而，如果有一个安全更新，它会立即通知你。</p><p>为获得更频繁的有关更新的通知，你可以更改设置来立即通知任何更新，你可以更改以下设置：</p><p>优麒麟（Ubuntu Kylin）</p><p>当然，即使不经常更新，你也可以改变更新频率来提示，这个选项完全取决于你的。考虑到你想保持你的系统是最新的，你应该遵循这些技巧来加快Ubuntu Kylin系统速度。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示&quot;&gt;&lt;a href=&quot;#每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何快速设
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>“优麒麟手机助手”篇 </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E6%89%8B%E6%9C%BA%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>http://yoursite.com/wiki/精选文章/“优麒麟手机助手”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E6%89%8B%E6%9C%BA%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/“优麒麟手机助手”篇/</id>
     <published>2019-06-29T03:51:09.000Z</published>
     <updated>2019-06-29T03:51:09.251Z</updated>
     
@@ -249,15 +225,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>Mate桌面安装与使用体验</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/Mate%E6%A1%8C%E9%9D%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
-    <id>http://yoursite.com/wiki/精选文章/Mate桌面安装与使用体验/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/Mate%E6%A1%8C%E9%9D%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/Mate桌面安装与使用体验/</id>
     <published>2019-06-29T03:50:51.000Z</published>
     <updated>2019-06-29T03:50:51.487Z</updated>
     
@@ -276,42 +252,38 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>如何对Ubuntu Kylin 14.04 的登录界面截图 </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%A6%82%E4%BD%95%E5%AF%B9Ubuntu-Kylin-14-04-%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE/"/>
-    <id>http://yoursite.com/wiki/精选文章/如何对Ubuntu-Kylin-14-04-的登录界面截图/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E5%AF%B9Ubuntu-Kylin-14-04-%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/如何对Ubuntu-Kylin-14-04-的登录界面截图/</id>
     <published>2019-06-29T03:50:34.000Z</published>
-    <updated>2019-06-29T03:50:34.742Z</updated>
+    <updated>2019-08-21T08:07:09.919Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图"><a href="#每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图" class="headerlink" title="每周一贴：如何对Ubuntu Kylin 14.04 的登录界面截图"></a>每周一贴：如何对Ubuntu Kylin 14.04 的登录界面截图</h2><p>有时用户需要对登录界面屏幕截图。例如，如果用户想写一篇有关如何在Ubuntu Kylin 14.04 上安装Cinnamon 的技术文章，登陆界面的截图就对初学者有帮助。无论你的原因是什么，如果你想知道如何对Ubuntu  Kylin 14.04 或Linux Mint 17 的登陆界面截图，让下面的技巧来告诉你怎么做吧。</p><p>对Ubuntu Kylin和Linux Mint的登录界面截图</p><p>这里的方法是创建一个可以从命令行界面运行的脚本，不要害怕这个脚本，使用它真的很简单。</p><p>第1步：获取ImageMagic</p><p>打开终端，然后使用以下命令安装ImageMagic。</p><p>sudo apt-get install imagemagick</p><p>第2步：准备脚本</p><p>创建一个新的文件，最好在你的home目录下，将它命名为screenshot.sh或任何你喜欢的。在文件中添加以下几行：<br>chvt 7; sleep 5s; DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd; convert ~/screenshot.xwd ~/screenshot.png; rm ~/screenshot.xwd</p><p>在上述中，chvt 7是虚拟控制台的数量。当你运行这个脚本后需要5秒来截图，你可以把它改成任何你想要的数字，会发现命名为screenshot.png的截图保存在你的home目录下。</p><p>第3步：给脚本执行权限</p><p>你必须要给脚本执行权限：</p><p>sudo chmod +x screenshot.sh</p><p>第4步：截图</p><p>现在，当一切准备就绪后，退出系统。进入用户登录模式后按Ctrl+Alt+F1，输入你的用户认证，然后像这样运行截图脚本：</p><p>sudo ./screenshot.sh</p><p>一旦这个脚本运行时，它会带你回到登录界面的图形界面（chvt 7），五秒钟后文件名为screenshot.png的截图将会保存在你的home目录下。</p><p>你可以根据自己的需要修改截图脚本。希望这个技巧能帮你对Ubuntu Kylin、Linux Mint或任何其他的Linux发行版的登录界面进行截图。如果你有任何疑问或建议，随时欢迎与我们UK团队联系。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图&quot;&gt;&lt;a href=&quot;#每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何对Ubuntu Kylin 14.
       
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>Master PDF：PDF和XPS文件编辑神器</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
-    <id>http://yoursite.com/wiki/精选文章/Master-PDF：PDF和XPS文件编辑神器/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/Master-PDF：PDF和XPS文件编辑神器/</id>
     <published>2019-06-29T03:49:24.000Z</published>
     <updated>2019-06-29T03:49:24.313Z</updated>
     
@@ -330,15 +302,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>“优麒麟在线中英文字典”篇</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
-    <id>http://yoursite.com/wiki/精选文章/“优麒麟在线中英文字典”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/“优麒麟在线中英文字典”篇/</id>
     <published>2019-06-29T03:49:06.000Z</published>
     <updated>2019-06-29T03:49:06.453Z</updated>
     
@@ -357,15 +329,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>在优麒麟14.04上安装精美的Dalisha图标主题</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F14-04%E4%B8%8A%E5%AE%89%E8%A3%85%E7%B2%BE%E7%BE%8E%E7%9A%84Dalisha%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98/"/>
-    <id>http://yoursite.com/wiki/精选文章/在优麒麟14-04上安装精美的Dalisha图标主题/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F14-04%E4%B8%8A%E5%AE%89%E8%A3%85%E7%B2%BE%E7%BE%8E%E7%9A%84Dalisha%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/在优麒麟14-04上安装精美的Dalisha图标主题/</id>
     <published>2019-06-29T03:48:43.000Z</published>
     <updated>2019-06-29T08:13:28.990Z</updated>
     
@@ -380,15 +352,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
   </entry>
   
   <entry>
     <title>快速解决Ubuntu Kylin 14.04文件包下载失败的错误</title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%BF%AB%E9%80%9F%E8%A7%A3%E5%86%B3Ubuntu-Kylin-14-04%E6%96%87%E4%BB%B6%E5%8C%85%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%94%99%E8%AF%AF/"/>
-    <id>http://yoursite.com/wiki/精选文章/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%BF%AB%E9%80%9F%E8%A7%A3%E5%86%B3Ubuntu-Kylin-14-04%E6%96%87%E4%BB%B6%E5%8C%85%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%94%99%E8%AF%AF/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/</id>
     <published>2019-06-29T03:48:23.000Z</published>
     <updated>2019-06-29T08:06:19.169Z</updated>
     
@@ -403,15 +375,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E5%9C%A8%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88Windows-8-%E3%80%81Ubuntu-Kylin%EF%BC%89%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BB%8EWindows-8%E5%8D%B8%E8%BD%BDUbuntu-Kylin/"/>
-    <id>http://yoursite.com/wiki/精选文章/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%9C%A8%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88Windows-8-%E3%80%81Ubuntu-Kylin%EF%BC%89%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BB%8EWindows-8%E5%8D%B8%E8%BD%BDUbuntu-Kylin/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/</id>
     <published>2019-06-29T03:47:58.000Z</published>
     <updated>2019-06-29T07:04:54.782Z</updated>
     
@@ -426,15 +398,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
   </entry>
   
   <entry>
     <title>“优麒麟备份助手”篇 </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%A4%87%E4%BB%BD%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>http://yoursite.com/wiki/精选文章/“优麒麟备份助手”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%A4%87%E4%BB%BD%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/“优麒麟备份助手”篇/</id>
     <published>2019-06-29T03:47:30.000Z</published>
     <updated>2019-06-29T06:36:44.850Z</updated>
     
@@ -449,15 +421,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>“Linux U盘助手”篇 </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E2%80%9CLinux-U%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>http://yoursite.com/wiki/精选文章/“Linux-U盘助手”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9CLinux-U%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/“Linux-U盘助手”篇/</id>
     <published>2019-06-29T03:47:02.000Z</published>
     <updated>2019-06-29T06:44:15.113Z</updated>
     
@@ -472,15 +444,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>“Linux 快速启动工具”篇 </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/%E2%80%9CLinux-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E5%B7%A5%E5%85%B7%E2%80%9D%E7%AF%87/"/>
-    <id>http://yoursite.com/wiki/精选文章/“Linux-快速启动工具”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9CLinux-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E5%B7%A5%E5%85%B7%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/“Linux-快速启动工具”篇/</id>
     <published>2019-06-29T03:46:38.000Z</published>
     <updated>2019-06-29T06:14:23.205Z</updated>
     
@@ -495,15 +467,15 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux下的Notepad++编辑器——Notepadqq </title>
-    <link href="http://yoursite.com/wiki/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/Linux%E4%B8%8B%E7%9A%84Notepad-%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%94%E2%80%94Notepadqq/"/>
-    <id>http://yoursite.com/wiki/精选文章/Linux下的Notepad-编辑器——Notepadqq/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/Linux%E4%B8%8B%E7%9A%84Notepad-%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%94%E2%80%94Notepadqq/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/Linux下的Notepad-编辑器——Notepadqq/</id>
     <published>2019-06-29T03:45:41.000Z</published>
     <updated>2019-06-29T05:54:57.124Z</updated>
     
@@ -518,7 +490,7 @@
     
     </summary>
     
-      <category term="精选文章" scheme="http://yoursite.com/categories/%E7%B2%BE%E9%80%89%E6%96%87%E7%AB%A0/"/>
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>

@@ -187,6 +187,7 @@ code {
     float: left;
     width: 73.42105263157895%;
     margin: 0 0.789473684210526%;
+    width: 810px;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -272,7 +273,7 @@ code {
 .article-entry h6,
 .widget h6 {
   font-size: 1em;
-  color: #999;
+  color: #000;
 }
 .article-entry hr,
 .widget hr {
@@ -348,8 +349,9 @@ code {
   font-weight: bold;
 }
 #header {
-  background: #fff;
+  background: #04123d;
   position: relative;
+  height: 85px;
 }
 #header a,
 #header a:visited {
@@ -358,10 +360,12 @@ code {
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #565a5f;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
 }
 #header a:hover {
-  color: #38b7ea;
+  color: #82e8fb;
 }
 .header-inner #logo,
 #main-nav,
@@ -369,7 +373,7 @@ code {
 #search-form-wrap {
   height: 40px;
   line-height: 40px;
-  padding: 4px 15px;
+  padding: 4px 25px;
 }
 .header-inner #logo,
 #main-nav {
@@ -382,16 +386,17 @@ code {
 .header-inner {
   height: 100%;
   position: relative;
+  margin: 0 auto;
 }
 .header-inner #logo {
   display: inline-block;
 }
 .header-inner #logo .logo {
-  margin-right: 5px;
+  margin-right: 85px;
   display: inline-block;
 }
 .header-inner #logo .site-title {
-  font-size: 16px;
+  font-size: 36px;
   display: inline-block;
   vertical-align: top;
   font-weight: 600;
@@ -509,6 +514,9 @@ code {
 #sub-nav #profile-nav .fa {
   line-height: 40px;
 }
+#search-form-wrap {
+  background: #006ead;
+}
 @media screen and (max-width: 559px) {
   #search-form-wrap {
     display: none;
@@ -558,7 +566,7 @@ code {
   width: 200px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #565a5f;
+  color: #000;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
@@ -569,7 +577,7 @@ code {
   height: auto !important;
   line-height: 1.6em;
   outline: none !important;
-  background: none !important;
+  background: #fff;
   font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   border: 1px solid #dfe1e2 !important;
 }
@@ -811,7 +819,7 @@ code {
 article {
   padding: 3px;
   border-radius: 4px;
-  background-color: #c1cfdc;
+  background-color: #006ead;
 }
 .article {
   margin: 40px 0;
@@ -820,7 +828,7 @@ article {
   overflow: hidden;
   background: #fff;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #006ead;
 }
 .article-banner {
   width: 100%;
@@ -897,17 +905,21 @@ div.article-meta-button a:hover {
   background: #333;
 }
 .article-inner .article-meta {
-  line-height: 20px;
-  background: #7b848c;
+  background-color: #006ead;
   margin: 0px -21px 20px -21px;
   padding: 0 20px;
-  line-height: 30px;
-  border: 1px solid #666;
+  line-height: 42px;
+  border: 1px solid #006ead;
   border-radius: 4px 4px 0 0;
   color: #fff;
 }
 .article-inner .article-meta a {
+  margin-left: 5px;
   color: #fff;
+  font-size: 20px;
+}
+.article-inner .article-meta span {
+  font-size: 20px;
 }
 .article-category .fa-angle-right {
   margin: 0 5px;
@@ -1065,7 +1077,7 @@ div.article-meta-button a:hover {
   margin-left: 1em;
 }
 .article-entry .caption {
-  color: #999;
+  color: #000;
   display: block;
   font-size: 0.9em;
   margin-top: 0.5em;
@@ -1097,7 +1109,7 @@ div .article-more-link {
   padding: 6px 15px;
   border-radius: 15px;
   background: #ebeef1;
-  color: #999;
+  color: #000;
   text-shadow: 0 1px #fff;
   text-decoration: none;
 }
@@ -1123,7 +1135,7 @@ div .article-more-link {
   clear: both;
 }
 .article-footer a {
-  color: #999;
+  color: #000;
   text-decoration: none;
 }
 .article-footer a:hover {
@@ -1178,7 +1190,7 @@ div .article-more-link {
 }
 .article-nav-link-wrap {
   text-decoration: none;
-  color: #999;
+  color: #000;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1625,7 +1637,7 @@ ol.toc {
 #page-nav {
   margin: 40px auto;
   text-align: center;
-  color: #999;
+  color: #000;
   overflow: hidden;
 }
 #page-nav:before,
@@ -1646,7 +1658,7 @@ ol.toc {
   border-radius: 2px;
 }
 #page-nav a {
-  color: #999;
+  color: #000;
   text-decoration: none;
 }
 #page-nav a:hover {
@@ -1777,6 +1789,9 @@ ol.toc {
     float: left;
     width: 23.42105263157895%;
     margin: 0 0.789473684210526%;
+    width: 250px;
+    margin-left: 220px;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -1815,7 +1830,7 @@ ol.toc {
 .tag-list-count,
 .archive-list-count {
   padding-left: 5px;
-  color: #999;
+  color: #000;
   font-size: 0.85em;
 }
 .category-list-count:before,
@@ -1837,37 +1852,34 @@ ol.toc {
 }
 .widget-wrap {
   margin: 40px 0;
-  background-color: #eff1f4;
-  border: 4px solid #c1cfdc;
+  background-color: #fff;
+  border: 4px solid #006ead;
   border-radius: 4px;
   padding: 20px;
 }
 .widget-wrap h3 {
   line-height: 20px;
-  background: #7b848c;
-  margin: -21px -21px 10px -21px;
+  background: #fff;
+  margin: -19px -19px 12px -19px;
   padding: 0 20px;
   line-height: 30px;
-  border: 1px solid #666;
   border-radius: 4px 4px 0 0;
 }
 .widget-wrap h3 a {
-  margin-top: 5px;
   float: right;
 }
 .widget-wrap h3 a,
 .widget-wrap h3 span {
   border-radius: 4px 4px 0 0;
-  background: #eff1f4;
-  font-size: 15px;
-  line-height: 18px;
+  background: #fff;
+  font-size: 20px;
+  line-height: 40px;
   padding: 5px 10px;
   vertical-align: bottom;
 }
 .widget-wrap h3 a i,
 .widget-wrap h3 span i {
   font-size: 20px;
-  vertical-align: bottom;
 }
 .widget-title {
   margin-bottom: 0;
