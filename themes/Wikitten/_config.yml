@@ -1,10 +1,12 @@
 # Menus
 menu:
-  首页: /
-  归档: /archives
-  分类: /categories
-  标签: /tags
-  关于: /about
+  首页: //www.ubuntukylin.com/
+  下载: //www.ubuntukylin.com/
+  新闻: //www.ubuntukylin.com/
+  社区: //www.ubuntukylin.com/
+  参与: //www.ubuntukylin.com/
+  知识库: //www.ubuntukylin.com/
+  UKUI: //www.ubuntukylin.com/
 
 # Customize
 customize:
@@ -16,10 +18,10 @@ customize:
     profile:
         enabled: false # Whether to show profile bar
         avatar: # css/images/avatar.png
-        gravatar: readlnh@163.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: readlnh
+        gravatar: 305466682@qq.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: kevin.d
         author_title: Designer & Programmer
-        location: Chengdu, China
+        location: hunan, China
         follow: https://github.com/ukui/
     highlight: monokai
     sidebar: left # sidebar position, options: left, right
@@ -89,3 +91,4 @@ miscellaneous:
         twitter_id:
         google_plus:
     links:
+
