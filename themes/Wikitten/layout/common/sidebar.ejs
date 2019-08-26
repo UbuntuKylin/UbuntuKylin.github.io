@@ -1,7 +1,10 @@
-<aside id="sidebar">
+<div class="dkw" style="width:250px;height:300px;float:left;margin-top:42px">
 <%- partial('search/index') %>
+<aside id="sidebar">
+
    <% theme.widgets.forEach(function(widget) { %>
         <%- partial('widget/' + widget) %>
     <% }) %>
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
+</div>

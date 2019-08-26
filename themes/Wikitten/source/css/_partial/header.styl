@@ -2,12 +2,13 @@
     @extend $block
     background: #04123d
     position: relative
-    height:85px
+
     a, a:visited
+        display:block
         white-space: nowrap
         transition: 0.2s ease
         color: white
-        margin-top:20px
+        line-height:85px
         font-size:18px
     a:hover
         color: #82e8fb
@@ -15,7 +16,7 @@
 $header-block
     height: logo-height
     line-height: logo-height
-    padding: ((header-height - logo-height)/2) 25px
+    padding: ((header-height - logo-height)/2) 15px
 
 $header-block-left
     float: left
@@ -24,21 +25,24 @@ $header-block-right
     float: right
 
 .header-inner
-    height: 100%
+    height: 85px
     position: relative
     margin:0 auto
-    #logo
-        @extend $header-block
-        @extend $header-block-left
-        display: inline-block
-        .logo
-            margin-right: 85px
+    .outer
+        height:100%
+        #logo
+            @extend $header-block
+            @extend $header-block-left
             display: inline-block
-        .site-title
-            font-size: 36px
-            display: inline-block
-            vertical-align: top
-            font-weight: 600
+            .logo
+
+                display: inline-block
+            .site-title
+                line-height:85px
+                font-size: 25px
+                display: inline-block
+
+                font-weight: 600
 
 #header-title
     text-align: center
@@ -49,7 +53,7 @@ $header-block-right
     margin-top: logo-height * -0.5
 
 .header-sub
-    border-top: 1px solid color-border
+
     ul
         clearfix()
         margin: 0 15px
@@ -125,9 +129,11 @@ $nav-link
             line-height: logo-height
 
 #search-form-wrap
-    background:#006ead
+    background:#04123d
+    width:88.8%
+    float:left
     @media mq-mini
-        display: none
+        display: block
     @extend $header-block
     @extend $header-block-right
     .search-form
