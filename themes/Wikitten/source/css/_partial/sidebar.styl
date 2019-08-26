@@ -1,11 +1,12 @@
 #sidebar
     @media mq-normal
         column(sidebar-column)
-        width:250px
-        margin-left:220px
-        margin-top:40px;
+        width:100%
     @media mq-tablet
-        column(sidebar-column-tablet)
+        column(sidebar-column-tablet)       
+        width:100%      
+    @media mq-mobile
+        width:100%
 
 
 .widget
@@ -42,10 +43,9 @@
             content: "#"
 
 .widget-wrap
-    margin: block-margin 0
+    margin:0
     background-color: white
-    border: 4px solid #006ead
-    border-radius: 4px
+
     padding: 20px
     h3
         line-height: 20px
@@ -61,12 +61,12 @@
             border-radius: 4px 4px 0 0
             background: white
             font-size: 20px
-            line-height: 40px
+            line-height: 23px
             padding: 5px 10px
             vertical-align:bottom
             i
                 font-size: 20px
-
+                vertical-align:bottom
 
 .widget-title
     @extend $block-caption
