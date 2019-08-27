@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://UbuntuKylin.github.io/"/>
-  <updated>2019-08-27T01:40:07.543Z</updated>
+  <updated>2019-08-27T07:50:25.173Z</updated>
   <id>https://UbuntuKylin.github.io/</id>
   
   <author>
@@ -20,17 +20,16 @@
     <title>欢迎来到UbuntuKylin Wiki</title>
     <link href="https://UbuntuKylin.github.io/wiki/welcome/"/>
     <id>https://UbuntuKylin.github.io/wiki/welcome/</id>
-    <published>2019-08-27T01:40:07.543Z</published>
-    <updated>2019-08-27T01:40:07.543Z</updated>
+    <published>2019-08-27T07:50:25.173Z</published>
+    <updated>2019-08-27T07:50:25.173Z</updated>
     
-    <content type="html"><![CDATA[<p>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!<br>Ubuntu Kylin 介绍</p><p>Ubuntu Kylin是基于Ubuntu的开源操作系统，目标是创建更适合中文用户的Linux发行版，并将成果反馈到全球用户。我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，Ubuntu Kylin 已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将Ubuntu Kylin应用于日常办公、企业生产和专业开发的人员或团队。Ubuntu Kylin最新的长期支持版是我们于2014年7月25日发布的4.04.1 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将Ubuntu Kylin应用于个人娱乐、办公体验或开发学习的人员或团队。Ubuntu Kylin最新的短期支持版是我们于2014年10月23日发布的14.10版本！ </p>]]></content>
+    <content type="html"><![CDATA[<h2 id="这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料"><a href="#这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料" class="headerlink" title="这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!"></a>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!</h2><h3 id="Ubuntu-Kylin-介绍"><a href="#Ubuntu-Kylin-介绍" class="headerlink" title="Ubuntu Kylin 介绍"></a>Ubuntu Kylin 介绍</h3><p>Ubuntu Kylin 是由中国 CCN 联合实验室支持和主导的开源项目，其宗旨是采用平台国际化与应用本地化融合的设计理念，通过定制本地化的桌面用户环境以及开发满足广大中文用户特定需求的应用软件来提供细腻的中文用户体验，做更有中国特色的操作系统。</p><p>Ubuntu Kylin 以 Ubuntu 为参考，得到来自 Debian、Ubuntu、LUPA 及各地 Linux 用户组等国内外众多社区爱好者的广泛参与和热情支持，其开发贡献者可参见 Ubuntu Kylin <a href="https://launchpad.net/%7Eubuntukylin-members/+members?active_batch=75&amp;active_direction=backwards&amp;active_memo=75" rel="external nofollow noopener noreferrer" target="_blank">开发者团队列表</a></p><p>我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，Ubuntu Kylin 已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将Ubuntu Kylin应用于日常办公、企业生产和专业开发的人员或团队。Ubuntu Kylin最新的长期支持版是我们于2014年7月25日发布的4.04.1 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将Ubuntu Kylin应用于个人娱乐、办公体验或开发学习的人员或团队。Ubuntu Kylin最新的短期支持版是我们于2014年10月23日发布的14.10版本！ </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!&lt;br&gt;Ubuntu Kylin 介绍&lt;/p&gt;
-&lt;p&gt;Ubuntu Kylin是基于Ubuntu的开源操作系统，目标是创建更适合中文用户的Linux发行版，并将成果反馈到全球用户。我们将持续努力为用户
+        &lt;h2 id=&quot;这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料&quot;&gt;&lt;a href=&quot;#这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料&quot; class=&quot;headerlink&quot; title=&quot;这是UbuntuKylin Wiki，你可以在这里找
       
     
     </summary>
@@ -108,29 +107,6 @@
   </entry>
   
   <entry>
-    <title>如何在Ubuntu Kylin中添加多个时区</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E5%9C%A8Ubuntu-Kylin%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%A4%9A%E4%B8%AA%E6%97%B6%E5%8C%BA/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/如何在Ubuntu-Kylin中添加多个时区/</id>
-    <published>2019-06-29T03:52:18.000Z</published>
-    <updated>2019-08-21T08:11:30.129Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="每周一贴：如何在Ubuntu-Kylin中添加多个时区"><a href="#每周一贴：如何在Ubuntu-Kylin中添加多个时区" class="headerlink" title="每周一贴：如何在Ubuntu Kylin中添加多个时区"></a>每周一贴：如何在Ubuntu Kylin中添加多个时区</h2><pre><code>当我们在日常工作中需要使用多个时区时，如果桌面时钟能够显示多个时间将会非常方便。比如，当我们观看世界杯时就需要同时关注北京时间和巴西里约热内卢时间。在Ubuntu Kylin中我们能够非常方便的改变设置显示多个时区。打开系统设置面板，然后找到“时间与日期”。点击“时钟”标签页，选中“其他地区的时间”，再点击“选择位置(L)...”按钮。</code></pre><p>优麒麟（Ubuntu Kylin） 优麒麟（Ubuntu Kylin）</p><pre><code>在打开的对话框中输入一个城市名字，如“Rio”，系统将自动显示匹配的地区。选择我们需要的，点击底部的“+”号就可以添加了。看看最后的结果吧，点击面板栏上的时间指示器，可以发现我们已经成功添加了里约热内卢时间。</code></pre><p>优麒麟（Ubuntu Kylin）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;每周一贴：如何在Ubuntu-Kylin中添加多个时区&quot;&gt;&lt;a href=&quot;#每周一贴：如何在Ubuntu-Kylin中添加多个时区&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何在Ubuntu Kylin中添加多个时区&quot;&gt;&lt;/a&gt;每周一贴：
-      
-    
-    </summary>
-    
-      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</title>
     <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
     <id>https://UbuntuKylin.github.io/wiki/快速入门/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
@@ -154,33 +130,6 @@
   </entry>
   
   <entry>
-    <title>如何在优麒麟桌面上显示歌词 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F%E6%A1%8C%E9%9D%A2%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%AD%8C%E8%AF%8D/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/如何在优麒麟桌面上显示歌词/</id>
-    <published>2019-06-29T03:51:45.000Z</published>
-    <updated>2019-06-29T03:51:45.676Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </title>
     <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
     <id>https://UbuntuKylin.github.io/wiki/快速入门/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
@@ -199,60 +148,6 @@
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>“优麒麟手机助手”篇 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E6%89%8B%E6%9C%BA%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/“优麒麟手机助手”篇/</id>
-    <published>2019-06-29T03:51:09.000Z</published>
-    <updated>2019-06-29T03:51:09.251Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Mate桌面安装与使用体验</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/Mate%E6%A1%8C%E9%9D%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/Mate桌面安装与使用体验/</id>
-    <published>2019-06-29T03:50:51.000Z</published>
-    <updated>2019-06-29T03:50:51.487Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
     
   </entry>
@@ -285,19 +180,15 @@
     <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
     <id>https://UbuntuKylin.github.io/wiki/软件应用/Master-PDF：PDF和XPS文件编辑神器/</id>
     <published>2019-06-29T03:49:24.000Z</published>
-    <updated>2019-06-29T03:49:24.313Z</updated>
+    <updated>2019-08-27T07:38:35.786Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="Master-PDF：PDF和XPS文件编辑神器"><a href="#Master-PDF：PDF和XPS文件编辑神器" class="headerlink" title="Master PDF：PDF和XPS文件编辑神器"></a>Master PDF：PDF和XPS文件编辑神器</h2><pre><code>假设您正在致力于Windows XP替换，恰好又在为寻找一款可在优麒麟或其它Linux发行版具备PDF-XChange Viewer, Foxit Reader或Adobe Reader类似强大功能的PDF替代软件，那么本编很乐意向您推荐Master PDF编辑器——这是一款私有软件，其Linux版本可以作为个人工具免费使用。 Master PDF具有以下功能特点：创建来自任意视窗应用的文档，支持打印功能修改任意PDF或XPS文件的内容快速显示PDF和XPS文件添加、删除和修改文本/图像导入XPS和PDF文件为BMP、JPEG、PNG、TIFF格式，分辨率范围为80DPI～600DPI书签编辑PDF加密PDF表单域创建和编辑可采用128位加密算法加密PDF文档将XPS文件转换为PDF</code></pre><p>下载安装Master PDF编辑器</p><pre><code>您可在Ubuntu软件中心中找到Master PDF，点击安装即可；或从以下地址下载deb文件：http://code-industry.net/public/master-pdf-editor_1.9.25_i386.deb</code></pre><p>优麒麟（Ubuntu Kylin）</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;Master-PDF：PDF和XPS文件编辑神器&quot;&gt;&lt;a href=&quot;#Master-PDF：PDF和XPS文件编辑神器&quot; class=&quot;headerlink&quot; title=&quot;Master PDF：PDF和XPS文件编辑神器&quot;&gt;&lt;/a&gt;Master PDF：PDF
       
     
     </summary>
@@ -312,19 +203,15 @@
     <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
     <id>https://UbuntuKylin.github.io/wiki/软件应用/“优麒麟在线中英文字典”篇/</id>
     <published>2019-06-29T03:49:06.000Z</published>
-    <updated>2019-06-29T03:49:06.453Z</updated>
+    <updated>2019-08-27T07:37:03.632Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="优麒麟在线中英文字典”篇"><a href="#优麒麟在线中英文字典”篇" class="headerlink" title="优麒麟在线中英文字典”篇"></a>优麒麟在线中英文字典”篇</h2><pre><code>众所周知，Windows下有道词典、金山词霸等词典客户端为用户带来了很多便利，Linux系统下的词典少之又少，用户迫切需要一款好用的词典软件。</code></pre><p>目前在Dash中可以搜索音乐、视频、图片等资源，为用户带来很多便利，省去了打开浏览器再进行搜索查看等复杂操作。如果基于Dash实现词典功能，将会给用户带来很大的便利，并在一定程度上提高用户的体验。</p><p>来自哈尔滨工业大学（威海）的赵博洋同学勇敢的接受了这次挑战。将利用Dash完成中英文字典应用的开发。赵博洋同学的完成情况如何呢？接下来就让我们提前体验一下吧：）</p><pre><code>首先要做的就是下载安装文件，前往CSDN CODE项目地址：开发者分支：https://code.csdn.net/u013116028/dash_dictionary/tree/master由于还没有安装包文件，需要借助isgd包来完成演示操作。</code></pre><p>第一步，下载源码。点击<a href="https://code.csdn.net/u013116028/dash_dictionary/tree/master页面下载按钮即可。" rel="external nofollow noopener noreferrer" target="_blank">https://code.csdn.net/u013116028/dash_dictionary/tree/master页面下载按钮即可。</a></p><p>第二步，安装isgd包。sudo apt-get install unity-scope-isgd 。</p><p>第三步，将src目录下的文件bid.txt  quci.py  unity_dictionary_daemon.py拷贝到/usr/share/unity-scopes/isgd目录下。</p><p>第四步，注销或重启系统。</p><pre><code>接下来我们就可以真正开始体验词典功能啦！</code></pre><p>我们知道Dash搜索有很多分类，如全局搜索、文件、音乐、视频、图片等等。通过调查发现，全局搜索功能是使用率最高的方式。用户不用切换分类，直接在搜索框中输入单词或汉字就可以啦！</p><p>（1）【中-英】：输入单词，显示结果如下：</p><p>优麒麟（Ubuntu Kylin） </p><p>点击单词，可以看到词汇详细信息：中文翻译、音标、例句等信息。如下图所示：</p><p>优麒麟（Ubuntu Kylin） </p><p> （2）【中-英】：输入文字，显示结果如下：</p><p> 优麒麟（Ubuntu Kylin） </p><p>点击文字，可以看到词汇详细信息：英文翻译、例句等信息。如下图所示：</p><p> 优麒麟（Ubuntu Kylin） </p><p>（3）纠错功能：</p><p>如果输入的单词拼写不对，会进行提示：</p><p>优麒麟（Ubuntu Kylin） </p><p>（4）划词功能：</p><p>   用鼠标选中要翻译的词语，屏幕右上角即会弹出显示结果的桌面气泡，如下图所示：</p><p>优麒麟（Ubuntu Kylin） </p><pre><code>赵博洋同学目前实现的词典的基本功能，后续将会完善词典的展示功能。</code></pre><p>   如果您也有兴趣为该项目贡献代码和建议，不妨到以下网址发表您的看法或者阅读、下载源代码：</p><p>   开发者分支：<a href="https://code.csdn.net/u013116028/dash_dictionary/tree/master" rel="external nofollow noopener noreferrer" target="_blank">https://code.csdn.net/u013116028/dash_dictionary/tree/master</a></p><p>开发者博客：<a href="http://blog.csdn.net/u013116028" rel="external nofollow noopener noreferrer" target="_blank">http://blog.csdn.net/u013116028</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
+        &lt;h2 id=&quot;优麒麟在线中英文字典”篇&quot;&gt;&lt;a href=&quot;#优麒麟在线中英文字典”篇&quot; class=&quot;headerlink&quot; title=&quot;优麒麟在线中英文字典”篇&quot;&gt;&lt;/a&gt;优麒麟在线中英文字典”篇&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;众所周知，Windows下有道词典、金山词霸
       
     
     </summary>
@@ -491,6 +378,98 @@
     </summary>
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>优麒麟U盘刻录14.10镜像出问题的解决方法</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E4%BC%98%E9%BA%92%E9%BA%9FU%E7%9B%98%E5%88%BB%E5%BD%9514-10%E9%95%9C%E5%83%8F%E5%87%BA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/优麒麟U盘刻录14-10镜像出问题的解决方法/</id>
+    <published>2019-06-24T06:32:07.000Z</published>
+    <updated>2019-06-29T03:43:17.117Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="优麒麟U盘刻录14-10镜像出问题的解决方法"><a href="#优麒麟U盘刻录14-10镜像出问题的解决方法" class="headerlink" title="优麒麟U盘刻录14.10镜像出问题的解决方法　　"></a>优麒麟U盘刻录14.10镜像出问题的解决方法　　</h2><p>　　从几个月前的14.10 daily 版本就有U盘刻录无法启动的现象，相关bug可参见：<a href="https://bugs.launchpad.net/ubunt ... reator/+bug/1325801" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>　　<br>　　系统镜像本身没有任何问题，刻录光盘、dd到U盘启动都是正常的。此问题是由于ubuntu使用了最新的syslinux版本，而大多U盘刻录软件还未支持最新的syslinux版本导致u盘无法启动，现在ubuntu系统自带及部分刻录工具是已经支持最新ubuntu14.10的U盘刻录。　　<br>　　通常遇到问题的都是windows用户，请更新或使用推荐的刻录软件制作U盘启动盘，具体如下：<br>　　linux的用mkusb　　<br>　　windows的用Win32DiskImager 来制作U盘启动<br>　　具体用法：<br>　　　　<a href="https://wiki.ubuntu.com/Win32DiskImager/iso2usb" rel="external nofollow noopener noreferrer" target="_blank">https://wiki.ubuntu.com/Win32DiskImager/iso2usb</a><br>　　　　<a href="https://help.ubuntu.com/community/mkusb" rel="external nofollow noopener noreferrer" target="_blank">https://help.ubuntu.com/community/mkusb</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;优麒麟U盘刻录14-10镜像出问题的解决方法&quot;&gt;&lt;a href=&quot;#优麒麟U盘刻录14-10镜像出问题的解决方法&quot; class=&quot;headerlink&quot; title=&quot;优麒麟U盘刻录14.10镜像出问题的解决方法　　&quot;&gt;&lt;/a&gt;优麒麟U盘刻录14.10镜像出问题的
+      
+    
+    </summary>
+    
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux新手大礼包：学习Linux你必须知道的那些事儿</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/Linux%E6%96%B0%E6%89%8B%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%9A%E5%AD%A6%E4%B9%A0Linux%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/Linux新手大礼包：学习Linux你必须知道的那些事儿/</id>
+    <published>2019-06-24T06:31:49.000Z</published>
+    <updated>2019-06-29T03:27:03.347Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Linux新手大礼包：学习Linux你必须知道的那些事儿"><a href="#Linux新手大礼包：学习Linux你必须知道的那些事儿" class="headerlink" title="Linux新手大礼包：学习Linux你必须知道的那些事儿　"></a>Linux新手大礼包：学习Linux你必须知道的那些事儿　</h2><p>　　欢迎加入 Linux 的大家庭！对你来说，这可能还是一个陌生的领域，不过相信随着逐步深入的了解，你会喜欢上 Linux，喜欢上开源的！首先，让我们来看一下，Linux新手应该注意和了解哪些事情吧！</p><h3 id="1-认识几个大牛"><a href="#1-认识几个大牛" class="headerlink" title="1. 认识几个大牛"></a>1. 认识几个大牛</h3><p>Linus Torvalds<br>生于1969年12月28日的芬兰赫尔辛基市，拥有美国国籍。他是 Linux 内核的最早作者，随后发起了这个开源项目，担任 Linux 内核的首席架构师与项目协调者，是当今世界最著名的电脑程序员、黑客之一。他还发起了 Git 这个开源项目，并为主要的开发者。</p><p>Richard Matthew Stallman<br>简称 RMS，生于1953年3月16日，美国自由软件运动的精神领袖、GNU 计划 以及自由软件基金会的创立者。作为一个著名的黑客，他的主要成就包括Emacs及后来的 GNU Emacs，GNU C 编译器及GDB调试器。他所写作的GNU通用公共许可证是世上最广为采用的自由软件许可证，为Copyleft观念开拓出一条崭新的道路。</p><p>Eric Steven Raymond<br>生于1957年12月4日，程序员，《大教堂与市集》的作者、《新黑客词 典》（”Jargon File”）的维护人、著名黑客。作为《新黑客词典》的主要编撰人以及维护者，雷蒙很早就被认为是黑客文化的历史学家以及人类学家。但是在1997年以 后，雷蒙被广泛公认为是开放源代码运动的主要领导者之一，并且是最为大众所知道（并最具争议性）的黑客。</p><p>了解更多开源界名人请见这里：</p><ul><li><a href="http://code.csdn.net/news/2819455" rel="external nofollow noopener noreferrer" target="_blank">历史上最知名的15位计算机科学家</a></li><li><a href="http://code.csdn.net/news/2820039" rel="external nofollow noopener noreferrer" target="_blank">岁月是把杀猪刀：开源大叔Linus Torvalds是如何炼成的</a></li><li><a href="http://code.csdn.net/news/2820040" rel="external nofollow noopener noreferrer" target="_blank">《一周开源弹》09期：《开源者说》访RMS大神</a></li><li><a href="http://code.csdn.net/news/2821086" rel="external nofollow noopener noreferrer" target="_blank">速来膜拜！20位活跃在Github上的国内技术大牛</a></li><li><a href="http://code.csdn.net/news/2820990" rel="external nofollow noopener noreferrer" target="_blank">10位Github上最受关注的前端大牛</a></li></ul><h3 id="2-了解Linux家族的明星成员"><a href="#2-了解Linux家族的明星成员" class="headerlink" title="2. 了解Linux家族的明星成员"></a>2. 了解Linux家族的明星成员</h3><p>　　<strong>Red Hat Enterprise Linux</strong>：Red Hat Enterprise Linux 是 Red Hat 公司的 Linux 发行版，面向商业市场，包括大型机。红帽公司从 Red Hat Enterprise Linux 5 开始对企业版 LINUX 的每个版本提供10年的支持，Red Hat Enterprise Linux 常简作 RHEL。Red Hat Enterprise Linux 大约3年发布一个新版本。<br>　　<strong>Fedora Linux</strong>：Fedora Linux 是较具知名度的 Linux 发行版之一。它是一套功能完备、更新快速的免费操作系统。而对赞助者 Red Hat 公司而言，它是许多新技术的测试平台，被认为可用的技术最终会加入到 Red Hat Enterprise Linux 中。<br>　　<strong>Centos</strong>：CentOS 全名为“社区企业操作系统”（Community Enterprise Operating System），是Linux发布版之一，它是来自于 Red Hat Enterprise Linux 依照开放源代码规定发布的源代码所编译而成。由于出自同样的源代码，因此有些要求高度稳定性的服务器以CentOS替代商业版的 Red Hat Enterprise Linux 使用。两者的不同，在于 CentOS 并不包含封闭源代码软件。CentOS 对上游代码的主要修改是为了卸载不能自由使用的商标。<br>　　<strong>Ubuntu</strong>：Ubuntu 是一个以桌面应用为主的 GNU/Linux 操作系统，其名称来自非洲南部祖鲁语或豪萨语的“ Ubuntu ”一词，意思是“人性”。 Ubuntu 基于 Debian 发行版，与 Debian 的不同在于它每6个月会发布一个新版本。<br>　　<strong>SUSE Linux</strong>：SUSE 是 Linux 操作系统其中一个发布版，也是德国的一个发布版。SUSE Linux 目前专注于企业市场。<br>　　<strong>openSUSE</strong>：openSUSE 是一个开放社区的计划，号称“最美丽的 Linux 发行版”。<br>　　<strong>Debian</strong>：Debian 是一种自由操作系统，全称 Debian GNU/Linux，由Debian计划（Debian Project）组织维护，Debian 是一个纯粹由自由软件所组合而成的操作环境。<br>　　<strong>Archlinux</strong>：Arch Linux(或称Arch)是一种以轻量简洁为设计理念的Linux发行版。其开发团队秉承简洁、优雅、正确和代码最小化的设计宗旨。Arch Linux 项目受 CRUX 启发，由 Judd Vinet 于2002年启动。</p><p>更多Linux版本请看这里： <a href="https://code.csdn.net/groups/7587/discources/935281" rel="external nofollow noopener noreferrer" target="_blank">Linux系统家族族谱</a></p><h3 id="3-初学者必读的Linux基础书籍"><a href="#3-初学者必读的Linux基础书籍" class="headerlink" title="3. 初学者必读的Linux基础书籍　　"></a>3. 初学者必读的Linux基础书籍　　</h3><p>　　要想学好Linux，你至少需要：一本好入门教材、一本linux指令参考手册、linux系统管理手册、讲解linux系统原理的书。这里我们推荐几部公认的好书：<br> <a href="http://book.douban.com/subject/4889838/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 基础学习篇》</a> 鸟哥 著；人民邮电出版社<br> <a href="http://book.douban.com/subject/10794788/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 服务器架设篇》</a>  鸟哥 著；机械工业出版社<br> <a href="http://book.douban.com/subject/25750712/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux命令、编辑器与Shell编程》</a> [美]索贝尔(Sobell·M.G.) 著； 清华大学出版社<br> <a href="http://book.douban.com/subject/1723151/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux设备驱动程序》</a> 科波特 著； 中国电力出版社<br> <a href="http://book.douban.com/subject/2287506/" rel="external nofollow noopener noreferrer" target="_blank">《 深入理解Linux内核》</a> （美）博韦，西斯特 著； 中国电力出版社<br> <a href="http://book.douban.com/subject/1788421/" rel="external nofollow noopener noreferrer" target="_blank">《 UNIX环境高级编程》</a>  W.Richard Stevens / Stephen A.Rago 著；人民邮电出版社</p><h3 id="4-熟悉Linux常用命令"><a href="#4-熟悉Linux常用命令" class="headerlink" title="4. 熟悉Linux常用命令"></a>4. 熟悉Linux常用命令</h3><ul><li>man ：任何时候你觉得对一个命令行不是很确定，都可以通过输入“man + 命令”来了解这个命令能确切是做什么的。</li><li>ls ：列出目录内容。</li><li>pwd ：在终端中显示当前工作目录的全路径。</li><li>cd ：要变更你当前所在的目录。</li><li>mkdir ：创建一个新的目录。</li><li>cp ：复制文件/重命名文件。</li><li>mv ：移动文件。</li><li>find 和 locate：搜索文件。</li><li>kill ：快速关闭一个进程。</li><li>passwd ：更改密码。</li><li>md5sum ：计算和检验MD5信息签名</li><li>history ：查询历史记录命令。</li><li>sudo ：(super user do)命令允许授权用户执行超级用户或者其它用户的命令。</li><li>touch ：创建一个新文件，或者将文件的访问和修改时间更新为当前时间。</li><li>chmod ：修改文件的访问权限。</li><li>chown ：改变文件拥有者和所在用户组。</li><li>apt ：APT是一个为Debian系列系统（Ubuntu，Kubuntu等等）开发的高级包管理器，在Gnu/Linux系统上，它会为包自动智能地搜索、安装、升级以及解决依赖问题。</li></ul><h3 id="5-小心新手常犯的几个错误"><a href="#5-小心新手常犯的几个错误" class="headerlink" title="5. 小心新手常犯的几个错误　"></a>5. 小心新手常犯的几个错误　</h3><p>　<strong>不要以根用户登录</strong>：这是使用Unix的惯例，除非必须那么不要轻易在根用户下运行任何东西。　<br>　<strong>文件命名混乱</strong>：避免使用美元符（$），括弧和百分号（%）等特殊字符，这些字符对于shell有着特殊意义，可能会引起冲突。避免使用空格，不要使用无效字符，“/”是根目录专用的。　<br>　<strong>所有文件都混在一起</strong>：将Home目录放在一个独立的分区上，可以在你重装系统甚至升级你的整个版本而不会丢失你的数据和个人设置。　<br>　<strong>试图点击运行.exe文件</strong>：除非你安装了WINE，双击那些.exe文件毫无用处。新用户需要知道，无论是Linux还是Windows，都只会运行针对自身系统开发的应用程序。　　<br>　<strong>以默认格式向微软Office用户发送OpenOffice文档</strong>：微软产品对其它操作系统和其它应用程序的友好性并不强，许多新Linux用户在共享文件给朋友时往往会遇到麻烦，因为对方无法阅读他们共享的文件格式，因此新Linux用户要注意存储文件的格式，确保它们能够被微软类似应用所打开。<br>　<strong>忽视更新</strong>：新的更新可以为一些新的漏洞打上补丁。维持更新可以在一个易受损的系统与一个安全的系统之间构造分水岭。Linux的安全来自于不断地维护。　　　　<br>　以上是一些操作习惯方面的错误，还有一些技术类型的错误，你可以查看《 避免UNIX和Linux中的常见错误》</p><h3 id="6-常去逛逛一些Linux社区和网站"><a href="#6-常去逛逛一些Linux社区和网站" class="headerlink" title="6. 常去逛逛一些Linux社区和网站"></a>6. 常去逛逛一些Linux社区和网站</h3><p>国内的专业Linux网站<br>　　<a href="http://www.chinaunix.net/" rel="external nofollow noopener noreferrer" target="_blank">ChinaUnix</a>： 创办于2001年，是一个以讨论Linux/Unix类操作系统技术、软件开发技术、数据库技术和网络应用技术等为主的开源技术社区网站。<br>　　<a href="http://bbs.linuxeden.com/index.php" rel="external nofollow noopener noreferrer" target="_blank">Linux伊甸园论坛</a>： 中文GNU/Linux开源社区，开源资讯门户网站，提供最新最快的Linux和开源资讯，24小时滚动更新。<br>　　<a href="http://linux.cn/" rel="external nofollow noopener noreferrer" target="_blank">LinuxCN</a>：Linux中国是专注于中文Linux技术、资讯的社区，在这里你可以获得一手的Linux资讯和技术知识。</p><p>国外著名Linux网站<br>　　<a href="http://www.linux.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux Online</a>： 最权威的Linux网站，文章讨论无所不包，软件硬件应有尽有。<br>　　<a href="http://li.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux国际协会(Linux International)</a>：有大量的Linux资源列表。<br>　　<a href="http://www.linux.com/" rel="external nofollow noopener noreferrer" target="_blank">Linux</a>：学习Linux的最好网站，也是Linux使用经验的汇聚地。<br>　　<a href="http://www.linuxforums.org/" rel="external nofollow noopener noreferrer" target="_blank">Linuxforums</a>： 提供Linux的软件资源，Linux论坛，Linux服务器发行版的信息，LINUX文章教程等信息的综合性网站。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Linux新手大礼包：学习Linux你必须知道的那些事儿&quot;&gt;&lt;a href=&quot;#Linux新手大礼包：学习Linux你必须知道的那些事儿&quot; class=&quot;headerlink&quot; title=&quot;Linux新手大礼包：学习Linux你必须知道的那些事儿　&quot;&gt;&lt;/a&gt;L
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>特洛伊木马可能已感染Linux系统多年</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E7%89%B9%E6%B4%9B%E4%BC%8A%E6%9C%A8%E9%A9%AC%E5%8F%AF%E8%83%BD%E5%B7%B2%E6%84%9F%E6%9F%93Linux%E7%B3%BB%E7%BB%9F%E5%A4%9A%E5%B9%B4/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/特洛伊木马可能已感染Linux系统多年/</id>
+    <published>2019-06-24T06:31:08.000Z</published>
+    <updated>2019-06-27T07:42:57.171Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="特洛伊木马可能已感染Linux系统多年"><a href="#特洛伊木马可能已感染Linux系统多年" class="headerlink" title="特洛伊木马可能已感染Linux系统多年"></a>特洛伊木马可能已感染Linux系统多年</h2><p><img src="http://www.ubuntukylin.com/upload/images/trojan-word-cloud(1" alt>.jpg)<br>关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数Linux用户广泛接受，然而这只在一定程度上成立，并非完全如此。<br>       与其它操作系统一样，Linux同样无法对恶意代码、木马、rootkit、病毒等完全免疫，已知存在几种著名的Linux病毒。但是如果和Windows相比，数量非常有限。既然如此又何必故话重提呢？这是因为一种新的木马已在市场上被探测到，有可能影响Linux系统。</p><p><strong>Turla同样可以感染Linux系统</strong><br>       数月前一款名为Turla的精巧间谍程序被探测到，该病毒被认为源自俄罗斯并且受到俄罗斯政府的支持。间谍程序以欧洲和美国的政府机构为目标已长达四年之久。在最近的报告中，Kaspersky的研究者发现Turla不仅感染Windows系统，同样感染Linux操作系统。Kaspersky研究者将其描述为“Turla迷题的丢失片段”（missing piece of Turla puzzle）。<br><strong>什么是Turla的Linux模块以及该模块有何危险性？</strong><br>       “Linux Turla模块是一个静态编译的C/C++模块，去除了符号信息目的是增加分析的难度。其功能包括隐藏的网络通信、任意地远程命令执行和远程管理。大部分代码来自公开来源”。<br>       报告还提到该木马在执行任意远程命令时不需要提权，无法被常用的管理工具发现。就个人而言，这种说法值得怀疑。因此，作为Linux桌面用户是否会感到担忧呢？在我们经历过ShellShock Linux bug之后，现在就崩溃还为时过早。Turla最初针对的是政府机构而不是普通用户。我们可以等待和观察更多、更详细的消息。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;特洛伊木马可能已感染Linux系统多年&quot;&gt;&lt;a href=&quot;#特洛伊木马可能已感染Linux系统多年&quot; class=&quot;headerlink&quot; title=&quot;特洛伊木马可能已感染Linux系统多年&quot;&gt;&lt;/a&gt;特洛伊木马可能已感染Linux系统多年&lt;/h2&gt;&lt;p&gt;&lt;i
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/Windows-8-1-UEFI-%E6%A8%A1%E5%BC%8F%E4%B8%8BU%E7%9B%98%E5%AE%89%E8%A3%85Ubuntu-Kylin-14-10-%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/</id>
+    <published>2019-06-24T06:30:40.000Z</published>
+    <updated>2019-06-27T07:39:18.569Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统"><a href="#Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统" class="headerlink" title="Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统"></a>Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</h2><p>因办公需要，Linux 系统是必需的，本文作者是 Windows8.1 系统，笔记本电脑型号是联想 Y400。 由于虚拟机的慢速，所以决定删除一个硬盘然后独立安装 Linux 的操作系统。</p><h3 id="1-Window-8-1-的情况："><a href="#1-Window-8-1-的情况：" class="headerlink" title="1. Window 8.1 的情况："></a>1. Window 8.1 的情况：</h3><p>windows 8.1 系统原装正版，电脑是联想 Y400，进入 Bios（开机出现Logo后按F2），因为UEFI的引导形式，BIOS里面没有U盘启动的选项。只有 UEFI 模式和 Legacy (传统模式)这两个选项。第一个尝试是在 Legacy 模式下进行传统的安装，这个和常规的安装方式没有什么区别。这里以 Ubuntu Kylin 为例。<br>    准备工作：<br>   （1） 第一次安装的是32位 Ubuntu Kylin 14.10，安装方式是U盘安装，因为 Bios 没有从 U 盘引导的选项，所以需要做一些准备工作;<br>   （2） 进入Windows系统，关掉快速启动，（控制面板-&gt;电源选项-&gt;左侧选择电源按钮的功能-&gt;单击选择当前不可用的设置-&gt;在下面的关机设置中关掉快速启动）;<br>   （3） 开机F2（不同机器不一样），进入Bios，关掉Secure Boot（安全启动），设置UEFI模式为Legacy模式，设置Legacy优先;<br>   （4） U 盘格式化，最好格式化成 FAT32 格式的，然后用刻录工具刻盘，比如软通碟（作者第一次用软通碟但是刻录的 U 盘无法正确引导安装，上网查了似乎对 legacy 等支持不好，所以在网上的建议下用了 Win32DiskImager ）就没有问题;<br>   （5） 备份重要的文件，防止安装出问题把系统搞坏了;<br>   （6） 下载 MBRFIX 工具，这个是你要删除 Ubuntu Kylin 时候防止 MBR 破话 Windows 的引导导致不能进入系统;<br>   （7） 防患于为然，最好有个PE系统恢复盘。<br>   （8） 下载 DiskGenius ，这个是因为你的 U 盘做完引导盘后你如果格式化，U 盘只有几百K的容量，你需要用这个软件把 U 盘丢失为分配的内存重新分配上；</p><h3 id="2-Ubuntu-Kylin-14-10-Legacy-U盘安装："><a href="#2-Ubuntu-Kylin-14-10-Legacy-U盘安装：" class="headerlink" title="2. Ubuntu Kylin 14.10 Legacy U盘安装："></a>2. Ubuntu Kylin 14.10 Legacy U盘安装：</h3><p>这个实际上是传统安装方式;<br>   （1） 插入U盘，因为之前已经在 Bios 中设置过 Legacy 和 Legacy 优先了，所以正常情况下应该是可以看到一个安装画面的，这个安装画面是紫色的，下面有个小人和一个图标，看到这个画面说明是传统的安装方式，这里安装的是32位的;<br>   （2） 一路默认就可以了，但是比较重要的是分区这块儿;<br>   （3） 这里分了 swap 交换分区 -2G ，根目录 -70G ，home-120G ，这个其实没那么严格，大家可以参考网上的一些建议，注意这里没有分 boot 分区，因为默认是会将 boot 挂载在全盘上的，所以出来的结果是以 Ubuntu Kylin 引导的（其实实际上不是，后面在详细分析）;<br>   （4） 分区下面的启动加载就保持不变了，默认为全盘;<br>   （5） 好了，一路耐心等待，重启的时候（U盘要拔掉，要不有进入安装界面了），就会看到 Ubuntu Kylin 的选择界面了，可以选 Ubuntu Kylin ，也可以选 Windows 8.1,正常情况下 Ubuntu Kylin 可以进去没有问题，但是 Windows 8.1却进不去了;<br>   （6） 原因是因为 Windows8.1是以UEFI模式安装引导的，而 Ubuntu Kylin 是在传统模式下安装的，所以理论上在前面的安装过程中希望通过 Ubuntu Kylin 引导 Windows，但结果是俩者不协同，导致 Ubuntu Kylin 生成的 windows 启动项是错误的;<br>   （7） 于是问题就来了，怎么进入 windows，很简单，重启进入 Bios，把 Legacy 改回为 UEFI，然后就又可以顺利的进入 Windows 8 了，但这时候没有 Ubuntu Kylin 的进入选项，这意味着你要想进入 Ubuntu Kylin ，就重新把 Legacy 改回为 UEFI 就可以了;如果你能忍受这样的麻烦，到 这里也算是顺利完成了;<br>   （8） 曾经试图想把 Ubuntu Kylin 的 boot 挂载在另外的分区上，然后设置启动项为该分区，然后希望通过 easyBCD 编辑从 Windows 引导，但是根本行不通，因为 UEFI 和 Legacy 两者各自独立，很难完成互相引导，至少我没有办到;<br>   （9） 最后的结果就是，看似是双系统，但是每次进入不同的系统都要重新设置 Bios ，非常麻烦！</p><h3 id="3-Ubuntu-Kylin-14-10-UEFI-U盘安装："><a href="#3-Ubuntu-Kylin-14-10-UEFI-U盘安装：" class="headerlink" title="3. Ubuntu Kylin 14.10 UEFI U盘安装："></a>3. Ubuntu Kylin 14.10 UEFI U盘安装：</h3><p>因为上面不爽，一气之下在Win8下面把 Ubuntu Kylin 的盘全删了，但是手贱造成的结果就是再次试图通过设置Bios为 Legacy 然后U盘安装盘无法引 导，这是因为之前将boot挂在全盘，破坏了MBR启动项，导致系统引导出错，但我还是可以通过更改为UEFI进入win8,所以我觉得也是有一点好的， 两种模式即便传统安装的 Ubuntu Kylin 死掉了，我还是能进入win8系统，于是在win8下重新把MBR用MBRFIX工具修复一下就好了，这个工具就只用 在命令行输入一行命令就可以了;觉得这个不是办法，决定用UEFI模式安装 Ubuntu Kylin 。<br>   （1） U 盘格式化，只有几百K,用 DiskGenius 把U盘的这几百K删了然后把所有未分配的U盘内存重新分配;<br>   （2） 注意U盘要格式化为fat32的;<br>   （3） 下载 Ubuntu Kylin 14.10 一定要是64位的，32位什么情况我就不得知了，我的电脑是64位，这里之针对64位安装的童鞋;<br>   （4） 刻录U盘，插入U盘重启;<br>   （5） 进入 BIOS，设置为 UEFI 模式，你会看到有一个 USB 的启动选项，这是因为U盘里有 .efi 这个文件，所以UEFI模式会自动检测，选择改选项优先启动就可以了;<br>   （6） 重启，Ubuntu Kylin 进入安装界面，这个界面与传统安装有所不同，没有之前的小人和图标了，而是在左上角有三行字，第一行是“Install…”，选择安装就可以了;<br>   （7） 在分配硬盘的时候，我分了四个区 /boot 挂载为 EFI 分区（这里我分了200M），/swap 交换分区，/根目录，/home 家分区;<br>   （8） 下面的启动分区设置为 /boot 所在的分区;<br>   （9） 其实这里你看似分了一个 /boot，以为启动项会挂载到你的这个 /boot 分区上，其实不然，无论有没有这个分区，Ubuntu 都会把 EFI 文件拷贝到一 个专门的EFI启动分区，这个分区是和 WIndow8 共用的，在硬盘设置你列表中你可以明显看到，一般在 Windows OS 分区的前面，sda2，你可以仔细检查一下，因为很明显有标志;<br>   （10） 所以第7步中你也可以不要 /boot，而在下面把启动加载的硬盘设置为 EFI 分区就可以了;<br>   （11） 你可能担心这样会破坏 windows 的引导，或者你以后删除 Ubuntu Kylin 会对 windows 的引导造成问题，其实不然，这样更安全，因为这样安装会在EFI分区新建一个 Ubuntu Kylin 的efi文件夹，专门负责 ubuntu Kylin 的引导，windows 的文件夹专门负责 windows 的引导，所以删除一个另一个也不会出问题，只是删除了后会有启动项的残留项，随便用efi工具清理一下就可以了;<br>  （12） 继续，重启，进入 Bios ，这个会发现多了 Ubuntu Kylin 这一个条目，原来只有( windows boot manager，boot from IPv4，boot from IPv6 )，把 Ubuntu Kylin 的选项调整到最上面，这样每次开机的的时候就会有 Ubuntu Kylin 还有 Ubuntu Kylin 的修复模式还有 Windows 8;<br>  目前支持 EFI 安装的 linux 系统有 Ubuntu、Ubuntu Kylin、Fedora 和 opensuse，比较新的版本支持，64位刻成盘Fat32格式基本上可以被自动检测到，安全启动要在bios里面关闭到，opensuse 支持安全启动模式下的安装，不过不知道效果怎么样，没有试验。大家在安装系统之前最好把准备工作做足，免得系统崩溃又没有PE修复盘欲哭无泪，装系统也是考验人品和耐心的事情，假如 Linux 里面可以看到 Windows 的盘符和其他硬盘，不要乱删。</p><p>原文：<a href="http://forum.ubuntu.org.cn/viewtopic.php?t=466297" rel="external nofollow noopener noreferrer" target="_blank">http://forum.ubuntu.org.cn/viewtopic.php?t=466297</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统&quot;&gt;&lt;a href=&quot;#Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统&quot; class=&quot;headerlink&quot; title=&quot;
+      
+    
+    </summary>
+    
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
   </entry>
