@@ -138,7 +138,7 @@ code {
   background-color: #f8f8f8;
 }
 .outer {
-  max-width: 1900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -187,7 +187,7 @@ code {
     float: left;
     width: 73.42105263157895%;
     margin: 0 0.789473684210526%;
-    width: 810px;
+    float: left;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -351,31 +351,31 @@ code {
 #header {
   background: #04123d;
   position: relative;
-  height: 85px;
 }
 #header a,
 #header a:visited {
+  display: block;
   white-space: nowrap;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
   transition: 0.2s ease;
   color: #fff;
-  margin-top: 20px;
+  line-height: 85px;
   font-size: 18px;
 }
 #header a:hover {
   color: #82e8fb;
 }
-.header-inner #logo,
+.header-inner .outer #logo,
 #main-nav,
 #sub-nav,
 #search-form-wrap {
   height: 40px;
   line-height: 40px;
-  padding: 4px 25px;
+  padding: 4px 15px;
 }
-.header-inner #logo,
+.header-inner .outer #logo,
 #main-nav {
   float: left;
 }
@@ -384,21 +384,23 @@ code {
   float: right;
 }
 .header-inner {
-  height: 100%;
+  height: 85px;
   position: relative;
   margin: 0 auto;
 }
-.header-inner #logo {
+.header-inner .outer {
+  height: 100%;
+}
+.header-inner .outer #logo {
   display: inline-block;
 }
-.header-inner #logo .logo {
-  margin-right: 85px;
+.header-inner .outer #logo .logo {
   display: inline-block;
 }
-.header-inner #logo .site-title {
-  font-size: 36px;
+.header-inner .outer #logo .site-title {
+  line-height: 85px;
+  font-size: 25px;
   display: inline-block;
-  vertical-align: top;
   font-weight: 600;
 }
 #header-title {
@@ -408,9 +410,6 @@ code {
   top: 50%;
   left: 0;
   margin-top: -20px;
-}
-.header-sub {
-  border-top: 1px solid #dfe1e2;
 }
 .header-sub ul {
   margin: 0 15px;
@@ -515,11 +514,14 @@ code {
   line-height: 40px;
 }
 #search-form-wrap {
-  background: #006ead;
+  background: #04123d;
+  width: 88.8%;
+  height: 39px;
+  float: left;
 }
 @media screen and (max-width: 559px) {
   #search-form-wrap {
-    display: none;
+    display: block;
   }
 }
 #search-form-wrap .search-form {
@@ -529,7 +531,7 @@ code {
   width: 100%;
   padding: 0 30px 0 15px;
   line-height: 40px;
-  height: 40px !important;
+  height: 30px !important;
   border-radius: 21px;
 }
 #search-form-wrap .search-form .search-form-input::-webkit-search-results-decoration,
@@ -818,8 +820,6 @@ code {
 }
 article {
   padding: 3px;
-  border-radius: 4px;
-  background-color: #006ead;
 }
 .article {
   margin: 40px 0;
@@ -827,8 +827,7 @@ article {
 .article-inner {
   overflow: hidden;
   background: #fff;
-  border-radius: 4px;
-  border: 1px solid #006ead;
+  border-top: 0px;
 }
 .article-banner {
   width: 100%;
@@ -905,12 +904,11 @@ div.article-meta-button a:hover {
   background: #333;
 }
 .article-inner .article-meta {
-  background-color: #006ead;
+  background-color: #04123d;
   margin: 0px -21px 20px -21px;
   padding: 0 20px;
   line-height: 42px;
-  border: 1px solid #006ead;
-  border-radius: 4px 4px 0 0;
+  border: 1px solid #04123d;
   color: #fff;
 }
 .article-inner .article-meta a {
@@ -1789,9 +1787,7 @@ ol.toc {
     float: left;
     width: 23.42105263157895%;
     margin: 0 0.789473684210526%;
-    width: 250px;
-    margin-left: 220px;
-    margin-top: 40px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -1800,6 +1796,12 @@ ol.toc {
     float: left;
     width: 33.421052631578945%;
     margin: 0 0.789473684210526%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 799px) {
+  #sidebar {
+    width: 100%;
   }
 }
 .widget {
@@ -1851,10 +1853,8 @@ ol.toc {
   content: "#";
 }
 .widget-wrap {
-  margin: 40px 0;
+  margin: 0;
   background-color: #fff;
-  border: 4px solid #006ead;
-  border-radius: 4px;
   padding: 20px;
 }
 .widget-wrap h3 {
@@ -1873,13 +1873,14 @@ ol.toc {
   border-radius: 4px 4px 0 0;
   background: #fff;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 23px;
   padding: 5px 10px;
   vertical-align: bottom;
 }
 .widget-wrap h3 a i,
 .widget-wrap h3 span i {
   font-size: 20px;
+  vertical-align: bottom;
 }
 .widget-title {
   margin-bottom: 0;
