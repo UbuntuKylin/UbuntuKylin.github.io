@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-快速入门/我就是我，原理不一样的snap" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -276,8 +285,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">
-            <time datetime="2019-06-24T01:02:40.000Z" itemprop="datePublished">2019-06-24</time>
+        <a href="/wiki/快速入门/我就是我，原理不一样的snap/">
+            <time datetime="2019-06-24T01:03:40.000Z" itemprop="datePublished">2019-06-24</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/我就是我，原理不一样的snap.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/我就是我，原理不一样的snap.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/我就是我，原理不一样的snap.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a>
+            <a class="article-title" href="/wiki/快速入门/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”"><a href="#优麒麟团队刘正元浅谈“Linux通用块层之IO合并”" class="headerlink" title="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”"></a>优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</h2><p>本文作者<strong>刘正元</strong>，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ <a href="https://mp.weixin.qq.com/s?__biz=MzAwMDUwNDgxOA==&amp;mid=2652664651&amp;idx=1&amp;sn=3b908b92b4209fd49bac561814369e5a&amp;chksm=810f35d6b678bcc0353c80e744244ab61ca81b93ae4adf18dfdff28ab35b6f97c0e7635f5f46&amp;mpshare=1&amp;scene=1&amp;srcid=0605uHWZBejaZQ1PEIru1IjU#rd" rel="external nofollow noopener noreferrer" target="_blank">Linux阅码场</a>”微信公众平台发表多篇文章，本文也是出自该处。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
-<p>所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一并处理，从而提升IO请求的处理效率。在前面有关通用块层介绍的系列文章当中我们或多或少地提及了IO请求合并的概念，本篇我们从头集中梳理IO请求在block layer的来龙去脉，以此来增强对IO请求合并的理解。</p>
-<p>首先来看一张图，下面的图展示了IO请求数据由用户进程产生，到最终持久化存储到物理存储介质，其间在内核空间所经历的数据流以及IO请求合并可能的触发点。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
+                    <p></p><h2 id="我就是我，原理不一样的snap"><a href="#我就是我，原理不一样的snap" class="headerlink" title="我就是我，原理不一样的snap"></a>我就是我，原理不一样的snap</h2><p><strong>引言</strong></p>
+<p>snap和flatpak都是新一代跨Linux发行版的软件包管理技术，上一篇我们简单介绍了flatpak的原理（传送门），今天我们接着简要介绍snap的安全机制。</p>
+<h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><p>snap是Canoncial公司提出的新一代linux包管理工具，致力于将所有linux发行版上的包格式统一，做到“一次打包，到处使用”。目前snap已经可以在包括Ubuntu、Fedora、Mint等多个Linux发行版上使用。首先我们来了解下snap相关的各种名词：</p>
+<h4 id="snap"><a href="#snap" class="headerlink" title="snap"></a>snap</h4><p>新一代跨Linux发行版的软件包管理技术，支持各大主流Linux发行版，通过Linux内核安全机制保证用户数据安全，彻底解决包依赖关系相关问题，并大大简化应用软件的打包工序。snap同时为安装及管理snap包的命令行工具。</p>
+<h4 id="snapd"><a href="#snapd" class="headerlink" title="snapd"></a>snapd</h4><p>管理snap软件包的后台服务。</p>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></div> 
             <div class="article-more-link">
-                <a href="/wiki/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/#more">Read More</a>
+                <a href="/wiki/快速入门/我就是我，原理不一样的snap/#more">Read More</a>
             </div>
 
         

@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -269,15 +278,15 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/软件应用/">软件应用</a>
+        <a class="article-category-link" href="/categories/快速入门/">快速入门</a>
     </div>
 
                         
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇/">
-            <time datetime="2019-06-24T01:02:10.000Z" itemprop="datePublished">2019-06-24</time>
+        <a href="/wiki/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">
+            <time datetime="2019-06-24T01:02:40.000Z" itemprop="datePublished">2019-06-24</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇/">循序而渐进，熟读而精思——优麒麟文件管理器篇</a>
+            <a class="article-title" href="/wiki/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="循序而渐进，熟读而精思——优麒麟文件管理器篇"><a href="#循序而渐进，熟读而精思——优麒麟文件管理器篇" class="headerlink" title="循序而渐进，熟读而精思——优麒麟文件管理器篇"></a>循序而渐进，熟读而精思——优麒麟文件管理器篇</h2><p>自上次发表“自是年少,韶华倾负 ——优麒麟-系统入门篇”教程之后，小编就消失快几个月了，不过小编没有偷懒哟，而是参与18.10的UKUI主题管理及发布派对去了。So，小编应该算比较勤快的，你看，今天又来写第二篇“优麒麟文件管理器”，现在跟我一起来认识这个管理工具吧。</p>
-<h3 id="华味惭初识，新声喜尽闻——文件管理器介绍"><a href="#华味惭初识，新声喜尽闻——文件管理器介绍" class="headerlink" title="华味惭初识，新声喜尽闻——文件管理器介绍"></a>华味惭初识，新声喜尽闻——文件管理器介绍</h3><p>对于文件管理器，我们并不陌生，它是提供用户界面管理文件的软件，帮助处理日常工作，管理储存在本地和网络中的文件。所有文件管理器都提供了基本的操作如重命名、创建、打开、查看、编辑、移动和删除文件。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201811/1541910960206554.jpg" alt></p>
-<h3 id="浓绿万枝红一点，动人春色不须多——文件管理器类别"><a href="#浓绿万枝红一点，动人春色不须多——文件管理器类别" class="headerlink" title="浓绿万枝红一点，动人春色不须多——文件管理器类别"></a>浓绿万枝红一点，动人春色不须多——文件管理器类别</h3><p>小编觉得文件管理器有点像文件架，上面可以摆放各种文件袋，而文件袋里装着各种文件。但文件架的款式有各种各样的。同样文件管理器是为了管理好自己的文件，如何愉快的浏览自己的管理窗口，那就看你喜欢哪种类型的。Linux中有基于控制台的，也有图形化的；有单窗口的，也有双面板的；有轻巧型的，也有笨重化的。如最受欢迎的几款比较好用的Linux文件管理器:Nautilus、Caja、Konqueror、Dolphin、Thunar、ROX-File、PCMan File Manager等。</p>
-<p>当然，这时优客们就会问了，咱们优麒麟使用的是哪一种呢？在优麒麟发布的第二个长期版16.04之前用的是“Nautilus”。而随着用户在使用中提出越来越多新的反馈和需求，优麒麟团队决定从“caja”中fork出新的分支，也就是现在的“penoy”。</p>
+                    <p></p><h2 id="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”"><a href="#优麒麟团队刘正元浅谈“Linux通用块层之IO合并”" class="headerlink" title="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”"></a>优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</h2><p>本文作者<strong>刘正元</strong>，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ <a href="https://mp.weixin.qq.com/s?__biz=MzAwMDUwNDgxOA==&amp;mid=2652664651&amp;idx=1&amp;sn=3b908b92b4209fd49bac561814369e5a&amp;chksm=810f35d6b678bcc0353c80e744244ab61ca81b93ae4adf18dfdff28ab35b6f97c0e7635f5f46&amp;mpshare=1&amp;scene=1&amp;srcid=0605uHWZBejaZQ1PEIru1IjU#rd" rel="external nofollow noopener noreferrer" target="_blank">Linux阅码场</a>”微信公众平台发表多篇文章，本文也是出自该处。</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
+<p>所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一并处理，从而提升IO请求的处理效率。在前面有关通用块层介绍的系列文章当中我们或多或少地提及了IO请求合并的概念，本篇我们从头集中梳理IO请求在block layer的来龙去脉，以此来增强对IO请求合并的理解。</p>
+<p>首先来看一张图，下面的图展示了IO请求数据由用户进程产生，到最终持久化存储到物理存储介质，其间在内核空间所经历的数据流以及IO请求合并可能的触发点。</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></div> 
             <div class="article-more-link">
-                <a href="/wiki/软件应用/循序而渐进，熟读而精思——优麒麟文件管理器篇/#more">Read More</a>
+                <a href="/wiki/快速入门/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/#more">Read More</a>
             </div>
 
         

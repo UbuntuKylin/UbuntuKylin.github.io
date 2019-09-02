@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-系统安装/UEFI环境安装" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-系统安装/常见问题及处理办法" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -276,8 +285,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/系统安装/UEFI环境安装/">
-            <time datetime="2019-05-17T06:16:28.000Z" itemprop="datePublished">2019-05-17</time>
+        <a href="/wiki/系统安装/常见问题及处理办法/">
+            <time datetime="2019-05-17T06:16:52.000Z" itemprop="datePublished">2019-05-17</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/UEFI环境安装.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/常见问题及处理办法.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/UEFI环境安装.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/常见问题及处理办法.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/UEFI环境安装.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/常见问题及处理办法.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/系统安装/UEFI环境安装/">UEFI环境安装</a>
+            <a class="article-title" href="/wiki/系统安装/常见问题及处理办法/">常见问题及处理办法</a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="UEFI环境安装"><a href="#UEFI环境安装" class="headerlink" title="UEFI环境安装"></a>UEFI环境安装</h2><p>前面的教程都是基于传统 BIOS 环境而言的，而现在的新电脑，基本上都是基于 UEFI 环境的，所以还是抽时间学习了一下 UEFI 环境下 UK14 的安装。下面专门讨论一下这个问题。</p>
-<h3 id="一、什么是-UEFI"><a href="#一、什么是-UEFI" class="headerlink" title="一、什么是 UEFI"></a>一、什么是 UEFI</h3><p>前面已经介绍了什么是 BIOS，这里再来简单看一下什么是 UEFI。<br>UEFI 是英语“Unified Extensible Firmware Interface”的简称，意为“统一可扩展固件接口”，是一种替代传统 BIOS 的固件接口标准。<br>这里不对 UEFI 理论知识做什么解释，暂时只需要了解以下几点：   </p>
-<ol>
-<li>UEFI 将会完全替代传统的 BIOS。   </li>
-<li>现在的新电脑基本上都是基于 UEFI 的，但很多人也还将其称为“BIOS”，许多电脑将其称为“UEFI BIOS”，而将传统 BIOS 称为“legacy BIOS”，应该是习惯使然，这里面的 BIOS 不如理解为是“固件”的意思更好。实际上，BIOS 是 BIOS，UEFI 是 UEFI ，它们都是电脑最基本的“固件”，根本没有“UEFI BIOS”。   </li>
+                    <p></p><h2 id="常见问题及处理办法"><a href="#常见问题及处理办法" class="headerlink" title="常见问题及处理办法"></a>常见问题及处理办法</h2><h3 id="1-刻录的系统安装光盘不能引导系统"><a href="#1-刻录的系统安装光盘不能引导系统" class="headerlink" title="1. 刻录的系统安装光盘不能引导系统"></a>1. 刻录的系统安装光盘不能引导系统</h3><ol>
+<li>确保正确设置了 BIOS 的光驱启动模式。</li>
+<li>若用于启动的光驱是 USB 接口的外置光驱，请插上辅助供电线。</li>
+<li>确保用于启动的光驱没有问题（可用一张正常的可启动光盘测试一下）。</li>
+<li>确保刻录盘的质量没有问题。</li>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></ol></div> 
             <div class="article-more-link">
-                <a href="/wiki/系统安装/UEFI环境安装/#more">Read More</a>
+                <a href="/wiki/系统安装/常见问题及处理办法/#more">Read More</a>
             </div>
 
         

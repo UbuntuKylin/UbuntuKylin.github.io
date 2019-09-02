@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-系统安装/设置“安装启动引导器”" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-系统安装/UEFI环境安装" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -276,8 +285,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/系统安装/设置“安装启动引导器”/">
-            <time datetime="2019-05-17T06:15:20.000Z" itemprop="datePublished">2019-05-17</time>
+        <a href="/wiki/系统安装/UEFI环境安装/">
+            <time datetime="2019-05-17T06:16:28.000Z" itemprop="datePublished">2019-05-17</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/设置“安装启动引导器”.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/UEFI环境安装.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/设置“安装启动引导器”.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/UEFI环境安装.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/设置“安装启动引导器”.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/UEFI环境安装.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/系统安装/设置“安装启动引导器”/">设置“安装启动引导器”</a>
+            <a class="article-title" href="/wiki/系统安装/UEFI环境安装/">UEFI环境安装</a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="设置“安装启动引导器”"><a href="#设置“安装启动引导器”" class="headerlink" title="设置“安装启动引导器”"></a>设置“安装启动引导器”</h2><p>硬盘分区处理好后，接下来还有个重要的操作，就是分区主界面下方的“安装启动引导器的设备”设置。下面分情况加以说明。   </p>
-<h3 id="一、单独安装-UK14"><a href="#一、单独安装-UK14" class="headerlink" title="一、单独安装 UK14"></a>一、单独安装 UK14</h3><p>若电脑上只安装 UK14 这一个操作系统，那么有两种选择：   </p>
+                    <p></p><h2 id="UEFI环境安装"><a href="#UEFI环境安装" class="headerlink" title="UEFI环境安装"></a>UEFI环境安装</h2><p>前面的教程都是基于传统 BIOS 环境而言的，而现在的新电脑，基本上都是基于 UEFI 环境的，所以还是抽时间学习了一下 UEFI 环境下 UK14 的安装。下面专门讨论一下这个问题。</p>
+<h3 id="一、什么是-UEFI"><a href="#一、什么是-UEFI" class="headerlink" title="一、什么是 UEFI"></a>一、什么是 UEFI</h3><p>前面已经介绍了什么是 BIOS，这里再来简单看一下什么是 UEFI。<br>UEFI 是英语“Unified Extensible Firmware Interface”的简称，意为“统一可扩展固件接口”，是一种替代传统 BIOS 的固件接口标准。<br>这里不对 UEFI 理论知识做什么解释，暂时只需要了解以下几点：   </p>
 <ol>
-<li>保持默认的“/dev/sda”<br>这样设置，UK14 安装程序会将默认的启动引导器程序 grub2 安装到第 1 块硬盘 （/dev/sda）的 MBR（磁盘的主引导记录） 上，由 grub2 程序来   管理系统的启动。这种情况下若用其他分区工具重建或改写 MBR，将会导致 UK14 系统启动失败。   </li>
-<li>选择挂载为“/”的根分区“/dev/sda1”<br>这样设置，UK14 不会改写硬盘的 MBR，这时“/”根分区必须是一个可启动分区（默认 UK14 安装程序已经将第 1 个主分区设置为可启动分区了，Windows 下一般叫“活动分区”）。这种情况下即使对硬盘进行重建或改写 MBR 的操作也不会影响 UK14 系统的启动。<br>以上两种设置系统都可以正常启动。   </li>
+<li>UEFI 将会完全替代传统的 BIOS。   </li>
+<li>现在的新电脑基本上都是基于 UEFI 的，但很多人也还将其称为“BIOS”，许多电脑将其称为“UEFI BIOS”，而将传统 BIOS 称为“legacy BIOS”，应该是习惯使然，这里面的 BIOS 不如理解为是“固件”的意思更好。实际上，BIOS 是 BIOS，UEFI 是 UEFI ，它们都是电脑最基本的“固件”，根本没有“UEFI BIOS”。   </li>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></ol></div> 
             <div class="article-more-link">
-                <a href="/wiki/系统安装/设置“安装启动引导器”/#more">Read More</a>
+                <a href="/wiki/系统安装/UEFI环境安装/#more">Read More</a>
             </div>
 
         

@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-系统安装/系统安装盘的制作" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-系统安装/从系统安装盘引导系统" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -276,8 +285,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/系统安装/系统安装盘的制作/">
-            <time datetime="2019-05-17T06:13:45.000Z" itemprop="datePublished">2019-05-17</time>
+        <a href="/wiki/系统安装/从系统安装盘引导系统/">
+            <time datetime="2019-05-17T06:14:15.000Z" itemprop="datePublished">2019-05-17</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/系统安装盘的制作.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/从系统安装盘引导系统.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/系统安装盘的制作.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/从系统安装盘引导系统.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/系统安装盘的制作.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/从系统安装盘引导系统.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/系统安装/系统安装盘的制作/">系统安装盘的制作</a>
+            <a class="article-title" href="/wiki/系统安装/从系统安装盘引导系统/">从系统安装盘引导系统</a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="系统安装盘的制作"><a href="#系统安装盘的制作" class="headerlink" title="系统安装盘的制作"></a>系统安装盘的制作</h2><h3 id="一、准备系统安装文件"><a href="#一、准备系统安装文件" class="headerlink" title="一、准备系统安装文件"></a>一、准备系统安装文件</h3><p>（一）文件格式简介<br>Ubuntu Kylin 14.04 LTS（以下简称“UK14”）系统安装文件是 LIVE CD 格式的光盘镜像文件，其扩展名是 ISO。LIVE CD 是现在 LINUX 发行版流行的发行格式，这种格式的系统安装光盘可以直接引导并启动到一个完整的 LINUX 系统。<br>（二）系统版本选择<br>UK14 有 32 位版本和 64 位版本的区别。现在一般推荐选择 64 位版本，如果电脑硬件比较老，可以选择 32 位版本。<br>（三）系统安装文件下载<br>可以从以下网址下载 UK14 的系统安装文件：<a href="http://www.ubuntukylin.com/downloads/" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>。<br>打开上面的网址，见到如下（图１）的页面：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/003528bbifbji0gnka22zn.jpg" alt="图一"><br>选（图１）中的“选择系统类型”，选择 32 位或者 64 位，在选择好系统类型后，在“累计下载点击量”文字的上方会出现“ISO MD5 值……”字样，请记下它，后面将会用到。点击下方列出的 4 个下载链接中的任意一个开始下载（可以自己选择一个速度比较快的链接）。由于这个文件有 1G 左右大小，所以若网速不够快的话是需要比较长的时间才能下载完毕的。下载完毕后将得到一个扩展名为 ISO 的文件，32 为版本文件名是 ubuntukylin-14.04-desktop-i386.iso，64 位版本文件名是 ubuntukylin-14.04-desktop-amd64.iso。<br>（四）系统安装文件验证<br>为保证下载回来的文件没有错误，最好能验证一下文件的 MD5 值。文件的 MD5 值指的是用 MD5 算法对文件进行运算后得到的一个结果值，这个值只要文件被改动一点点就会发生变化，因此可以通过这个值来判断文件是否被篡改或者不完整。<br>在 Windows 系统下，可以使用的文件 MD5 值运算工具比较多，可从网上下载到；比如太平洋电脑网的可以从这个页面下载：<a href="http://dl.pconline.com.cn/download/90027-1.html" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>，下回来后运行，其界面如下（图2）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/004017jk48usa8srzaud68.jpg" alt="图2"></p>
-<p>点选（图2）中的“浏览”按钮，加载下载回来的 ISO 文件，稍等一会儿即可计算出其 MD5 值，结果显示在上面的文本框中。将其中“MD5:”后的值和官方网站贴出的 MD5 值（即前文提到的“ISO MD5 值……”）作对比（不区分大小写）。如果不一样，就需要重新下载；如果一样，就可以放心使用了。<br>在 Ubuntu 系统下，比较方便的工具是 GtkHash，可从 Ubuntu 软件中心或新立得软件包管理器中直接安装，其界面如下（图3）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/004228lbnwjt9agwei1myi.jpg" alt="图3"><br>使用方法很简单，不赘述。</p>
-<h3 id="二、制作安装盘"><a href="#二、制作安装盘" class="headerlink" title="二、制作安装盘"></a>二、制作安装盘</h3><p>尽管 UK14 的系统安装文件是 LIVE CD 的 ISO 镜像，但我们却可以有多种方法将其制作成安装盘。<br>（一）制作 DVD 安装光盘<br>DVD 安装光盘的优点是成本低，兼容性好，文件刻录好后不会被病毒破坏或被误删；缺点是制作比较麻烦，而且现在好多超薄的笔记本都没有 DVD，没法使用。<br>找一台有 DVD 刻录机的电脑，准备 1 张质量稍微好点儿的 DVD 刻录盘（怕刻坏就多准备几张），不能用 CD 刻录盘，CD 刻录盘容量太小，装不下。<br>制作步骤如下：   </p>
+                    <p></p><h2 id="从系统安装盘引导程序"><a href="#从系统安装盘引导程序" class="headerlink" title="从系统安装盘引导程序"></a>从系统安装盘引导程序</h2><h3 id="一、关于电脑启动的基本知识"><a href="#一、关于电脑启动的基本知识" class="headerlink" title="一、关于电脑启动的基本知识"></a>一、关于电脑启动的基本知识</h3><p>（一）基本概念<br> 众所周知，电脑系统由硬件系统和软件系统构成，那么，硬件系统和软件系统是怎么对接的呢？<br> 要了解这个问题，首先需要了解一个基本概念，那就是 BIOS。<br> BIOS 是英语“Basic In/Out System”的简写，意思是“基本输入输出系统”。<br> 电脑的主板上有一个看起来很小但却非常重要的芯片，这块芯片本身属于看得见的“硬件”，但其内部却固化了很多的看不见的“软件”信息，这些软件信息 包括硬件的基本配置信息、BIOS 设置程序、系统自检程序、系统自举程序等等。这块芯片就是 “BIOS 芯片”，是一块既“硬”又“软”的东西，它就是电脑的“硬件系统”和“软件系统”的接口。<br> 另外，BIOS 里设置的硬件配置信息不可能囊括所有的硬件配置信息，有很多的硬件设备的信息和一些特殊的用户信息需要用户添加进 BIOS 里，所以，BIOS 还提供了 BIOS 设置程序和一块 CMOS 存储器（一种半导体存储器，需要主板上的一块纽扣电池供电），这样，用户就可以对一些额外的配置信息进行设置并将设置结果存储到 CMOS 里，这个过程称为 “BIOS设置”。<br> BIOS 芯片就是负责对电脑的“硬件系统”和“软件系统”进行对接的关键芯片，所以它是非常重要的芯片，如果损坏，将会造成整个电脑系统的瘫痪。以前有一款由一位台湾学生编写的著名的病毒叫“CIH”就是专门破坏 BIOS 芯片的病毒。<br> （二）启动过程<br> 电脑的启动过程其实一点儿也不复杂。下面来看一下电脑的启动过程：   </p>
 <ol>
-<li>Windows 系统下<br>（1）安装刻录软件：<br>推荐安装 ImgBurn，可从这里下载：<a href="http://download.imgburn.com/SetupImgBurn_2.5.8.0.exe" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>，从这里下载中文语言包：<a href="http://download.imgburn.com/translations/chinese_prc.zip" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>。<br>运行下回来的SetupImgBurn_2.5.8.0.exe开始安装软件，这款软件是免费的，现在也捆绑有别的软件，所以安装过程中最好不要一 直点“Next”，在其中有一步让你选择安装方式时，请选择“Custom Installation(advanced）”，然后去掉下面的“Install AVG PC TuneUp”（也可能是其他额外的选项）复选框的勾，再点“Next”后即开始安装，安装过程中还会弹出一个对话框，询问是否检查更新，可点选“否”； 安装完成后点“close”后会打开该软件的主页，直接关闭。解压下回来的 chinese_prc.zip，得到文件 chinese_prc.lng，将这个文件剪切到 ImgBurn 的安装目录下的Languages 目录中（比如 C:\Program Files\ImgBurn\Languages）。<br>(2）启动刻录软件：<br>通过桌面或开始菜单中的ImgBurn快捷方式启动软件，即可见到如下（图4）的界面：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/004455sjpxs82w5vrv8jjj.jpg" alt="图4"><br>(3）刻录光盘：<br>将 DVD 刻录盘放入 DVD 刻录机，点击“刻录镜像至光盘”，来到下面的界面（图5）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/004653mm3t3c0uc3b3390q.jpg" alt="图5"><br>按（图5）中所示进行操作，“验证”会耽误不少时间，一般不需要；刻录速度不能太快，否在会有刻坏光盘的可能。开始刻录后耐心等待，刻录一张这样的光盘可能要 5 分钟或者更多时间，刻录完毕后会自动弹出光盘。正常的话，这张光盘马上就可以使用了。   </li>
+<li>接通电源，按下主机上的电源按钮，主机电源向各个设备供电；   </li>
+<li>上电自检，英语为“Power on Self Test”，简称“POST”，电脑会检测系统的关键设备（如内存、CPU 等），此时显示器上会显示一些自检信息（有时会显示电脑或主板的品牌标志图）；   </li>
+<li>检测扩展设备（如显卡、网卡、硬盘等），此时显示器上也有提示信息；   </li>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></ol></div> 
             <div class="article-more-link">
-                <a href="/wiki/系统安装/系统安装盘的制作/#more">Read More</a>
+                <a href="/wiki/系统安装/从系统安装盘引导系统/#more">Read More</a>
             </div>
 
         

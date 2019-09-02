@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-快速入门/快速检查电脑是否配备USB-3-0" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Q&amp;A/问答天地" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -269,15 +278,15 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/快速入门/">快速入门</a>
+        <a class="article-category-link" href="/categories/Q-A/">Q&A</a>
     </div>
 
                         
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/快速入门/快速检查电脑是否配备USB-3-0/">
-            <time datetime="2019-06-29T03:53:54.000Z" itemprop="datePublished">2019-06-29</time>
+        <a href="/wiki/Q&A/问答天地/">
+            <time datetime="2019-08-28T02:54:35.000Z" itemprop="datePublished">2019-08-28</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/快速检查电脑是否配备USB-3-0.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/Q&amp;A/问答天地.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/快速检查电脑是否配备USB-3-0.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/Q&amp;A/问答天地.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/快速检查电脑是否配备USB-3-0.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/Q&amp;A/问答天地.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/快速入门/快速检查电脑是否配备USB-3-0/">快速检查电脑是否配备USB 3.0</a>
+            <a class="article-title" href="/wiki/Q&A/问答天地/">问答天地</a>
         </h1>
     
 
@@ -333,19 +342,19 @@
                 
                 
                     
-                    <p></p><h2 id="小技巧：快速检查电脑是否配备USB-3-0"><a href="#小技巧：快速检查电脑是否配备USB-3-0" class="headerlink" title="小技巧：快速检查电脑是否配备USB 3.0"></a>小技巧：快速检查电脑是否配备USB 3.0</h2><pre><code> 越来越多的电脑开始配备USB 3.0端口，但是如何知道您的电脑是否带有3.0端口以及哪个端口是3.0呢？方法如下：
- 打开终端，使用以下命令：
- $ lsusb
-该命令显示系统中的USB相关信息，检查结果，如果发现乐死“3.0 root hub”字样，表明系统带有USB 3.0。
-优麒麟（Ubuntu Kylin）
+                    <p></p><h4 id="1-虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题"><a href="#1-虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题" class="headerlink" title="1.虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题"></a>1.虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题</h4><p>这是窗口管理器和xorg在虚拟机下工作流程出现问题而导致的，缩放窗口会导致内存泄漏。在虚拟机的显示设置的硬件加速中勾选3d加速可以解决这一问题。</p>
+<h4 id="2-刻录的系统安装光盘不能引导系统"><a href="#2-刻录的系统安装光盘不能引导系统" class="headerlink" title="2.刻录的系统安装光盘不能引导系统"></a>2.刻录的系统安装光盘不能引导系统</h4><p>（1）确保正确设置了 BIOS 的光驱启动模式。<br>（2）若用于启动的光驱是 USB 接口的外置光驱，请插上辅助供电线。<br>（3）确保用于启动的光驱没有问题（可用一张正常的可启动光盘测试一下）。<br>（4）确保刻录盘的质量没有问题。<br>（5）降低刻录时的速度。<br>（6）确保刻录光驱没有问题（可刻录一张其他的可启动 ISO 测试一下）。<br>（7）确保下载的 UK14 的 ISO 文件的 MD5 值正确。</p>
+<h4 id="3-制作的-USB-系统安装盘不能引导系统"><a href="#3-制作的-USB-系统安装盘不能引导系统" class="headerlink" title="3. 制作的 USB 系统安装盘不能引导系统"></a>3. 制作的 USB 系统安装盘不能引导系统</h4><p>（1）确保正确设置了 BIOS 的优盘启动模式。<br>（2）若为台式机，请尝试使用主机后部的 USB2.0 接口。<br>（3）若为笔记本，请尝试更换另一个 USB 2.0 接口。<br>（4）尽量不使用 USB 3.0 接口（接口里面的小隔片 USB 3.0 通常为蓝色，USB 2.0 的通常为黑色或白色）。<br>（5）若为移动硬盘并且有辅助供电口，请接上辅助供电线。<br>（6）确保优盘被格式化成 FAT32 模式（可直接用制作工具格式化）。<br>（7）确保优盘没有问题（可制作一张其他的可启动 ISO 测试一下）。<br>（8）确保电脑能兼容制作好的系统安装盘（可将系统安装盘拿到别的电脑上测试一下）。</p>
+<h4 id="4-安装画面花屏"><a href="#4-安装画面花屏" class="headerlink" title="4. 安装画面花屏"></a>4. 安装画面花屏</h4><p>（1）确保显卡没有问题。<br>（2）集成显卡确保内存没有问题。<br>（3）确保显卡能兼容 UK14（一般不是太新的显卡出现这种情况的概率很小）。</p>
+<h4 id="5-安装过程中没有发现硬盘或硬盘无法分区"><a href="#5-安装过程中没有发现硬盘或硬盘无法分区" class="headerlink" title="5. 安装过程中没有发现硬盘或硬盘无法分区"></a>5. 安装过程中没有发现硬盘或硬盘无法分区</h4><p>（1）确保硬盘已正确安装到主机中（可进 BIOS 查看，初学者可用 Windows PE 启动盘查看）。<br>（2）尝试在 BIOS 里关闭 UEFI 模式（进 BIOS 里设置）。<br>（3）尝试关闭 BIOS 里的 Windows 优化模式（某些品牌机有此设置）。<br>（3）确保硬盘的分区模式是 MBR 模式（可在 Windows 下用 Diskgenius 分区工具转换）。</p>
 <p>
                 
             
         
         
-            </p></code></pre></div> 
+            </p></div> 
             <div class="article-more-link">
-                <a href="/wiki/快速入门/快速检查电脑是否配备USB-3-0/#more">Read More</a>
+                <a href="/wiki/Q&A/问答天地/#more">Read More</a>
             </div>
 
         

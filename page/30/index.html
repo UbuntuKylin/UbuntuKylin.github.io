@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-快速入门/有趣的Linux彩蛋——用sudo来冒犯用户" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -269,15 +278,15 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/快速入门/">快速入门</a>
+        <a class="article-category-link" href="/categories/系统安装/">系统安装</a>
     </div>
 
                         
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/快速入门/有趣的Linux彩蛋——用sudo来冒犯用户/">
-            <time datetime="2019-06-24T06:26:59.000Z" itemprop="datePublished">2019-06-24</time>
+        <a href="/wiki/系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">
+            <time datetime="2019-06-24T06:27:17.000Z" itemprop="datePublished">2019-06-24</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/有趣的Linux彩蛋——用sudo来冒犯用户.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/有趣的Linux彩蛋——用sudo来冒犯用户.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/有趣的Linux彩蛋——用sudo来冒犯用户.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/快速入门/有趣的Linux彩蛋——用sudo来冒犯用户/">有趣的Linux彩蛋——用sudo来冒犯用户</a>
+            <a class="article-title" href="/wiki/系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">如何在 Ubuntu Kylin 中安装Numix主题和图标 </a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="有趣的Linux彩蛋——用sudo来冒犯用户"><a href="#有趣的Linux彩蛋——用sudo来冒犯用户" class="headerlink" title="有趣的Linux彩蛋——用sudo来冒犯用户"></a>有趣的Linux彩蛋——用sudo来冒犯用户</h2><p>人们可以配置 sudo（用来给命令授权的），来冒犯那些输错密码的用户。一起来看看吧！</p>
-<p>首先，打开终端，输入以下命令：</p>
-<p><strong>sudo visudo</strong></p>
-<p>强烈推荐使用 visudo 编辑 /etc/sudoers 配置文件。之所以使用 visudo 有两个原因，一是它能够防止两个用户同时修改它；二是，它可以帮助校验修改是否正确。visudo不会擅自保存带有语法错误的配置文件，它会提示你出现的问题，并询问该如何处理。visudo 默认的是在vi里打开配置文件，而在 Ubuntu Kylin 中，visudo 默认在 nano 中打开 /etc/sudoers。</p>
-<p>然后，在文件顶部，加上这么一行：</p>
+                    <p></p><h2 id="如何在-Ubuntu-Kylin-中安装Numix主题和图标"><a href="#如何在-Ubuntu-Kylin-中安装Numix主题和图标" class="headerlink" title="如何在 Ubuntu Kylin 中安装Numix主题和图标"></a>如何在 Ubuntu Kylin 中安装Numix主题和图标</h2><p>Numix 可谓是 Linux 桌面上相当棒的一个主题了，本文我们介绍如何在 Ubuntu Kylin 中安装 Numix 主题和图标，同时也介绍下如何更换 Ubuntu Kylin 主题。</p>
+<p><img src="http://www.ubuntukylin.com/upload/201512/1450063953693392.jpg" alt></p>
+<p><strong>Ubuntu Kylin 安装 Numix 主题和图标</strong></p>
+<p>我们将使用 Numix 的官方 PPA 来进行安装，先打开终端使用如下命令安装 Numix 主题和图标：</p>
+<p>sudo add-apt-repository ppa:numix/ppa<br>sudo apt-get update<br>sudo apt-get install numix-gtk-theme numix-icon-theme-circle</p>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></div> 
             <div class="article-more-link">
-                <a href="/wiki/快速入门/有趣的Linux彩蛋——用sudo来冒犯用户/#more">Read More</a>
+                <a href="/wiki/系统安装/如何在-Ubuntu-Kylin-中安装Numix主题和图标/#more">Read More</a>
             </div>
 
         

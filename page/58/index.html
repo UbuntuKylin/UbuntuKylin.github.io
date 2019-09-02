@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-软件应用/WINE-QQ" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-软件应用/Linux游戏" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -276,8 +285,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/软件应用/WINE-QQ/">
-            <time datetime="2019-06-18T02:04:42.000Z" itemprop="datePublished">2019-06-18</time>
+        <a href="/wiki/软件应用/Linux游戏/">
+            <time datetime="2019-06-18T02:05:00.000Z" itemprop="datePublished">2019-06-18</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/软件应用/WINE-QQ.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/软件应用/Linux游戏.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/软件应用/WINE-QQ.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/软件应用/Linux游戏.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/软件应用/WINE-QQ.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/软件应用/Linux游戏.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/软件应用/WINE-QQ/">WINE QQ</a>
+            <a class="article-title" href="/wiki/软件应用/Linux游戏/">Linux游戏</a>
         </h1>
     
 
@@ -333,19 +342,19 @@
                 
                 
                     
-                    <p></p><h2 id="银河麒麟版本安装攻略："><a href="#银河麒麟版本安装攻略：" class="headerlink" title="银河麒麟版本安装攻略："></a>银河麒麟版本安装攻略：</h2><p>记录于20170503：本条专用于最近出的银河麒麟版本安装QQ，优麒麟版本还是按之前的攻略安装<br>1、从优麒麟官网（<a href="http://www.ubuntukylin.com/application/show.php?lang=cn&amp;id=279）下载QQ压缩包，并减压缩。" rel="external nofollow noopener noreferrer" target="_blank">http://www.ubuntukylin.com/application/show.php?lang=cn&amp;id=279）下载QQ压缩包，并减压缩。</a><br>2、sudo vim /etc/apt/sources.list 修改源地址为 deb <a href="http://archive.kylinos.cn/yhkylin/" rel="external nofollow noopener noreferrer" target="_blank">http://archive.kylinos.cn/yhkylin/</a> juniper main restricted universe multiverse 这其实就是系统默认源地址之一，其余的源地址全部删除，然后运行sudo apt-get update 即可。<br>3、先运行 sudo dpkg –add-architecture i386 然后直接用 sudo dpkg -i fonts-wqy-microhei_0.2.0-beta-2_all.deb ttf-wqy-microhei_0.2.0-beta-2_all.deb wine-qqintl_0.1.3-2_i386.deb 安装qq的三个包，这时会报依赖问题，用 sudo apt-get  -f install 解决依赖即可安装成功，其它使用问题见帖子下文要注意事项。</p>
-<p>注意：银河麒麟版不需要像优麒麟版那样去下载帖子末尾的包，源中已有。</p>
-<p>===============================================================================</p>
-<p>优麒麟版本安装攻略：<br>记录于20170106：现在这个版本qq登录时会报 “您的号码暂时不能使用低版本的QQ,请到:***下载安装最新版的QQ” ，这是由于被安全机制检测到版本太低，需要手机登录qq将手机设备锁关掉才行。</p>
-<p>另外：ubuntu1610之后系统版本的用户，由于ubuntu源里面不再有libpng12这个包了，会包依赖错误，需要手动下载安装libpng12这个包，依赖包已经上传，在文章末尾处可点击下载。 下载后先运行 sudo dpkg –add-architecture i386 后再 sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_i386.deb 即可安装。</p>
+                    <p></p><h2 id="还在为linux下没有好玩的游戏烦恼吗？"><a href="#还在为linux下没有好玩的游戏烦恼吗？" class="headerlink" title="还在为linux下没有好玩的游戏烦恼吗？"></a>还在为linux下没有好玩的游戏烦恼吗？</h2><p>回复本贴！<br>打造linux游戏索引第一贴！</p>
+<p>每回复一层楼，我发一个游戏，发到我找不到游戏为止！（每人有效一次）</p>
+<p>听说过名字的游戏找不到资源？<br>回复本帖！<br>游戏资源第一帖！<br>回复你想要的游戏，我去找资源，找到为止！！</p>
+<p>广告结束，游戏索引正式开始建立：<br>1.纽沃斯英雄（Heroes of newerth(HoN) ）</p>
+<ol start="2">
 <p>
                 
             
         
         
-            </p></div> 
+            </p></ol></div> 
             <div class="article-more-link">
-                <a href="/wiki/软件应用/WINE-QQ/#more">Read More</a>
+                <a href="/wiki/软件应用/Linux游戏/#more">Read More</a>
             </div>
 
         

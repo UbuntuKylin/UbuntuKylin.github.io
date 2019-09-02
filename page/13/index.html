@@ -106,11 +106,11 @@
         <div class="outer">
             
             
-                <div class="dkw" style="width:250px;float:left;margin-top:43px;overflow:hidden">
+                <div class="dkw" style="width:18em;float:left;margin-top:43px;overflow:hidden">
 <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -150,7 +150,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>目录</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -160,6 +160,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -259,7 +268,7 @@
 </div>
             
             <section id="main">
-        <article id="post-软件应用/“优麒麟备份助手”篇" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -269,15 +278,15 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/软件应用/">软件应用</a>
+        <a class="article-category-link" href="/categories/系统安装/">系统安装</a>
     </div>
 
                         
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/软件应用/“优麒麟备份助手”篇/">
-            <time datetime="2019-06-29T03:47:30.000Z" itemprop="datePublished">2019-06-29</time>
+        <a href="/wiki/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">
+            <time datetime="2019-06-29T03:47:58.000Z" itemprop="datePublished">2019-06-29</time>
         </a>
     </div>
 
@@ -289,13 +298,13 @@
                         
 
                             <!--<div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/软件应用/“优麒麟备份助手”篇.md'> Source </a>
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/软件应用/“优麒麟备份助手”篇.md'> Edit </a>
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/软件应用/“优麒麟备份助手”篇.md'> History </a>
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin.md'> History </a>
                             </div>-->
                         
                     </div>
@@ -303,7 +312,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/wiki/软件应用/“优麒麟备份助手”篇/">“优麒麟备份助手”篇 </a>
+            <a class="article-title" href="/wiki/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a>
         </h1>
     
 
@@ -333,11 +342,11 @@
                 
                 
                     
-                    <p></p><h2 id="优麒麟备份助手”篇"><a href="#优麒麟备份助手”篇" class="headerlink" title="优麒麟备份助手”篇"></a>优麒麟备份助手”篇</h2><p>自从Ubuntu One关闭服务后，Linux平台下便又少了一个好用的备份工具。虽然系统集成了备份服务（Deja-dup），但由于没有同步至网盘等选项，显然无法满足时刻担心自己硬盘挂掉的筒子们。Ubuntu Kylin平台已有的金山快盘for Ubuntu Kylin支持同步文件至云端，但它毕竟不是专门的备份工具，在文件版本控制上远不及Deja-dup，如何合理利用这两样工具，扬长避短，打造Linux平台功能强大的备份工具呢？让我们一起来看看来自黑龙江大学的杨希斌同学是如何做的。</p>
-<p>首先要做的就是下载安装文件：前往CSDN CODE上的项目地址：</p>
-<p>开发者分支：<a href="https://code.csdn.net/cnlamo/deja-dup-uk/tree/master" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a></p>
-<p>Src目录是项目的所有代码文件，pkg目录里便是已经打好包的安装文件，按照自己的系统选择版本，i386对应32位，x86_64对应64位。下载完成后cd到下载目录执行sudo dpkg -i *.deb进行安装。安装完成后，无需重启注销，立等可用！</p>
-<p>现在我们就可以体验一下加过料的Deja-dup啦！打开金山快盘for UbuntuKylin，登陆。以便体验同步到金山快盘的功能。现在，打开系统设置，在左下角那个黑不溜秋的“备份”便是新的Deja-dup了。界面与原版并无太大出入，只是在要保存的文件夹选线中，多出来一键添加图片和文档的按钮，由于是初版，很多一键添加的选项没有想好如何布置，在未来的版本中，作者会添加更多更使用的选项供用户使用。</p>
+                    <p></p><h2 id="在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin"><a href="#在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin" class="headerlink" title="在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin"></a>在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin</h2><p><img src="http://www.ubuntukylin.com/upload/images/q1.jpg" alt> </p>
+<p>曾几次介绍如何在Windows 8存在的情况下安装Ubuntu Kylin。但是，我们如何从Windows 8中卸载Ubuntu Kylin呢？这篇教程适用于任何Linux操作系统，如Ubuntu Kylin、Linux Mint、Elementary或任何其他Linux的发行版。</p>
+<p>如果您认为卸载Ubuntu Kylin是一个艰巨的任务，那完全是错误的，因为从Windows中删除Ubuntu Kylin是很容易的。如果你有一个Windows安装盘，从Windows中卸载Linux简直就是小菜一碟。</p>
+<p>本教程教你当启动了Windows 8/8.1安装盘时如何从Windows 8或Windows 8.1中彻底删除Linux。</p>
+<p>从双系统中安全卸载Ubuntu Kylin</p>
 <p>
                 
             
@@ -345,7 +354,7 @@
         
             </p></div> 
             <div class="article-more-link">
-                <a href="/wiki/软件应用/“优麒麟备份助手”篇/#more">Read More</a>
+                <a href="/wiki/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/#more">Read More</a>
             </div>
 
         
