@@ -38,7 +38,7 @@ code
 
 .outer
     clearfix()
-    max-width: (column-width + gutter-width) * columns * 2 - 700
+    max-width: (column-width + gutter-width) * columns * 2 - 760
     margin: 0 auto
     padding: 0 gutter-width
     @media mq-mini
@@ -74,14 +74,13 @@ code
         if sidebar
             column(main-column-tablet)
 
-        else
-    
+        else  
             width: 100%
     @media mq-mobile
- 
+        float:left
         width: 100%
-    @media mq-mini    
-
+    @media mq-mini
+        float:left
         width: 100%
 
 @import "_extend"
