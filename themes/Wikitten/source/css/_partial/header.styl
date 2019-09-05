@@ -16,7 +16,7 @@
 $header-block
     height: logo-height
     line-height: logo-height
-    padding: ((header-height - logo-height)/2) 15px
+
 
 $header-block-left
     float: left
@@ -76,6 +76,11 @@ $header-block-right
         display: none
 
 #main-nav
+    height:100%
+    a
+        height:80%
+    a:hover
+        border-bottom:3px solid #6dc5dc
     @extend $header-block
     @extend $header-block-right
     @media mq-mobile
@@ -84,6 +89,11 @@ $header-block-right
         display: none
 
 #main-nav-mobile
+    height:100%
+    a
+        height:80%
+    a:hover
+        border-bottom:3px solid #6dc5dc
     @media mq-tablet
         display: none
     @media mq-normal
@@ -131,16 +141,18 @@ $nav-link
             line-height: logo-height
 
 #search-form-wrap
-    background:#04123d
-    width:88.8%
+    background:#e5e5e5
+    width:30%
     height:39px
-    float:left
+    float:right
     @media mq-tablet
-        width:94%         
+        width:30% 
+   
     @media mq-mobile
-        width:94%
+        float:left
+        width:96%
     @media mq-mini
-        width: 94%
+        width: 96%
         display: block
     @extend $header-block
     @extend $header-block-right

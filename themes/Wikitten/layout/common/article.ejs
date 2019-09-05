@@ -17,7 +17,7 @@
                         <% if (theme.history_control.enable) { 
                             let repertory_address = `${theme.history_control.server_link}/${theme.history_control.user}/${theme.history_control.repertory}`;
                             let file_path = `${theme.history_control.branch}/source/${post.source}`;%>
-
+                            <%- partial('search/index') %>
                             <!--<div class="article-meta-button">
                                 <a href='<%= `${repertory_address}/raw/${file_path}` %>'> Source </a>
                             </div>
@@ -54,7 +54,7 @@
         <% } else { %>
             <% if (post.toc) { %>
                 <div id="toc" class="toc-article">
-                <strong class="toc-title"><%= __('article.catalogue') %></strong>
+                <strong class="toc-title">目录</strong>
                     <%- toc(post.content) %>
                 </div>
             <% } %>
