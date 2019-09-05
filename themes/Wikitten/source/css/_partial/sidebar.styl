@@ -1,20 +1,9 @@
-.dkw
-    @media mq-normal
-        column(sidebar-column)
-    @media mq-tablet
-        column(sidebar-column-tablet)          
-    @media mq-mobile
-        width:100%
-    @media mq-mini
-        width: 100%
-
 #sidebar
     @media mq-normal
         column(sidebar-column)
-        width:100%
+
     @media mq-tablet
-        column(sidebar-column-tablet)       
-        width:100%      
+        column(sidebar-column-tablet)      
     @media mq-mobile
         width:100%
     @media mq-mini
@@ -73,6 +62,7 @@
             border-radius: 4px 4px 0 0
             background: white
             font-size: 20px
+            font-weight: bold
             line-height: 23px
             padding: 5px 10px
             vertical-align:bottom
@@ -227,6 +217,12 @@
             font-weight: bold
             & > a
                 color: #333
+                display:block
+                height:30px
+                border-bottom:1px solid #eeeeee
+                font-size:15px
+                i:before
+                    content:none
                 &:hover
                     text-decoration: none
         &.file
@@ -241,6 +237,7 @@
         a:hover
             display: block
             text-decoration: none
+            color:#000
         a:focus:before
             content: "↪"
             float: left
