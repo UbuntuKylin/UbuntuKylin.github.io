@@ -117,7 +117,7 @@ body,
 }
 body {
   color: #565a5f;
-  background: #ebeef1;
+  background: #fff;
   font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -375,7 +375,6 @@ code {
 #search-form-wrap {
   height: 40px;
   line-height: 40px;
-  padding: 4px 15px;
 }
 .header-inner .outer #logo {
   float: left;
@@ -447,6 +446,15 @@ code {
     display: none;
   }
 }
+#main-nav {
+  height: 100%;
+}
+#main-nav a {
+  height: 80%;
+}
+#main-nav a:hover {
+  border-bottom: 3px solid #6dc5dc;
+}
 @media screen and (min-width: 560px) and (max-width: 799px) {
   #main-nav {
     display: none;
@@ -456,6 +464,15 @@ code {
   #main-nav {
     display: none;
   }
+}
+#main-nav-mobile {
+  height: 100%;
+}
+#main-nav-mobile a {
+  height: 80%;
+}
+#main-nav-mobile a:hover {
+  border-bottom: 3px solid #6dc5dc;
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #main-nav-mobile {
@@ -517,24 +534,25 @@ code {
   line-height: 40px;
 }
 #search-form-wrap {
-  background: #04123d;
-  width: 88.8%;
+  background: #e5e5e5;
+  width: 30%;
   height: 39px;
-  float: left;
+  float: right;
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #search-form-wrap {
-    width: 94%;
+    width: 30%;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 799px) {
   #search-form-wrap {
-    width: 94%;
+    float: left;
+    width: 96%;
   }
 }
 @media screen and (max-width: 559px) {
   #search-form-wrap {
-    width: 94%;
+    width: 96%;
     display: block;
   }
 }
@@ -841,7 +859,7 @@ article {
 .article-inner {
   overflow: hidden;
   background: #fff;
-  border-top: 0px;
+  border: 1px solid #e5e5e5;
 }
 .article-banner {
   width: 100%;
@@ -918,16 +936,15 @@ div.article-meta-button a:hover {
   background: #333;
 }
 .article-inner .article-meta {
-  background-color: #04123d;
+  background-color: #e5e5e5;
   margin: 0px -21px 20px -21px;
-  padding: 0 20px;
+  padding-left: 20px;
   line-height: 42px;
-  border: 1px solid #04123d;
-  color: #fff;
+  color: #333;
 }
 .article-inner .article-meta a {
   margin-left: 5px;
-  color: #fff;
+  color: #333;
   font-size: 20px;
 }
 .article-inner .article-meta span {
@@ -1381,7 +1398,6 @@ div .article-more-link {
   margin: 0 auto;
 }
 .toc-article {
-  width: 100%;
   background: #f9f9f9;
   margin: 0.2em 0.2em 0.2em 0.2em;
   padding: 1em;
@@ -1776,7 +1792,7 @@ ol.toc {
   line-height: 30px;
 }
 #footer {
-  background-color: #fafafa;
+  background-color: #fff;
   padding: 20px 0;
   border-top: 1px solid #dfe1e2;
   color: #565a5f;
@@ -1798,38 +1814,11 @@ ol.toc {
   font-size: 0.8em;
 }
 @media screen and (min-width: 1200px) {
-  .dkw {
-    display: inline;
-    float: left;
-    width: 23.42105263157895%;
-    margin: 0 0.789473684210526%;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1199px) {
-  .dkw {
-    display: inline;
-    float: left;
-    width: 33.421052631578945%;
-    margin: 0 0.789473684210526%;
-  }
-}
-@media screen and (min-width: 560px) and (max-width: 799px) {
-  .dkw {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 559px) {
-  .dkw {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
   #sidebar {
     display: inline;
     float: left;
     width: 23.42105263157895%;
     margin: 0 0.789473684210526%;
-    width: 100%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -1838,7 +1827,6 @@ ol.toc {
     float: left;
     width: 33.421052631578945%;
     margin: 0 0.789473684210526%;
-    width: 100%;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 799px) {
@@ -1920,6 +1908,7 @@ ol.toc {
   border-radius: 4px 4px 0 0;
   background: #fff;
   font-size: 20px;
+  font-weight: bold;
   line-height: 23px;
   padding: 5px 10px;
   vertical-align: bottom;
@@ -2152,6 +2141,13 @@ ol.toc {
 }
 #categories li.directory > a {
   color: #333;
+  display: block;
+  height: 30px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+#categories li.directory > a i:before {
+  content: none;
 }
 #categories li.directory > a:hover {
   text-decoration: none;
@@ -2171,6 +2167,7 @@ ol.toc {
 #categories li a:hover {
   display: block;
   text-decoration: none;
+  color: #000;
 }
 #categories li a:focus:before {
   content: "↪";
