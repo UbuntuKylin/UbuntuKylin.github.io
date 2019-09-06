@@ -53,7 +53,7 @@ auto_excerpt:
 # Search
 search:
     insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-    swiftype: # enter swiftype install key here
+    swiftype: false# enter swiftype install key here
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 # History version 
