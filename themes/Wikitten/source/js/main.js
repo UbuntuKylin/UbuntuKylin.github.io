@@ -44,15 +44,13 @@
     // To Top
     if ($('#sidebar').length) {
         $(document).on('scroll', function () {
-            if ($(document).width() >= 800) {
+            if ($(document).width() > 0) {
                 if(($(this).scrollTop() > toTop) && ($(this).scrollTop() > 0)) {
                     $('#toTop').fadeIn();
-                    $('#toTop').css('left', $('#sidebar').offset().left);
+                    $('#toTop').css('right', '30px');
                 } else {
                     $('#toTop').fadeOut();
                 }
-            } else {
-                $('#toTop').fadeOut();
             }
         }).on('click', '#toTop', function () {
             $('body, html').animate({ scrollTop: 0 }, 600);
