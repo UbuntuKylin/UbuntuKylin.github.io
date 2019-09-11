@@ -61,9 +61,9 @@
         span
             border-radius: 4px 4px 0 0
             background: white
-            font-size: 20px
+            font-size: 24px
             font-weight: bold
-            line-height: 23px
+            line-height: 24px
             padding: 5px 10px
             vertical-align:bottom
             i
@@ -119,12 +119,12 @@
     display: none
     cursor: pointer
     text-align: center
-    width: 60px
-    height: 60px
-    color: white
+    width: 55px
+    height: 55px
+    color: #939393
     font-size: 50px
     line-height: 55px
-    background: color-default
+    background: #e5e5e5
     opacity: 0.8
     border-radius: 4px
     bottom: 20px
@@ -221,8 +221,6 @@
                 height:30px
                 border-bottom:1px solid #eeeeee
                 font-size:15px
-                i:before
-                    content:none
                 &:hover
                     text-decoration: none
         &.file
@@ -230,18 +228,16 @@
             word-wrap: break-word
             &.active > a
                 font-weight: bold
+                color:#1660c5
         li.file
             padding-left: 10px
             word-wrap: break-word
-        a,
+        a
+            display: block
+            text-decoration: none
+            color:#333
         a:hover
             display: block
             text-decoration: none
-            color:#000
-        a:focus:before
-            content: "↪"
-            float: left
-            margin-left: -13px
-            font-weight: bold
-            color: #333
-                    
+            color:#1660c5
+              
