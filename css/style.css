@@ -364,7 +364,7 @@ code {
   transition: 0.2s ease;
   color: #fff;
   line-height: 85px;
-  font-size: 18px;
+  font-size: 16px;
 }
 #header a:hover {
   color: #82e8fb;
@@ -488,7 +488,7 @@ code {
 .main-nav-link {
   float: left;
   display: block;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 .nav-icon {
   text-align: center;
@@ -870,10 +870,11 @@ article {
 }
 .article-header .article-title {
   display: block;
+  text-align: center;
   margin-bottom: 14px;
 }
 .article-title {
-  font-size: 2em;
+  font-size: 30px;
   color: #565a5f;
   text-decoration: none;
   line-height: 1.3em;
@@ -945,10 +946,10 @@ div.article-meta-button a:hover {
 .article-inner .article-meta a {
   margin-left: 5px;
   color: #333;
-  font-size: 20px;
+  font-size: 14px;
 }
 .article-inner .article-meta span {
-  font-size: 20px;
+  font-size: 14px;
 }
 .article-category .fa-angle-right {
   margin: 0 5px;
@@ -1021,7 +1022,8 @@ div.article-meta-button a:hover {
   visibility: visible;
 }
 .article-entry a {
-  color: #38b7ea;
+  color: #1660c5;
+  font-size: 14px;
   text-decoration: none;
 }
 .article-entry a:hover {
@@ -1398,9 +1400,8 @@ div .article-more-link {
   margin: 0 auto;
 }
 .toc-article {
-  background: #f9f9f9;
+  background: #fff;
   margin: 0.2em 0.2em 0.2em 0.2em;
-  padding: 1em;
   border: 1px solid #fff;
   border-radius: 0px;
 }
@@ -1907,9 +1908,9 @@ ol.toc {
 .widget-wrap h3 span {
   border-radius: 4px 4px 0 0;
   background: #fff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  line-height: 23px;
+  line-height: 24px;
   padding: 5px 10px;
   vertical-align: bottom;
 }
@@ -1999,12 +2000,12 @@ ol.toc {
   display: none;
   cursor: pointer;
   text-align: center;
-  width: 60px;
-  height: 60px;
-  color: #fff;
+  width: 55px;
+  height: 55px;
+  color: #939393;
   font-size: 50px;
   line-height: 55px;
-  background: #565a5f;
+  background: #e5e5e5;
   opacity: 0.8;
   border-radius: 4px;
   bottom: 20px;
@@ -2146,9 +2147,6 @@ ol.toc {
   border-bottom: 1px solid #eee;
   font-size: 15px;
 }
-#categories li.directory > a i:before {
-  content: none;
-}
 #categories li.directory > a:hover {
   text-decoration: none;
 }
@@ -2158,23 +2156,21 @@ ol.toc {
 }
 #categories li.file.active > a {
   font-weight: bold;
+  color: #1660c5;
 }
 #categories li li.file {
   padding-left: 10px;
   word-wrap: break-word;
 }
-#categories li a,
+#categories li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
 #categories li a:hover {
   display: block;
   text-decoration: none;
-  color: #000;
-}
-#categories li a:focus:before {
-  content: "↪";
-  float: left;
-  margin-left: -13px;
-  font-weight: bold;
-  color: #333;
+  color: #1660c5;
 }
 .ins-search {
   display: none;
