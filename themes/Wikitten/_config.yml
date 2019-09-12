@@ -42,6 +42,7 @@ widgets: # default use category only
     # - tag
     # - tagcloud
     # - links
+
     
 # Excerpt 
 ## Auto creat excerpt with not <!--more-->
