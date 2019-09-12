@@ -44,7 +44,7 @@
                     return searchItem('file', item.title, null, preview, CONFIG.ROOT_URL + item.path);
                 });
                 break;
-           
+            case 'CATEGORIES':
             case 'TAGS':
                 $searchItems = array.map(function (item) {
                     return searchItem(type === 'CATEGORIES' ? 'folder' : 'tag', item.name, item.slug, null, item.permalink);
