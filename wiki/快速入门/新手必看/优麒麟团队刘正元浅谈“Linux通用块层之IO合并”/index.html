@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>优麒麟团队刘正元浅谈“Linux通用块层之IO合并” | UbuntuKylin Wiki</title>
+    
+    
+        <meta name="keywords" content="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="本文作者刘正元，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ Linux阅码场”微信公众平台发表多篇文章，本文也是出自该处。  所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”">
+<meta property="og:url" content="https://UbuntuKylin.github.io/wiki/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/index.html">
+<meta property="og:site_name" content="UbuntuKylin Wiki">
+<meta property="og:description" content="本文作者刘正元，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ Linux阅码场”微信公众平台发表多篇文章，本文也是出自该处。  所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254005961032.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254017439804.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254026772374.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254037273702.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254048278725.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254084160608.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254095647471.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254105303637.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254118631038.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254143306219.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254164616153.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254202385663.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254236803650.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254245597629.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254255647107.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254265486421.png">
+<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254276774034.png">
+<meta property="og:updated_time" content="2019-09-16T06:07:54.510Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”">
+<meta name="twitter:description" content="本文作者刘正元，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ Linux阅码场”微信公众平台发表多篇文章，本文也是出自该处。  所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一">
+<meta name="twitter:image" content="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="UbuntuKylin Wiki" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href=" / " id="logo">
+                <span class="site-title"> UbuntuKylin Wiki </span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">下载</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">新闻</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">社区</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">参与</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">知识库</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">UKUI</a>
+                
+            </nav>
+            
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">下载</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">新闻</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">社区</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">参与</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">知识库</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">UKUI</a></td>
+                
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                
+<aside id="sidebar" style="margin-top:40px">
+
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>目录</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            快速入门
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            其他
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            基础操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/基础操作/入门介绍（开机桌面关机）/">入门介绍（开机桌面关机）</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/注销、关机、切换用户/">注销、关机、切换用户</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/键盘快捷键设置/">键盘快捷键设置</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/日程事件/">日程事件</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/启动有限制的客人会话/">启动有限制的客人会话</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/关闭无线（飞行模式）/">关闭无线（飞行模式）</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/桌面环境配置/">桌面环境配置</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/">如何对Ubuntu Kylin 14.04 的登录界面截图 </a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/">如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/快速检查电脑是否配备USB-3-0/">快速检查电脑是否配备USB 3.0</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            新手必看
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/新手必看/WEP和WPA介绍/">WEP和WPA介绍</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux上的文件类型与默认图标/">Linux上的文件类型与默认图标</a></li>  <li class="file active"><a href="/wiki/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux中，你一定要掌握的网络基本命令/">Linux中，你一定要掌握的网络基本命令! </a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux命令及Linux终端的20个趣事/">Linux命令及Linux终端的20个趣事</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/有趣的Linux彩蛋——用sudo来冒犯用户/">有趣的Linux彩蛋——用sudo来冒犯用户</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/">Linux新手大礼包：学习Linux你必须知道的那些事儿</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            系统介绍
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/系统介绍/各版本新特性/">各版本新特性</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/窗口和工作区/">窗口和工作区</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/UKUI/">UKUI</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            进阶操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            系统安装
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            U盘教程
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/U盘教程/U盘做WIN7-UK双系统/">U盘做WIN7+UK双系统</a></li>  <li class="file"><a href="/wiki/系统安装/U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/">Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            安装教程 
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/安装教程 /几种安装UK的方法/">几种安装UK的方法</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /从系统安装盘引导系统/">从系统安装盘引导系统</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /引导系统并准备安装/">引导系统并准备安装</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /选择安装类型并处理分区/">选择安装类型并处理分区</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /设置“安装启动引导器”/">设置“安装启动引导器”</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /UEFI环境安装/">UEFI环境安装</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /如何在-Ubuntu-Ubuntu-Kylin-中安装-Unity-8-桌面预览版/">如何在 Ubuntu/Ubuntu Kylin 中安装 Unity 8 桌面预览版</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /如何在优麒麟（Ubuntu-Kylin）上安装Linux内核4-0/">如何在优麒麟（Ubuntu Kylin）上安装Linux内核4.0 </a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            安装问题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/安装问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            桌面风格
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/桌面风格/10个-Adobe-风格的创意图标，你值得拥有！/">10个 Adobe 风格的创意图标，你值得拥有！</a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">如何在 Ubuntu Kylin 中安装Numix主题和图标 </a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/Ubuntu-Kylin-15-10-如何安装Mac主题/">Ubuntu Kylin 15.10 如何安装Mac主题</a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/">在优麒麟14.04上安装精美的Dalisha图标主题</a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/如何让你的“笨兔”更像苹果？/">如何让你的“笨兔”更像苹果？</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/系统安装/优麒麟所有版本下载汇总/">优麒麟所有版本下载汇总</a></li>  <li class="file"><a href="/wiki/系统安装/系统安装盘的制作/">系统安装盘的制作</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            软件应用
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            其他工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/其他工具/优麒麟使用教程第二期：VirtualBox-虚拟机安装/">优麒麟使用教程第二期：VirtualBox 虚拟机安装</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            其他软件
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/其他软件/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            自带软件工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/自带软件工具/优客助手/">优客助手</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/软件中心/">软件中心</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/小企鹅输入法/">小企鹅输入法</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/优客农历/">优客农历</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/优客天气/">优客天气</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/麒麟影音/">麒麟影音</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/生物识别/">生物识别</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/循序而渐进，熟读而精思——优麒麟文件管理器篇/">循序而渐进，熟读而精思——优麒麟文件管理器篇</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/welcome/">欢迎来到优麒麟百科</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+            <section id="main"><article id="post-快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/快速入门/">快速入门</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/快速入门/新手必看/">新手必看</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">
+            <time datetime="2019-06-24T01:02:40.000Z" itemprop="datePublished">2019-06-24</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+</div>
+                            <!--<div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”.md'> History </a>
+                            </div>-->
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            优麒麟团队刘正元浅谈“Linux通用块层之IO合并”
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#cache-合并"><span class="toc-number">1.</span> <span class="toc-text">cache 合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#plug-合并"><span class="toc-number">2.</span> <span class="toc-text">plug 合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bio后向合并-ELEVATOR-BACK-MERGE"><span class="toc-number">3.</span> <span class="toc-text">bio后向合并 (ELEVATOR_BACK_MERGE)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bio前向合并-ELEVATOR-FRONT-MERGE"><span class="toc-number">4.</span> <span class="toc-text">bio前向合并 (ELEVATOR_FRONT_MERGE)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#elevator-合并"><span class="toc-number">5.</span> <span class="toc-text">elevator 合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bio合并到elevator"><span class="toc-number">6.</span> <span class="toc-text">bio合并到elevator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结"><span class="toc-number">7.</span> <span class="toc-text">小结</span></a></li></ol>
+                </div>
+            
+        
+        
+            <p>本文作者<strong>刘正元</strong>，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ <a href="https://mp.weixin.qq.com/s?__biz=MzAwMDUwNDgxOA==&amp;mid=2652664651&amp;idx=1&amp;sn=3b908b92b4209fd49bac561814369e5a&amp;chksm=810f35d6b678bcc0353c80e744244ab61ca81b93ae4adf18dfdff28ab35b6f97c0e7635f5f46&amp;mpshare=1&amp;scene=1&amp;srcid=0605uHWZBejaZQ1PEIru1IjU#rd" rel="external nofollow noopener noreferrer" target="_blank">Linux阅码场</a>”微信公众平台发表多篇文章，本文也是出自该处。</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
+<p>所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一并处理，从而提升IO请求的处理效率。在前面有关通用块层介绍的系列文章当中我们或多或少地提及了IO请求合并的概念，本篇我们从头集中梳理IO请求在block layer的来龙去脉，以此来增强对IO请求合并的理解。</p>
+<p>首先来看一张图，下面的图展示了IO请求数据由用户进程产生，到最终持久化存储到物理存储介质，其间在内核空间所经历的数据流以及IO请求合并可能的触发点。</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
+<p>从内核的角度而言，进程产生的IO路径主要有图中①②③所示的三条：</p>
+<p>①　缓存IO,对应图中的路径①，系统中绝大部分IO走的这种形式，充分利用filesystem层的page cache所带来的优势， 应用程序产生的IO经系统调用落入page cache之后便可以直接返回，page cache中的缓存数据由内核回写线程在适当时机负责同步到底层的存储介质之上，当然应用程序也可以主动发起回写过程（如fsync系统调用）来确保数据尽快同步到存储介质上，从而避免系统崩溃或者掉电带来的数据不一致性。缓存IO可以带来很多好处，首先应用程序将IO丢给page cache之后就直接返回了，避免了每次IO都将整个IO协议栈走一遍，从而减少了IO的延迟。其次，page cache中的缓存最后以页或块为单位进行回写，并非应用程序向page cache中提交了几次IO,回写的时候就需要往通用块层提交几次IO,这样在提交时间上不连续但在空间上连续的小块IO请求就可以合并到同一个缓存页中一并处理。再次，如果应用程序之前产生的IO已经在page cache中，后续又产生了相同的IO，那么只需要将后到的IO覆盖page cache中的旧IO，这样一来如果应用程序频繁的操作文件的同一个位置，我们只需要向底层存储设备提交最后一次IO就可以了。最后，应用程序写入到page cache中的缓存数据可以为后续的读操作服务，读取数据的时候先搜索page cache，如果命中了则直接返回，如果没命中则从底层读取并保存到page cache中，下次再读的时候便可以从page cache中命中。</p>
+<p>②　非缓存IO（带蓄流），对应图中的路径②，这种IO绕过文件系统层的cache。用户在打开要读写的文件的时候需要加上“O_DIRECT”标志，意为直接IO，不让文件系统的page cache介入。从用户角度而言，应用程序能直接控制的IO形式除了上面提到的“缓存IO”，剩下的IO都走的这种形式，就算文件打开时加上了”O_SYNC”标志，最终产生的IO也会进入蓄流链表（图中的Plug List）。如果应用程序在用户空间自己做了缓存，那么就可以使用这种IO方式，常见的如数据库应用。</p>
+<p>③　非缓存IO（不带蓄流），对应图中的路径③，内核通用块层的蓄流机制只给内核空间提供了接口来控制IO请求是否蓄流，用户空间进程没有办法控制提交的IO请求进入通用块层的时候是否蓄流。严格的说用户空间直接产生的IO都会走蓄流路径，哪怕是IO的时候附上了“O_DIRECT”和”O_SYNC”标志（可以参考《Linux通用块层介绍（part1: bio层）》中的蓄流章节），用户间接产生的IO，如文件系统日志数据、元数据，有的不会走蓄流路径而是直接进入调度队列尽快得到调度。注意一点，通用块层的蓄流只提供机制和接口而不提供策略，至于需不需要蓄流、何时蓄流完全由内核中的IO派发者决定。</p>
+<p>应用程序不管使用图中哪条IO路径，内核都会想方设法对IO进行合并。内核为促进这种合并，在IO协议栈上设置了三个最佳狙击点：</p>
+<ul>
+<li><p>Cache（页高速缓存）</p>
+</li>
+<li><p>Plug List（蓄流链表）</p>
+</li>
+<li><p>Elevator Queue（调度队列）</p>
+</li>
+</ul>
+<h3 id="cache-合并"><a href="#cache-合并" class="headerlink" title="cache 合并"></a>cache 合并</h3><p>IO处在文件系统层的page cache中时只有IO数据，还没有IO请求（bio或request）,只有page cache在读写的时候才会产生IO请求。本文主要介绍IO请求在通用块层的合并，因此对于IO在cache层的合并只做现象分析，不深入到内部逻辑和代码细节。</p>
+<p>如果是缓存IO,用户进程提交的写数据会积聚在page cache中。cache保存IO数据的基本单位为page,大小一般为4K,因此cache又叫“页高速缓存”， 用户进程提交的小块数据可以缓存到cache中的同一个page中，最后回写线程将一个page中的数据一次性提交给通用块层处理。以dd程序写一个裸设备为例，每次写1K数据，连续写16次：</p>
+<p>　　dd if=/dev/zero of=/dev/sdb bs=1k count=16</p>
+<p>通过blktrace观测的结果为：</p>
+<p>　　blktrace -d /dev/sdb -o - | blkparse -i -</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254017439804.png" alt></p>
+<p>bio请求在通用块层的处理情况主要是通过第六列反映出来的，如果对blkparse的输出不太了解，可以man一下blktrace。对照每一行的输出来看看应用程序产生的写IO经由page cache之后是如何派发到通用块层的：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254026772374.png" alt></p>
+<p>现阶段只关注IO是如何从page cache中派发到通用块层的，所以后面的泻流、派发过程没有贴出来。回写线程–kworker以8个扇区（扇区大小为512B, 8个扇区为4K对应一个page大小）为单位将dd程序读写的1K数据块派发给通用块层处理。dd程序写了16次，回写线程只写了4次（对应四次Q），page cache的缓存功能有效的合并了应用程序直接产生的IO数据。</p>
+<p>文件系统层的page cache对读IO也有一定的作用，带缓存的读IO会触发文件系统层的预读机制，所谓预读有专门的预读算法，通过判断用户进程IO趋势，提前将存储介质上的数据块读入page cache中，下次读操作来时可以直接从page cache中命中，而不需要每次都发起对块设备的读请求。还是以dd程序读一个裸设备为例，每次读1K数据，连续读16次：</p>
+<p>　　dd if=/dev/sdb of=/dev/zero bs=1K count=16</p>
+<p>通过blktrace观测的结果为：</p>
+<p>　　blktrace -d /dev/sdb -o - | blkparse -i -</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254037273702.png" alt></p>
+<p>同样只关注IO是如何从上层派发到通用块层的，不关注IO在通用块层的具体情况，先不考虑P，I，U，D，C等操作，那么上面的输出可以简单解析为：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254048278725.png" alt></p>
+<p>读操作是同步的，所以触发读请求的是dd进程本身。dd进程发起了16次读操作，总共读取16K数据，但是预读机制只向底层发送了两次读请求，分别为0+32(16K), 32+64(32K)，总共预读了16 + 32 = 48K数据，并保存到cache中，多预读的数据可以为后续的读操作服务。</p>
+<h3 id="plug-合并"><a href="#plug-合并" class="headerlink" title="plug 合并"></a>plug 合并</h3><p>linuxer公众号中介绍bio和request的系列文章，熟悉IO请求在通用块层的处理，以及蓄流(plug)机制的原理和接口。特别推荐宋宝华老师写的《文件读写（BIO）波澜壮阔的一生》，通俗易懂地介绍了一个文件io的生命周期。</p>
+<p>每个进程都有一个私有的蓄流链表，进程在往通用块层派发IO之前如果开启了蓄流功能，那么IO请求在被发送给IO调度器之前都保存在蓄流链表中，直到泄流(unplug)的时候才批量交给调度器。蓄流的主要目的就是为了增加请求合并的机会，bio在进入蓄流链表之前会尝试与蓄流链表中保存的request进行合并,使用的接口为blk_attempt_plug_merge().本文是基于内核4.17分析的，源码来源于4.17-rc1。</p>
+<p>blk_attempt_plug_merge:<br>    list_for_each_entry_reverse(rq, plug_list, queuelist) {<br>                ……<br>                switch (blk_try_merge(rq, bio)) {<br>                case ELEVATOR_BACK_MERGE:<br>                        merged = bio_attempt_back_merge(q, rq, bio);<br>                        break;<br>                case ELEVATOR_FRONT_MERGE:<br>                        merged = bio_attempt_front_merge(q, rq, bio);<br>                        break;<br>                case ELEVATOR_DISCARD_MERGE:<br>                        merged = bio_attempt_discard_merge(q, rq, bio);<br>                        break;<br>                default:<br>                        break;<br>                }<br>    }</p>
+<p>代码遍历蓄流链表中的request，使用blk_try_merge找到一个能与bio合并的request并判断合并类型，蓄流链表中的合并类型有三种：ELEVATOR_BACK_MERGE，ELEVATOR_FRONT_MERGE，ELEVATOR_DISCARD_MERGE。普通文件IO操作只会进行前两种合并，第三种是丢弃操作的合并，不是普通的IO的合并，故不讨论。</p>
+<h3 id="bio后向合并-ELEVATOR-BACK-MERGE"><a href="#bio后向合并-ELEVATOR-BACK-MERGE" class="headerlink" title="bio后向合并 (ELEVATOR_BACK_MERGE)"></a>bio后向合并 (ELEVATOR_BACK_MERGE)</h3><p>为了验证IO请求在通用块层的各种合并形式，准备了以下测试程序，该测试程序使用内核原生支持的异步IO引擎，可异步地向内核一次提交多个IO请求。为了减少page cache和文件系统的干扰，使用O_DIRECT的方式直接向裸设备派发IO。</p>
+<p>iotc.c<br>…<br>/<em> dispatch 3 4k-size ios using the io_type specified by user </em>/<br>＃define NUM_EVENTS 3<br>＃define ALIGN_SIZE 4096<br>＃define WR_SIZE 4096<br>enum io_type {<br>SEQUENCE_IO,/<em> dispatch 3 ios: 0-4k(0+8), 4-8k(8+8), 8-12k(16+8) </em>/<br>REVERSE_IO,/<em> dispatch 3 ios: 8-12k(16+8), 4-8k(8+8),0-4k(0+8) </em>/<br>INTERLEAVE_IO, /<em> dispatch 3 ios: 8-12k(16+8), 0-4k(0+8),4-8k(8+8) </em>/ ,<br>IO_TYPE_END<br>};<br>int io_units[IO_TYPE_END][NUM_EVENTS] = {<br>{0, 1, 2},/<em> corresponding to SEQUENCE_IO </em>/<br>{2, 1, 0},/<em> corresponding to REVERSE_IO </em>/<br>{2, 0, 1}/<em> corresponding to INTERLEAVE_IO </em>/<br>};<br>char <em>io_opt = “srid:”;/</em> acceptable options <em>/<br>int main(int argc, char </em>argv[])<br>{<br>intfd;<br>io_context_t ctx;<br>struct timespec tms;<br>struct io_event events[NUM_EVENTS];<br>struct iocb iocbs[NUM_EVENTS],<br><em>iocbp[NUM_EVENTS];<br>int i, io_flag = -1;;<br>void </em>buf;<br>bool hit = false;<br>char <em>dev = NULL, opt;<br>/</em> io_flag and dev got set according the options passed by user , don’t paste the code of parsing here to shrink space <em>/<br>fd = open(dev, O_RDWR | __O_DIRECT);<br>/</em> we can dispatch 32 IOs at 1 systemcall <em>/<br>ctx = 0;<br>io_setup(32, &amp;ctx);<br>posix_memalign(&amp;buf,ALIGN_SIZE,WR_SIZE);<br>/</em> prepare IO request according to io_type <em>/<br>for (i = 0; i &lt; NUM_EVENTS; iocbp[i] = iocbs + i, ++i)<br>io_prep_pwrite(&amp;iocbs[i], fd, buf, WR_SIZE, io_units[io_flag][i] </em> WR_SIZE);<br>/<em> submit IOs using io_submit systemcall </em>/<br>io_submit(ctx, NUM_EVENTS, iocbp);<br>/<em> get the IO result with a timeout of 1S</em>/<br>tms.tv_sec = 1;<br>tms.tv_nsec = 0;<br>io_getevents(ctx, 1, NUM_EVENTS, events, &amp;tms);<br>return 0;<br>}</p>
+<p>测试程序接收两个参数，第一个为作用的设备，第二个为IO类型，定义了三种IO类型：SEQUENCE_IO（顺序），REVERSE_IO（逆序），INTERLEAVE_IO（交替）分别用来验证蓄流阶段的bio后向合并、前向合并和泄流阶段的request合并。为了减少篇幅，此处贴出的源码删除了选项解析和容错处理，只保留主干，原版位于：<a href="https://github.com/liuzhengyuan/iotc" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>。</p>
+<p>为验证bio在蓄流阶段的后向合并，用上面的测试程序iotc顺序派发三个写io:</p>
+<p>＃ ./iotc-d/dev/sdb-s</p>
+<p>-d指定作用的设备sdb，-s指定IO方式为SEQUENCE_IO（顺序），表示顺序发起三个写请求：bio0(0 + 8), bio1(8 + 8), bio2(16 + 8)。通过blktrace来观察iotc派发的bio请求在通用块层蓄流链表中的合并情况：</p>
+<p>blktrace -d /dev/sdb -o - | blkparse -i -</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254084160608.png" alt></p>
+<p>上面的输出可以简单解析为：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254095647471.png" alt></p>
+<p>第一个bio(bio0)进入通用块层时，此时蓄流链表为空，于是申请一个request并用bio0初始化，再将request添加进蓄流链表，同时告诉blktrace蓄流已正式工作。第二个bio(bio1)到来的时候会走blk_attempt_plug_merge的逻辑，尝试调用bio_attempt_back_merge与蓄流链表中的request合并，发现正好能合并到第一个bio所在的request尾部，于是直接返回。第三个bio(bio2)的处理与第二个同理。通过蓄流合并之后，三个IO请求最终合并成了一个request(0 + 24)。用一副图来展示整个合并过程：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254105303637.png" alt></p>
+<h3 id="bio前向合并-ELEVATOR-FRONT-MERGE"><a href="#bio前向合并-ELEVATOR-FRONT-MERGE" class="headerlink" title="bio前向合并 (ELEVATOR_FRONT_MERGE)"></a>bio前向合并 (ELEVATOR_FRONT_MERGE)</h3><p>为验证bio在蓄流阶段的前向合并，使用iotc逆序派发三个写io:</p>
+<p>＃ ./iotc-d/dev/sdb-r</p>
+<p>-r指定IO方式为REVERSE_IO（逆序），表示逆序发起三个写请求：bio0(16 + 8),bio1(8 + 8), bio2(0 + 8)。blktrace的观察结果为：</p>
+<p>blktrace -d /dev/sdb -o - | blkparse -i -</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254118631038.png" alt></p>
+<p>上面的输出可以简单解析为：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254143306219.png" alt></p>
+<p>与前面的后向合并相比，唯一的区别是合并方式由之前的”M”变成了现在的”F”，即在blk_attempt_plug_merge中走的是bio_attempt_front_merge分支。通过下面的图来展示前向合并过程：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254164616153.png" alt></p>
+<p>“plug合并”不会做request与request的进阶合并，蓄流链表中的request之间的合并会在泄流的时候做，即在下面介绍的“elevator合并”中做。</p>
+<h3 id="elevator-合并"><a href="#elevator-合并" class="headerlink" title="elevator 合并"></a>elevator 合并</h3><p>上面讲到的蓄流链表合并是为进程内的IO请求服务的，每个进程只往自己的蓄流链表中提交IO请求，进程间的蓄流链表相互独立，互不干涉。但是，多个进程可以同时对一个设备发起IO请求，那么通用块层还需要提供一个节点，让进程间的IO请求有机会进行合并。一个块设备有且仅有一个请求队列（调度队列），所有对块设备的IO请求都需要经过这个公共节点，因此调度队列（Elevator Queue）是IO请求合并的另一个节点。</p>
+<p>先回顾一下通用块层处理IO请求的核心函数：blk_queue_bio(),上层派发的bio请求都会流经该函数，或将bio蓄流到Plug List，或将bio合并到Elevator Queue,或将bio生成request直接插入到Elevator Queue。blk_queue_bio()的主要处理流程为：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254202385663.png" alt></p>
+<p>其中”A”标识的“合并到蓄流链表的request中”就是上一章介绍的“plug合并”。bio如果不能合并到蓄流链表中接下来会尝试合并到“B”标识的”合并到调度队列的request中”。”合并到调度队列的request中”只是“elevator合并”的第一个点。你可能已经发现了blk_queue_bio()将bio合并到蓄流链表或者将request添加进蓄流链表之后就没管了，从路径①可以发现蓄流链表中的request最终都是要交给电梯调度队列的，这正是”elevator合并”的第二个点，关于泄流的时机请参考我之前写的《Linux通用块层介绍（part1: bio层）》。下面分别介绍这两个合并点：</p>
+<h3 id="bio合并到elevator"><a href="#bio合并到elevator" class="headerlink" title="bio合并到elevator"></a>bio合并到elevator</h3><p>先看B表示的代码段：</p>
+<p>blk_queue_bio:<br>switch (elv_merge(q, &amp;req, bio)) {<br>case ELEVATOR_BACK_MERGE:<br>if (!bio_attempt_back_merge(q, req, bio))<br>break;<br>elv_bio_merged(q, req, bio);<br>free = attempt_back_merge(q, req);<br>if (free)<br><strong>blk_put_request(q, free);<br>else<br>elv_merged_request(q, req, ELEVATOR_BACK_MERGE);<br>goto out_unlock;<br>case ELEVATOR_FRONT_MERGE:<br>if (!bio_attempt_front_merge(q, req, bio))<br>break;<br>elv_bio_merged(q, req, bio);<br>free = attempt_front_merge(q, req);<br>if (free)
+</strong>blk_put_request(q, free);<br>else<br>elv_merged_request(q, req, ELEVATOR_FRONT_MERGE);<br>goto out_unlock;<br>default:<br>break;<br>}</p>
+<p>合并逻辑基本与”plug合并”相似，先调用elv_merge接口判断合并类型，然后根据是后向合并或是前向合并分别调用bio_attempt_back_merge和bio_attempt_front_merge进行合并操作，由于操作对象从蓄流链表变成了电梯调度队列，bio合并完了之后还需额外干几件事：</p>
+<ol>
+<li>调用elv_bio_merged,该函数会调用电梯调度器注册的elevator_bio_merged_fn接口来通知调度器做相应的处理，对于deadline调度器而言该接口为NULL。</li>
+</ol>
+<p>2.寻找进阶合并，参考我之前写的《Linux通用块层介绍（part2: request层）》中对进阶合并的描述，如果bio产生了后向合并，则调用attempt_back_merge试图进行后向进阶合并，如果bio产生了前向合并，则调用attempt_front_merge企图进行前向进阶合并。deadline的进阶合并接口为deadline_merged_requests， 被合并的request会从调度队列中删除。通过下面的图示来展示后向进阶合并过程，前向进阶合并同理。</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254236803650.png" alt></p>
+<ol start="3">
+<li>如果产生了进阶合并，则被合并的request可以释放了，参考上图，可调用blk_put_request进行回收。如果只产生了bio合并，合并后的request的长度和扇区地址都会发生变化，需要调用elv_merged_request-&gt;elevator_merged_fn来更新合并后的请求在调度队列的位置。deadline对应的接口为deadline_merged_request，其相应的操作为将合并的request先从调度队列移出再重新插进去。</li>
+</ol>
+<p>“bio合并到elevator”的合并形式只会发生在进程间，即只有一个进程在IO的时候不会产生这种合并形式，原因在于进程在向调度队列派发IO请求或者试图与将bio与调度队列中的请求合并的时候是持有设备的队列锁得，其他进程是不能往调度队列派发请求，这也是通用块层单队列通道窄需要发展多队列的主要原因之一，只有进程在将调度队列中的request逐个派发给驱动层的时候才会将设备队列锁重新打开，即只有当一个进程在将调度队列中request派发给驱动的时候其他进程才有机会将bio合并到还未派发完的request中。所以想通过简单的IO测试程序来捕捉这种形式的合并比较困难，这对两个IO进程的IO产生时序有非常高的要求，故不演示。有兴趣的可以参考上面的github仓库，里面有patch对内核特定的请求派发位置加上延时来改变IO请求本来的时序，从而让测试程序人为的达到这种碰撞效果。</p>
+<p>request在泄流的时候合并到elevator</p>
+<p>通用块层的泄流接口为：blk_flush_plug_list()， 该接口主要的处理逻辑如下图所示</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254245597629.png" alt></p>
+<p>其中请求合并发生的点在__elv_add_request()。blk_flush_plug_list会遍历蓄流链表中的每个request，然后将每个request通过_elv_add_request接口添加到调度队列中，添加的过程中会尝试与调度队列中已有的request进行合并。</p>
+<p>__elv_add_request:<br>case ELEVATOR_INSERT_SORT_MERGE:<br>/*</p>
+<ul>
+<li>If we succeed in merging this request with one in the</li>
+<li>queue already, we are done - rq has now been freed,</li>
+<li>so no need to do anything further.<br><em>/<br>if (elv_attempt_insert_merge(q, rq))<br>break;<br>/</em> fall through */<br>case ELEVATOR_INSERT_SORT:<br>BUG_ON(blk_rq_is_passthrough(rq));<br>rq-&gt;rq_flags |= RQF_SORTED;<br>q-&gt;nr_sorted++;<br>if (rq_mergeable(rq)) {<br>elv_rqhash_add(q, rq);<br>if (!q-&gt;last_merge)<br>q-&gt;last_merge = rq;<br>}<br>q-&gt;elevator-&gt;type-&gt;ops.sq.elevator_add_req_fn(q, rq);<br>break;</li>
+</ul>
+<p>泄流时走的是ELEVATOR_INSERT_SORT_MERGE分支，正如注释所说的先让蓄流的request调用elv_attempt_insert_merge尝试与调度队列中的request合并，如果不能合并则落入到ELEVATOR_INSERT_SORT分支，该分支直接调用电梯调度器注册的elevator_add_req_fn接口将新来的request插入到调度队列合适的位置。其中elv_rqhash_add是将新加入到调度队列的request做hash索引，这样做的好处是加快从调度队列寻找可合并的request的索引速度。</p>
+<p>在泄流的时候调度队列中既有其他进程产生的request，也有当前进程从蓄流链表中派发的request（blk_flush_plug_list是先将所有request派发到调度队列再一次性queue_unplugged，而不是派发一个request就queue_unplugged）。所以“request在泄流的时候合并到elevator”既是进程内的，也可以是进程间的。</p>
+<p>elv_attempt_insert_merge的实现只做request间的后向合并，即只会将一个request合并到调度队列中的request的尾部。这对于单进程IO而言足够了，因为blk_flush_plug_list在泄流的时候已经将蓄流链表中的request进行了list_sort（按扇区排序）。笔者曾经提交过促进进程间request的前向合并的patch（见github），但没被接收，maintainer–Jens的解析是这种IO场景很难发生，如果产生这种IO场景基本是应用程序设计不合理。通过增加时间和空间来优化一个并不常见的场景并不可取。</p>
+<p>最后通过一个例子来验证进程内“request在泄流的时候合并到elevator”，进程间的合并同样对请求派发时序有很强的要求，在此不演示，github中有相应的测试patch和测试方法。iotc使用下面的方式派发三个写io:</p>
+<p>＃ ./iotc-d/dev/sdb-i</p>
+<p>-i指定IO方式为INTERLEAVE_IO（交替），表示按扇区交替的方式发起三个写请求：bio0(16 + 8),bio1(8 + 8), bio2(0 + 8)。blktrace的观察结果为：</p>
+<p>blktrace -d /dev/sdb -o - | blkparse -i -</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254255647107.png" alt></p>
+<p>上面的输出可以简单解析为：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254265486421.png" alt></p>
+<p>bio0(16 + 8)先到达plug list，bio1(0+8)到达时发现不能与plug list中的request合并，于是申请一个request添加到plug list。bio2(8+8)到达时首先与bio1进行后向合并。之后进程触发泄流，泄流接口函数会将plug list中的request排序，因此request(0+16)先派发到调度队列，此时调度队列为空不能进行合并。然后派发request(16+8),派发时调用elv_attempt_insert_merge接口尝试与调度队列中的其他request进行合并，发现可以与request(0+16)进行后向合并，于是两个request合并成一个，最后向设备驱动派发的只有一个request(0+24)。整个过程可以用下面的图来展示：</p>
+<p><img src="http://www.ubuntukylin.com/upload/201806/1528254276774034.png" alt></p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>通过cache、plug和elevator自上而下的三层狙击，应用程序产生的IO能最大限度的进行合并，从而提升IO带宽，降低IO延迟，延长设备寿命。page cache打头阵，既做数据缓存又做IO合并，主要是针对小块IO进行合并，因为使用内存页做缓存，所以合并后的最大IO单元为页大小，当然对于大块IO,page cache也会将它拆分成以页为单位下发，这不影响最终的效果，因为后面还有plug和elevator补刀。plug list竭尽全力合并进程内产生的IO,从设备的角度而言进程内产生的IO相关性更强，合并的可能性更大，plug list设计位于elevator queue之上而且又是每个进程私有的，因此plug list既有利于IO合并，又减轻了elevator queue的负担。elevator queue更多的是承担进程间IO的合并，用来弥补plug list对进程间合并的不足，如果是带缓存的IO，这种IO合并基本上不会出现。从实际应用角度出发，IO合并更多的是发生在page cache和plug list中。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+<!--
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/快速入门/其他/我就是我，原理不一样的snap/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    我就是我，原理不一样的snap
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/软件应用/自带软件工具/循序而渐进，熟读而精思——优麒麟文件管理器篇/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">循序而渐进，熟读而精思——优麒麟文件管理器篇</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>    
+ -->
+
+
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Copyright©2013-2019 Ubuntu Kylin 版权所有<br>津ICP备15002470号-2
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277082673'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277082673%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> 
+            <!--<br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>-->
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+
+    
+
+
+
+</footer>
+
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>

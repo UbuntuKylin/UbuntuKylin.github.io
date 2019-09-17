@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>软件源配置和包管理工具 | UbuntuKylin Wiki</title>
+    
+    
+        <meta name="keywords" content="软件源配置和包管理工具">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="更改软件源　　“软件源”指的是 UK14 安装软件时获取软件包的来源，这个来源绝大多数情况下就是互联网上的服务器。既然是互联网上的服务器，就有个连接速度的问题。UK14 默认的软件源多数情况下速度偏慢，为了获取更好的下载速度，装好系统后第一件事就是更改软件源。　　点击启动器上的“系统设置”，弹出“系统设置”窗口，点击下方的“软件和更新”，弹出“软件和更新”对话框，再在“ubuntu 软件”标签下的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件源配置和包管理工具">
+<meta property="og:url" content="https://UbuntuKylin.github.io/wiki/快速入门/进阶操作/软件源配置和包管理工具/index.html">
+<meta property="og:site_name" content="UbuntuKylin Wiki">
+<meta property="og:description" content="更改软件源　　“软件源”指的是 UK14 安装软件时获取软件包的来源，这个来源绝大多数情况下就是互联网上的服务器。既然是互联网上的服务器，就有个连接速度的问题。UK14 默认的软件源多数情况下速度偏慢，为了获取更好的下载速度，装好系统后第一件事就是更改软件源。　　点击启动器上的“系统设置”，弹出“系统设置”窗口，点击下方的“软件和更新”，弹出“软件和更新”对话框，再在“ubuntu 软件”标签下的">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220315ynqc2qocvcqqf8q9.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220344bdq5dr4y4n1nqrse.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220425tuj5u5tu4jc9kald.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220501hz455yi2v5qkqwoh.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220732etgddezze56852gm.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220814m7twwfprb5f10xzy.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220853d11h0hiwtwzpy2q2.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220915olwtqqx5wvywv4x8.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220957rduek6wekkkkdzj6.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/221035r7rzwy5kw8ki66yj.jpg">
+<meta property="og:updated_time" content="2019-09-16T06:06:05.668Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="软件源配置和包管理工具">
+<meta name="twitter:description" content="更改软件源　　“软件源”指的是 UK14 安装软件时获取软件包的来源，这个来源绝大多数情况下就是互联网上的服务器。既然是互联网上的服务器，就有个连接速度的问题。UK14 默认的软件源多数情况下速度偏慢，为了获取更好的下载速度，装好系统后第一件事就是更改软件源。　　点击启动器上的“系统设置”，弹出“系统设置”窗口，点击下方的“软件和更新”，弹出“软件和更新”对话框，再在“ubuntu 软件”标签下的">
+<meta name="twitter:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220315ynqc2qocvcqqf8q9.jpg">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="UbuntuKylin Wiki" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href=" / " id="logo">
+                <span class="site-title"> UbuntuKylin Wiki </span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">下载</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">新闻</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">社区</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">参与</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">知识库</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">UKUI</a>
+                
+            </nav>
+            
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">下载</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">新闻</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">社区</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">参与</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">知识库</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">UKUI</a></td>
+                
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                
+<aside id="sidebar" style="margin-top:40px">
+
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>目录</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            快速入门
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            其他
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            基础操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/基础操作/入门介绍（开机桌面关机）/">入门介绍（开机桌面关机）</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/注销、关机、切换用户/">注销、关机、切换用户</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/键盘快捷键设置/">键盘快捷键设置</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/日程事件/">日程事件</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/启动有限制的客人会话/">启动有限制的客人会话</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/关闭无线（飞行模式）/">关闭无线（飞行模式）</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/桌面环境配置/">桌面环境配置</a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/">如何对Ubuntu Kylin 14.04 的登录界面截图 </a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/">如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </a></li>  <li class="file"><a href="/wiki/快速入门/基础操作/快速检查电脑是否配备USB-3-0/">快速检查电脑是否配备USB 3.0</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            新手必看
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/新手必看/WEP和WPA介绍/">WEP和WPA介绍</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux上的文件类型与默认图标/">Linux上的文件类型与默认图标</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux中，你一定要掌握的网络基本命令/">Linux中，你一定要掌握的网络基本命令! </a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux命令及Linux终端的20个趣事/">Linux命令及Linux终端的20个趣事</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/有趣的Linux彩蛋——用sudo来冒犯用户/">有趣的Linux彩蛋——用sudo来冒犯用户</a></li>  <li class="file"><a href="/wiki/快速入门/新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/">Linux新手大礼包：学习Linux你必须知道的那些事儿</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            系统介绍
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/系统介绍/各版本新特性/">各版本新特性</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/窗口和工作区/">窗口和工作区</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/UKUI/">UKUI</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/系统介绍/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            进阶操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/wiki/快速入门/进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            系统安装
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            U盘教程
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/U盘教程/U盘做WIN7-UK双系统/">U盘做WIN7+UK双系统</a></li>  <li class="file"><a href="/wiki/系统安装/U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/">Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            安装教程 
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/安装教程 /几种安装UK的方法/">几种安装UK的方法</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /从系统安装盘引导系统/">从系统安装盘引导系统</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /引导系统并准备安装/">引导系统并准备安装</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /选择安装类型并处理分区/">选择安装类型并处理分区</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /设置“安装启动引导器”/">设置“安装启动引导器”</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /UEFI环境安装/">UEFI环境安装</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /如何在-Ubuntu-Ubuntu-Kylin-中安装-Unity-8-桌面预览版/">如何在 Ubuntu/Ubuntu Kylin 中安装 Unity 8 桌面预览版</a></li>  <li class="file"><a href="/wiki/系统安装/安装教程 /如何在优麒麟（Ubuntu-Kylin）上安装Linux内核4-0/">如何在优麒麟（Ubuntu Kylin）上安装Linux内核4.0 </a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            安装问题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/安装问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            桌面风格
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/桌面风格/10个-Adobe-风格的创意图标，你值得拥有！/">10个 Adobe 风格的创意图标，你值得拥有！</a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">如何在 Ubuntu Kylin 中安装Numix主题和图标 </a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/Ubuntu-Kylin-15-10-如何安装Mac主题/">Ubuntu Kylin 15.10 如何安装Mac主题</a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/">在优麒麟14.04上安装精美的Dalisha图标主题</a></li>  <li class="file"><a href="/wiki/系统安装/桌面风格/如何让你的“笨兔”更像苹果？/">如何让你的“笨兔”更像苹果？</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/系统安装/优麒麟所有版本下载汇总/">优麒麟所有版本下载汇总</a></li>  <li class="file"><a href="/wiki/系统安装/系统安装盘的制作/">系统安装盘的制作</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            软件应用
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            其他工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/其他工具/优麒麟使用教程第二期：VirtualBox-虚拟机安装/">优麒麟使用教程第二期：VirtualBox 虚拟机安装</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/其他工具/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            其他软件
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/其他软件/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/其他软件/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            自带软件工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/自带软件工具/优客助手/">优客助手</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/软件中心/">软件中心</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/小企鹅输入法/">小企鹅输入法</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/优客农历/">优客农历</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/优客天气/">优客天气</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/麒麟影音/">麒麟影音</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/生物识别/">生物识别</a></li>  <li class="file"><a href="/wiki/软件应用/自带软件工具/循序而渐进，熟读而精思——优麒麟文件管理器篇/">循序而渐进，熟读而精思——优麒麟文件管理器篇</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/welcome/">欢迎来到优麒麟百科</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+            <section id="main"><article id="post-快速入门/进阶操作/软件源配置和包管理工具" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/快速入门/">快速入门</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/快速入门/进阶操作/">进阶操作</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/快速入门/进阶操作/软件源配置和包管理工具/">
+            <time datetime="2019-06-18T02:34:39.000Z" itemprop="datePublished">2019-06-18</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+</div>
+                            <!--<div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/进阶操作/软件源配置和包管理工具.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/进阶操作/软件源配置和包管理工具.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/进阶操作/软件源配置和包管理工具.md'> History </a>
+                            </div>-->
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            软件源配置和包管理工具
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#更改软件源"><span class="toc-number">1.</span> <span class="toc-text">更改软件源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装“新立得软件包管理器”"><span class="toc-number">2.</span> <span class="toc-text">安装“新立得软件包管理器”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装“GDebi-软件包安装工具”"><span class="toc-number">3.</span> <span class="toc-text">安装“GDebi 软件包安装工具”</span></a></li></ol>
+                </div>
+            
+        
+        
+            <h3 id="更改软件源"><a href="#更改软件源" class="headerlink" title="更改软件源"></a>更改软件源</h3><p>　　“软件源”指的是 UK14 安装软件时获取软件包的来源，这个来源绝大多数情况下就是互联网上的服务器。既然是互联网上的服务器，就有个连接速度的问题。UK14 默认的软件源多数情况下速度偏慢，为了获取更好的下载速度，装好系统后第一件事就是更改软件源。<br>　　点击启动器上的“系统设置”，弹出“系统设置”窗口，点击下方的“软件和更新”，弹出“软件和更新”对话框，再在“ubuntu 软件”标签下的“下载自…”列表里点选“其他站点…”，弹出“选择下载服务器”对话框，见下图（图1）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220315ynqc2qocvcqqf8q9.jpg" alt="图１"><br>　　上面（图1）中“选择下载服务器”里列出了可用的服务器，可以在这里选择速度快一些的服务器。若点击“选择最佳服务器”，UK14 将会弹出一个界面自动扫描互联网测试找出速度最快的服务器，这需要耽误一些时间，我一般很少用（有时它找到的最佳服务器居然会是美洲的国家的，真的很奇 怪）。我这边根据经验，比较快的会是 163 、sohu、ustc的。选择好后，点击“选择服务器”，这时会弹出要求输入密码的对话框，见下图（图2）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220344bdq5dr4y4n1nqrse.jpg" alt="图２">　　<br>　　面（图2）的对话框以后可能会经常见到，这是因为 UK14 凡是涉及到对系统进行关键修改的操作都要验证用户的管理权限（即 root 权限），这是 UK14 的安全管理机制之一。<br>　　在上面（图2）中输入在系统安装过程中设置的用户密码，回车或点“授权”，即可完成更改软件源的操作。返回到“软件和更新”对话框，点击“关闭”，又会弹出下图（图3）所示对话框：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220425tuj5u5tu4jc9kald.jpg" alt="图３"><br>　　点击“图3”中的“重新载入”，UK14 系统将会自动根据新的软件源来对系统中的软件信息进行“更新缓存”的操作，完毕后会自动关闭提示框。<br>　　更换了合适的软件源后，系统后面的操作将会节省很多时间。</p>
+<h3 id="安装“新立得软件包管理器”"><a href="#安装“新立得软件包管理器”" class="headerlink" title="安装“新立得软件包管理器”"></a>安装“新立得软件包管理器”</h3><p>　　点击启动器上的“ubuntu 软件中心”，将会启动“ubuntu 软件中心”，见下图（图4）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220501hz455yi2v5qkqwoh.jpg" alt="图４"><br>　　“ubuntu 软件中心”是推荐的安装各种软件的“中心”，类似于手机上的软件中心、应用商店、软件市场类的程序。这个程序的启动会比较慢（可能是因为要联网的原因）， 偶尔还会出现失去响应的情况，我个人不太喜欢，因为从这里安装程序虽然的确比较方便，但却看不到程序安装的“详细过程”，如将程序安装到了哪里、拷贝了哪 些文件、设置了些什么东西等等，全都看不到，只能看到一个进度条，还有个根本看不明白的“历史”。所以我要安装另一款经典的软件包管理器，即“新立得软件 包管理器”。<br>　　在（图4）中，往下滚动窗口。注意，默认情况下，untiy 窗口的滚动条跟 Windows 下也不一样，它是能看到却不能点击的，鼠标移动到上面才能看到个滚动条出现，即所谓“即现式”的。说实话，这个条儿开始点时还真不习惯，不过好在可以恢复 为“传统”的样式，这个后面再说。<br>　　将窗口往下滚动，在“最高评分”里可以找到“Synaptic Package Manager”软件（现在是英语，装好后会是汉字的），点击它，然后安装它。很快就可以安装好，并且会自动在启动器上添加个“新立得软件包管理器”的图 标（这次是汉字了）。通过安装“新立得软件包管理器”就可以感受到 UK14 下安装软件的方式是何其简单啊！是不是跟手机上差不多啊？当然缺点我刚才也已经说了。<br>　　以上操作也可在 dash 中搜索“ubuntu kylin 软件中心”并用它来安装“新立得软件包管理器”。“ubuntu kylin 软件中心”看名字就知道是 ubuntu kylin 自己定制的跟“ubuntu 软件中心”一样的工具，不过目前该工具才刚刚起步，还没有足够的理由让我选用它。</p>
+<h3 id="安装“GDebi-软件包安装工具”"><a href="#安装“GDebi-软件包安装工具”" class="headerlink" title="安装“GDebi 软件包安装工具”"></a>安装“GDebi 软件包安装工具”</h3><p>　　有了“新立得软件包管理器”，以后安装、升级、卸载软件将会非常简单方便！若再结合一个小工具“gdebi 软件包安装工具”，可以说比在 Windows 下要更加简单、更加方便！<br>　　gdebi 软件包安装工具是一款用来安装扩展名为“deb”的软件包的工具。Ubuntu 衍生自 Debian，Debian 当然也是一种 Linux 发行版，deb 格式的软件包就是 Debian 及其衍生版本的专用软件包格式。<br>　　下面我们正好就借安装“gdebi 软件包安装工具”来“牛刀小试”一下“新立得软件包管理器”。<br>　　点击启动器上的“新立得软件包管理器”，启动“新立得软件包管理器”；启动后又会弹出要求你输入密码的对话框，这次这个对话框上出现了许多英文，这 是因为新立得软件翻译的原因造成的，不用管它，输入密码，弹出首次运行的提示框，直接关闭掉，来到软件的主界面，点击界面工具栏上的“搜索”，在弹出的窗 口中输入关键词“GDebi”，搜索，即看到如下界面（图5）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220732etgddezze56852gm.jpg" alt="图５"><br>　　上图（图5）的界面还是很清晰明了的，在图中双击我们要安装的“gdebi”，弹出了如下对话框（图6）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220814m7twwfprb5f10xzy.jpg" alt="图６"><br>　　弹出这个对话框即意味着要安装“gdebi”，必须同时安装图中列表里列出的 3 个软件包，这就是所谓的“软件包依赖”，根本不用我们操心，“新立得”帮我们搞定了，我们当然要点“标记”按钮，返回到主界面，见下图（图7）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220853d11h0hiwtwzpy2q2.jpg" alt="图７"><br>　　在上图（图7）中点击“应用”，弹出“应用下列变更吗”对话框，可以再阅读一下上面的提示，点击“应用”即开始从软件源下载软件包、下载完毕即开始安装，安装过程中展开“详细信息”可以看到系统在具体做什么（当然初学者还看不懂），见下图（图8）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220915olwtqqx5wvywv4x8.jpg" alt="图８"><br>　　安装完毕会给出提示，关闭提示窗口，返回到主界面，GDebi 成功安装。<br>　　若想知道 GDebi 在你的系统中哪些地方安装了哪些文件，可以在刚才的主界面列表中右击“gdebi”，在右键菜单中点“属性”，在弹出窗口中切换到“已安装的文件”，会看到下面的界面（图9）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/220957rduek6wekkkkdzj6.jpg" alt="图9"><br>　　在上图（图9）中，可以清晰地看到 gdebi 在系统中的什么位置安装了哪些文件，非常清楚；要想知道该软件的“软件包依赖关系”，则可以切换到“依赖关系”查看。<br>　　不过这一次，安装程序并没有在启动器上添加上“GDebi”的图标（若都加上图标，那启动器肯定拥挤不堪），那么，该到哪里去找 GDebi 的“快捷方式”呢？这时 dash 就派上用场了。点击 dash 图标，在搜索框中输入“gdebi”（实际上我只输入“gd”两个字母，要的东西就已出现了），就出现了如下图所示界面（图10）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/25/221035r7rzwy5kw8ki66yj.jpg" alt="图10"><br>　　看到（图10）中的“GDebi Package Installer”了吧？那就是“GDebi 软件包安装工具”的“快捷方式”，点击它就可以启动“GDebi”了。不过，这款软件的启动我们一般是通过在 deb 软件包文件上右击，然后在右键菜单中来启动的，这点后面会加以说明。<br>　　从上面的例子中可以看到，在 UK14 中安装软件，什么“命令行”、什么“依赖”、什么“setup、install”全都跟你没关系！重要的是，你可以清晰的看到该软件的软件包依赖关系，软 件装上去以后，你还可以清晰的查看到该软件在你的系统中安装了哪些文件、这些文件又都装到了哪里。如果这样你还说Linux 安装软件就是麻烦，那只能说你太执拗了，执拗得都不讲道理了！<br>　　当然，有些人会认为这样通过图形界面来安装软件效率不高，这点我承认。但不是还有那么一些人比如我有“命令行恐惧症”嘛！这是萝卜白菜各有所爱的事。<br>　　 好了，“工欲善其事，必先利其器”，有了称手的工具，后面的工作将会事半功倍。 </p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+<!--
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/快速入门/进阶操作/语言支持和输入法配置/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    语言支持和输入法配置
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/软件应用/自带软件工具/生物识别/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">生物识别</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>    
+ -->
+
+
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Copyright©2013-2019 Ubuntu Kylin 版权所有<br>津ICP备15002470号-2
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277082673'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277082673%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> 
+            <!--<br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>-->
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+
+    
+
+
+
+</footer>
+
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>

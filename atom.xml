@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://UbuntuKylin.github.io/"/>
-  <updated>2019-09-05T09:21:21.690Z</updated>
+  <updated>2019-09-12T08:43:53.298Z</updated>
   <id>https://UbuntuKylin.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>欢迎来到UbuntuKylin Wiki</title>
+    <title>欢迎来到优麒麟百科</title>
     <link href="https://UbuntuKylin.github.io/wiki/welcome/"/>
     <id>https://UbuntuKylin.github.io/wiki/welcome/</id>
-    <published>2019-09-05T09:21:21.690Z</published>
-    <updated>2019-09-05T09:21:21.690Z</updated>
+    <published>2019-09-12T08:43:53.298Z</published>
+    <updated>2019-09-12T08:43:53.298Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料"><a href="#这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料" class="headerlink" title="这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!!"></a>这是UbuntuKylin Wiki，你可以在这里找到你需要的资料!!!!!</h2><h3 id="Ubuntu-Kylin-介绍"><a href="#Ubuntu-Kylin-介绍" class="headerlink" title="Ubuntu Kylin 介绍"></a>Ubuntu Kylin 介绍</h3><p>Ubuntu Kylin 是由中国 CCN 联合实验室支持和主导的开源项目，其宗旨是采用平台国际化与应用本地化融合的设计理念，通过定制本地化的桌面用户环境以及开发满足广大中文用户特定需求的应用软件来提供细腻的中文用户体验，做更有中国特色的操作系统。</p><p>Ubuntu Kylin 以 Ubuntu 为参考，得到来自 Debian、Ubuntu、LUPA 及各地 Linux 用户组等国内外众多社区爱好者的广泛参与和热情支持，其开发贡献者可参见 Ubuntu Kylin <a href="https://launchpad.net/%7Eubuntukylin-members/+members?active_batch=75&amp;active_direction=backwards&amp;active_memo=75" rel="external nofollow noopener noreferrer" target="_blank">开发者团队列表</a></p><p>我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，Ubuntu Kylin 已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将Ubuntu Kylin应用于日常办公、企业生产和专业开发的人员或团队。Ubuntu Kylin最新的长期支持版是我们于2019年8月9日发布的18.04.3 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将Ubuntu Kylin应用于个人娱乐、办公体验或开发学习的人员或团队。Ubuntu Kylin最新的短期支持版是我们于2019年4月19日发布的19.04版本！ </p>]]></content>
+    <content type="html"><![CDATA[<h3 id="优麒麟介绍"><a href="#优麒麟介绍" class="headerlink" title="优麒麟介绍"></a>优麒麟介绍</h3><p>优麒麟是由中国 CCN 联合实验室支持和主导的开源项目，其宗旨是采用平台国际化与应用本地化融合的设计理念，通过定制本地化的桌面用户环境以及开发满足广大中文用户特定需求的应用软件来提供细腻的中文用户体验，做更有中国特色的操作系统。</p><p>优麒麟以 Ubuntu 为参考，得到来自 Debian、Ubuntu、LUPA 及各地 Linux 用户组等国内外众多社区爱好者的广泛参与和热情支持，其开发贡献者可参见 Ubuntu Kylin <a href="https://launchpad.net/%7Eubuntukylin-members/+members?active_batch=75&amp;active_direction=backwards&amp;active_memo=75" rel="external nofollow noopener noreferrer" target="_blank">开发者团队列表</a></p><p>我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，优麒麟已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将优麒麟应用于日常办公、企业生产和专业开发的人员或团队。优麒麟最新的长期支持版是我们于2019年8月9日发布的18.04.3 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将优麒麟应用于个人娱乐、办公体验或开发学习的人员或团队。优麒麟最新的短期支持版是我们于2019年4月19日发布的19.04版本！ </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料&quot;&gt;&lt;a href=&quot;#这是UbuntuKylin-Wiki，你可以在这里找到你需要的资料&quot; class=&quot;headerlink&quot; title=&quot;这是UbuntuKylin Wiki，你可以在这里找
+        &lt;h3 id=&quot;优麒麟介绍&quot;&gt;&lt;a href=&quot;#优麒麟介绍&quot; class=&quot;headerlink&quot; title=&quot;优麒麟介绍&quot;&gt;&lt;/a&gt;优麒麟介绍&lt;/h3&gt;&lt;p&gt;优麒麟是由中国 CCN 联合实验室支持和主导的开源项目，其宗旨是采用平台国际化与应用本地化融合的设计理念，通过定制本
       
     
     </summary>
@@ -42,15 +42,15 @@
     <link href="https://UbuntuKylin.github.io/wiki/Q&amp;A/%E9%97%AE%E7%AD%94%E5%A4%A9%E5%9C%B0/"/>
     <id>https://UbuntuKylin.github.io/wiki/Q&amp;A/问答天地/</id>
     <published>2019-08-28T02:54:35.000Z</published>
-    <updated>2019-08-28T03:11:44.589Z</updated>
+    <updated>2019-09-16T02:54:37.941Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="1-虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题"><a href="#1-虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题" class="headerlink" title="1.虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题"></a>1.虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题</h4><p>这是窗口管理器和xorg在虚拟机下工作流程出现问题而导致的，缩放窗口会导致内存泄漏。在虚拟机的显示设置的硬件加速中勾选3d加速可以解决这一问题。</p><h4 id="2-刻录的系统安装光盘不能引导系统"><a href="#2-刻录的系统安装光盘不能引导系统" class="headerlink" title="2.刻录的系统安装光盘不能引导系统"></a>2.刻录的系统安装光盘不能引导系统</h4><p>（1）确保正确设置了 BIOS 的光驱启动模式。<br>（2）若用于启动的光驱是 USB 接口的外置光驱，请插上辅助供电线。<br>（3）确保用于启动的光驱没有问题（可用一张正常的可启动光盘测试一下）。<br>（4）确保刻录盘的质量没有问题。<br>（5）降低刻录时的速度。<br>（6）确保刻录光驱没有问题（可刻录一张其他的可启动 ISO 测试一下）。<br>（7）确保下载的 UK14 的 ISO 文件的 MD5 值正确。</p><h4 id="3-制作的-USB-系统安装盘不能引导系统"><a href="#3-制作的-USB-系统安装盘不能引导系统" class="headerlink" title="3. 制作的 USB 系统安装盘不能引导系统"></a>3. 制作的 USB 系统安装盘不能引导系统</h4><p>（1）确保正确设置了 BIOS 的优盘启动模式。<br>（2）若为台式机，请尝试使用主机后部的 USB2.0 接口。<br>（3）若为笔记本，请尝试更换另一个 USB 2.0 接口。<br>（4）尽量不使用 USB 3.0 接口（接口里面的小隔片 USB 3.0 通常为蓝色，USB 2.0 的通常为黑色或白色）。<br>（5）若为移动硬盘并且有辅助供电口，请接上辅助供电线。<br>（6）确保优盘被格式化成 FAT32 模式（可直接用制作工具格式化）。<br>（7）确保优盘没有问题（可制作一张其他的可启动 ISO 测试一下）。<br>（8）确保电脑能兼容制作好的系统安装盘（可将系统安装盘拿到别的电脑上测试一下）。</p><h4 id="4-安装画面花屏"><a href="#4-安装画面花屏" class="headerlink" title="4. 安装画面花屏"></a>4. 安装画面花屏</h4><p>（1）确保显卡没有问题。<br>（2）集成显卡确保内存没有问题。<br>（3）确保显卡能兼容 UK14（一般不是太新的显卡出现这种情况的概率很小）。</p><h4 id="5-安装过程中没有发现硬盘或硬盘无法分区"><a href="#5-安装过程中没有发现硬盘或硬盘无法分区" class="headerlink" title="5. 安装过程中没有发现硬盘或硬盘无法分区"></a>5. 安装过程中没有发现硬盘或硬盘无法分区</h4><p>（1）确保硬盘已正确安装到主机中（可进 BIOS 查看，初学者可用 Windows PE 启动盘查看）。<br>（2）尝试在 BIOS 里关闭 UEFI 模式（进 BIOS 里设置）。<br>（3）尝试关闭 BIOS 里的 Windows 优化模式（某些品牌机有此设置）。<br>（3）确保硬盘的分区模式是 MBR 模式（可在 Windows 下用 Diskgenius 分区工具转换）。</p><h4 id="6-安装过程中复制文件错误"><a href="#6-安装过程中复制文件错误" class="headerlink" title="6. 安装过程中复制文件错误"></a>6. 安装过程中复制文件错误</h4><p>（1）确保安装介质没有问题（常见的问题有光盘质量不好、光驱挑盘、USB 供电不稳、优盘质量不好等）。<br>（2）确保电脑硬件没有问题（常见的问题有内存质量不好、电源不稳定、硬盘有坏道等）。<br>（3）确保没有使用 USB 3.0 接口（很多 USB3.0 接口引导或安装系统时不稳定）。</p><h4 id="7-无法安装启动引导器"><a href="#7-无法安装启动引导器" class="headerlink" title="7. 无法安装启动引导器"></a>7. 无法安装启动引导器</h4><p>（1）确保硬盘没有问题。<br>（2）确保电脑 BIOS 里关闭了硬盘引导扇区保护（部分电脑有这个功能）。</p><h4 id="8-安装过程太慢"><a href="#8-安装过程太慢" class="headerlink" title="8. 安装过程太慢"></a>8. 安装过程太慢</h4><p>（1）确保安装介质没有问题。<br>（2）若使用光盘安装，确保光驱读盘没有问题。<br>（3）若使用读卡器加存储卡制作系统安装盘，其速度可能会比较慢，属正常现象；若过慢，则应检查读卡器和存储卡。<br>（4）确保安装过程中断开了网络。</p><h4 id="9-安装完成后重启无法引导-UK14-系统"><a href="#9-安装完成后重启无法引导-UK14-系统" class="headerlink" title="9. 安装完成后重启无法引导 UK14 系统"></a>9. 安装完成后重启无法引导 UK14 系统</h4><p>（1）确保在 BIOS 里重新正确设置了从硬盘启动。<br>（2）确保在安装过程中正确设置了“安装启动引导器的设备”。<br>（3）若选择了与 Windows 共存的安装方式并且没有将“安装启动引导器的设备”设置为类似“sda”的方式，那么需要重新安装启动引导器来处理多系统启动。</p><h4 id="10-安装-Ubuntu-Kylin-时卡在等待安装页面上无法继续"><a href="#10-安装-Ubuntu-Kylin-时卡在等待安装页面上无法继续" class="headerlink" title="10.安装 Ubuntu Kylin 时卡在等待安装页面上无法继续"></a>10.安装 Ubuntu Kylin 时卡在等待安装页面上无法继续</h4><p>一般可通过修改硬盘的兼容模式来改变这一状况，具体得从分区以及硬盘的兼容模式两方面来进行判断。另外一种可能，通过设置参数来解决，具体步骤如下可参考问题 A+7。</p><h4 id="11-安装好-Ubuntu-Kylin-后，win7-win8-消失"><a href="#11-安装好-Ubuntu-Kylin-后，win7-win8-消失" class="headerlink" title="11.安装好 Ubuntu Kylin 后，win7/win8 消失"></a>11.安装好 Ubuntu Kylin 后，win7/win8 消失</h4><p>按 esc 或者 F2（有些机器是F1）进入 bios，修改启动选项为从硬盘启动，保存后重启电脑，看启动项是否显示有 win 的选项，正版 win8 的话请参照问题 A+2 。</p><h4 id="12-安装-Win8-和-Ubuntu-kylin-系统，开机后-Ubuntu-kylin-无法自动挂载-Win-分区"><a href="#12-安装-Win8-和-Ubuntu-kylin-系统，开机后-Ubuntu-kylin-无法自动挂载-Win-分区" class="headerlink" title="12.安装 Win8 和 Ubuntu kylin 系统，开机后 Ubuntu kylin 无法自动挂载 Win 分区"></a>12.安装 Win8 和 Ubuntu kylin 系统，开机后 Ubuntu kylin 无法自动挂载 Win 分区</h4><p>具体操作过程如下：<br>1).在 Win8 下：打开控制面板—》硬件和声音—》电源选项;<br>2).在弹出的“电源选项”界面，点击“选择电源按钮的功能”;<br>3).在弹出的界面中，发现部分选项已无法更改，先点击“更改当前不可用的设置”;<br>4).可以看到之前无法选择的选项已经可以更改，可以看到“启用快速启动（推荐）”选项（系统默认开启），我们可以在此设置是否开启或者关闭此功能;<br>5).挂载后，但缺少对 win 分区的操作权限，安装 ntfs-config 来设置成功： sudo apt-get install ntfs-config sudo ntfs-config<br>6).sudo ntfs-config 打开后，将启用外部设备写支持和启用内部设备写支持这两个选项勾选上，权限就设置成功了。</p><h4 id="13-双系统时间显示不一致问题的真正解决方法"><a href="#13-双系统时间显示不一致问题的真正解决方法" class="headerlink" title="13.双系统时间显示不一致问题的真正解决方法"></a>13.双系统时间显示不一致问题的真正解决方法</h4><p>双系统时间显示不一致问题的真正解决方法是关掉UTC。具体操作：进入 Ubuntu Kylin，打开终端，输入以下命令： sudo gedit /etc/default/rcS 把 UTC 设置成 no (“UTC=no”)，即可。</p><h4 id="14-重装-Windows-系统后的-grub-修复"><a href="#14-重装-Windows-系统后的-grub-修复" class="headerlink" title="14.重装 Windows 系统后的 grub 修复"></a>14.重装 Windows 系统后的 grub 修复</h4><p>重装 Windows 系统后，需要对 grub 进行修复，具体过程如下：<br>1).使用 Ubuntu Kylin 的安装盘启动进入“试用 Ubuntu Kylin ”的模式;<br>2).在文件浏览中打开 Ubuntu Kylin 所在的分区，比如 /media/ukylin/49d095cd-dd62-4571-989f-0aeeae944b18/，其中 “ ukylin ” 是当前的用户名，“49d095cd-dd62-4571-989f-0aeeae944b18”是 Ubuntu Kylin 所在分区的磁盘编号;<br>3).打开终端，输入命令： sudo grub-install  –boot-directory=/media/ukylin/49d095cd-dd62-4571-989f-0aeeae944b18  /dev/sda<br>4).重启系统即可完成grub的重新安装。<br>5).进入 Ubuntu Kylin 系统，运行命令 sudo update-grub 完成 grub 的更新。然后，重启机器就可以看到正常的启动菜单。</p><h4 id="15-系统引导修复"><a href="#15-系统引导修复" class="headerlink" title="15.系统引导修复"></a>15.系统引导修复</h4><p>很多用户在 windows下格式掉了 Ubuntu Kylin 系统的分区导致 grub 损坏，重启后黑屏停在grub&gt;这里，进不了系统，这里提供几种解决方法。<br> (1) 用光盘重装 Ubuntu Kylin 系统即可，grub自然会被修复。<br> (2) 用 windows 盘，进入 winPE，打开 dos 命令行，执行 fixboot /mbr 即可。<br> (3) 在 grub &gt; 输入 rootnoverify (hd0,0) ,回车在输入 chainloader +1 即可进入 windows，然后参照方法10。</p><h4 id="16-怎样选择开机启动设备"><a href="#16-怎样选择开机启动设备" class="headerlink" title="16.怎样选择开机启动设备"></a>16.怎样选择开机启动设备</h4><p>各种机器略有区别，一般开机时会提示 “ Press Fx Enter Boot Device ” 或者 “ Press Fx Enter Boot Options ”。据经验，lenovo、IBM 的机器是开机时按 F12 进入启动选项，华硕开机时按Esc进入启动选项，HP 机器开机时按 F9 或 F10 进入启动选项。</p><h4 id="17-安装过程中报读取错误，安装中断"><a href="#17-安装过程中报读取错误，安装中断" class="headerlink" title="17.安装过程中报读取错误，安装中断"></a>17.安装过程中报读取错误，安装中断</h4><p>这通常是由于光盘读取错误，可以换安装光盘或者使用外置光驱进行尝试。</p><h4 id="18-启动系统待机之后就没有办法启动"><a href="#18-启动系统待机之后就没有办法启动" class="headerlink" title="18.启动系统待机之后就没有办法启动"></a>18.启动系统待机之后就没有办法启动</h4><p>这通常是系统挂起进入省电待机模式所导致，短按开机键或 Fn 键即可恢复。</p><h4 id="19-选择安装菜单-在运行一堆命令行后-系统黑屏或者花屏"><a href="#19-选择安装菜单-在运行一堆命令行后-系统黑屏或者花屏" class="headerlink" title="19.选择安装菜单,在运行一堆命令行后,系统黑屏或者花屏"></a>19.选择安装菜单,在运行一堆命令行后,系统黑屏或者花屏</h4><p>这个问题有可能是显卡或者 ACPI 电源选项的问题。可以尝试如下解决方法: (1) BIOS 关闭 ACPI 选项:可以进入 BIOS,找到 ACPI 选项并将其禁用。<br>(2)增加启动参数:从光盘启动后，按上下键出现安装菜单，选择“安装Ubuntu Kylin”安装菜单项,按 F6 键进入编辑状态,然后可以分别尝试增加如下参数并回车启动安装: acpi=off nomodeset, vga=normal nomodeset vga=ask,增加此参数用于选择分辨率,启动过程中如果出现提示要求“按回车”进行分辨率扫描则直接按回车,从显示的可用分辨率列表中选择稍微低一点儿的分辨率,比如 1024<em>768</em>32;<br>注意：如果按此方法安装成功之后，重启进入系统时仍然出现相同情况，则在启动界面（ Grub 阶段）按下 “ e ” 键在命令行启动linux内核参数行，按照上述方法设置后按 “ Ctrl+x ” 键盘保存后启动，进入系统之后直接修改 grub 配置文件，加上相同的启动选项并保存，这样以后就可以正常启动。</p><h4 id="20-安装完成后原-Windows-系统启动蓝屏"><a href="#20-安装完成后原-Windows-系统启动蓝屏" class="headerlink" title="20.安装完成后原 Windows 系统启动蓝屏"></a>20.安装完成后原 Windows 系统启动蓝屏</h4><p>可能是由于在 Ubuntu Kylin 系统下访问 Windows 分区时对分区操作不当（比如没有正常卸载磁盘）导致分区异常，而 Windows 在启动过程中对分区状态进行检查导致报错。可以有以下两种解决方案：<br>(1) 用 winPE 光盘，进入 winPE，在 winPE 对 windows 磁盘分区进行修复；<br>(2) 用 Ubuntu Kylin 系统盘，进入“试用 Ubuntu Kylin ”模式。进入系统后，打开终端，运行 df 命令，查看你机器上 Windows C 盘所在的分区，假如为 /dev/sda1 ，此时运行 fsck -y /dev/sda1 命令对该磁盘分区进行修复。</p><h4 id="21-安装-Ubuntu-Kylin-系统后，重启直接进入-Windows-8"><a href="#21-安装-Ubuntu-Kylin-系统后，重启直接进入-Windows-8" class="headerlink" title="21.安装 Ubuntu Kylin 系统后，重启直接进入 Windows 8"></a>21.安装 Ubuntu Kylin 系统后，重启直接进入 Windows 8</h4><p>可能跟机器的 BIOS 设置有关。由于预装 Windows 8 的系统在启动时，要求 BIOS 设置为 UEFI 中的安全启动，而 Ubuntu Kylin 系统在启动时，在 BIOS 中关闭该选项即可。</p><h4 id="22-全新磁盘建立分区时提示：Can’t-have-a-partition-outside-the-disk"><a href="#22-全新磁盘建立分区时提示：Can’t-have-a-partition-outside-the-disk" class="headerlink" title="22.全新磁盘建立分区时提示：Can’t have a partition outside the disk!"></a>22.全新磁盘建立分区时提示：Can’t have a partition outside the disk!</h4><p>遇到该问题可以通过以下方式解决：通过系统安装盘，进入“试用 Ubuntu Kylin “ 模式，在 Dash 中打开 GParted 分区工具，通过该工具对磁盘进行分区即可，具体步骤为打开 Gparted &gt;设备&gt;创建分区表，操作完后就可以对新硬盘进行分区并进行系统安装了。</p><h4 id="23-在-WIN7-下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装"><a href="#23-在-WIN7-下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装" class="headerlink" title="23.在 WIN7 下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装"></a>23.在 WIN7 下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装</h4><p>这可能是由于硬盘主分区个数过多或者硬盘使用的是动态分区格式。通过安装光盘选择“试用 Ubuntu Kylin ”，在试用系统中，通过 Dash 搜索 GParted 。打开 GParted 分区软件，将其中一个主分区内容导出，然后删除该主分区，然后重启电脑，则能够解决以上问题。</p><h4 id="24-预装-WIN-8-系统时如何设置"><a href="#24-预装-WIN-8-系统时如何设置" class="headerlink" title="24.预装 WIN 8 系统时如何设置"></a>24.预装 WIN 8 系统时如何设置</h4><p>如果机器预先安装的是 WIN 8 系统，需对 BIOS 进行设置。以推荐机型 E49A 为例，具体步骤如下：<br>重启机器，并在出现第一屏画面时不停地按 F2 键(有些机器是按 F1，HP 机器按 F10，华硕的机器按 Esc )，此时会进入机器的 BIOS 设置界面，然后设置以下两项：<br>(1)按左右键选择 config 选项，你将会看到其中有带 USB 的这个选项，选中并回车将会出现四个选项，选择 smart auto 并回车确认；<br>(2)按左右键至 security 选项，选中 Secure Boot 并回车，将会弹出两个选项，选中 Disabled 选项；<br>(3)按左右键选择 startup 选项，选中 UEFI/Legacy Boot 并回车，选择 Legacy Only 选项并回车确认；<br>(4)选择 Boot 选项并回车，调整光盘启动选项(按 F6 键进行调整)，从上至下的次序为 USB CD… USB FDD.. ATAPI CD1.. ATA HDD1… ATA HDD0… 最后，按 F10 保存并重启。</p><h4 id="25-系统无法从光盘启动"><a href="#25-系统无法从光盘启动" class="headerlink" title="25.系统无法从光盘启动"></a>25.系统无法从光盘启动</h4><p>这可能是由于 BIOS 没有设置成从光盘启动。可以有以下两种解决方案：<br>(1) 重启机器，并在出现第一屏画面时不停地按 F12 键，此时会弹出系统启动设备选择菜单，通过键盘的上下键选择光驱设备(如不确定，可以找带有 “ CD ” 或  “  DVD ” 字眼的选项)，按回车即可从光盘启动；<br>(2) 重启机器，并在出现第一屏画面时不停地按 F2 键(有些机器是按 F1，hp 电脑按 F10 )，此时会进入机器的 BIOS 设置界面，选择启动选项设置(如不确定，可以找带有 “ Boot ” 和 “ Sequence ” 等字眼的选项)，然后将光驱设备移动到启动顺序的第一个，按 F10 并选择 YES (有些机器是 Exit and saving changes 选项)，即可保存对 BIOS 的设置并重启机器。</p><h4 id="26-缺少无线网卡驱动暨无线网卡问题诊断方法"><a href="#26-缺少无线网卡驱动暨无线网卡问题诊断方法" class="headerlink" title="26.缺少无线网卡驱动暨无线网卡问题诊断方法"></a>26.缺少无线网卡驱动暨无线网卡问题诊断方法</h4><p>在命令行终端中输入 lspci 命令查看 Network Controller 或者有 Wireless 关键字的那一行，可以确定无线网卡的型号，目前发现系统本身不能很好支持的有 BCM4312、BCM4313、BCM43224、BCM43225 等 BCM 系列无线网卡，RTL8191(SE)、RTL8192(SE)、RTL8176 等 RTL 系列无线网卡，偶尔也会有 Ralink、Intel 系列、Atheros 系列的无线网卡缺少驱动。<br>无线网卡驱动安装：针对不同型号无线网卡需要安装相应的驱动补丁，目前我们已针对 BCM 的无线网卡做了驱动补丁。补丁下载地址：<a href="http://pan.baidu.com/s/1kT82oZH" rel="external nofollow noopener noreferrer" target="_blank">http://pan.baidu.com/s/1kT82oZH</a><br>无线网卡驱动安装确认：执行完上面的安装步骤后，打开终端，输入iwconfig命令，列出的系统中的网络接口，正常情况下，应该会存在一个名字为 wlan0、wlan1 或者 eth1 中的接口。如果存在，比如 wlan0，使用 sudo ifconfig wlan0 up 命令启动无线网卡，正常情况下无线网卡的灯会亮起。</p><h4 id="27-安装完驱动后-iwconfig-不存在-wlan0、wlan1-或者-eth1-无线接口，或者-ifconfig-wlan0"><a href="#27-安装完驱动后-iwconfig-不存在-wlan0、wlan1-或者-eth1-无线接口，或者-ifconfig-wlan0" class="headerlink" title="27.安装完驱动后 iwconfig 不存在 wlan0、wlan1 或者 eth1 无线接口，或者 ifconfig wlan0"></a>27.安装完驱动后 iwconfig 不存在 wlan0、wlan1 或者 eth1 无线接口，或者 ifconfig wlan0</h4><p>这可能是由于无线网卡开关未打开，可以使用 sudo rfkill list all 进行查看，硬件开关没开的话 Hard blocked ” 后面会显示 “ Yes ” 。<br>打开无线网卡开关：通常笔记本至少包括硬件开关(在笔记本的侧面)、快捷键开关 ( Fn 加上 F 功能键 ) 和 BIOS 开关中的一种。可以分别尝试以确认是否打开。</p><h4 id="28-B43无线网卡安装完成后还是无法启动无线网络"><a href="#28-B43无线网卡安装完成后还是无法启动无线网络" class="headerlink" title="28.B43无线网卡安装完成后还是无法启动无线网络"></a>28.B43无线网卡安装完成后还是无法启动无线网络</h4><p>在终端中使用 lspci -k 命令，找到无线网卡对应的条目，查看 “ kernel driver in use ” 后面是否是 wl，如果不是，打开文件 /etc/modprobe.d/blacklist，在最后加上如下两行：<br>blacklist  b43<br>blacklist  ssb<br>保存并重启系统即可。</p><h4 id="29-进入系统后，屏幕显示出现偏移"><a href="#29-进入系统后，屏幕显示出现偏移" class="headerlink" title="29.进入系统后，屏幕显示出现偏移"></a>29.进入系统后，屏幕显示出现偏移</h4><p>这是由于显卡驱动设置问题。用编辑器打开 /boot/grub/grub.cfg 文件，在 quiet 后面输入空格，然后加上 nomodeset  (注意：有两个地方都需要添加)，然后重启系统即可。</p><h4 id="30-网页中访问网络视频时不能全屏或者全屏后显示白屏"><a href="#30-网页中访问网络视频时不能全屏或者全屏后显示白屏" class="headerlink" title="30.网页中访问网络视频时不能全屏或者全屏后显示白屏"></a>30.网页中访问网络视频时不能全屏或者全屏后显示白屏</h4><p>这也是由于显卡驱动问题。可以直接右键点击视频，选择“设置”，将“启用硬件加速”前面的勾去掉即可。</p><h4 id="31-浏览器下载附件时保存位置的设置方法"><a href="#31-浏览器下载附件时保存位置的设置方法" class="headerlink" title="31.浏览器下载附件时保存位置的设置方法"></a>31.浏览器下载附件时保存位置的设置方法</h4><p>目前 Firefox 默认将下载的附件保存在”/下载”目录下，如果想保存到自己设定的位置，可以按如下方法进行：<br>(1)打开浏览器“编辑”菜单下选择“首选项”，弹出 Firefox 首选项对话框；<br>(2) 在“常规”标签栏下，可以看到“下载”设置，选择“总询问保存文件的位置”；<br>(3) 设置完后关闭，此时下载附件时会提示选择保存路径。</p><h4 id="32-修改开机密码"><a href="#32-修改开机密码" class="headerlink" title="32.修改开机密码"></a>32.修改开机密码</h4><p>打开命令行终端，执行 sudo passwd XXX（用户名），然后输入新密码就 OK 了。</p><h4 id="33-设置launch启动栏自动隐藏"><a href="#33-设置launch启动栏自动隐藏" class="headerlink" title="33.设置launch启动栏自动隐藏"></a>33.设置launch启动栏自动隐藏</h4><p>将鼠标箭头置于桌面，单击右键—更改桌面背景—选择“行为”—自动隐藏启动器按钮选择开启就好了。</p><h4 id="34-如何将程序锁定到启动器"><a href="#34-如何将程序锁定到启动器" class="headerlink" title="34.如何将程序锁定到启动器"></a>34.如何将程序锁定到启动器</h4><p>首先打开 dash，找到相应的软件，打开软件，在启动器上面可以看到相应程序的图标，鼠标移动到图标上单击右键，锁定到启动器，则可将程序锁定到启动器。</p><h4 id="35-忘记用户登录密码"><a href="#35-忘记用户登录密码" class="headerlink" title="35.忘记用户登录密码"></a>35.忘记用户登录密码</h4><p>重启系统，在 grub 选择画面，按 “ e ” 进入 burg 编辑模式。光标移至编辑模式中的第5项（ linux /boot/vmlinuz…… ），在后面输入“  single ”（注：single 前边有一个空格）,然后，按 Ctrl+X 键。接着，按『 Enter 』键，等出现输入命令的提示时（【 root@XXX 】#）输入 “ passwd XXX ” ，其中 “ XXX ” 是指用户名，然后【 Enter 】，（系统提示你输入两次新密码）。然后，输入 reboot，就 OK 了。</p><h4 id="36-USB鼠标和U盘不能使用"><a href="#36-USB鼠标和U盘不能使用" class="headerlink" title="36.USB鼠标和U盘不能使用"></a>36.USB鼠标和U盘不能使用</h4><p>这是由于 ACPI 模块与 USB 模块冲突，可以参考“系统安装和启动”中解决问题的方法，在 burg.cfg 文件中增加 acpi=off 参数即可。有些机器添加参数后只有某个特定的 USB 接口可以使用。</p><h4 id="37-如何获得更多帮助"><a href="#37-如何获得更多帮助" class="headerlink" title="37.如何获得更多帮助"></a>37.如何获得更多帮助</h4><p>帮助系统系统尚在不断完善改进中，更多问题请访问 <a href="http://ask.ubuntukylin.com" rel="external nofollow noopener noreferrer" target="_blank">http://ask.ubuntukylin.com</a> 提问或 <a href="http://forum.ubuntukylin.com" rel="external nofollow noopener noreferrer" target="_blank">http://forum.ubuntukylin.com</a> 咨询，欢迎广大爱好者提供有关 Ubuntu Kylin 系统使用的各种解决方案。新闻及动态请关注  <a href="http://www.ubuntukylin.com。" rel="external nofollow noopener noreferrer" target="_blank">http://www.ubuntukylin.com。</a></p><h4 id="38-无法登录Ubuntu-kylin的软件中心，只能在网页上登录？"><a href="#38-无法登录Ubuntu-kylin的软件中心，只能在网页上登录？" class="headerlink" title="38.无法登录Ubuntu kylin的软件中心，只能在网页上登录？"></a>38.无法登录Ubuntu kylin的软件中心，只能在网页上登录？</h4><p>1810版本的软件中心登录已经独立出来，需要在软件中心注册后再登录，不能使用论坛的帐号。</p><h4 id="39-开机显示-错误：can-t-find-command-‘hwmatch’。-错误：png：bit-depth-must-be-8-or-按任意键继续…"><a href="#39-开机显示-错误：can-t-find-command-‘hwmatch’。-错误：png：bit-depth-must-be-8-or-按任意键继续…" class="headerlink" title="39.开机显示   错误：can/t find command ‘hwmatch’。    错误：png：bit depth must be 8 or 按任意键继续…"></a>39.开机显示   错误：can/t find command ‘hwmatch’。    错误：png：bit depth must be 8 or 按任意键继续…</h4><p>已经在github上修复(<a href="https://github.com/ukui/ubuntuky" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/ukui/ubuntuky</a> … a68baeddcaace2d89df)，如果等不及的用户，可以下载附件中的ubuntukylin-theme本地安装(稍等，附件上传失败了)，也可以等待更新进入Ubuntu仓库，到时只需要sudo apt update &amp;&amp; sudo apt install ubuntukylin-theme即可。</p>]]></content>
+    <content type="html"><![CDATA[<h4 id="虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题"><a href="#虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题" class="headerlink" title="虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题"></a>虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题</h4><p>这是窗口管理器和xorg在虚拟机下工作流程出现问题而导致的，缩放窗口会导致内存泄漏。在虚拟机的显示设置的硬件加速中勾选3d加速可以解决这一问题。</p><h4 id="刻录的系统安装光盘不能引导系统"><a href="#刻录的系统安装光盘不能引导系统" class="headerlink" title="刻录的系统安装光盘不能引导系统"></a>刻录的系统安装光盘不能引导系统</h4><p>（1）确保正确设置了 BIOS 的光驱启动模式。<br>（2）若用于启动的光驱是 USB 接口的外置光驱，请插上辅助供电线。<br>（3）确保用于启动的光驱没有问题（可用一张正常的可启动光盘测试一下）。<br>（4）确保刻录盘的质量没有问题。<br>（5）降低刻录时的速度。<br>（6）确保刻录光驱没有问题（可刻录一张其他的可启动 ISO 测试一下）。<br>（7）确保下载的 UK14 的 ISO 文件的 MD5 值正确。</p><h4 id="制作的-USB-系统安装盘不能引导系统"><a href="#制作的-USB-系统安装盘不能引导系统" class="headerlink" title="制作的 USB 系统安装盘不能引导系统"></a>制作的 USB 系统安装盘不能引导系统</h4><p>（1）确保正确设置了 BIOS 的优盘启动模式。<br>（2）若为台式机，请尝试使用主机后部的 USB2.0 接口。<br>（3）若为笔记本，请尝试更换另一个 USB 2.0 接口。<br>（4）尽量不使用 USB 3.0 接口（接口里面的小隔片 USB 3.0 通常为蓝色，USB 2.0 的通常为黑色或白色）。<br>（5）若为移动硬盘并且有辅助供电口，请接上辅助供电线。<br>（6）确保优盘被格式化成 FAT32 模式（可直接用制作工具格式化）。<br>（7）确保优盘没有问题（可制作一张其他的可启动 ISO 测试一下）。<br>（8）确保电脑能兼容制作好的系统安装盘（可将系统安装盘拿到别的电脑上测试一下）。</p><h4 id="安装画面花屏"><a href="#安装画面花屏" class="headerlink" title="安装画面花屏"></a>安装画面花屏</h4><p>（1）确保显卡没有问题。<br>（2）集成显卡确保内存没有问题。<br>（3）确保显卡能兼容 UK14（一般不是太新的显卡出现这种情况的概率很小）。</p><h4 id="安装过程中没有发现硬盘或硬盘无法分区"><a href="#安装过程中没有发现硬盘或硬盘无法分区" class="headerlink" title="安装过程中没有发现硬盘或硬盘无法分区"></a>安装过程中没有发现硬盘或硬盘无法分区</h4><p>（1）确保硬盘已正确安装到主机中（可进 BIOS 查看，初学者可用 Windows PE 启动盘查看）。<br>（2）尝试在 BIOS 里关闭 UEFI 模式（进 BIOS 里设置）。<br>（3）尝试关闭 BIOS 里的 Windows 优化模式（某些品牌机有此设置）。<br>（3）确保硬盘的分区模式是 MBR 模式（可在 Windows 下用 Diskgenius 分区工具转换）。</p><h4 id="安装过程中复制文件错误"><a href="#安装过程中复制文件错误" class="headerlink" title="安装过程中复制文件错误"></a>安装过程中复制文件错误</h4><p>（1）确保安装介质没有问题（常见的问题有光盘质量不好、光驱挑盘、USB 供电不稳、优盘质量不好等）。<br>（2）确保电脑硬件没有问题（常见的问题有内存质量不好、电源不稳定、硬盘有坏道等）。<br>（3）确保没有使用 USB 3.0 接口（很多 USB3.0 接口引导或安装系统时不稳定）。</p><h4 id="无法安装启动引导器"><a href="#无法安装启动引导器" class="headerlink" title="无法安装启动引导器"></a>无法安装启动引导器</h4><p>（1）确保硬盘没有问题。<br>（2）确保电脑 BIOS 里关闭了硬盘引导扇区保护（部分电脑有这个功能）。</p><h4 id="安装过程太慢"><a href="#安装过程太慢" class="headerlink" title="安装过程太慢"></a>安装过程太慢</h4><p>（1）确保安装介质没有问题。<br>（2）若使用光盘安装，确保光驱读盘没有问题。<br>（3）若使用读卡器加存储卡制作系统安装盘，其速度可能会比较慢，属正常现象；若过慢，则应检查读卡器和存储卡。<br>（4）确保安装过程中断开了网络。</p><h4 id="安装完成后重启无法引导-UK14-系统"><a href="#安装完成后重启无法引导-UK14-系统" class="headerlink" title="安装完成后重启无法引导 UK14 系统"></a>安装完成后重启无法引导 UK14 系统</h4><p>（1）确保在 BIOS 里重新正确设置了从硬盘启动。<br>（2）确保在安装过程中正确设置了“安装启动引导器的设备”。<br>（3）若选择了与 Windows 共存的安装方式并且没有将“安装启动引导器的设备”设置为类似“sda”的方式，那么需要重新安装启动引导器来处理多系统启动。</p><h4 id="安装-Ubuntu-Kylin-时卡在等待安装页面上无法继续"><a href="#安装-Ubuntu-Kylin-时卡在等待安装页面上无法继续" class="headerlink" title="安装 Ubuntu Kylin 时卡在等待安装页面上无法继续"></a>安装 Ubuntu Kylin 时卡在等待安装页面上无法继续</h4><p>一般可通过修改硬盘的兼容模式来改变这一状况，具体得从分区以及硬盘的兼容模式两方面来进行判断。另外一种可能，通过设置参数来解决，具体步骤如下可参考问题 A+7。</p><h4 id="安装好-Ubuntu-Kylin-后，win7-win8-消失"><a href="#安装好-Ubuntu-Kylin-后，win7-win8-消失" class="headerlink" title="安装好 Ubuntu Kylin 后，win7/win8 消失"></a>安装好 Ubuntu Kylin 后，win7/win8 消失</h4><p>按 esc 或者 F2（有些机器是F1）进入 bios，修改启动选项为从硬盘启动，保存后重启电脑，看启动项是否显示有 win 的选项，正版 win8 的话请参照问题 A+2 。</p><h4 id="安装-Win8-和-Ubuntu-kylin-系统，开机后-Ubuntu-kylin-无法自动挂载-Win-分区"><a href="#安装-Win8-和-Ubuntu-kylin-系统，开机后-Ubuntu-kylin-无法自动挂载-Win-分区" class="headerlink" title="安装 Win8 和 Ubuntu kylin 系统，开机后 Ubuntu kylin 无法自动挂载 Win 分区"></a>安装 Win8 和 Ubuntu kylin 系统，开机后 Ubuntu kylin 无法自动挂载 Win 分区</h4><p>具体操作过程如下：<br>1).在 Win8 下：打开控制面板—》硬件和声音—》电源选项;<br>2).在弹出的“电源选项”界面，点击“选择电源按钮的功能”;<br>3).在弹出的界面中，发现部分选项已无法更改，先点击“更改当前不可用的设置”;<br>4).可以看到之前无法选择的选项已经可以更改，可以看到“启用快速启动（推荐）”选项（系统默认开启），我们可以在此设置是否开启或者关闭此功能;<br>5).挂载后，但缺少对 win 分区的操作权限，安装 ntfs-config 来设置成功： sudo apt-get install ntfs-config sudo ntfs-config<br>6).sudo ntfs-config 打开后，将启用外部设备写支持和启用内部设备写支持这两个选项勾选上，权限就设置成功了。</p><h4 id="双系统时间显示不一致问题的真正解决方法"><a href="#双系统时间显示不一致问题的真正解决方法" class="headerlink" title="双系统时间显示不一致问题的真正解决方法"></a>双系统时间显示不一致问题的真正解决方法</h4><p>双系统时间显示不一致问题的真正解决方法是关掉UTC。具体操作：进入 Ubuntu Kylin，打开终端，输入以下命令： sudo gedit /etc/default/rcS 把 UTC 设置成 no (“UTC=no”)，即可。</p><h4 id="重装-Windows-系统后的-grub-修复"><a href="#重装-Windows-系统后的-grub-修复" class="headerlink" title="重装 Windows 系统后的 grub 修复"></a>重装 Windows 系统后的 grub 修复</h4><p>重装 Windows 系统后，需要对 grub 进行修复，具体过程如下：<br>1).使用 Ubuntu Kylin 的安装盘启动进入“试用 Ubuntu Kylin ”的模式;<br>2).在文件浏览中打开 Ubuntu Kylin 所在的分区，比如 /media/ukylin/49d095cd-dd62-4571-989f-0aeeae944b18/，其中 “ ukylin ” 是当前的用户名，“49d095cd-dd62-4571-989f-0aeeae944b18”是 Ubuntu Kylin 所在分区的磁盘编号;<br>3).打开终端，输入命令： sudo grub-install  –boot-directory=/media/ukylin/49d095cd-dd62-4571-989f-0aeeae944b18  /dev/sda<br>4).重启系统即可完成grub的重新安装。<br>5).进入 Ubuntu Kylin 系统，运行命令 sudo update-grub 完成 grub 的更新。然后，重启机器就可以看到正常的启动菜单。</p><h4 id="系统引导修复"><a href="#系统引导修复" class="headerlink" title="系统引导修复"></a>系统引导修复</h4><p>很多用户在 windows下格式掉了 Ubuntu Kylin 系统的分区导致 grub 损坏，重启后黑屏停在grub&gt;这里，进不了系统，这里提供几种解决方法。<br> (1) 用光盘重装 Ubuntu Kylin 系统即可，grub自然会被修复。<br> (2) 用 windows 盘，进入 winPE，打开 dos 命令行，执行 fixboot /mbr 即可。<br> (3) 在 grub &gt; 输入 rootnoverify (hd0,0) ,回车在输入 chainloader +1 即可进入 windows，然后参照方法10。</p><h4 id="怎样选择开机启动设备"><a href="#怎样选择开机启动设备" class="headerlink" title="怎样选择开机启动设备"></a>怎样选择开机启动设备</h4><p>各种机器略有区别，一般开机时会提示 “ Press Fx Enter Boot Device ” 或者 “ Press Fx Enter Boot Options ”。据经验，lenovo、IBM 的机器是开机时按 F12 进入启动选项，华硕开机时按Esc进入启动选项，HP 机器开机时按 F9 或 F10 进入启动选项。</p><h4 id="安装过程中报读取错误，安装中断"><a href="#安装过程中报读取错误，安装中断" class="headerlink" title="安装过程中报读取错误，安装中断"></a>安装过程中报读取错误，安装中断</h4><p>这通常是由于光盘读取错误，可以换安装光盘或者使用外置光驱进行尝试。</p><h4 id="启动系统待机之后就没有办法启动"><a href="#启动系统待机之后就没有办法启动" class="headerlink" title="启动系统待机之后就没有办法启动"></a>启动系统待机之后就没有办法启动</h4><p>这通常是系统挂起进入省电待机模式所导致，短按开机键或 Fn 键即可恢复。</p><h4 id="选择安装菜单-在运行一堆命令行后-系统黑屏或者花屏"><a href="#选择安装菜单-在运行一堆命令行后-系统黑屏或者花屏" class="headerlink" title="选择安装菜单,在运行一堆命令行后,系统黑屏或者花屏"></a>选择安装菜单,在运行一堆命令行后,系统黑屏或者花屏</h4><p>这个问题有可能是显卡或者 ACPI 电源选项的问题。可以尝试如下解决方法: (1) BIOS 关闭 ACPI 选项:可以进入 BIOS,找到 ACPI 选项并将其禁用。<br>(2)增加启动参数:从光盘启动后，按上下键出现安装菜单，选择“安装Ubuntu Kylin”安装菜单项,按 F6 键进入编辑状态,然后可以分别尝试增加如下参数并回车启动安装: acpi=off nomodeset, vga=normal nomodeset vga=ask,增加此参数用于选择分辨率,启动过程中如果出现提示要求“按回车”进行分辨率扫描则直接按回车,从显示的可用分辨率列表中选择稍微低一点儿的分辨率,比如 1024<em>768</em>32;<br>注意：如果按此方法安装成功之后，重启进入系统时仍然出现相同情况，则在启动界面（ Grub 阶段）按下 “ e ” 键在命令行启动linux内核参数行，按照上述方法设置后按 “ Ctrl+x ” 键盘保存后启动，进入系统之后直接修改 grub 配置文件，加上相同的启动选项并保存，这样以后就可以正常启动。</p><h4 id="安装完成后原-Windows-系统启动蓝屏"><a href="#安装完成后原-Windows-系统启动蓝屏" class="headerlink" title="安装完成后原 Windows 系统启动蓝屏"></a>安装完成后原 Windows 系统启动蓝屏</h4><p>可能是由于在 Ubuntu Kylin 系统下访问 Windows 分区时对分区操作不当（比如没有正常卸载磁盘）导致分区异常，而 Windows 在启动过程中对分区状态进行检查导致报错。可以有以下两种解决方案：<br>(1) 用 winPE 光盘，进入 winPE，在 winPE 对 windows 磁盘分区进行修复；<br>(2) 用 Ubuntu Kylin 系统盘，进入“试用 Ubuntu Kylin ”模式。进入系统后，打开终端，运行 df 命令，查看你机器上 Windows C 盘所在的分区，假如为 /dev/sda1 ，此时运行 fsck -y /dev/sda1 命令对该磁盘分区进行修复。</p><h4 id="安装-Ubuntu-Kylin-系统后，重启直接进入-Windows-8"><a href="#安装-Ubuntu-Kylin-系统后，重启直接进入-Windows-8" class="headerlink" title="安装 Ubuntu Kylin 系统后，重启直接进入 Windows 8"></a>安装 Ubuntu Kylin 系统后，重启直接进入 Windows 8</h4><p>可能跟机器的 BIOS 设置有关。由于预装 Windows 8 的系统在启动时，要求 BIOS 设置为 UEFI 中的安全启动，而 Ubuntu Kylin 系统在启动时，在 BIOS 中关闭该选项即可。</p><h4 id="全新磁盘建立分区时提示：Can’t-have-a-partition-outside-the-disk"><a href="#全新磁盘建立分区时提示：Can’t-have-a-partition-outside-the-disk" class="headerlink" title="全新磁盘建立分区时提示：Can’t have a partition outside the disk!"></a>全新磁盘建立分区时提示：Can’t have a partition outside the disk!</h4><p>遇到该问题可以通过以下方式解决：通过系统安装盘，进入“试用 Ubuntu Kylin “ 模式，在 Dash 中打开 GParted 分区工具，通过该工具对磁盘进行分区即可，具体步骤为打开 Gparted &gt;设备&gt;创建分区表，操作完后就可以对新硬盘进行分区并进行系统安装了。</p><h4 id="在-WIN7-下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装"><a href="#在-WIN7-下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装" class="headerlink" title="在 WIN7 下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装"></a>在 WIN7 下查看磁盘分区有足够剩余空间，但安装时选择“利用剩余空间”却提示无法安装</h4><p>这可能是由于硬盘主分区个数过多或者硬盘使用的是动态分区格式。通过安装光盘选择“试用 Ubuntu Kylin ”，在试用系统中，通过 Dash 搜索 GParted 。打开 GParted 分区软件，将其中一个主分区内容导出，然后删除该主分区，然后重启电脑，则能够解决以上问题。</p><h4 id="预装-WIN-8-系统时如何设置"><a href="#预装-WIN-8-系统时如何设置" class="headerlink" title="预装 WIN 8 系统时如何设置"></a>预装 WIN 8 系统时如何设置</h4><p>如果机器预先安装的是 WIN 8 系统，需对 BIOS 进行设置。以推荐机型 E49A 为例，具体步骤如下：<br>重启机器，并在出现第一屏画面时不停地按 F2 键(有些机器是按 F1，HP 机器按 F10，华硕的机器按 Esc )，此时会进入机器的 BIOS 设置界面，然后设置以下两项：<br>(1)按左右键选择 config 选项，你将会看到其中有带 USB 的这个选项，选中并回车将会出现四个选项，选择 smart auto 并回车确认；<br>(2)按左右键至 security 选项，选中 Secure Boot 并回车，将会弹出两个选项，选中 Disabled 选项；<br>(3)按左右键选择 startup 选项，选中 UEFI/Legacy Boot 并回车，选择 Legacy Only 选项并回车确认；<br>(4)选择 Boot 选项并回车，调整光盘启动选项(按 F6 键进行调整)，从上至下的次序为 USB CD… USB FDD.. ATAPI CD1.. ATA HDD1… ATA HDD0… 最后，按 F10 保存并重启。</p><h4 id="系统无法从光盘启动"><a href="#系统无法从光盘启动" class="headerlink" title="系统无法从光盘启动"></a>系统无法从光盘启动</h4><p>这可能是由于 BIOS 没有设置成从光盘启动。可以有以下两种解决方案：<br>(1) 重启机器，并在出现第一屏画面时不停地按 F12 键，此时会弹出系统启动设备选择菜单，通过键盘的上下键选择光驱设备(如不确定，可以找带有 “ CD ” 或  “  DVD ” 字眼的选项)，按回车即可从光盘启动；<br>(2) 重启机器，并在出现第一屏画面时不停地按 F2 键(有些机器是按 F1，hp 电脑按 F10 )，此时会进入机器的 BIOS 设置界面，选择启动选项设置(如不确定，可以找带有 “ Boot ” 和 “ Sequence ” 等字眼的选项)，然后将光驱设备移动到启动顺序的第一个，按 F10 并选择 YES (有些机器是 Exit and saving changes 选项)，即可保存对 BIOS 的设置并重启机器。</p><h4 id="缺少无线网卡驱动暨无线网卡问题诊断方法"><a href="#缺少无线网卡驱动暨无线网卡问题诊断方法" class="headerlink" title="缺少无线网卡驱动暨无线网卡问题诊断方法"></a>缺少无线网卡驱动暨无线网卡问题诊断方法</h4><p>在命令行终端中输入 lspci 命令查看 Network Controller 或者有 Wireless 关键字的那一行，可以确定无线网卡的型号，目前发现系统本身不能很好支持的有 BCM4312、BCM4313、BCM43224、BCM43225 等 BCM 系列无线网卡，RTL8191(SE)、RTL8192(SE)、RTL8176 等 RTL 系列无线网卡，偶尔也会有 Ralink、Intel 系列、Atheros 系列的无线网卡缺少驱动。<br>无线网卡驱动安装：针对不同型号无线网卡需要安装相应的驱动补丁，目前我们已针对 BCM 的无线网卡做了驱动补丁。补丁下载地址：<a href="http://pan.baidu.com/s/1kT82oZH" rel="external nofollow noopener noreferrer" target="_blank">http://pan.baidu.com/s/1kT82oZH</a><br>无线网卡驱动安装确认：执行完上面的安装步骤后，打开终端，输入iwconfig命令，列出的系统中的网络接口，正常情况下，应该会存在一个名字为 wlan0、wlan1 或者 eth1 中的接口。如果存在，比如 wlan0，使用 sudo ifconfig wlan0 up 命令启动无线网卡，正常情况下无线网卡的灯会亮起。</p><h4 id="安装完驱动后-iwconfig-不存在-wlan0、wlan1-或者-eth1-无线接口，或者-ifconfig-wlan0"><a href="#安装完驱动后-iwconfig-不存在-wlan0、wlan1-或者-eth1-无线接口，或者-ifconfig-wlan0" class="headerlink" title="安装完驱动后 iwconfig 不存在 wlan0、wlan1 或者 eth1 无线接口，或者 ifconfig wlan0"></a>安装完驱动后 iwconfig 不存在 wlan0、wlan1 或者 eth1 无线接口，或者 ifconfig wlan0</h4><p>这可能是由于无线网卡开关未打开，可以使用 sudo rfkill list all 进行查看，硬件开关没开的话 Hard blocked ” 后面会显示 “ Yes ” 。<br>打开无线网卡开关：通常笔记本至少包括硬件开关(在笔记本的侧面)、快捷键开关 ( Fn 加上 F 功能键 ) 和 BIOS 开关中的一种。可以分别尝试以确认是否打开。</p><h4 id="B43无线网卡安装完成后还是无法启动无线网络"><a href="#B43无线网卡安装完成后还是无法启动无线网络" class="headerlink" title="B43无线网卡安装完成后还是无法启动无线网络"></a>B43无线网卡安装完成后还是无法启动无线网络</h4><p>在终端中使用 lspci -k 命令，找到无线网卡对应的条目，查看 “ kernel driver in use ” 后面是否是 wl，如果不是，打开文件 /etc/modprobe.d/blacklist，在最后加上如下两行：<br>blacklist  b43<br>blacklist  ssb<br>保存并重启系统即可。</p><h4 id="进入系统后，屏幕显示出现偏移"><a href="#进入系统后，屏幕显示出现偏移" class="headerlink" title="进入系统后，屏幕显示出现偏移"></a>进入系统后，屏幕显示出现偏移</h4><p>这是由于显卡驱动设置问题。用编辑器打开 /boot/grub/grub.cfg 文件，在 quiet 后面输入空格，然后加上 nomodeset  (注意：有两个地方都需要添加)，然后重启系统即可。</p><h4 id="网页中访问网络视频时不能全屏或者全屏后显示白屏"><a href="#网页中访问网络视频时不能全屏或者全屏后显示白屏" class="headerlink" title="网页中访问网络视频时不能全屏或者全屏后显示白屏"></a>网页中访问网络视频时不能全屏或者全屏后显示白屏</h4><p>这也是由于显卡驱动问题。可以直接右键点击视频，选择“设置”，将“启用硬件加速”前面的勾去掉即可。</p><h4 id="浏览器下载附件时保存位置的设置方法"><a href="#浏览器下载附件时保存位置的设置方法" class="headerlink" title="浏览器下载附件时保存位置的设置方法"></a>浏览器下载附件时保存位置的设置方法</h4><p>目前 Firefox 默认将下载的附件保存在”/下载”目录下，如果想保存到自己设定的位置，可以按如下方法进行：<br>(1)打开浏览器“编辑”菜单下选择“首选项”，弹出 Firefox 首选项对话框；<br>(2) 在“常规”标签栏下，可以看到“下载”设置，选择“总询问保存文件的位置”；<br>(3) 设置完后关闭，此时下载附件时会提示选择保存路径。</p><h4 id="修改开机密码"><a href="#修改开机密码" class="headerlink" title="修改开机密码"></a>修改开机密码</h4><p>打开命令行终端，执行 sudo passwd XXX（用户名），然后输入新密码就 OK 了。</p><h4 id="设置launch启动栏自动隐藏"><a href="#设置launch启动栏自动隐藏" class="headerlink" title="设置launch启动栏自动隐藏"></a>设置launch启动栏自动隐藏</h4><p>将鼠标箭头置于桌面，单击右键—更改桌面背景—选择“行为”—自动隐藏启动器按钮选择开启就好了。</p><h4 id="如何将程序锁定到启动器"><a href="#如何将程序锁定到启动器" class="headerlink" title="如何将程序锁定到启动器"></a>如何将程序锁定到启动器</h4><p>首先打开 dash，找到相应的软件，打开软件，在启动器上面可以看到相应程序的图标，鼠标移动到图标上单击右键，锁定到启动器，则可将程序锁定到启动器。</p><h4 id="忘记用户登录密码"><a href="#忘记用户登录密码" class="headerlink" title="忘记用户登录密码"></a>忘记用户登录密码</h4><p>重启系统，在 grub 选择画面，按 “ e ” 进入 burg 编辑模式。光标移至编辑模式中的第5项（ linux /boot/vmlinuz…… ），在后面输入“  single ”（注：single 前边有一个空格）,然后，按 Ctrl+X 键。接着，按『 Enter 』键，等出现输入命令的提示时（【 root@XXX 】#）输入 “ passwd XXX ” ，其中 “ XXX ” 是指用户名，然后【 Enter 】，（系统提示你输入两次新密码）。然后，输入 reboot，就 OK 了。</p><h4 id="USB鼠标和U盘不能使用"><a href="#USB鼠标和U盘不能使用" class="headerlink" title="USB鼠标和U盘不能使用"></a>USB鼠标和U盘不能使用</h4><p>这是由于 ACPI 模块与 USB 模块冲突，可以参考“系统安装和启动”中解决问题的方法，在 burg.cfg 文件中增加 acpi=off 参数即可。有些机器添加参数后只有某个特定的 USB 接口可以使用。</p><h4 id="如何获得更多帮助"><a href="#如何获得更多帮助" class="headerlink" title="如何获得更多帮助"></a>如何获得更多帮助</h4><p>帮助系统系统尚在不断完善改进中，更多问题请访问<a href="http://forum.ubuntukylin.com" rel="external nofollow noopener noreferrer" target="_blank">http://forum.ubuntukylin.com</a> 咨询，欢迎广大爱好者提供有关 Ubuntu Kylin 系统使用的各种解决方案。新闻及动态请关注  <a href="http://www.ubuntukylin.com。" rel="external nofollow noopener noreferrer" target="_blank">http://www.ubuntukylin.com。</a></p><h4 id="无法登录Ubuntu-kylin的软件中心，只能在网页上登录？"><a href="#无法登录Ubuntu-kylin的软件中心，只能在网页上登录？" class="headerlink" title="无法登录Ubuntu kylin的软件中心，只能在网页上登录？"></a>无法登录Ubuntu kylin的软件中心，只能在网页上登录？</h4><p>1810版本的软件中心登录已经独立出来，需要在软件中心注册后再登录，不能使用论坛的帐号。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;1-虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题&quot;&gt;&lt;a href=&quot;#1-虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题&quot; class=&quot;headerlink&quot; title=&quot;1.虚拟机（virtualbox）使用中
+        &lt;h4 id=&quot;虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题&quot;&gt;&lt;a href=&quot;#虚拟机（virtualbox）使用中内存异占用常高导致系统卡顿的问题&quot; class=&quot;headerlink&quot; title=&quot;虚拟机（virtualbox）使用中内存异占用常
       
     
     </summary>
@@ -62,189 +62,249 @@
   
   <entry>
     <title>快速检查电脑是否配备USB 3.0</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/%E5%BF%AB%E9%80%9F%E6%A3%80%E6%9F%A5%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E9%85%8D%E5%A4%87USB-3-0/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/小技巧/快速检查电脑是否配备USB-3-0/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%AB%E9%80%9F%E6%A3%80%E6%9F%A5%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E9%85%8D%E5%A4%87USB-3-0/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/基础操作/快速检查电脑是否配备USB-3-0/</id>
     <published>2019-06-29T03:53:54.000Z</published>
-    <updated>2019-08-21T08:13:13.389Z</updated>
+    <updated>2019-09-17T01:53:47.165Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="小技巧：快速检查电脑是否配备USB-3-0"><a href="#小技巧：快速检查电脑是否配备USB-3-0" class="headerlink" title="小技巧：快速检查电脑是否配备USB 3.0"></a>小技巧：快速检查电脑是否配备USB 3.0</h2><pre><code> 越来越多的电脑开始配备USB 3.0端口，但是如何知道您的电脑是否带有3.0端口以及哪个端口是3.0呢？方法如下： 打开终端，使用以下命令： $ lsusb该命令显示系统中的USB相关信息，检查结果，如果发现乐死“3.0 root hub”字样，表明系统带有USB 3.0。优麒麟（Ubuntu Kylin）接下来，如何识别哪个端口为USB 3.0呢？通常USB 3.0端口带有SS标记（Super Speed的缩写）。如果硬件厂商没有标记SS或USB 3，则检查端口内部的颜色，USB 3.0通常为蓝色。优麒麟（Ubuntu Kylin）</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>越来越多的电脑开始配备USB 3.0端口，但是如何知道您的电脑是否带有3.0端口以及哪个端口是3.0呢？方法如下：<br>打开终端，使用以下命令：<br>$ lsusb<br>该命令显示系统中的USB相关信息，检查结果，如果发现乐死“3.0 root hub”字样，表明系统带有USB 3.0。<br><img src="http://www.ubuntukylin.com/upload/images/usb30.png"><br>接下来，如何识别哪个端口为USB 3.0呢？<br>通常USB 3.0端口带有SS标记（Super Speed的缩写）。如果硬件厂商没有标记SS或USB 3，则检查端口内部的颜色，USB 3.0通常为蓝色。<br><img src="http://www.ubuntukylin.com/upload/images/usb3_0port.jpg"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;小技巧：快速检查电脑是否配备USB-3-0&quot;&gt;&lt;a href=&quot;#小技巧：快速检查电脑是否配备USB-3-0&quot; class=&quot;headerlink&quot; title=&quot;小技巧：快速检查电脑是否配备USB 3.0&quot;&gt;&lt;/a&gt;小技巧：快速检查电脑是否配备USB 3.0&lt;/
+        &lt;p&gt;越来越多的电脑开始配备USB 3.0端口，但是如何知道您的电脑是否带有3.0端口以及哪个端口是3.0呢？方法如下：&lt;br&gt;打开终端，使用以下命令：&lt;br&gt;$ lsusb&lt;br&gt;该命令显示系统中的USB相关信息，检查结果，如果发现乐死“3.0 root hub”字样，表明系统
       
     
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="小技巧" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <category term="基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>如何让你的“笨兔”更像苹果？</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E2%80%9C%E7%AC%A8%E5%85%94%E2%80%9D%E6%9B%B4%E5%83%8F%E8%8B%B9%E6%9E%9C%EF%BC%9F/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/如何让你的“笨兔”更像苹果？/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E2%80%9C%E7%AC%A8%E5%85%94%E2%80%9D%E6%9B%B4%E5%83%8F%E8%8B%B9%E6%9E%9C%EF%BC%9F/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/桌面风格/如何让你的“笨兔”更像苹果？/</id>
     <published>2019-06-29T03:53:35.000Z</published>
-    <updated>2019-08-21T08:19:31.547Z</updated>
+    <updated>2019-09-17T02:04:21.793Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="每周一帖：如何让你的“笨兔”更像苹果？"><a href="#每周一帖：如何让你的“笨兔”更像苹果？" class="headerlink" title="每周一帖：如何让你的“笨兔”更像苹果？"></a>每周一帖：如何让你的“笨兔”更像苹果？</h2><pre><code> 嗨，如果您是“笨兔”（Ubuntu）系统的忠实粉丝，可是也很喜欢苹果系统（Mac OS X）的界面风格，肿么办？小编给你支一招——无需花钱去购置昂贵的苹果也能让你的“笨兔”14.04看起来更像Mac！ 为了让“笨兔”穿上Mac的外衣，您需要的是Zukimac主题，请跟随小编做如下课间运动：1. 获取Zukimac主题：http://pan.baidu.com/s/1hq1MKZE2. 解压下载的zip文件，将Zukitwo-mac、Zukiwi-mac和Zulomo目录拷贝到当前用户主目录的.themes下    通过文件浏览器进入主目录，按下Ctrl+H键显示所有隐藏目录。如果没有的话就创建一个）</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>  3. 使用Unity Tweak工具更改主题安装Unity Tweak Tool       sudo apt-get install unity-tweak-tool打开Unity Tweak Tool</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>选择主题</code></pre><p>优麒麟（Ubuntu Kylin）</p><p>优麒麟（Ubuntu Kylin）</p><pre><code>如何，是不是很有鸟枪换炮的赶脚？</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>   接下来，如果您愿意还可以您的“笨兔”使用起来感觉更像Mac一点——换个程序启动面板试试</code></pre><p>sudo add-apt-repository ppa:ricotz/docky<br>sudo apt-get update<br>sudo apt-get install plank</p><pre><code>换个指示器看看</code></pre><p>sudo add-apt-repository ppa:noobslab/apps<br>sudo apt-get update<br>sudo apt-get install indicator-synapse</p>]]></content>
+    <content type="html"><![CDATA[<p>  嗨，如果您是“笨兔”（Ubuntu）系统的忠实粉丝，可是也很喜欢苹果系统（Mac OS X）的界面风格，肿么办？小编给你支一招——无需花钱去购置昂贵的苹果也能让你的“笨兔”14.04看起来更像Mac！<br>  为了让“笨兔”穿上Mac的外衣，您需要的是Zukimac主题，请跟随小编做如下课间运动：     </p><ol><li>获取Zukimac主题：<a href="http://pan.baidu.com/s/1hq1MKZE" rel="external nofollow noopener noreferrer" target="_blank">http://pan.baidu.com/s/1hq1MKZE</a>  </li><li>解压下载的zip文件，将Zukitwo-mac、Zukiwi-mac和Zulomo目录拷贝到当前用户主目录的.themes下通过文件浏览器进入主目录，按下Ctrl+H键显示所有隐藏目录。如果没有的话就创建一个）</li></ol><p><img src="http://www.ubuntukylin.com/upload/images/theme.png"></p><ol start="3"><li>使用Unity Tweak工具更改主题<br>安装Unity Tweak Tool<br>sudo apt-get install unity-tweak-tool<br>打开Unity Tweak Tool<br><img src="http://www.ubuntukylin.com/upload/images/theme5.png"></li></ol><p>选择主题</p><p><img src="http://www.ubuntukylin.com/upload/images/theme2.png"><br><img src="http://www.ubuntukylin.com/upload/images/theme3.png"></p><p>如何，是不是很有鸟枪换炮的赶脚？</p><p><img src="http://www.ubuntukylin.com/upload/images/theme6.png"></p><p>接下来，如果您愿意还可以您的“笨兔”使用起来感觉更像Mac一点——<br>换个程序启动面板试试<br>sudo add-apt-repository ppa:ricotz/docky<br>sudo apt-get update<br>sudo apt-get install plank  </p><p>换个指示器看看<br>sudo add-apt-repository ppa:noobslab/apps<br>sudo apt-get update<br>sudo apt-get install indicator-synapse</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;每周一帖：如何让你的“笨兔”更像苹果？&quot;&gt;&lt;a href=&quot;#每周一帖：如何让你的“笨兔”更像苹果？&quot; class=&quot;headerlink&quot; title=&quot;每周一帖：如何让你的“笨兔”更像苹果？&quot;&gt;&lt;/a&gt;每周一帖：如何让你的“笨兔”更像苹果？&lt;/h2&gt;&lt;pre&gt;
+        &lt;p&gt;  嗨，如果您是“笨兔”（Ubuntu）系统的忠实粉丝，可是也很喜欢苹果系统（Mac OS X）的界面风格，肿么办？小编给你支一招——无需花钱去购置昂贵的苹果也能让你的“笨兔”14.04看起来更像Mac！&lt;br&gt;  为了让“笨兔”穿上Mac的外衣，您需要的是Zukimac主
       
     
     </summary>
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="桌面风格" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/"/>
     
     
   </entry>
   
   <entry>
     <title>如何修复Ubuntu Kylin 14.04丢失系统设置问题</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8DUbuntu-Kylin-14-04%E4%B8%A2%E5%A4%B1%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8DUbuntu-Kylin-14-04%E4%B8%A2%E5%A4%B1%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/</id>
     <published>2019-06-29T03:53:18.000Z</published>
-    <updated>2019-08-21T08:18:09.790Z</updated>
+    <updated>2019-09-17T01:59:03.577Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题"><a href="#每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题" class="headerlink" title="每周一贴：如何修复Ubuntu Kylin 14.04丢失系统设置问题"></a>每周一贴：如何修复Ubuntu Kylin 14.04丢失系统设置问题</h2><pre><code>最近有不少童鞋在安装搜狗输入法之后，决定卸载ibus输入法，结果导致系统设置变成如下这个“惨淡”景象，其它小伙伴都到哪里去了？</code></pre><p>优麒麟（Ubuntu Kylin）</p><pre><code>解决方法是：打开终端，然后执行以下命令 ——      sudo apt-get install ubuntu-desktop这相当于重新安装了Unity，该方法同样能够解决没有Unity启动器和指示面板的情形。</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>  最近有不少童鞋在安装搜狗输入法之后，决定卸载ibus输入法，结果导致系统设置变成如下这个“惨淡”景象，其它小伙伴都到哪里去了？<br><img src="http://www.ubuntukylin.com/upload/images/setting.png"><br>解决方法是：打开终端，然后执行以下命令 ——<br>  sudo apt-get install ubuntu-desktop<br>这相当于重新安装了Unity，该方法同样能够解决没有Unity启动器和指示面板的情形。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题&quot;&gt;&lt;a href=&quot;#每周一贴：如何修复Ubuntu-Kylin-14-04丢失系统设置问题&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何修复Ubuntu Kylin 
+        &lt;p&gt;  最近有不少童鞋在安装搜狗输入法之后，决定卸载ibus输入法，结果导致系统设置变成如下这个“惨淡”景象，其它小伙伴都到哪里去了？&lt;br&gt;&lt;img src=&quot;http://www.ubuntukylin.com/upload/images/setting.png&quot;&gt;&lt;br&gt;
       
     
     </summary>
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="安装问题" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/小技巧/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
     <published>2019-06-29T03:51:59.000Z</published>
-    <updated>2019-08-21T08:10:34.053Z</updated>
+    <updated>2019-09-17T01:51:39.550Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复"><a href="#每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复" class="headerlink" title="每周一贴：Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复"></a>每周一贴：Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</h2><p>Ubuntu Kylin 中的声音问题是一个老生常谈的问题。</p><p>在这里我们所使用的环境为Ubuntu Kylin 14.04版，安装完之后第一次启动系统没有声音。经过排查发现alsamixer状态怪异:</p><p>优麒麟（Ubuntu Kylin）</p><p>如图所示：alsamixer中默认情况下设置的是HDMI。这意味着默认情况下，声音输出为HDMI，而不是内置扬声器。所以在系统中我们找不到内置扬声器设置。</p><p>打开终端，使用以下命令检查alsamixer状态：</p><p>alsamixer</p><p>如果alsamixer中默认情况下为HDMI或其他音频输出设置，请继续阅读下文看如何可以修复它。</p><p>现在我们要做的是强制Ubuntu Kylin默认使用模拟输出而不是HDMI接口，在这里我们需要一些信息。打开终端，然后输入下面的命令：</p><p>aplay -l</p><p>终端将列出设备，卡号等信息。记下卡号和模拟输出设备号。我的输出结果是这样的：</p><p>优麒麟（Ubuntu Kylin）</p><p>一旦你有需要的卡和设备编号，就可以做出这样一个新的配置文件：</p><p>sudo gedit /etc/asound.conf</p><p>上面的命令也将打开该文件。当然，用你的卡和设备号替换添加以下几行：</p><p>defaults.pcm.card 1</p><p>defaults.pcm.device 0</p><p>保存文件并重新启动计算机。你现在应该可以听到声音了。值得注意的是，这个问题的修复适用于所有的Linux发行版，如Linux Mint的，Elementary OS，Fedora，Arch Linux等。当然，这种“无声音修复”仅适用于当HDMI是默认设置的情况下。</p>]]></content>
+    <content type="html"><![CDATA[<p>Ubuntu Kylin 中的声音问题是一个老生常谈的问题。</p><p>在这里我们所使用的环境为Ubuntu Kylin 14.04版，安装完之后第一次启动系统没有声音。经过排查发现alsamixer状态怪异:</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%8722.jpg"></p><p>如图所示：alsamixer中默认情况下设置的是HDMI。这意味着默认情况下，声音输出为HDMI，而不是内置扬声器。所以在系统中我们找不到内置扬声器设置。</p><p>打开终端，使用以下命令检查alsamixer状态：</p><p>alsamixer</p><p>如果alsamixer中默认情况下为HDMI或其他音频输出设置，请继续阅读下文看如何可以修复它。</p><p>现在我们要做的是强制Ubuntu Kylin默认使用模拟输出而不是HDMI接口，在这里我们需要一些信息。打开终端，然后输入下面的命令：</p><p>aplay -l</p><p>终端将列出设备，卡号等信息。记下卡号和模拟输出设备号。我的输出结果是这样的：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%8723.jpg"></p><p>一旦你有需要的卡和设备编号，就可以做出这样一个新的配置文件：</p><p>sudo gedit /etc/asound.conf</p><p>上面的命令也将打开该文件。当然，用你的卡和设备号替换添加以下几行：</p><p>defaults.pcm.card 1</p><p>defaults.pcm.device 0</p><p>保存文件并重新启动计算机。你现在应该可以听到声音了。值得注意的是，这个问题的修复适用于所有的Linux发行版，如Linux Mint的，Elementary OS，Fedora，Arch Linux等。当然，这种“无声音修复”仅适用于当HDMI是默认设置的情况下。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复&quot;&gt;&lt;a href=&quot;#每周一贴：Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：Ubu
+        &lt;p&gt;Ubuntu Kylin 中的声音问题是一个老生常谈的问题。&lt;/p&gt;
+&lt;p&gt;在这里我们所使用的环境为Ubuntu Kylin 14.04版，安装完之后第一次启动系统没有声音。经过排查发现alsamixer状态怪异:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.u
       
     
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="小技巧" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <category term="进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/小技巧/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
     <published>2019-06-29T03:51:23.000Z</published>
-    <updated>2019-08-21T08:08:39.031Z</updated>
+    <updated>2019-09-17T01:48:22.547Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示"><a href="#每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示" class="headerlink" title="每周一贴：如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示]"></a>每周一贴：如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示]</h2><p>新手们也许都喜欢保持自己的系统是最新的，无论是安全更新、系统更新或应用程序更新。并且不喜欢等一个星期。是的，在默认情况下，Ubuntu Kylin的更新管理器会自动的在每周弹出一次，除非它是个安全更新。</p><p>如果你也想保持自己的系统更新更频繁，你可以更改更新设置。在这个初学者技巧中，我们将看到怎样使你的Ubuntu Kylin桌面更加频繁地更新。</p><p>在Ubuntu Kylin 14.04 中更改更新频率</p><p>进入Dash搜索“更新”或“update”，点击“软件和更新”：</p><p>优麒麟（Ubuntu Kylin）</p><p>在“软件和更新”中，进入“更新”选项卡。新手可以看到用于更新系统的设置。比如对于你自己来说，默认设置是每天检查更新，但普通的更新每周只显示一次，然而，如果有一个安全更新，它会立即通知你。</p><p>为获得更频繁的有关更新的通知，你可以更改设置来立即通知任何更新，你可以更改以下设置：</p><p>优麒麟（Ubuntu Kylin）</p><p>当然，即使不经常更新，你也可以改变更新频率来提示，这个选项完全取决于你的。考虑到你想保持你的系统是最新的，你应该遵循这些技巧来加快Ubuntu Kylin系统速度。</p>]]></content>
+    <content type="html"><![CDATA[<p>新手们也许都喜欢保持自己的系统是最新的，无论是安全更新、系统更新或应用程序更新。并且不喜欢等一个星期。是的，在默认情况下，Ubuntu Kylin的更新管理器会自动的在每周弹出一次，除非它是个安全更新。</p><p>如果你也想保持自己的系统更新更频繁，你可以更改更新设置。在这个初学者技巧中，我们将看到怎样使你的Ubuntu Kylin桌面更加频繁地更新。</p><p>在Ubuntu Kylin 14.04 中更改更新频率</p><p>进入Dash搜索“更新”或“update”，点击“软件和更新”：</p><p><img src="http://www.ubuntukylin.com/upload/images/date(3).jpg"></p><p>在“软件和更新”中，进入“更新”选项卡。新手可以看到用于更新系统的设置。比如对于你自己来说，默认设置是每天检查更新，但普通的更新每周只显示一次，然而，如果有一个安全更新，它会立即通知你。</p><p>为获得更频繁的有关更新的通知，你可以更改设置来立即通知任何更新，你可以更改以下设置：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E6%9B%B4%E6%96%B0.jpg"></p><p>当然，即使不经常更新，你也可以改变更新频率来提示，这个选项完全取决于你的。考虑到你想保持你的系统是最新的，你应该遵循这些技巧来加快Ubuntu Kylin系统速度。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示&quot;&gt;&lt;a href=&quot;#每周一贴：如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何快速设
+        &lt;p&gt;新手们也许都喜欢保持自己的系统是最新的，无论是安全更新、系统更新或应用程序更新。并且不喜欢等一个星期。是的，在默认情况下，Ubuntu Kylin的更新管理器会自动的在每周弹出一次，除非它是个安全更新。&lt;/p&gt;
+&lt;p&gt;如果你也想保持自己的系统更新更频繁，你可以更改更新设置。
       
     
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="小技巧" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <category term="基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>如何对Ubuntu Kylin 14.04 的登录界面截图 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/%E5%A6%82%E4%BD%95%E5%AF%B9Ubuntu-Kylin-14-04-%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/小技巧/如何对Ubuntu-Kylin-14-04-的登录界面截图/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%AF%B9Ubuntu-Kylin-14-04-%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/</id>
     <published>2019-06-29T03:50:34.000Z</published>
-    <updated>2019-08-21T08:07:09.919Z</updated>
+    <updated>2019-09-16T05:58:49.063Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图"><a href="#每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图" class="headerlink" title="每周一贴：如何对Ubuntu Kylin 14.04 的登录界面截图"></a>每周一贴：如何对Ubuntu Kylin 14.04 的登录界面截图</h2><p>有时用户需要对登录界面屏幕截图。例如，如果用户想写一篇有关如何在Ubuntu Kylin 14.04 上安装Cinnamon 的技术文章，登陆界面的截图就对初学者有帮助。无论你的原因是什么，如果你想知道如何对Ubuntu  Kylin 14.04 或Linux Mint 17 的登陆界面截图，让下面的技巧来告诉你怎么做吧。</p><p>对Ubuntu Kylin和Linux Mint的登录界面截图</p><p>这里的方法是创建一个可以从命令行界面运行的脚本，不要害怕这个脚本，使用它真的很简单。</p><p>第1步：获取ImageMagic</p><p>打开终端，然后使用以下命令安装ImageMagic。</p><p>sudo apt-get install imagemagick</p><p>第2步：准备脚本</p><p>创建一个新的文件，最好在你的home目录下，将它命名为screenshot.sh或任何你喜欢的。在文件中添加以下几行：<br>chvt 7; sleep 5s; DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd; convert ~/screenshot.xwd ~/screenshot.png; rm ~/screenshot.xwd</p><p>在上述中，chvt 7是虚拟控制台的数量。当你运行这个脚本后需要5秒来截图，你可以把它改成任何你想要的数字，会发现命名为screenshot.png的截图保存在你的home目录下。</p><p>第3步：给脚本执行权限</p><p>你必须要给脚本执行权限：</p><p>sudo chmod +x screenshot.sh</p><p>第4步：截图</p><p>现在，当一切准备就绪后，退出系统。进入用户登录模式后按Ctrl+Alt+F1，输入你的用户认证，然后像这样运行截图脚本：</p><p>sudo ./screenshot.sh</p><p>一旦这个脚本运行时，它会带你回到登录界面的图形界面（chvt 7），五秒钟后文件名为screenshot.png的截图将会保存在你的home目录下。</p><p>你可以根据自己的需要修改截图脚本。希望这个技巧能帮你对Ubuntu Kylin、Linux Mint或任何其他的Linux发行版的登录界面进行截图。如果你有任何疑问或建议，随时欢迎与我们UK团队联系。</p>]]></content>
+    <content type="html"><![CDATA[<p>有时用户需要对登录界面屏幕截图。例如，如果用户想写一篇有关如何在Ubuntu Kylin 14.04 上安装Cinnamon 的技术文章，登陆界面的截图就对初学者有帮助。无论你的原因是什么，如果你想知道如何对Ubuntu  Kylin 14.04 或Linux Mint 17 的登陆界面截图，让下面的技巧来告诉你怎么做吧。</p><p>对Ubuntu Kylin和Linux Mint的登录界面截图</p><p>这里的方法是创建一个可以从命令行界面运行的脚本，不要害怕这个脚本，使用它真的很简单。</p><p>第1步：获取ImageMagic</p><p>打开终端，然后使用以下命令安装ImageMagic。</p><p>sudo apt-get install imagemagick</p><p>第2步：准备脚本</p><p>创建一个新的文件，最好在你的home目录下，将它命名为screenshot.sh或任何你喜欢的。在文件中添加以下几行：<br>chvt 7; sleep 5s; DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd; convert ~/screenshot.xwd ~/screenshot.png; rm ~/screenshot.xwd</p><p>在上述中，chvt 7是虚拟控制台的数量。当你运行这个脚本后需要5秒来截图，你可以把它改成任何你想要的数字，会发现命名为screenshot.png的截图保存在你的home目录下。</p><p>第3步：给脚本执行权限</p><p>你必须要给脚本执行权限：</p><p>sudo chmod +x screenshot.sh</p><p>第4步：截图</p><p>现在，当一切准备就绪后，退出系统。进入用户登录模式后按Ctrl+Alt+F1，输入你的用户认证，然后像这样运行截图脚本：</p><p>sudo ./screenshot.sh</p><p>一旦这个脚本运行时，它会带你回到登录界面的图形界面（chvt 7），五秒钟后文件名为screenshot.png的截图将会保存在你的home目录下。</p><p>你可以根据自己的需要修改截图脚本。希望这个技巧能帮你对Ubuntu Kylin、Linux Mint或任何其他的Linux发行版的登录界面进行截图。如果你有任何疑问或建议，随时欢迎与我们UK团队联系。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图&quot;&gt;&lt;a href=&quot;#每周一贴：如何对Ubuntu-Kylin-14-04-的登录界面截图&quot; class=&quot;headerlink&quot; title=&quot;每周一贴：如何对Ubuntu Kylin 14.
+        &lt;p&gt;有时用户需要对登录界面屏幕截图。例如，如果用户想写一篇有关如何在Ubuntu Kylin 14.04 上安装Cinnamon 的技术文章，登陆界面的截图就对初学者有帮助。无论你的原因是什么，如果你想知道如何对Ubuntu  Kylin 14.04 或Linux Mint 1
       
     
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="小技巧" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <category term="基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>Master PDF：PDF和XPS文件编辑神器</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他软件/Master-PDF：PDF和XPS文件编辑神器/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/Master-PDF：PDF和XPS文件编辑神器/</id>
     <published>2019-06-29T03:49:24.000Z</published>
-    <updated>2019-08-27T07:38:35.786Z</updated>
+    <updated>2019-09-17T02:16:42.850Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Master-PDF：PDF和XPS文件编辑神器"><a href="#Master-PDF：PDF和XPS文件编辑神器" class="headerlink" title="Master PDF：PDF和XPS文件编辑神器"></a>Master PDF：PDF和XPS文件编辑神器</h2><pre><code>假设您正在致力于Windows XP替换，恰好又在为寻找一款可在优麒麟或其它Linux发行版具备PDF-XChange Viewer, Foxit Reader或Adobe Reader类似强大功能的PDF替代软件，那么本编很乐意向您推荐Master PDF编辑器——这是一款私有软件，其Linux版本可以作为个人工具免费使用。 Master PDF具有以下功能特点：创建来自任意视窗应用的文档，支持打印功能修改任意PDF或XPS文件的内容快速显示PDF和XPS文件添加、删除和修改文本/图像导入XPS和PDF文件为BMP、JPEG、PNG、TIFF格式，分辨率范围为80DPI～600DPI书签编辑PDF加密PDF表单域创建和编辑可采用128位加密算法加密PDF文档将XPS文件转换为PDF</code></pre><p>下载安装Master PDF编辑器</p><pre><code>您可在Ubuntu软件中心中找到Master PDF，点击安装即可；或从以下地址下载deb文件：http://code-industry.net/public/master-pdf-editor_1.9.25_i386.deb</code></pre><p>优麒麟（Ubuntu Kylin）</p>]]></content>
+    <content type="html"><![CDATA[<p>假设您正在致力于Windows XP替换，恰好又在为寻找一款可在优麒麟或其它Linux发行版具备PDF-XChange Viewer, Foxit Reader或Adobe Reader类似强大功能的PDF替代软件，那么本编很乐意向您推荐Master PDF编辑器——这是一款私有软件，其Linux版本可以作为个人工具免费使用。  </p><p>Master PDF具有以下功能特点：  </p><p>创建来自任意视窗应用的文档，支持打印功能<br>修改任意PDF或XPS文件的内容<br>快速显示PDF和XPS文件<br>添加、删除和修改文本/图像<br>导入XPS和PDF文件为BMP、JPEG、PNG、TIFF格式，分辨率范围为80DPI～600DPI<br>书签编辑<br>PDF加密<br>PDF表单域创建和编辑<br>可采用128位加密算法加密PDF文档<br>将XPS文件转换为PDF  </p><p>下载安装Master PDF编辑器<br>您可在Ubuntu软件中心中找到Master PDF，点击安装即可；或从以下地址下载deb文件：<a href="http://code-industry.net/public/master-pdf-editor_1.9.25_i386.deb" rel="external nofollow noopener noreferrer" target="_blank">http://code-industry.net/public/master-pdf-editor_1.9.25_i386.deb</a></p><p><img src="http://www.ubuntukylin.com/upload/images/master.png"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Master-PDF：PDF和XPS文件编辑神器&quot;&gt;&lt;a href=&quot;#Master-PDF：PDF和XPS文件编辑神器&quot; class=&quot;headerlink&quot; title=&quot;Master PDF：PDF和XPS文件编辑神器&quot;&gt;&lt;/a&gt;Master PDF：PDF
+        &lt;p&gt;假设您正在致力于Windows XP替换，恰好又在为寻找一款可在优麒麟或其它Linux发行版具备PDF-XChange Viewer, Foxit Reader或Adobe Reader类似强大功能的PDF替代软件，那么本编很乐意向您推荐Master PDF编辑器——这是一
       
     
     </summary>
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他软件" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/"/>
+      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>“优麒麟在线中英文字典”篇</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他软件/“优麒麟在线中英文字典”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/“优麒麟在线中英文字典”篇/</id>
     <published>2019-06-29T03:49:06.000Z</published>
-    <updated>2019-08-27T07:37:03.632Z</updated>
+    <updated>2019-09-17T02:12:56.889Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="优麒麟在线中英文字典”篇"><a href="#优麒麟在线中英文字典”篇" class="headerlink" title="优麒麟在线中英文字典”篇"></a>优麒麟在线中英文字典”篇</h2><pre><code>众所周知，Windows下有道词典、金山词霸等词典客户端为用户带来了很多便利，Linux系统下的词典少之又少，用户迫切需要一款好用的词典软件。</code></pre><p>目前在Dash中可以搜索音乐、视频、图片等资源，为用户带来很多便利，省去了打开浏览器再进行搜索查看等复杂操作。如果基于Dash实现词典功能，将会给用户带来很大的便利，并在一定程度上提高用户的体验。</p><p>来自哈尔滨工业大学（威海）的赵博洋同学勇敢的接受了这次挑战。将利用Dash完成中英文字典应用的开发。赵博洋同学的完成情况如何呢？接下来就让我们提前体验一下吧：）</p><pre><code>首先要做的就是下载安装文件，前往CSDN CODE项目地址：开发者分支：https://code.csdn.net/u013116028/dash_dictionary/tree/master由于还没有安装包文件，需要借助isgd包来完成演示操作。</code></pre><p>第一步，下载源码。点击<a href="https://code.csdn.net/u013116028/dash_dictionary/tree/master页面下载按钮即可。" rel="external nofollow noopener noreferrer" target="_blank">https://code.csdn.net/u013116028/dash_dictionary/tree/master页面下载按钮即可。</a></p><p>第二步，安装isgd包。sudo apt-get install unity-scope-isgd 。</p><p>第三步，将src目录下的文件bid.txt  quci.py  unity_dictionary_daemon.py拷贝到/usr/share/unity-scopes/isgd目录下。</p><p>第四步，注销或重启系统。</p><pre><code>接下来我们就可以真正开始体验词典功能啦！</code></pre><p>我们知道Dash搜索有很多分类，如全局搜索、文件、音乐、视频、图片等等。通过调查发现，全局搜索功能是使用率最高的方式。用户不用切换分类，直接在搜索框中输入单词或汉字就可以啦！</p><p>（1）【中-英】：输入单词，显示结果如下：</p><p>优麒麟（Ubuntu Kylin） </p><p>点击单词，可以看到词汇详细信息：中文翻译、音标、例句等信息。如下图所示：</p><p>优麒麟（Ubuntu Kylin） </p><p> （2）【中-英】：输入文字，显示结果如下：</p><p> 优麒麟（Ubuntu Kylin） </p><p>点击文字，可以看到词汇详细信息：英文翻译、例句等信息。如下图所示：</p><p> 优麒麟（Ubuntu Kylin） </p><p>（3）纠错功能：</p><p>如果输入的单词拼写不对，会进行提示：</p><p>优麒麟（Ubuntu Kylin） </p><p>（4）划词功能：</p><p>   用鼠标选中要翻译的词语，屏幕右上角即会弹出显示结果的桌面气泡，如下图所示：</p><p>优麒麟（Ubuntu Kylin） </p><pre><code>赵博洋同学目前实现的词典的基本功能，后续将会完善词典的展示功能。</code></pre><p>   如果您也有兴趣为该项目贡献代码和建议，不妨到以下网址发表您的看法或者阅读、下载源代码：</p><p>   开发者分支：<a href="https://code.csdn.net/u013116028/dash_dictionary/tree/master" rel="external nofollow noopener noreferrer" target="_blank">https://code.csdn.net/u013116028/dash_dictionary/tree/master</a></p><p>开发者博客：<a href="http://blog.csdn.net/u013116028" rel="external nofollow noopener noreferrer" target="_blank">http://blog.csdn.net/u013116028</a></p>]]></content>
+    <content type="html"><![CDATA[<p>众所周知，Windows下有道词典、金山词霸等词典客户端为用户带来了很多便利，Linux系统下的词典少之又少，用户迫切需要一款好用的词典软件。<br>目前在Dash中可以搜索音乐、视频、图片等资源，为用户带来很多便利，省去了打开浏览器再进行搜索查看等复杂操作。如果基于Dash实现词典功能，将会给用户带来很大的便利，并在一定程度上提高用户的体验。<br>来自哈尔滨工业大学（威海）的赵博洋同学勇敢的接受了这次挑战。将利用Dash完成中英文字典应用的开发。赵博洋同学的完成情况如何呢？接下来就让我们提前体验一下吧：）<br>首先要做的就是下载安装文件，由于还没有安装包文件，需要借助isgd包来完成演示操作。</p><p>第一步，下载源码.</p><p>第二步，安装isgd包。sudo apt-get install unity-scope-isgd 。</p><p>第三步，将src目录下的文件bid.txt  quci.py  unity_dictionary_daemon.py拷贝到/usr/share/unity-scopes/isgd目录下。</p><p>第四步，注销或重启系统。  </p><p>接下来我们就可以真正开始体验词典功能啦！</p><p>我们知道Dash搜索有很多分类，如全局搜索、文件、音乐、视频、图片等等。通过调查发现，全局搜索功能是使用率最高的方式。用户不用切换分类，直接在搜索框中输入单词或汉字就可以啦！</p><p>（1）【中-英】：输入单词，显示结果如下：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%871(3).png"></p><p>点击单词，可以看到词汇详细信息：中文翻译、音标、例句等信息。如下图所示：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%872(4).png"> </p><p> （2）【中-英】：输入文字，显示结果如下：<br><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%873(1).png"></p><p>点击文字，可以看到词汇详细信息：英文翻译、例句等信息。如下图所示<br><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%874(1).png"></p><p>（3）纠错功能：</p><p>如果输入的单词拼写不对，会进行提示：<br><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%875(1).png"></p><p>（4）划词功能：</p><p>   用鼠标选中要翻译的词语，屏幕右上角即会弹出显示结果的桌面气泡，如下图所示：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%876(1).png"></p><pre><code>赵博洋同学目前实现的词典的基本功能，后续将会完善词典的展示功能。</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;优麒麟在线中英文字典”篇&quot;&gt;&lt;a href=&quot;#优麒麟在线中英文字典”篇&quot; class=&quot;headerlink&quot; title=&quot;优麒麟在线中英文字典”篇&quot;&gt;&lt;/a&gt;优麒麟在线中英文字典”篇&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;众所周知，Windows下有道词典、金山词霸
+        &lt;p&gt;众所周知，Windows下有道词典、金山词霸等词典客户端为用户带来了很多便利，Linux系统下的词典少之又少，用户迫切需要一款好用的词典软件。&lt;br&gt;目前在Dash中可以搜索音乐、视频、图片等资源，为用户带来很多便利，省去了打开浏览器再进行搜索查看等复杂操作。如果基于Das
+      
+    
+    </summary>
+    
+      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在优麒麟14.04上安装精美的Dalisha图标主题</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F14-04%E4%B8%8A%E5%AE%89%E8%A3%85%E7%B2%BE%E7%BE%8E%E7%9A%84Dalisha%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/</id>
+    <published>2019-06-29T03:48:43.000Z</published>
+    <updated>2019-09-16T08:44:37.277Z</updated>
+    
+    <content type="html"><![CDATA[<p>  Dalisha是一套优美的圆角图标，可应用于几乎所有主流的Linux桌面环境，例如Unity、GNOME、KDE、Cinnamon、Mate等。Dalisha拥有超过30,000个图标，目前正处于活跃开发状态。如果您愿意尝试，不妨跟随以下步骤在优麒麟上安装体验。</p><p><img src="http://www.ubuntukylin.com/upload/images/dalisha-7.jpg" alt> </p><p><strong>通过PPA在优麒麟上安装Dalisha</strong><br>  打开终端，执行以下命令（需要大约120MB的磁盘空间）：</p><ul><li><p>sudo add-apt-repository ppa:noobslab/icons</p></li><li><p>sudo apt-get update</p></li><li><p>sudo apt-get install dalisha-icons</p><p>  或者通过以下链接地址下载：<a href="http://gnome-look.org/content/show.php/Dalisha?content=166286" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a></p></li></ul><p><strong>通过优客助手设置试用Dalisha图标主题</strong><br>  安装完成之后，打开优客助手，在系统美化标签中选择Dalisha图标主题：</p><p><img src="http://www.ubuntukylin.com/upload/images/dalisha-2.png" alt><br>  接下来就可以欣赏使用最新的主题风格啦。</p><p><img src="http://www.ubuntukylin.com/upload/images/dalisha.png" alt><br>卸载Dalisha<br>  打开命令行，执行以下命令：</p><ul><li><p>sudo apt-get remove dalisha-icons </p></li><li><p>sudo add-apt-repository –remove ppa:noobslab/icons</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  Dalisha是一套优美的圆角图标，可应用于几乎所有主流的Linux桌面环境，例如Unity、GNOME、KDE、Cinnamon、Mate等。Dalisha拥有超过30,000个图标，目前正处于活跃开发状态。如果您愿意尝试，不妨跟随以下步骤在优麒麟上安装体验。&lt;/p&gt;
+      
+    
+    </summary>
+    
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="桌面风格" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>快速解决Ubuntu Kylin 14.04文件包下载失败的错误</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/%E5%BF%AB%E9%80%9F%E8%A7%A3%E5%86%B3Ubuntu-Kylin-14-04%E6%96%87%E4%BB%B6%E5%8C%85%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%94%99%E8%AF%AF/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他软件/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/</id>
+    <published>2019-06-29T03:48:23.000Z</published>
+    <updated>2019-09-17T01:41:28.529Z</updated>
+    
+    <content type="html"><![CDATA[<p>Ubuntu Kylin更新时出现错误是很常见的。下面大家将看到的是在Ubuntu Kylin 14.04下文件包下载失败的错误以及如何快速解决这个错误的技巧。</p><p>文件包下载失败的错误</p><p>这个错误并不仅限于Ubuntu Kylin。</p><p>首先让大家试着去了解一下这个错误。运行更新管理器时会看到“文件包下载失败的错误”：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%871(5).jpg"></p><p>从这些详细的错误信息大家会发现它无法从访问的URL得到特定的包。复制网址，并试图通过Web浏览器来访问它。正如预料中的那样，文件不存在：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%872(3).jpg"></p><p>为了进一步检查，便查看了同一个包中所有有效的版本，尝试去找出更新管理器无法找到的那个版本：</p><p><img src alt></p><p>有意思的是：为什么更新管理器要去得到这个不在服务器上的版本呢？</p><p>解决“文件包下载失败”的错误</p><p>错误的原因是更新管理器使用了不具有特定软件包的版本服务器。如果您不知道，当安装Ubuntu Kylin或其他Linux操作系统时，软件和更新都默认设置为离自己位置最近的镜像服务器。这是为了确保软件下载（和更新）处于良好的速度。</p><p>但是，可能您正在使用的服务器系统尚未从主服务器上更新。这种情况发生可能是有几个原因。那如何来解决这个错误？可以改变服务器为主服务器，就能继续顺利进行更新了。</p><p>大家一起来看看如何解决它。</p><p>第一步：</p><p>转到软件和更新：</p><p><img src alt> </p><p>第二步：</p><p>在Ubuntu Kylin软件选项卡中，更改服务器为主服务器。</p><p><img src alt></p><p>将所做的更改保存。它会更新软件的缓存。再次运行更新管理器。更新应该就可以了。</p><p>类似的无法下载资源信息的更新错误也是可以很容易地解决的。希望这个教程可以帮您解决在Ubuntu Kylin 14.04下载文件包失败的错误。如有任何疑问或建议，随时欢迎联系UK团队。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Ubuntu Kylin更新时出现错误是很常见的。下面大家将看到的是在Ubuntu Kylin 14.04下文件包下载失败的错误以及如何快速解决这个错误的技巧。&lt;/p&gt;
+&lt;p&gt;文件包下载失败的错误&lt;/p&gt;
+&lt;p&gt;这个错误并不仅限于Ubuntu Kylin。&lt;/p&gt;
+&lt;p&gt;首
       
     
     </summary>
@@ -257,126 +317,61 @@
   </entry>
   
   <entry>
-    <title>在优麒麟14.04上安装精美的Dalisha图标主题</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F14-04%E4%B8%8A%E5%AE%89%E8%A3%85%E7%B2%BE%E7%BE%8E%E7%9A%84Dalisha%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/在优麒麟14-04上安装精美的Dalisha图标主题/</id>
-    <published>2019-06-29T03:48:43.000Z</published>
-    <updated>2019-06-29T08:13:28.990Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="在优麒麟14-04上安装精美的Dalisha图标主题"><a href="#在优麒麟14-04上安装精美的Dalisha图标主题" class="headerlink" title="在优麒麟14.04上安装精美的Dalisha图标主题"></a>在优麒麟14.04上安装精美的Dalisha图标主题</h2><p>  Dalisha是一套优美的圆角图标，可应用于几乎所有主流的Linux桌面环境，例如Unity、GNOME、KDE、Cinnamon、Mate等。Dalisha拥有超过30,000个图标，目前正处于活跃开发状态。如果您愿意尝试，不妨跟随以下步骤在优麒麟上安装体验。</p><p><img src="http://www.ubuntukylin.com/upload/images/dalisha-7.jpg" alt> </p><p><strong>通过PPA在优麒麟上安装Dalisha</strong><br>  打开终端，执行以下命令（需要大约120MB的磁盘空间）：</p><ul><li><p>sudo add-apt-repository ppa:noobslab/icons</p></li><li><p>sudo apt-get update</p></li><li><p>sudo apt-get install dalisha-icons</p><p>  或者通过以下链接地址下载：<a href="http://gnome-look.org/content/show.php/Dalisha?content=166286" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a></p></li></ul><p><strong>通过优客助手设置试用Dalisha图标主题</strong><br>  安装完成之后，打开优客助手，在系统美化标签中选择Dalisha图标主题：</p><p><img src="http://www.ubuntukylin.com/upload/images/dalisha-2.png" alt><br>  接下来就可以欣赏使用最新的主题风格啦。</p><p><img src="http://www.ubuntukylin.com/upload/images/dalisha.png" alt><br>卸载Dalisha<br>  打开命令行，执行以下命令：</p><ul><li><p>sudo apt-get remove dalisha-icons </p></li><li><p>sudo add-apt-repository –remove ppa:noobslab/icons</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;在优麒麟14-04上安装精美的Dalisha图标主题&quot;&gt;&lt;a href=&quot;#在优麒麟14-04上安装精美的Dalisha图标主题&quot; class=&quot;headerlink&quot; title=&quot;在优麒麟14.04上安装精美的Dalisha图标主题&quot;&gt;&lt;/a&gt;在优麒麟14.0
-      
-    
-    </summary>
-    
-      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>快速解决Ubuntu Kylin 14.04文件包下载失败的错误</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%BF%AB%E9%80%9F%E8%A7%A3%E5%86%B3Ubuntu-Kylin-14-04%E6%96%87%E4%BB%B6%E5%8C%85%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%94%99%E8%AF%AF/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/</id>
-    <published>2019-06-29T03:48:23.000Z</published>
-    <updated>2019-06-29T08:06:19.169Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="快速解决Ubuntu-Kylin-14-04文件包下载失败的错误"><a href="#快速解决Ubuntu-Kylin-14-04文件包下载失败的错误" class="headerlink" title="快速解决Ubuntu Kylin 14.04文件包下载失败的错误"></a>快速解决Ubuntu Kylin 14.04文件包下载失败的错误</h2><p>Ubuntu Kylin更新时出现错误是很常见的。下面大家将看到的是在Ubuntu Kylin 14.04下文件包下载失败的错误以及如何快速解决这个错误的技巧。</p><p>文件包下载失败的错误</p><p>这个错误并不仅限于Ubuntu Kylin。</p><p>首先让大家试着去了解一下这个错误。运行更新管理器时会看到“文件包下载失败的错误”：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%871(5" alt>.jpg)</p><p>从这些详细的错误信息大家会发现它无法从访问的URL得到特定的包。复制网址，并试图通过Web浏览器来访问它。正如预料中的那样，文件不存在：</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%872(3" alt>.jpg)</p><p>为了进一步检查，便查看了同一个包中所有有效的版本，尝试去找出更新管理器无法找到的那个版本：</p><p><img src alt></p><p>有意思的是：为什么更新管理器要去得到这个不在服务器上的版本呢？</p><p>解决“文件包下载失败”的错误</p><p>错误的原因是更新管理器使用了不具有特定软件包的版本服务器。如果您不知道，当安装Ubuntu Kylin或其他Linux操作系统时，软件和更新都默认设置为离自己位置最近的镜像服务器。这是为了确保软件下载（和更新）处于良好的速度。</p><p>但是，可能您正在使用的服务器系统尚未从主服务器上更新。这种情况发生可能是有几个原因。那如何来解决这个错误？可以改变服务器为主服务器，就能继续顺利进行更新了。</p><p>大家一起来看看如何解决它。</p><p>第一步：</p><p>转到软件和更新：</p><p><img src alt> </p><p>第二步：</p><p>在Ubuntu Kylin软件选项卡中，更改服务器为主服务器。</p><p><img src alt></p><p>将所做的更改保存。它会更新软件的缓存。再次运行更新管理器。更新应该就可以了。</p><p>类似的无法下载资源信息的更新错误也是可以很容易地解决的。希望这个教程可以帮您解决在Ubuntu Kylin 14.04下载文件包失败的错误。如有任何疑问或建议，随时欢迎联系UK团队。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;快速解决Ubuntu-Kylin-14-04文件包下载失败的错误&quot;&gt;&lt;a href=&quot;#快速解决Ubuntu-Kylin-14-04文件包下载失败的错误&quot; class=&quot;headerlink&quot; title=&quot;快速解决Ubuntu Kylin 14.04文件包下载失
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%9C%A8%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88Windows-8-%E3%80%81Ubuntu-Kylin%EF%BC%89%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BB%8EWindows-8%E5%8D%B8%E8%BD%BDUbuntu-Kylin/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/%E5%9C%A8%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88Windows-8-%E3%80%81Ubuntu-Kylin%EF%BC%89%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BB%8EWindows-8%E5%8D%B8%E8%BD%BDUbuntu-Kylin/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/</id>
     <published>2019-06-29T03:47:58.000Z</published>
-    <updated>2019-06-29T07:04:54.782Z</updated>
+    <updated>2019-09-16T08:29:32.554Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin"><a href="#在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin" class="headerlink" title="在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin"></a>在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin</h2><p><img src="http://www.ubuntukylin.com/upload/images/q1.jpg" alt> </p><p>曾几次介绍如何在Windows 8存在的情况下安装Ubuntu Kylin。但是，我们如何从Windows 8中卸载Ubuntu Kylin呢？这篇教程适用于任何Linux操作系统，如Ubuntu Kylin、Linux Mint、Elementary或任何其他Linux的发行版。</p><p>如果您认为卸载Ubuntu Kylin是一个艰巨的任务，那完全是错误的，因为从Windows中删除Ubuntu Kylin是很容易的。如果你有一个Windows安装盘，从Windows中卸载Linux简直就是小菜一碟。</p><p>本教程教你当启动了Windows 8/8.1安装盘时如何从Windows 8或Windows 8.1中彻底删除Linux。</p><p>从双系统中安全卸载Ubuntu Kylin</p><p>如果您有Windows 8安装盘并且已经安装了Windows 8.1操作系统，它的运行过程都是一样的,虽不与Windows 7相同。如果有Windows安装盘，就来一起学习下面这个在Windows中删除Ubuntu Kylin Linux操作系统的过程。</p><p>从双系统中删除Linux分两部分进行。首先是删除已安装Linux的分区（S）。由于只删除Linux分区会导致Grub错误，所以第二部分是修复Windows启动加载器。</p><p>第一部分：在Windows中删除Linux分区</p><p>第1步：登录Windows。按Windows+ R，运行diskmgmt.msc命令打开Windows的磁盘管理工具。</p><p><img src="http://www.ubuntukylin.com/upload/images/q2.jpg" alt> </p><p> 第2步：既然已经安装了Linux，就很容易让您通过它的容量大小识别Linux分区。另一个提示可以通过看分区是否无文件系统和驱动器号来识别Linux分区。 Windows分区都标有一个驱动器号，如通常在NTFS或FAT文件系统C，D，E等。</p><p>正如您所看到的，这有三个Linux分区。</p><p><img src="http://www.ubuntukylin.com/upload/images/q3.jpg" alt> </p><p>第3步：选择Linux分区（S），右击选择“删除卷”选项。</p><p><img src="http://www.ubuntukylin.com/upload/images/q4.jpg" alt> </p><p>它会弹出一个警告，在这里选择“是”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q5.jpg" alt> </p><p>第4步：被删除的分区将作为一大块空闲空间。您可以扩展现有分区或创建一个新的Windows分区出来。如果想双启动Linux与Windows，建议创建一个新的驱动器（或卷或分区，随便您怎么称呼它）。</p><p><img src="http://www.ubuntukylin.com/upload/images/q6.jpg" alt> </p><p>第二部分：修复Windows启动加载器</p><p>一旦删除Linux分区，就需要花时间来修复Windows启动加载器。这里的图片可能有点不清晰，因为Ubuntu Kylin登录界面的截屏比Windows简单。</p><p>第1步：放入Windows 8安装盘，重启计算机。在开机时按F10或F12键，进入BIOS/ UEFI，从硬盘启动。</p><p><img src="http://www.ubuntukylin.com/upload/images/q7.jpg" alt> </p><p>第2步：选择“修复计算机”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q8.jpg" alt> </p><p>第3步：进入“故障处理”选项。</p><p><img src="http://www.ubuntukylin.com/upload/images/q9.jpg" alt> </p><p>第4步：在“故障处理”页面中，选择“高级选项”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q10.jpg" alt> </p><p>第5步：找到”命令提示符”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q11.jpg" alt> </p><p>第6步：在命令行中输入以下命令来修复Windows启动加载器。</p><p> bootrec.exe /fixmbr</p><p>通常情况下，它运行的时间很短。您甚至不必等它。</p><p><img src="http://www.ubuntukylin.com/upload/images/q11.jpg" alt> </p><p>第7步：一旦完成，重启计算机，这时候从硬盘正常启动，进入Windows。如果您仍看到Grub错误，请尝试以下步骤。</p><p>第8步：如果第6步失效，尝试在”高级故障排除”选项中的”自动修复”选项。</p><p><img src="http://www.ubuntukylin.com/upload/images/q13.jpg" alt> </p><p>这将需要一点时间来找问题，然后修复它。</p><p><img src="http://www.ubuntukylin.com/upload/images/q14.jpg" alt> </p><p>现在，如果您重启，应该在Windows中正常，就不会看到任何的grub救援错误。</p><p>希望这篇技巧文章能帮您从Windows8双系统启动中完全删除Ubuntu Kylin Linux系统。欢迎给UK团队提出任何问题或建议。</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="http://www.ubuntukylin.com/upload/images/q1.jpg" alt> </p><p>曾几次介绍如何在Windows 8存在的情况下安装Ubuntu Kylin。但是，我们如何从Windows 8中卸载Ubuntu Kylin呢？这篇教程适用于任何Linux操作系统，如Ubuntu Kylin、Linux Mint、Elementary或任何其他Linux的发行版。</p><p>如果您认为卸载Ubuntu Kylin是一个艰巨的任务，那完全是错误的，因为从Windows中删除Ubuntu Kylin是很容易的。如果你有一个Windows安装盘，从Windows中卸载Linux简直就是小菜一碟。</p><p>本教程教你当启动了Windows 8/8.1安装盘时如何从Windows 8或Windows 8.1中彻底删除Linux。</p><p>从双系统中安全卸载Ubuntu Kylin</p><p>如果您有Windows 8安装盘并且已经安装了Windows 8.1操作系统，它的运行过程都是一样的,虽不与Windows 7相同。如果有Windows安装盘，就来一起学习下面这个在Windows中删除Ubuntu Kylin Linux操作系统的过程。</p><p>从双系统中删除Linux分两部分进行。首先是删除已安装Linux的分区（S）。由于只删除Linux分区会导致Grub错误，所以第二部分是修复Windows启动加载器。</p><p>第一部分：在Windows中删除Linux分区</p><p>第1步：登录Windows。按Windows+ R，运行diskmgmt.msc命令打开Windows的磁盘管理工具。</p><p><img src="http://www.ubuntukylin.com/upload/images/q2.jpg" alt> </p><p> 第2步：既然已经安装了Linux，就很容易让您通过它的容量大小识别Linux分区。另一个提示可以通过看分区是否无文件系统和驱动器号来识别Linux分区。 Windows分区都标有一个驱动器号，如通常在NTFS或FAT文件系统C，D，E等。</p><p>正如您所看到的，这有三个Linux分区。</p><p><img src="http://www.ubuntukylin.com/upload/images/q3.jpg" alt> </p><p>第3步：选择Linux分区（S），右击选择“删除卷”选项。</p><p><img src="http://www.ubuntukylin.com/upload/images/q4.jpg" alt> </p><p>它会弹出一个警告，在这里选择“是”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q5.jpg" alt> </p><p>第4步：被删除的分区将作为一大块空闲空间。您可以扩展现有分区或创建一个新的Windows分区出来。如果想双启动Linux与Windows，建议创建一个新的驱动器（或卷或分区，随便您怎么称呼它）。</p><p><img src="http://www.ubuntukylin.com/upload/images/q6.jpg" alt> </p><p>第二部分：修复Windows启动加载器</p><p>一旦删除Linux分区，就需要花时间来修复Windows启动加载器。这里的图片可能有点不清晰，因为Ubuntu Kylin登录界面的截屏比Windows简单。</p><p>第1步：放入Windows 8安装盘，重启计算机。在开机时按F10或F12键，进入BIOS/ UEFI，从硬盘启动。</p><p><img src="http://www.ubuntukylin.com/upload/images/q7.jpg" alt> </p><p>第2步：选择“修复计算机”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q8.jpg" alt> </p><p>第3步：进入“故障处理”选项。</p><p><img src="http://www.ubuntukylin.com/upload/images/q9.jpg" alt> </p><p>第4步：在“故障处理”页面中，选择“高级选项”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q10.jpg" alt> </p><p>第5步：找到”命令提示符”。</p><p><img src="http://www.ubuntukylin.com/upload/images/q11.jpg" alt> </p><p>第6步：在命令行中输入以下命令来修复Windows启动加载器。</p><p> bootrec.exe /fixmbr</p><p>通常情况下，它运行的时间很短。您甚至不必等它。</p><p><img src="http://www.ubuntukylin.com/upload/images/q11.jpg" alt> </p><p>第7步：一旦完成，重启计算机，这时候从硬盘正常启动，进入Windows。如果您仍看到Grub错误，请尝试以下步骤。</p><p>第8步：如果第6步失效，尝试在”高级故障排除”选项中的”自动修复”选项。</p><p><img src="http://www.ubuntukylin.com/upload/images/q13.jpg" alt> </p><p>这将需要一点时间来找问题，然后修复它。</p><p><img src="http://www.ubuntukylin.com/upload/images/q14.jpg" alt> </p><p>现在，如果您重启，应该在Windows中正常，就不会看到任何的grub救援错误。</p><p>希望这篇技巧文章能帮您从Windows8双系统启动中完全删除Ubuntu Kylin Linux系统。欢迎给UK团队提出任何问题或建议。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin&quot;&gt;&lt;a href=&quot;#在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin&quot; class=
+        &lt;p&gt;&lt;img src=&quot;http://www.ubuntukylin.com/upload/images/q1.jpg&quot; alt&gt; &lt;/p&gt;
+&lt;p&gt;曾几次介绍如何在Windows 8存在的情况下安装Ubuntu Kylin。但是，我们如何从Windows 8中卸载Ubuntu 
       
     
     </summary>
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>“优麒麟备份助手”篇 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E8%87%AA%E5%B8%A6%E8%BD%AF%E4%BB%B6/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%A4%87%E4%BB%BD%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/自带软件/“优麒麟备份助手”篇/</id>
-    <published>2019-06-29T03:47:30.000Z</published>
-    <updated>2019-06-29T06:36:44.850Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="优麒麟备份助手”篇"><a href="#优麒麟备份助手”篇" class="headerlink" title="优麒麟备份助手”篇"></a>优麒麟备份助手”篇</h2><p>自从Ubuntu One关闭服务后，Linux平台下便又少了一个好用的备份工具。虽然系统集成了备份服务（Deja-dup），但由于没有同步至网盘等选项，显然无法满足时刻担心自己硬盘挂掉的筒子们。Ubuntu Kylin平台已有的金山快盘for Ubuntu Kylin支持同步文件至云端，但它毕竟不是专门的备份工具，在文件版本控制上远不及Deja-dup，如何合理利用这两样工具，扬长避短，打造Linux平台功能强大的备份工具呢？让我们一起来看看来自黑龙江大学的杨希斌同学是如何做的。</p><p>首先要做的就是下载安装文件：前往CSDN CODE上的项目地址：</p><p>开发者分支：<a href="https://code.csdn.net/cnlamo/deja-dup-uk/tree/master" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a></p><p>Src目录是项目的所有代码文件，pkg目录里便是已经打好包的安装文件，按照自己的系统选择版本，i386对应32位，x86_64对应64位。下载完成后cd到下载目录执行sudo dpkg -i *.deb进行安装。安装完成后，无需重启注销，立等可用！</p><p>现在我们就可以体验一下加过料的Deja-dup啦！打开金山快盘for UbuntuKylin，登陆。以便体验同步到金山快盘的功能。现在，打开系统设置，在左下角那个黑不溜秋的“备份”便是新的Deja-dup了。界面与原版并无太大出入，只是在要保存的文件夹选线中，多出来一键添加图片和文档的按钮，由于是初版，很多一键添加的选项没有想好如何布置，在未来的版本中，作者会添加更多更使用的选项供用户使用。</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%872(6" alt>.png)</p><p>在存储位置选项中，新增了一个备份到金山快盘的选项，选择这一项后，如果你已经登陆快盘，就会在主界面中出现备份文件本地存放位置和快盘空间大小。由于金山快盘是实时同步本地文件夹，所以备份文件会存放在本地。在未来的版本中，将不依赖与金山快盘客户端，而使用金山快盘开放API进行开发，解决这个问题。</p><p><img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%871(6" alt>.png)</p><p>杨希斌同学目前实现了备份文件云同步，今后会继续完善程序的其他功能，做得更好。</p><p>如果您也有兴趣为该项目贡献代码和建议，不妨到以下网址发表您的看法或者阅读、下载源代码：</p><p>开发者分支：<a href="https://code.csdn.net/cnlamo/deja-dup-uk/tree/master" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a></p><p>开发者博客：<a href="http://blog.csdn.net/cnlamohttp://blog.csdn.net/cnlamo" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;优麒麟备份助手”篇&quot;&gt;&lt;a href=&quot;#优麒麟备份助手”篇&quot; class=&quot;headerlink&quot; title=&quot;优麒麟备份助手”篇&quot;&gt;&lt;/a&gt;优麒麟备份助手”篇&lt;/h2&gt;&lt;p&gt;自从Ubuntu One关闭服务后，Linux平台下便又少了一个好用的备份工具。虽然
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
-    
-      <category term="自带软件" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E8%87%AA%E5%B8%A6%E8%BD%AF%E4%BB%B6/"/>
+      <category term="安装问题" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>“Linux U盘助手”篇 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9CLinux-U%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/“Linux-U盘助手”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/%E2%80%9CLinux-U%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/“Linux-U盘助手”篇/</id>
     <published>2019-06-29T03:47:02.000Z</published>
-    <updated>2019-06-29T06:44:15.113Z</updated>
+    <updated>2019-09-17T01:39:31.695Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="“Linux-U盘助手”篇"><a href="#“Linux-U盘助手”篇" class="headerlink" title="“Linux U盘助手”篇"></a>“Linux U盘助手”篇</h2><h3 id="一、软件的下载及编译："><a href="#一、软件的下载及编译：" class="headerlink" title="一、软件的下载及编译："></a>一、软件的下载及编译：</h3><ol><li><p>在CODE平台上访问项目<a href="https://code.csdn.net/silulusilulu/udmanager_linux/tree/master" rel="external nofollow noopener noreferrer" target="_blank">https://code.csdn.net/silulusilulu/udmanager_linux/tree/master</a> 。</p><ol start="2"><li>复制ssh地址git[at]code[dot]csdn[dot]net:silulusilulu/udmanager_linux.git。</li></ol></li><li><p>执行gitclone，将项目导入本地。</p></li></ol><p><img src="http://www.ubuntukylin.com/upload/images/1(2" alt>.png)</p><ol start="4"><li><p>在项目main/目录中执行qmake(qt4)，生成Makefile文件。（建议配置好qt环境变量，或找到qmake的相应路径）<br><img src="http://www.ubuntukylin.com/upload/images/2(2" alt>.png)</p></li><li><p>执行make命令，编译软件。</p></li></ol><p><img src="http://www.ubuntukylin.com/upload/images/3(1" alt>.png)</p><h3 id="二、软件的执行及功能演示："><a href="#二、软件的执行及功能演示：" class="headerlink" title="二、软件的执行及功能演示："></a>二、软件的执行及功能演示：</h3><ol><li>进入bin/目录运行软件，以root权限运行后软件处于u盘拔插的监听状态。</li></ol><p><img src alt></p><ol start="2"><li>插入u盘后，桌面上弹出悬浮窗口，可自由拖动。</li></ol><p><img src alt></p><ol start="3"><li>双击悬浮窗口，提示用户选择挂载目录。建议选择空目录作为挂载点，否则会覆盖丢失目录中原有数据。</li></ol><p><img src alt></p><ol start="4"><li>挂载目录选择完成后，进入主操作窗口（若挂载不成功会重复提示挂载）。</li></ol><p><img src alt></p><ol start="5"><li>主窗口可对u盘进行信息检测或操作。窗口上部为u盘信息检测部分，点击按钮，可得到u盘的信。</li></ol><p><img src alt></p><ol start="6"><li>点击Deepcheck I/O Speed按钮可深度测试u盘的读写速度，包括cache速度。</li></ol><p><img src alt></p><ol start="7"><li>点击fsck按钮可对u盘的文件系统进行扫描修复。（u盘内数据越多，检测速度越慢）</li></ol><p><img src alt></p><ol start="8"><li>点击formate按钮可对u盘进行格式化处理。格式化后原有数据丢失。软件提供几种常用的文件系统类型供用户选择，其中ext*文件系统格式化需要较长时间。若格式化过程中中断，则u盘文件系统损坏。<br><img src alt></li></ol><p>选择完成后点击ok按钮则对u盘进行格式化。</p><ol start="9"><li>主窗口下部为软件执行过程的中间数据，可与结果一同供用户参考，也可点击detail按钮对细节进行隐藏或显示操作。</li></ol><p><img src alt></p><ol start="10"><li><p>最小化主窗口则弹出悬浮窗口。</p></li><li><p>拔出u盘则隐藏主窗口和悬浮窗口。</p></li><li><p>软件运行后一直处于监听状态，可反复拔插u盘。</p></li><li><p>start按钮可对u盘的监听线程进行开启或关闭，建议一直保持开启，否则可能会有未知错误。。。</p></li><li><p>目前软件不具有同时操作多个u盘的功能。</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="一、软件的下载及编译："><a href="#一、软件的下载及编译：" class="headerlink" title="一、软件的下载及编译："></a>一、软件的下载及编译：</h3><ol><li><p>在CODE平台上访问项目<a href="https://code.csdn.net/silulusilulu/udmanager_linux/tree/master" rel="external nofollow noopener noreferrer" target="_blank">https://code.csdn.net/silulusilulu/udmanager_linux/tree/master</a> 。</p></li><li><p>复制ssh地址git[at]code[dot]csdn[dot]net:silulusilulu/udmanager_linux.git。</p></li><li><p>执行gitclone，将项目导入本地。</p></li></ol><p><img src="http://www.ubuntukylin.com/upload/images/1(2).png"></p><ol start="4"><li><p>在项目main/目录中执行qmake(qt4)，生成Makefile文件。（建议配置好qt环境变量，或找到qmake的相应路径）<br><img src="http://www.ubuntukylin.com/upload/images/2(2).png"></p></li><li><p>执行make命令，编译软件。</p></li></ol><p><img src="http://www.ubuntukylin.com/upload/images/3(1).png"></p><h3 id="二、软件的执行及功能演示："><a href="#二、软件的执行及功能演示：" class="headerlink" title="二、软件的执行及功能演示："></a>二、软件的执行及功能演示：</h3><ol><li>进入bin/目录运行软件，以root权限运行后软件处于u盘拔插的监听状态。</li></ol><p><img src alt></p><ol start="2"><li>插入u盘后，桌面上弹出悬浮窗口，可自由拖动。</li></ol><p><img src alt></p><ol start="3"><li>双击悬浮窗口，提示用户选择挂载目录。建议选择空目录作为挂载点，否则会覆盖丢失目录中原有数据。</li></ol><p><img src alt></p><ol start="4"><li>挂载目录选择完成后，进入主操作窗口（若挂载不成功会重复提示挂载）。</li></ol><p><img src alt></p><ol start="5"><li>主窗口可对u盘进行信息检测或操作。窗口上部为u盘信息检测部分，点击按钮，可得到u盘的信。</li></ol><p><img src alt></p><ol start="6"><li>点击Deepcheck I/O Speed按钮可深度测试u盘的读写速度，包括cache速度。</li></ol><p><img src alt></p><ol start="7"><li>点击fsck按钮可对u盘的文件系统进行扫描修复。（u盘内数据越多，检测速度越慢）</li></ol><p><img src alt></p><ol start="8"><li>点击formate按钮可对u盘进行格式化处理。格式化后原有数据丢失。软件提供几种常用的文件系统类型供用户选择，其中ext*文件系统格式化需要较长时间。若格式化过程中中断，则u盘文件系统损坏。<br><img src alt></li></ol><p>选择完成后点击ok按钮则对u盘进行格式化。</p><ol start="9"><li>主窗口下部为软件执行过程的中间数据，可与结果一同供用户参考，也可点击detail按钮对细节进行隐藏或显示操作。</li></ol><p><img src alt></p><ol start="10"><li><p>最小化主窗口则弹出悬浮窗口。</p></li><li><p>拔出u盘则隐藏主窗口和悬浮窗口。</p></li><li><p>软件运行后一直处于监听状态，可反复拔插u盘。</p></li><li><p>start按钮可对u盘的监听线程进行开启或关闭，建议一直保持开启，否则可能会有未知错误。。。</p></li><li><p>目前软件不具有同时操作多个u盘的功能。</p></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;“Linux-U盘助手”篇&quot;&gt;&lt;a href=&quot;#“Linux-U盘助手”篇&quot; class=&quot;headerlink&quot; title=&quot;“Linux U盘助手”篇&quot;&gt;&lt;/a&gt;“Linux U盘助手”篇&lt;/h2&gt;&lt;h3 id=&quot;一、软件的下载及编译：&quot;&gt;&lt;a href=
+        &lt;h3 id=&quot;一、软件的下载及编译：&quot;&gt;&lt;a href=&quot;#一、软件的下载及编译：&quot; class=&quot;headerlink&quot; title=&quot;一、软件的下载及编译：&quot;&gt;&lt;/a&gt;一、软件的下载及编译：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在CODE平台上访问项目&lt;a href=&quot;http
       
     
     </summary>
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
+      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+    
     
   </entry>
   
   <entry>
     <title>“Linux 快速启动工具”篇 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E2%80%9CLinux-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E5%B7%A5%E5%85%B7%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/“Linux-快速启动工具”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/%E2%80%9CLinux-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E5%B7%A5%E5%85%B7%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/“Linux-快速启动工具”篇/</id>
     <published>2019-06-29T03:46:38.000Z</published>
     <updated>2019-06-29T06:14:23.205Z</updated>
     
@@ -393,103 +388,135 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
+      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+    
     
   </entry>
   
   <entry>
     <title>Linux下的Notepad++编辑器——Notepadqq </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/Linux%E4%B8%8B%E7%9A%84Notepad-%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%94%E2%80%94Notepadqq/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他软件/Linux下的Notepad-编辑器——Notepadqq/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/Linux%E4%B8%8B%E7%9A%84Notepad-%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%94%E2%80%94Notepadqq/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/Linux下的Notepad-编辑器——Notepadqq/</id>
     <published>2019-06-29T03:45:41.000Z</published>
-    <updated>2019-06-29T05:54:57.124Z</updated>
+    <updated>2019-09-17T00:58:08.171Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Linux下的Notepad-编辑器——Notepadqq"><a href="#Linux下的Notepad-编辑器——Notepadqq" class="headerlink" title="Linux下的Notepad++编辑器——Notepadqq"></a>Linux下的Notepad++编辑器——Notepadqq</h2><p>  Notepad++是一套非常有特色的自由软件的纯文字编辑器(许可证:GPL)。有完整的中文化接口及支持多国语言编写的功能(UTF8 技术)。它的功能比 Windows 中的 Notepad(记事本)强大，除了可以用来制作一般的纯文字说明文件，也十分适合当作编写电脑程序的编辑器。Notepad++ 不仅有语法高亮度显示，也有语法折叠功能，并且支持宏以及扩充基本功能的外挂模组。但是可惜的是Notepad++只能在Windows平台下使用。<br>  工作中必须使用Windows时，Notepad++是众多程序员最喜爱的文本编辑器，在Ubuntu下是否能够使用到相同的软件呢？Notepadqq就是这样一款与Notepad++非常接近的编辑器，拥有几乎相同的功能。如果您是一个Notepad++粉丝，我们推荐您尝试下Notepadqq。以下是Notepadqq的截图：<br><img src="http://www.ubuntukylin.com/upload/images/notepadqq.png" alt></p><p>在Ubuntu / Ubuntu Kylin下安装和卸载 Nodepadqq<br>对于Ubuntu发行版本可以通过PPA安装，命令如下：</p><ul><li>sudo add-apt-repository ppa:notepadqq-team/notepadqq</li><li>sudo apt-get update</li><li>sudo apt-get install notepadqq  </li></ul><p>类似的，卸载命令如下：</p><ul><li>sudo apt-get remove notepadqq</li><li>sudo add-apt-repository –remove ppa:notepadqq-team/notepadqq</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>  Notepad++是一套非常有特色的自由软件的纯文字编辑器(许可证:GPL)。有完整的中文化接口及支持多国语言编写的功能(UTF8 技术)。它的功能比 Windows 中的 Notepad(记事本)强大，除了可以用来制作一般的纯文字说明文件，也十分适合当作编写电脑程序的编辑器。Notepad++ 不仅有语法高亮度显示，也有语法折叠功能，并且支持宏以及扩充基本功能的外挂模组。但是可惜的是Notepad++只能在Windows平台下使用。<br>  工作中必须使用Windows时，Notepad++是众多程序员最喜爱的文本编辑器，在Ubuntu下是否能够使用到相同的软件呢？Notepadqq就是这样一款与Notepad++非常接近的编辑器，拥有几乎相同的功能。如果您是一个Notepad++粉丝，我们推荐您尝试下Notepadqq。以下是Notepadqq的截图：<br><img src="http://www.ubuntukylin.com/upload/images/notepadqq.png" alt></p><p><strong>在Ubuntu / Ubuntu Kylin下安装和卸载 Nodepadqq</strong><br>对于Ubuntu发行版本可以通过PPA安装，命令如下：</p><ul><li>sudo add-apt-repository ppa:notepadqq-team/notepadqq</li><li>sudo apt-get update</li><li>sudo apt-get install notepadqq  </li></ul><p>类似的，卸载命令如下：</p><ul><li>sudo apt-get remove notepadqq</li><li>sudo add-apt-repository –remove ppa:notepadqq-team/notepadqq</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Linux下的Notepad-编辑器——Notepadqq&quot;&gt;&lt;a href=&quot;#Linux下的Notepad-编辑器——Notepadqq&quot; class=&quot;headerlink&quot; title=&quot;Linux下的Notepad++编辑器——Notepadqq&quot;&gt;&lt;/
+        &lt;p&gt;  Notepad++是一套非常有特色的自由软件的纯文字编辑器(许可证:GPL)。有完整的中文化接口及支持多国语言编写的功能(UTF8 技术)。它的功能比 Windows 中的 Notepad(记事本)强大，除了可以用来制作一般的纯文字说明文件，也十分适合当作编写电脑程序的
       
     
     </summary>
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他软件" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>优麒麟U盘刻录14.10镜像出问题的解决方法</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E4%BC%98%E9%BA%92%E9%BA%9FU%E7%9B%98%E5%88%BB%E5%BD%9514-10%E9%95%9C%E5%83%8F%E5%87%BA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/优麒麟U盘刻录14-10镜像出问题的解决方法/</id>
-    <published>2019-06-24T06:32:07.000Z</published>
-    <updated>2019-06-29T03:43:17.117Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="优麒麟U盘刻录14-10镜像出问题的解决方法"><a href="#优麒麟U盘刻录14-10镜像出问题的解决方法" class="headerlink" title="优麒麟U盘刻录14.10镜像出问题的解决方法　　"></a>优麒麟U盘刻录14.10镜像出问题的解决方法　　</h2><p>　　从几个月前的14.10 daily 版本就有U盘刻录无法启动的现象，相关bug可参见：<a href="https://bugs.launchpad.net/ubunt ... reator/+bug/1325801" rel="external nofollow noopener noreferrer" target="_blank">点击此处</a>　　<br>　　系统镜像本身没有任何问题，刻录光盘、dd到U盘启动都是正常的。此问题是由于ubuntu使用了最新的syslinux版本，而大多U盘刻录软件还未支持最新的syslinux版本导致u盘无法启动，现在ubuntu系统自带及部分刻录工具是已经支持最新ubuntu14.10的U盘刻录。　　<br>　　通常遇到问题的都是windows用户，请更新或使用推荐的刻录软件制作U盘启动盘，具体如下：<br>　　linux的用mkusb　　<br>　　windows的用Win32DiskImager 来制作U盘启动<br>　　具体用法：<br>　　　　<a href="https://wiki.ubuntu.com/Win32DiskImager/iso2usb" rel="external nofollow noopener noreferrer" target="_blank">https://wiki.ubuntu.com/Win32DiskImager/iso2usb</a><br>　　　　<a href="https://help.ubuntu.com/community/mkusb" rel="external nofollow noopener noreferrer" target="_blank">https://help.ubuntu.com/community/mkusb</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;优麒麟U盘刻录14-10镜像出问题的解决方法&quot;&gt;&lt;a href=&quot;#优麒麟U盘刻录14-10镜像出问题的解决方法&quot; class=&quot;headerlink&quot; title=&quot;优麒麟U盘刻录14.10镜像出问题的解决方法　　&quot;&gt;&lt;/a&gt;优麒麟U盘刻录14.10镜像出问题的
-      
-    
-    </summary>
-    
-      <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux新手大礼包：学习Linux你必须知道的那些事儿</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E7%9F%A5%E8%AF%86/Linux%E6%96%B0%E6%89%8B%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%9A%E5%AD%A6%E4%B9%A0Linux%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/小知识/Linux新手大礼包：学习Linux你必须知道的那些事儿/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/Linux%E6%96%B0%E6%89%8B%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%9A%E5%AD%A6%E4%B9%A0Linux%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/</id>
     <published>2019-06-24T06:31:49.000Z</published>
-    <updated>2019-06-29T03:27:03.347Z</updated>
+    <updated>2019-09-16T06:28:47.913Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Linux新手大礼包：学习Linux你必须知道的那些事儿"><a href="#Linux新手大礼包：学习Linux你必须知道的那些事儿" class="headerlink" title="Linux新手大礼包：学习Linux你必须知道的那些事儿　"></a>Linux新手大礼包：学习Linux你必须知道的那些事儿　</h2><p>　　欢迎加入 Linux 的大家庭！对你来说，这可能还是一个陌生的领域，不过相信随着逐步深入的了解，你会喜欢上 Linux，喜欢上开源的！首先，让我们来看一下，Linux新手应该注意和了解哪些事情吧！</p><h3 id="1-认识几个大牛"><a href="#1-认识几个大牛" class="headerlink" title="1. 认识几个大牛"></a>1. 认识几个大牛</h3><p>Linus Torvalds<br>生于1969年12月28日的芬兰赫尔辛基市，拥有美国国籍。他是 Linux 内核的最早作者，随后发起了这个开源项目，担任 Linux 内核的首席架构师与项目协调者，是当今世界最著名的电脑程序员、黑客之一。他还发起了 Git 这个开源项目，并为主要的开发者。</p><p>Richard Matthew Stallman<br>简称 RMS，生于1953年3月16日，美国自由软件运动的精神领袖、GNU 计划 以及自由软件基金会的创立者。作为一个著名的黑客，他的主要成就包括Emacs及后来的 GNU Emacs，GNU C 编译器及GDB调试器。他所写作的GNU通用公共许可证是世上最广为采用的自由软件许可证，为Copyleft观念开拓出一条崭新的道路。</p><p>Eric Steven Raymond<br>生于1957年12月4日，程序员，《大教堂与市集》的作者、《新黑客词 典》（”Jargon File”）的维护人、著名黑客。作为《新黑客词典》的主要编撰人以及维护者，雷蒙很早就被认为是黑客文化的历史学家以及人类学家。但是在1997年以 后，雷蒙被广泛公认为是开放源代码运动的主要领导者之一，并且是最为大众所知道（并最具争议性）的黑客。</p><p>了解更多开源界名人请见这里：</p><ul><li><a href="http://code.csdn.net/news/2819455" rel="external nofollow noopener noreferrer" target="_blank">历史上最知名的15位计算机科学家</a></li><li><a href="http://code.csdn.net/news/2820039" rel="external nofollow noopener noreferrer" target="_blank">岁月是把杀猪刀：开源大叔Linus Torvalds是如何炼成的</a></li><li><a href="http://code.csdn.net/news/2820040" rel="external nofollow noopener noreferrer" target="_blank">《一周开源弹》09期：《开源者说》访RMS大神</a></li><li><a href="http://code.csdn.net/news/2821086" rel="external nofollow noopener noreferrer" target="_blank">速来膜拜！20位活跃在Github上的国内技术大牛</a></li><li><a href="http://code.csdn.net/news/2820990" rel="external nofollow noopener noreferrer" target="_blank">10位Github上最受关注的前端大牛</a></li></ul><h3 id="2-了解Linux家族的明星成员"><a href="#2-了解Linux家族的明星成员" class="headerlink" title="2. 了解Linux家族的明星成员"></a>2. 了解Linux家族的明星成员</h3><p>　　<strong>Red Hat Enterprise Linux</strong>：Red Hat Enterprise Linux 是 Red Hat 公司的 Linux 发行版，面向商业市场，包括大型机。红帽公司从 Red Hat Enterprise Linux 5 开始对企业版 LINUX 的每个版本提供10年的支持，Red Hat Enterprise Linux 常简作 RHEL。Red Hat Enterprise Linux 大约3年发布一个新版本。<br>　　<strong>Fedora Linux</strong>：Fedora Linux 是较具知名度的 Linux 发行版之一。它是一套功能完备、更新快速的免费操作系统。而对赞助者 Red Hat 公司而言，它是许多新技术的测试平台，被认为可用的技术最终会加入到 Red Hat Enterprise Linux 中。<br>　　<strong>Centos</strong>：CentOS 全名为“社区企业操作系统”（Community Enterprise Operating System），是Linux发布版之一，它是来自于 Red Hat Enterprise Linux 依照开放源代码规定发布的源代码所编译而成。由于出自同样的源代码，因此有些要求高度稳定性的服务器以CentOS替代商业版的 Red Hat Enterprise Linux 使用。两者的不同，在于 CentOS 并不包含封闭源代码软件。CentOS 对上游代码的主要修改是为了卸载不能自由使用的商标。<br>　　<strong>Ubuntu</strong>：Ubuntu 是一个以桌面应用为主的 GNU/Linux 操作系统，其名称来自非洲南部祖鲁语或豪萨语的“ Ubuntu ”一词，意思是“人性”。 Ubuntu 基于 Debian 发行版，与 Debian 的不同在于它每6个月会发布一个新版本。<br>　　<strong>SUSE Linux</strong>：SUSE 是 Linux 操作系统其中一个发布版，也是德国的一个发布版。SUSE Linux 目前专注于企业市场。<br>　　<strong>openSUSE</strong>：openSUSE 是一个开放社区的计划，号称“最美丽的 Linux 发行版”。<br>　　<strong>Debian</strong>：Debian 是一种自由操作系统，全称 Debian GNU/Linux，由Debian计划（Debian Project）组织维护，Debian 是一个纯粹由自由软件所组合而成的操作环境。<br>　　<strong>Archlinux</strong>：Arch Linux(或称Arch)是一种以轻量简洁为设计理念的Linux发行版。其开发团队秉承简洁、优雅、正确和代码最小化的设计宗旨。Arch Linux 项目受 CRUX 启发，由 Judd Vinet 于2002年启动。</p><p>更多Linux版本请看这里： <a href="https://code.csdn.net/groups/7587/discources/935281" rel="external nofollow noopener noreferrer" target="_blank">Linux系统家族族谱</a></p><h3 id="3-初学者必读的Linux基础书籍"><a href="#3-初学者必读的Linux基础书籍" class="headerlink" title="3. 初学者必读的Linux基础书籍　　"></a>3. 初学者必读的Linux基础书籍　　</h3><p>　　要想学好Linux，你至少需要：一本好入门教材、一本linux指令参考手册、linux系统管理手册、讲解linux系统原理的书。这里我们推荐几部公认的好书：<br> <a href="http://book.douban.com/subject/4889838/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 基础学习篇》</a> 鸟哥 著；人民邮电出版社<br> <a href="http://book.douban.com/subject/10794788/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 服务器架设篇》</a>  鸟哥 著；机械工业出版社<br> <a href="http://book.douban.com/subject/25750712/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux命令、编辑器与Shell编程》</a> [美]索贝尔(Sobell·M.G.) 著； 清华大学出版社<br> <a href="http://book.douban.com/subject/1723151/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux设备驱动程序》</a> 科波特 著； 中国电力出版社<br> <a href="http://book.douban.com/subject/2287506/" rel="external nofollow noopener noreferrer" target="_blank">《 深入理解Linux内核》</a> （美）博韦，西斯特 著； 中国电力出版社<br> <a href="http://book.douban.com/subject/1788421/" rel="external nofollow noopener noreferrer" target="_blank">《 UNIX环境高级编程》</a>  W.Richard Stevens / Stephen A.Rago 著；人民邮电出版社</p><h3 id="4-熟悉Linux常用命令"><a href="#4-熟悉Linux常用命令" class="headerlink" title="4. 熟悉Linux常用命令"></a>4. 熟悉Linux常用命令</h3><ul><li>man ：任何时候你觉得对一个命令行不是很确定，都可以通过输入“man + 命令”来了解这个命令能确切是做什么的。</li><li>ls ：列出目录内容。</li><li>pwd ：在终端中显示当前工作目录的全路径。</li><li>cd ：要变更你当前所在的目录。</li><li>mkdir ：创建一个新的目录。</li><li>cp ：复制文件/重命名文件。</li><li>mv ：移动文件。</li><li>find 和 locate：搜索文件。</li><li>kill ：快速关闭一个进程。</li><li>passwd ：更改密码。</li><li>md5sum ：计算和检验MD5信息签名</li><li>history ：查询历史记录命令。</li><li>sudo ：(super user do)命令允许授权用户执行超级用户或者其它用户的命令。</li><li>touch ：创建一个新文件，或者将文件的访问和修改时间更新为当前时间。</li><li>chmod ：修改文件的访问权限。</li><li>chown ：改变文件拥有者和所在用户组。</li><li>apt ：APT是一个为Debian系列系统（Ubuntu，Kubuntu等等）开发的高级包管理器，在Gnu/Linux系统上，它会为包自动智能地搜索、安装、升级以及解决依赖问题。</li></ul><h3 id="5-小心新手常犯的几个错误"><a href="#5-小心新手常犯的几个错误" class="headerlink" title="5. 小心新手常犯的几个错误　"></a>5. 小心新手常犯的几个错误　</h3><p>　<strong>不要以根用户登录</strong>：这是使用Unix的惯例，除非必须那么不要轻易在根用户下运行任何东西。　<br>　<strong>文件命名混乱</strong>：避免使用美元符（$），括弧和百分号（%）等特殊字符，这些字符对于shell有着特殊意义，可能会引起冲突。避免使用空格，不要使用无效字符，“/”是根目录专用的。　<br>　<strong>所有文件都混在一起</strong>：将Home目录放在一个独立的分区上，可以在你重装系统甚至升级你的整个版本而不会丢失你的数据和个人设置。　<br>　<strong>试图点击运行.exe文件</strong>：除非你安装了WINE，双击那些.exe文件毫无用处。新用户需要知道，无论是Linux还是Windows，都只会运行针对自身系统开发的应用程序。　　<br>　<strong>以默认格式向微软Office用户发送OpenOffice文档</strong>：微软产品对其它操作系统和其它应用程序的友好性并不强，许多新Linux用户在共享文件给朋友时往往会遇到麻烦，因为对方无法阅读他们共享的文件格式，因此新Linux用户要注意存储文件的格式，确保它们能够被微软类似应用所打开。<br>　<strong>忽视更新</strong>：新的更新可以为一些新的漏洞打上补丁。维持更新可以在一个易受损的系统与一个安全的系统之间构造分水岭。Linux的安全来自于不断地维护。　　　　<br>　以上是一些操作习惯方面的错误，还有一些技术类型的错误，你可以查看《 避免UNIX和Linux中的常见错误》</p><h3 id="6-常去逛逛一些Linux社区和网站"><a href="#6-常去逛逛一些Linux社区和网站" class="headerlink" title="6. 常去逛逛一些Linux社区和网站"></a>6. 常去逛逛一些Linux社区和网站</h3><p>国内的专业Linux网站<br>　　<a href="http://www.chinaunix.net/" rel="external nofollow noopener noreferrer" target="_blank">ChinaUnix</a>： 创办于2001年，是一个以讨论Linux/Unix类操作系统技术、软件开发技术、数据库技术和网络应用技术等为主的开源技术社区网站。<br>　　<a href="http://bbs.linuxeden.com/index.php" rel="external nofollow noopener noreferrer" target="_blank">Linux伊甸园论坛</a>： 中文GNU/Linux开源社区，开源资讯门户网站，提供最新最快的Linux和开源资讯，24小时滚动更新。<br>　　<a href="http://linux.cn/" rel="external nofollow noopener noreferrer" target="_blank">LinuxCN</a>：Linux中国是专注于中文Linux技术、资讯的社区，在这里你可以获得一手的Linux资讯和技术知识。</p><p>国外著名Linux网站<br>　　<a href="http://www.linux.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux Online</a>： 最权威的Linux网站，文章讨论无所不包，软件硬件应有尽有。<br>　　<a href="http://li.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux国际协会(Linux International)</a>：有大量的Linux资源列表。<br>　　<a href="http://www.linux.com/" rel="external nofollow noopener noreferrer" target="_blank">Linux</a>：学习Linux的最好网站，也是Linux使用经验的汇聚地。<br>　　<a href="http://www.linuxforums.org/" rel="external nofollow noopener noreferrer" target="_blank">Linuxforums</a>： 提供Linux的软件资源，Linux论坛，Linux服务器发行版的信息，LINUX文章教程等信息的综合性网站。</p>]]></content>
+    <content type="html"><![CDATA[<p>　<br>　　欢迎加入 Linux 的大家庭！对你来说，这可能还是一个陌生的领域，不过相信随着逐步深入的了解，你会喜欢上 Linux，喜欢上开源的！首先，让我们来看一下，Linux新手应该注意和了解哪些事情吧！</p><h3 id="1-认识几个大牛"><a href="#1-认识几个大牛" class="headerlink" title="1. 认识几个大牛"></a>1. 认识几个大牛</h3><p>Linus Torvalds<br>生于1969年12月28日的芬兰赫尔辛基市，拥有美国国籍。他是 Linux 内核的最早作者，随后发起了这个开源项目，担任 Linux 内核的首席架构师与项目协调者，是当今世界最著名的电脑程序员、黑客之一。他还发起了 Git 这个开源项目，并为主要的开发者。</p><p>Richard Matthew Stallman<br>简称 RMS，生于1953年3月16日，美国自由软件运动的精神领袖、GNU 计划 以及自由软件基金会的创立者。作为一个著名的黑客，他的主要成就包括Emacs及后来的 GNU Emacs，GNU C 编译器及GDB调试器。他所写作的GNU通用公共许可证是世上最广为采用的自由软件许可证，为Copyleft观念开拓出一条崭新的道路。</p><p>Eric Steven Raymond<br>生于1957年12月4日，程序员，《大教堂与市集》的作者、《新黑客词 典》（”Jargon File”）的维护人、著名黑客。作为《新黑客词典》的主要编撰人以及维护者，雷蒙很早就被认为是黑客文化的历史学家以及人类学家。但是在1997年以 后，雷蒙被广泛公认为是开放源代码运动的主要领导者之一，并且是最为大众所知道（并最具争议性）的黑客。</p><h3 id="2-了解Linux家族的明星成员"><a href="#2-了解Linux家族的明星成员" class="headerlink" title="2. 了解Linux家族的明星成员"></a>2. 了解Linux家族的明星成员</h3><p>　　<strong>Red Hat Enterprise Linux</strong>：Red Hat Enterprise Linux 是 Red Hat 公司的 Linux 发行版，面向商业市场，包括大型机。红帽公司从 Red Hat Enterprise Linux 5 开始对企业版 LINUX 的每个版本提供10年的支持，Red Hat Enterprise Linux 常简作 RHEL。Red Hat Enterprise Linux 大约3年发布一个新版本。<br>　　<strong>Fedora Linux</strong>：Fedora Linux 是较具知名度的 Linux 发行版之一。它是一套功能完备、更新快速的免费操作系统。而对赞助者 Red Hat 公司而言，它是许多新技术的测试平台，被认为可用的技术最终会加入到 Red Hat Enterprise Linux 中。<br>　　<strong>Centos</strong>：CentOS 全名为“社区企业操作系统”（Community Enterprise Operating System），是Linux发布版之一，它是来自于 Red Hat Enterprise Linux 依照开放源代码规定发布的源代码所编译而成。由于出自同样的源代码，因此有些要求高度稳定性的服务器以CentOS替代商业版的 Red Hat Enterprise Linux 使用。两者的不同，在于 CentOS 并不包含封闭源代码软件。CentOS 对上游代码的主要修改是为了卸载不能自由使用的商标。<br>　　<strong>Ubuntu</strong>：Ubuntu 是一个以桌面应用为主的 GNU/Linux 操作系统，其名称来自非洲南部祖鲁语或豪萨语的“ Ubuntu ”一词，意思是“人性”。 Ubuntu 基于 Debian 发行版，与 Debian 的不同在于它每6个月会发布一个新版本。<br>　　<strong>SUSE Linux</strong>：SUSE 是 Linux 操作系统其中一个发布版，也是德国的一个发布版。SUSE Linux 目前专注于企业市场。<br>　　<strong>openSUSE</strong>：openSUSE 是一个开放社区的计划，号称“最美丽的 Linux 发行版”。<br>　　<strong>Debian</strong>：Debian 是一种自由操作系统，全称 Debian GNU/Linux，由Debian计划（Debian Project）组织维护，Debian 是一个纯粹由自由软件所组合而成的操作环境。<br>　　<strong>Archlinux</strong>：Arch Linux(或称Arch)是一种以轻量简洁为设计理念的Linux发行版。其开发团队秉承简洁、优雅、正确和代码最小化的设计宗旨。Arch Linux 项目受 CRUX 启发，由 Judd Vinet 于2002年启动。</p><p>更多Linux版本请看这里： <a href="https://code.csdn.net/groups/7587/discources/935281" rel="external nofollow noopener noreferrer" target="_blank">Linux系统家族族谱</a></p><h3 id="3-初学者必读的Linux基础书籍"><a href="#3-初学者必读的Linux基础书籍" class="headerlink" title="3. 初学者必读的Linux基础书籍　　"></a>3. 初学者必读的Linux基础书籍　　</h3><p>　　要想学好Linux，你至少需要：一本好入门教材、一本linux指令参考手册、linux系统管理手册、讲解linux系统原理的书。这里我们推荐几部公认的好书：<br> <a href="http://book.douban.com/subject/4889838/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 基础学习篇》</a> 鸟哥 著；人民邮电出版社<br> <a href="http://book.douban.com/subject/10794788/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 服务器架设篇》</a>  鸟哥 著；机械工业出版社<br> <a href="http://book.douban.com/subject/25750712/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux命令、编辑器与Shell编程》</a> [美]索贝尔(Sobell·M.G.) 著； 清华大学出版社<br> <a href="http://book.douban.com/subject/1723151/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux设备驱动程序》</a> 科波特 著； 中国电力出版社<br> <a href="http://book.douban.com/subject/2287506/" rel="external nofollow noopener noreferrer" target="_blank">《 深入理解Linux内核》</a> （美）博韦，西斯特 著； 中国电力出版社<br> <a href="http://book.douban.com/subject/1788421/" rel="external nofollow noopener noreferrer" target="_blank">《 UNIX环境高级编程》</a>  W.Richard Stevens / Stephen A.Rago 著；人民邮电出版社</p><h3 id="4-熟悉Linux常用命令"><a href="#4-熟悉Linux常用命令" class="headerlink" title="4. 熟悉Linux常用命令"></a>4. 熟悉Linux常用命令</h3><ul><li>man ：任何时候你觉得对一个命令行不是很确定，都可以通过输入“man + 命令”来了解这个命令能确切是做什么的。</li><li>ls ：列出目录内容。</li><li>pwd ：在终端中显示当前工作目录的全路径。</li><li>cd ：要变更你当前所在的目录。</li><li>mkdir ：创建一个新的目录。</li><li>cp ：复制文件/重命名文件。</li><li>mv ：移动文件。</li><li>find 和 locate：搜索文件。</li><li>kill ：快速关闭一个进程。</li><li>passwd ：更改密码。</li><li>md5sum ：计算和检验MD5信息签名</li><li>history ：查询历史记录命令。</li><li>sudo ：(super user do)命令允许授权用户执行超级用户或者其它用户的命令。</li><li>touch ：创建一个新文件，或者将文件的访问和修改时间更新为当前时间。</li><li>chmod ：修改文件的访问权限。</li><li>chown ：改变文件拥有者和所在用户组。</li><li>apt ：APT是一个为Debian系列系统（Ubuntu，Kubuntu等等）开发的高级包管理器，在Gnu/Linux系统上，它会为包自动智能地搜索、安装、升级以及解决依赖问题。</li></ul><h3 id="5-小心新手常犯的几个错误"><a href="#5-小心新手常犯的几个错误" class="headerlink" title="5. 小心新手常犯的几个错误　"></a>5. 小心新手常犯的几个错误　</h3><p>　<strong>不要以根用户登录</strong>：这是使用Unix的惯例，除非必须那么不要轻易在根用户下运行任何东西。　<br>　<strong>文件命名混乱</strong>：避免使用美元符（$），括弧和百分号（%）等特殊字符，这些字符对于shell有着特殊意义，可能会引起冲突。避免使用空格，不要使用无效字符，“/”是根目录专用的。　<br>　<strong>所有文件都混在一起</strong>：将Home目录放在一个独立的分区上，可以在你重装系统甚至升级你的整个版本而不会丢失你的数据和个人设置。　<br>　<strong>试图点击运行.exe文件</strong>：除非你安装了WINE，双击那些.exe文件毫无用处。新用户需要知道，无论是Linux还是Windows，都只会运行针对自身系统开发的应用程序。　　<br>　<strong>以默认格式向微软Office用户发送OpenOffice文档</strong>：微软产品对其它操作系统和其它应用程序的友好性并不强，许多新Linux用户在共享文件给朋友时往往会遇到麻烦，因为对方无法阅读他们共享的文件格式，因此新Linux用户要注意存储文件的格式，确保它们能够被微软类似应用所打开。<br>　<strong>忽视更新</strong>：新的更新可以为一些新的漏洞打上补丁。维持更新可以在一个易受损的系统与一个安全的系统之间构造分水岭。Linux的安全来自于不断地维护。　　　　<br>　以上是一些操作习惯方面的错误，还有一些技术类型的错误，你可以查看《 避免UNIX和Linux中的常见错误》</p><h3 id="6-常去逛逛一些Linux社区和网站"><a href="#6-常去逛逛一些Linux社区和网站" class="headerlink" title="6. 常去逛逛一些Linux社区和网站"></a>6. 常去逛逛一些Linux社区和网站</h3><p>国内的专业Linux网站<br>　　<a href="http://www.chinaunix.net/" rel="external nofollow noopener noreferrer" target="_blank">ChinaUnix</a>： 创办于2001年，是一个以讨论Linux/Unix类操作系统技术、软件开发技术、数据库技术和网络应用技术等为主的开源技术社区网站。<br>　　<a href="http://linux.cn/" rel="external nofollow noopener noreferrer" target="_blank">LinuxCN</a>：Linux中国是专注于中文Linux技术、资讯的社区，在这里你可以获得一手的Linux资讯和技术知识。</p><p>国外著名Linux网站<br>　　<a href="http://www.linux.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux Online</a>： 最权威的Linux网站，文章讨论无所不包，软件硬件应有尽有。<br>　　<a href="http://li.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux国际协会(Linux International)</a>：有大量的Linux资源列表。<br>　　<a href="http://www.linux.com/" rel="external nofollow noopener noreferrer" target="_blank">Linux</a>：学习Linux的最好网站，也是Linux使用经验的汇聚地。<br>　　<a href="http://www.linuxforums.org/" rel="external nofollow noopener noreferrer" target="_blank">Linuxforums</a>： 提供Linux的软件资源，Linux论坛，Linux服务器发行版的信息，LINUX文章教程等信息的综合性网站。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Linux新手大礼包：学习Linux你必须知道的那些事儿&quot;&gt;&lt;a href=&quot;#Linux新手大礼包：学习Linux你必须知道的那些事儿&quot; class=&quot;headerlink&quot; title=&quot;Linux新手大礼包：学习Linux你必须知道的那些事儿　&quot;&gt;&lt;/a&gt;L
+        &lt;p&gt;　&lt;br&gt;　　欢迎加入 Linux 的大家庭！对你来说，这可能还是一个陌生的领域，不过相信随着逐步深入的了解，你会喜欢上 Linux，喜欢上开源的！首先，让我们来看一下，Linux新手应该注意和了解哪些事情吧！&lt;/p&gt;
+&lt;h3 id=&quot;1-认识几个大牛&quot;&gt;&lt;a href=&quot;
       
     
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="小知识" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+      <category term="新手必看" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/"/>
     
     
   </entry>
   
   <entry>
     <title>特洛伊木马可能已感染Linux系统多年</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E7%9F%A5%E8%AF%86/%E7%89%B9%E6%B4%9B%E4%BC%8A%E6%9C%A8%E9%A9%AC%E5%8F%AF%E8%83%BD%E5%B7%B2%E6%84%9F%E6%9F%93Linux%E7%B3%BB%E7%BB%9F%E5%A4%9A%E5%B9%B4/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/小知识/特洛伊木马可能已感染Linux系统多年/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%85%B6%E4%BB%96/%E7%89%B9%E6%B4%9B%E4%BC%8A%E6%9C%A8%E9%A9%AC%E5%8F%AF%E8%83%BD%E5%B7%B2%E6%84%9F%E6%9F%93Linux%E7%B3%BB%E7%BB%9F%E5%A4%9A%E5%B9%B4/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/其他/特洛伊木马可能已感染Linux系统多年/</id>
     <published>2019-06-24T06:31:08.000Z</published>
-    <updated>2019-06-27T07:42:57.171Z</updated>
+    <updated>2019-09-16T06:23:54.437Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="特洛伊木马可能已感染Linux系统多年"><a href="#特洛伊木马可能已感染Linux系统多年" class="headerlink" title="特洛伊木马可能已感染Linux系统多年"></a>特洛伊木马可能已感染Linux系统多年</h2><p><img src="http://www.ubuntukylin.com/upload/images/trojan-word-cloud(1" alt>.jpg)<br>关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数Linux用户广泛接受，然而这只在一定程度上成立，并非完全如此。<br>       与其它操作系统一样，Linux同样无法对恶意代码、木马、rootkit、病毒等完全免疫，已知存在几种著名的Linux病毒。但是如果和Windows相比，数量非常有限。既然如此又何必故话重提呢？这是因为一种新的木马已在市场上被探测到，有可能影响Linux系统。</p><p><strong>Turla同样可以感染Linux系统</strong><br>       数月前一款名为Turla的精巧间谍程序被探测到，该病毒被认为源自俄罗斯并且受到俄罗斯政府的支持。间谍程序以欧洲和美国的政府机构为目标已长达四年之久。在最近的报告中，Kaspersky的研究者发现Turla不仅感染Windows系统，同样感染Linux操作系统。Kaspersky研究者将其描述为“Turla迷题的丢失片段”（missing piece of Turla puzzle）。<br><strong>什么是Turla的Linux模块以及该模块有何危险性？</strong><br>       “Linux Turla模块是一个静态编译的C/C++模块，去除了符号信息目的是增加分析的难度。其功能包括隐藏的网络通信、任意地远程命令执行和远程管理。大部分代码来自公开来源”。<br>       报告还提到该木马在执行任意远程命令时不需要提权，无法被常用的管理工具发现。就个人而言，这种说法值得怀疑。因此，作为Linux桌面用户是否会感到担忧呢？在我们经历过ShellShock Linux bug之后，现在就崩溃还为时过早。Turla最初针对的是政府机构而不是普通用户。我们可以等待和观察更多、更详细的消息。</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="http://www.ubuntukylin.com/upload/images/trojan-word-cloud(1).jpg"><br>关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数Linux用户广泛接受，然而这只在一定程度上成立，并非完全如此。<br>       与其它操作系统一样，Linux同样无法对恶意代码、木马、rootkit、病毒等完全免疫，已知存在几种著名的Linux病毒。但是如果和Windows相比，数量非常有限。既然如此又何必故话重提呢？这是因为一种新的木马已在市场上被探测到，有可能影响Linux系统。</p><p><strong>Turla同样可以感染Linux系统</strong><br>       数月前一款名为Turla的精巧间谍程序被探测到，该病毒被认为源自俄罗斯并且受到俄罗斯政府的支持。间谍程序以欧洲和美国的政府机构为目标已长达四年之久。在最近的报告中，Kaspersky的研究者发现Turla不仅感染Windows系统，同样感染Linux操作系统。Kaspersky研究者将其描述为“Turla迷题的丢失片段”（missing piece of Turla puzzle）。<br><strong>什么是Turla的Linux模块以及该模块有何危险性？</strong><br>       “Linux Turla模块是一个静态编译的C/C++模块，去除了符号信息目的是增加分析的难度。其功能包括隐藏的网络通信、任意地远程命令执行和远程管理。大部分代码来自公开来源”。<br>       报告还提到该木马在执行任意远程命令时不需要提权，无法被常用的管理工具发现。就个人而言，这种说法值得怀疑。因此，作为Linux桌面用户是否会感到担忧呢？在我们经历过ShellShock Linux bug之后，现在就崩溃还为时过早。Turla最初针对的是政府机构而不是普通用户。我们可以等待和观察更多、更详细的消息。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;特洛伊木马可能已感染Linux系统多年&quot;&gt;&lt;a href=&quot;#特洛伊木马可能已感染Linux系统多年&quot; class=&quot;headerlink&quot; title=&quot;特洛伊木马可能已感染Linux系统多年&quot;&gt;&lt;/a&gt;特洛伊木马可能已感染Linux系统多年&lt;/h2&gt;&lt;p&gt;&lt;i
+        &lt;p&gt;&lt;img src=&quot;http://www.ubuntukylin.com/upload/images/trojan-word-cloud(1).jpg&quot;&gt;&lt;br&gt;关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数Li
       
     
     </summary>
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="小知识" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+      <category term="其他" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%85%B6%E4%BB%96/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/U%E7%9B%98%E6%95%99%E7%A8%8B/Windows-8-1-UEFI-%E6%A8%A1%E5%BC%8F%E4%B8%8BU%E7%9B%98%E5%AE%89%E8%A3%85Ubuntu-Kylin-14-10-%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/</id>
+    <published>2019-06-24T06:30:40.000Z</published>
+    <updated>2019-09-16T08:06:42.404Z</updated>
+    
+    <content type="html"><![CDATA[<p>因办公需要，Linux 系统是必需的，本文作者是 Windows8.1 系统，笔记本电脑型号是联想 Y400。 由于虚拟机的慢速，所以决定删除一个硬盘然后独立安装 Linux 的操作系统。</p><h3 id="1-Window-8-1-的情况："><a href="#1-Window-8-1-的情况：" class="headerlink" title="1. Window 8.1 的情况："></a>1. Window 8.1 的情况：</h3><p>windows 8.1 系统原装正版，电脑是联想 Y400，进入 Bios（开机出现Logo后按F2），因为UEFI的引导形式，BIOS里面没有U盘启动的选项。只有 UEFI 模式和 Legacy (传统模式)这两个选项。第一个尝试是在 Legacy 模式下进行传统的安装，这个和常规的安装方式没有什么区别。这里以 Ubuntu Kylin 为例。<br>    准备工作：<br>   （1） 第一次安装的是32位 Ubuntu Kylin 14.10，安装方式是U盘安装，因为 Bios 没有从 U 盘引导的选项，所以需要做一些准备工作;<br>   （2） 进入Windows系统，关掉快速启动，（控制面板-&gt;电源选项-&gt;左侧选择电源按钮的功能-&gt;单击选择当前不可用的设置-&gt;在下面的关机设置中关掉快速启动）;<br>   （3） 开机F2（不同机器不一样），进入Bios，关掉Secure Boot（安全启动），设置UEFI模式为Legacy模式，设置Legacy优先;<br>   （4） U 盘格式化，最好格式化成 FAT32 格式的，然后用刻录工具刻盘，比如软通碟（作者第一次用软通碟但是刻录的 U 盘无法正确引导安装，上网查了似乎对 legacy 等支持不好，所以在网上的建议下用了 Win32DiskImager ）就没有问题;<br>   （5） 备份重要的文件，防止安装出问题把系统搞坏了;<br>   （6） 下载 MBRFIX 工具，这个是你要删除 Ubuntu Kylin 时候防止 MBR 破话 Windows 的引导导致不能进入系统;<br>   （7） 防患于为然，最好有个PE系统恢复盘。<br>   （8） 下载 DiskGenius ，这个是因为你的 U 盘做完引导盘后你如果格式化，U 盘只有几百K的容量，你需要用这个软件把 U 盘丢失为分配的内存重新分配上；</p><h3 id="2-Ubuntu-Kylin-14-10-Legacy-U盘安装："><a href="#2-Ubuntu-Kylin-14-10-Legacy-U盘安装：" class="headerlink" title="2. Ubuntu Kylin 14.10 Legacy U盘安装："></a>2. Ubuntu Kylin 14.10 Legacy U盘安装：</h3><p>这个实际上是传统安装方式;<br>   （1） 插入U盘，因为之前已经在 Bios 中设置过 Legacy 和 Legacy 优先了，所以正常情况下应该是可以看到一个安装画面的，这个安装画面是紫色的，下面有个小人和一个图标，看到这个画面说明是传统的安装方式，这里安装的是32位的;<br>   （2） 一路默认就可以了，但是比较重要的是分区这块儿;<br>   （3） 这里分了 swap 交换分区 -2G ，根目录 -70G ，home-120G ，这个其实没那么严格，大家可以参考网上的一些建议，注意这里没有分 boot 分区，因为默认是会将 boot 挂载在全盘上的，所以出来的结果是以 Ubuntu Kylin 引导的（其实实际上不是，后面在详细分析）;<br>   （4） 分区下面的启动加载就保持不变了，默认为全盘;<br>   （5） 好了，一路耐心等待，重启的时候（U盘要拔掉，要不有进入安装界面了），就会看到 Ubuntu Kylin 的选择界面了，可以选 Ubuntu Kylin ，也可以选 Windows 8.1,正常情况下 Ubuntu Kylin 可以进去没有问题，但是 Windows 8.1却进不去了;<br>   （6） 原因是因为 Windows8.1是以UEFI模式安装引导的，而 Ubuntu Kylin 是在传统模式下安装的，所以理论上在前面的安装过程中希望通过 Ubuntu Kylin 引导 Windows，但结果是俩者不协同，导致 Ubuntu Kylin 生成的 windows 启动项是错误的;<br>   （7） 于是问题就来了，怎么进入 windows，很简单，重启进入 Bios，把 Legacy 改回为 UEFI，然后就又可以顺利的进入 Windows 8 了，但这时候没有 Ubuntu Kylin 的进入选项，这意味着你要想进入 Ubuntu Kylin ，就重新把 Legacy 改回为 UEFI 就可以了;如果你能忍受这样的麻烦，到 这里也算是顺利完成了;<br>   （8） 曾经试图想把 Ubuntu Kylin 的 boot 挂载在另外的分区上，然后设置启动项为该分区，然后希望通过 easyBCD 编辑从 Windows 引导，但是根本行不通，因为 UEFI 和 Legacy 两者各自独立，很难完成互相引导，至少我没有办到;<br>   （9） 最后的结果就是，看似是双系统，但是每次进入不同的系统都要重新设置 Bios ，非常麻烦！</p><h3 id="3-Ubuntu-Kylin-14-10-UEFI-U盘安装："><a href="#3-Ubuntu-Kylin-14-10-UEFI-U盘安装：" class="headerlink" title="3. Ubuntu Kylin 14.10 UEFI U盘安装："></a>3. Ubuntu Kylin 14.10 UEFI U盘安装：</h3><p>因为上面不爽，一气之下在Win8下面把 Ubuntu Kylin 的盘全删了，但是手贱造成的结果就是再次试图通过设置Bios为 Legacy 然后U盘安装盘无法引 导，这是因为之前将boot挂在全盘，破坏了MBR启动项，导致系统引导出错，但我还是可以通过更改为UEFI进入win8,所以我觉得也是有一点好的， 两种模式即便传统安装的 Ubuntu Kylin 死掉了，我还是能进入win8系统，于是在win8下重新把MBR用MBRFIX工具修复一下就好了，这个工具就只用 在命令行输入一行命令就可以了;觉得这个不是办法，决定用UEFI模式安装 Ubuntu Kylin 。<br>   （1） U 盘格式化，只有几百K,用 DiskGenius 把U盘的这几百K删了然后把所有未分配的U盘内存重新分配;<br>   （2） 注意U盘要格式化为fat32的;<br>   （3） 下载 Ubuntu Kylin 14.10 一定要是64位的，32位什么情况我就不得知了，我的电脑是64位，这里之针对64位安装的童鞋;<br>   （4） 刻录U盘，插入U盘重启;<br>   （5） 进入 BIOS，设置为 UEFI 模式，你会看到有一个 USB 的启动选项，这是因为U盘里有 .efi 这个文件，所以UEFI模式会自动检测，选择改选项优先启动就可以了;<br>   （6） 重启，Ubuntu Kylin 进入安装界面，这个界面与传统安装有所不同，没有之前的小人和图标了，而是在左上角有三行字，第一行是“Install…”，选择安装就可以了;<br>   （7） 在分配硬盘的时候，我分了四个区 /boot 挂载为 EFI 分区（这里我分了200M），/swap 交换分区，/根目录，/home 家分区;<br>   （8） 下面的启动分区设置为 /boot 所在的分区;<br>   （9） 其实这里你看似分了一个 /boot，以为启动项会挂载到你的这个 /boot 分区上，其实不然，无论有没有这个分区，Ubuntu 都会把 EFI 文件拷贝到一 个专门的EFI启动分区，这个分区是和 WIndow8 共用的，在硬盘设置你列表中你可以明显看到，一般在 Windows OS 分区的前面，sda2，你可以仔细检查一下，因为很明显有标志;<br>   （10） 所以第7步中你也可以不要 /boot，而在下面把启动加载的硬盘设置为 EFI 分区就可以了;<br>   （11） 你可能担心这样会破坏 windows 的引导，或者你以后删除 Ubuntu Kylin 会对 windows 的引导造成问题，其实不然，这样更安全，因为这样安装会在EFI分区新建一个 Ubuntu Kylin 的efi文件夹，专门负责 ubuntu Kylin 的引导，windows 的文件夹专门负责 windows 的引导，所以删除一个另一个也不会出问题，只是删除了后会有启动项的残留项，随便用efi工具清理一下就可以了;<br>  （12） 继续，重启，进入 Bios ，这个会发现多了 Ubuntu Kylin 这一个条目，原来只有( windows boot manager，boot from IPv4，boot from IPv6 )，把 Ubuntu Kylin 的选项调整到最上面，这样每次开机的的时候就会有 Ubuntu Kylin 还有 Ubuntu Kylin 的修复模式还有 Windows 8;<br>  目前支持 EFI 安装的 linux 系统有 Ubuntu、Ubuntu Kylin、Fedora 和 opensuse，比较新的版本支持，64位刻成盘Fat32格式基本上可以被自动检测到，安全启动要在bios里面关闭到，opensuse 支持安全启动模式下的安装，不过不知道效果怎么样，没有试验。大家在安装系统之前最好把准备工作做足，免得系统崩溃又没有PE修复盘欲哭无泪，装系统也是考验人品和耐心的事情，假如 Linux 里面可以看到 Windows 的盘符和其他硬盘，不要乱删。</p><p>原文：<a href="http://forum.ubuntu.org.cn/viewtopic.php?t=466297" rel="external nofollow noopener noreferrer" target="_blank">http://forum.ubuntu.org.cn/viewtopic.php?t=466297</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;因办公需要，Linux 系统是必需的，本文作者是 Windows8.1 系统，笔记本电脑型号是联想 Y400。 由于虚拟机的慢速，所以决定删除一个硬盘然后独立安装 Linux 的操作系统。&lt;/p&gt;
+&lt;h3 id=&quot;1-Window-8-1-的情况：&quot;&gt;&lt;a href=&quot;#1
+      
+    
+    </summary>
+    
+      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="U盘教程" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/U%E7%9B%98%E6%95%99%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Aptik%E6%9D%A5%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D-Ubuntu-Ubuntu-Kylin-%E4%B8%AD%E7%9A%84Apps%E5%92%8CPPAs/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/</id>
+    <published>2019-06-24T06:30:22.000Z</published>
+    <updated>2019-09-16T05:48:43.280Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.ubuntukylin.com/upload/images/a1(1).png"></p><p>当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其设置会很方便的。此时 Aptik 粉墨登场，它可以帮助你轻松实现。</p><p><strong>Aptik</strong>（自动包备份和恢复）是一个可以用在Ubuntu、Ubuntu Kylin 和其他基于Debian以及Ubuntu的Linux发行版上的应用，它允许你将已经安装过的包括软件库、下载包、安装的应用和主题、用户设置在内的PPAs(个人软件包存档)备份到外部的U盘、网络存储或者类似于Dropbox的云服务上。</p><p>注意：当我们在此文章中说到输入某些东西的时候，如果被输入的内容被引号包裹，请不要将引号一起输入进去，除非我们有特殊说明。</p><p>想要安装Aptik，需要先添加其PPA。使用Ctrl + Alt + T快捷键打开一个新的终端窗口。输入以下文字，并按回车执行。</p><ul><li>sudo apt-add-repository –y ppa:teejee2008/ppa</li></ul><p>当提示输入密码的时候，输入你的密码然后按回车。</p><p><img src="http://www.ubuntukylin.com/upload/images/a2(1).png"></p><p>在命令行提示符输入下边的命令，来确保资源库已经是最新版本。</p><ul><li>sudo apt-get update</li></ul><p><img src="http://www.ubuntukylin.com/upload/images/a3.png" alt></p><p>更新完毕后，你就完成了安装Aptik的准备工作。接下来输入以下命令并按回车：</p><ul><li>sudo apt-get install aptik</li></ul><p>注意：你可能会看到一些有关于获取不到包更新的错误提示。不过别担心，如果这些提示看起来跟下边图片中类似的话，你的Aptik的安装就没有任何问题。</p><p><img src="http://www.ubuntukylin.com/upload/images/a4.png" alt></p><p>安装过程会被显示出来。其中一个被显示出来的消息会提到此次安装会使用掉多少磁盘空间，然后提示你是否要继续，按下“y”再按回车，继续安装。</p><p><img src="http://www.ubuntukylin.com/upload/images/a5.png" alt></p><p>当安装完成后，输入“Exit”并按回车或者按下左上角的“X”按钮，关闭终端窗口。</p><p><img src="http://www.ubuntukylin.com/upload/images/a6.png" alt></p><p>在正式运行Aptik前，你需要设置好备份目录到一个U盘、网络驱动器或者类似于Dropbox和Google Drive的云帐号上。这儿的例子中，我们使用的是Dropbox。</p><p><img src="http://www.ubuntukylin.com/upload/images/a7.png" alt></p><p>一旦设置好备份目录，点击启动栏上方的“Search”按钮。</p><p><img src="http://www.ubuntukylin.com/upload/images/a8.png" alt></p><p>在搜索框中键入 “aptik”。结果会随着你的输入显示出来。当Aptik图标显示出来的时候，点击它打开应用。</p><p><img src="http://www.ubuntukylin.com/upload/images/a9.png" alt></p><p>此时一个对话框会显示出来要求你输入密码。输入你的密码并按“OK”按钮。</p><p><img src="http://www.ubuntukylin.com/upload/images/a10.png" alt></p><p>Aptik的主窗口显示出来了。从“Backup Directory”下拉列表中选择“Other…”。这个操作允许你选择你已经建立好的备份目录。</p><p>注意：在下拉列表的右侧的 “Open” 按钮会在一个文件管理窗口中打开选择目录功能。</p><p><img src="http://www.ubuntukylin.com/upload/images/a11.png" alt></p><p>在 “Backup Directory” 对话窗口中，定位到你的备份目录，然后按“Open”。</p><p>注意：如果此时你尚未建立备份目录或者想在备份目录中新建个子目录，你可以点“Create Folder”来新建目录。</p><p><img src="http://www.ubuntukylin.com/upload/images/a12.png" alt></p><p>点击“Software Sources (PPAs).”右侧的 “Backup”来备份已安装的PPAs。</p><p><img src="http://www.ubuntukylin.com/upload/images/a13.png" alt></p><p>然后“Backup Software Sources”对话窗口显示出来。已安装的包和对应的源（PPA）同时也显示出来了。选择你需要备份的源（PPAs），或者点“Select All”按钮选择所有源。</p><p><img src="http://www.ubuntukylin.com/upload/images/a14.png" alt></p><p>点击 “Backup” 开始备份。</p><p><img src="http://www.ubuntukylin.com/upload/images/a15.png" alt></p><p>备份完成后，一个提示你备份完成的对话窗口会蹦出来。点击 “OK” 关掉。</p><p>一个名为“ppa.list”的文件出现在了备份目录中。</p><p><img src="http://www.ubuntukylin.com/upload/images/a16.png" alt></p><p>接下来，“Downloaded Packages (APT Cache)”的项目只对重装同样版本的Ubuntu有用处。它会备份下你系统缓存(/var/cache/apt/archives)中的包。如果你是升级系统的话，可以跳过这个条目，因为针对新系统的包会比现有系统缓存中的包更加新一些。</p><p>备份和恢复下载过的包，这可以在重装Ubuntu，并且重装包的时候节省时间和网络带宽。因为一旦你把这些包恢复到系统缓存中之后，他们可以重新被利用起来，这样下载过程就免了，包的安装会更加快捷。</p><p>如果你是重装相同版本的Ubuntu系统的话，点击 “Downloaded Packages (APT Cache)” 右侧的 “Backup” 按钮来备份系统缓存中的包。</p><p>注意：当你备份下载过的包的时候是没有二级对话框出现的。你系统缓存 (/var/cache/apt/archives) 中的包会被拷贝到备份目录下一个名叫 “archives” 的文件夹中，当整个过程完成后会出现一个对话框来告诉你备份已经完成。</p><p><img src="http://www.ubuntukylin.com/upload/images/a17.png" alt></p><p>有一些包是你的Ubuntu发行版的一部分。因为安装Ubuntu系统的时候会自动安装它们，所以它们是不会被备份下来的。例如，火狐浏览器在Ubuntu和其他类似Linux发行版上都是默认被安装的，所以默认情况下，它不会被选择备份。</p><p>像<a href="http://www.howtogeek.com/203768" rel="external nofollow noopener noreferrer" target="_blank">package for the Chrome web browser</a>这种系统安装完后才安装的包或者包含 Aptik 的包会默认被选择上。这可以方便你备份这些后安装的包。</p><p>按照需要选择想要备份的包。点击 “Software Selections” 右侧的 “Backup” 按钮备份顶层包。</p><p>注意：依赖包不会出现在这个备份中。</p><p><img src="http://www.ubuntukylin.com/upload/images/a18.png" alt></p><p>备份目录中出现了两个名为 “packages.list” 和“packages-installed.list” 的文件，并且会弹出一个通知你备份完成的对话框。点击 ”OK“关闭它。</p><p>注意：“packages-installed.list”文件包含了所有的包，而 “packages.list” 在包含了所有包的前提下还指出了那些包被选择上了。</p><p><img src="http://www.ubuntukylin.com/upload/images/a19.png" alt></p><p>要备份已安装软件的设置的话，点击 Aptik 主界面 “Application Settings” 右侧的 “Backup” 按钮，选择你要备份的设置，点击“Backup”。</p><p>注意：如果你要选择所有设置，点击“Select All”按钮。</p><p><img src="http://www.ubuntukylin.com/upload/images/a20.png" alt></p><p>被选择的配置文件统一被打包到一个名叫 “app-settings.tar.gz” 的文件中。</p><p><img src="http://www.ubuntukylin.com/upload/images/a21.png" alt></p><p>当打包完成后，打包后的文件被拷贝到备份目录下，另外一个备份成功的对话框出现。点击“OK”关掉。</p><p><img src="http://www.ubuntukylin.com/upload/images/a22.png" alt></p><p>放在 “/usr/share/themes” 目录的主题和放在 “/usr/share/icons” 目录的图标也可以备份。点击 “Themes and Icons” 右侧的 “Backup” 来进行此操作。“Backup Themes” 对话框默认选择了所有的主题和图标。你可以安装需要的、取消一些不要的，然后点击 “Backup” 进行备份。</p><p><img src="http://www.ubuntukylin.com/upload/images/a23.png" alt></p><p>主题被打包拷贝到备份目录下的 “themes” 文件夹中，图标被打包拷贝到备份目录下的 “icons” 文件夹中。然后成功提示对话框出现，点击“OK”关闭它。</p><p><img src="http://www.ubuntukylin.com/upload/images/a24.png" alt></p><p>一旦你完成了需要的备份，点击主界面左上角的“X”关闭 Aptik 。</p><p><img src="http://www.ubuntukylin.com/upload/images/a25.png" alt></p><p>备份过的文件已存在于你选择的备份目录中，可以随时查看。</p><p><img src="http://www.ubuntukylin.com/upload/images/a26.png" alt></p><p>当你重装Ubuntu/Ubuntu Kylin或者安装新版本后，在新的系统中安装 Aptik 并且将备份好的文件置于新系统中使用。运行 Aptik，并使用每个条目的 “Restore” 按钮来恢复你的软件源、应用、包、设置、主题以及图标。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://www.ubuntukylin.com/upload/images/a1(1).png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
