@@ -6,25 +6,19 @@ tags:
 categories:
 ---
 
-
-
-
-
-## 百度网盘 Linux 版发布，搭配优麒麟运行更完美!
-
 近日，百度官宣推出了百度网盘 Linux 版（在此之前已发布 Windows、Android、iPhone、iPad、Windows Phone、Mac 等多个平台的版本），版本号为 Linux V2.0.1，这无疑对于使用 Linux 操作系统的用户而言是一个激动人心的好消息。目前官方网站的百度网盘 Linux 版下载只提供 rpm 格式，所以为方便用户在优麒麟上用 deb 格式的安装，小编已在下文中提供 deb 下载链接。
 
 ![](http://www.ubuntukylin.com/upload/201906/1560758952534116.png)
 
-一、下载百度网盘Linux版
+### 下载百度网盘Linux版
 
 点击链接 [](https://www.ubuntukylin.com/public/pdf/baidunetdisk_linux_2.0.1-2_amd64.deb) 下载。
 
-二、在优麒麟19.04上安装百度网盘
+### 在优麒麟19.04上安装百度网盘
 
-    sudo dpkg -i baidunetdisk_linux_2.0.1-2_amd64.deb
+sudo dpkg -i baidunetdisk_linux_2.0.1-2_amd64.deb
 
-三、运行和使用百度网盘客户端
+### 运行和使用百度网盘客户端
 
 1、打开开始菜单，点击“ baidunetdisk ”图标运行百度网盘 APP。当然如果您想以后直接在桌面快速打开，也可以右击选择“添加到桌面”来产生桌面快捷方式。
 
