@@ -62,8 +62,8 @@
   
   <entry>
     <title>快速检查电脑是否配备USB 3.0</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%AB%E9%80%9F%E6%A3%80%E6%9F%A5%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E9%85%8D%E5%A4%87USB-3-0/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/基础操作/快速检查电脑是否配备USB-3-0/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%AB%E9%80%9F%E6%A3%80%E6%9F%A5%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E9%85%8D%E5%A4%87USB-3-0/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/1.基础操作/快速检查电脑是否配备USB-3-0/</id>
     <published>2019-06-29T03:53:54.000Z</published>
     <updated>2019-09-17T01:53:47.165Z</updated>
     
@@ -80,15 +80,15 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
+      <category term="1.基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/1-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>如何让你的“笨兔”更像苹果？</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E2%80%9C%E7%AC%A8%E5%85%94%E2%80%9D%E6%9B%B4%E5%83%8F%E8%8B%B9%E6%9E%9C%EF%BC%9F/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/桌面风格/如何让你的“笨兔”更像苹果？/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/4.%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E2%80%9C%E7%AC%A8%E5%85%94%E2%80%9D%E6%9B%B4%E5%83%8F%E8%8B%B9%E6%9E%9C%EF%BC%9F/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/4.桌面风格/如何让你的“笨兔”更像苹果？/</id>
     <published>2019-06-29T03:53:35.000Z</published>
     <updated>2019-09-17T02:04:21.793Z</updated>
     
@@ -105,15 +105,15 @@
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="桌面风格" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/"/>
+      <category term="4.桌面风格" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/4-%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/"/>
     
     
   </entry>
   
   <entry>
     <title>如何修复Ubuntu Kylin 14.04丢失系统设置问题</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8DUbuntu-Kylin-14-04%E4%B8%A2%E5%A4%B1%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/2.%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8DUbuntu-Kylin-14-04%E4%B8%A2%E5%A4%B1%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/2.安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/</id>
     <published>2019-06-29T03:53:18.000Z</published>
     <updated>2019-09-17T01:59:03.577Z</updated>
     
@@ -130,15 +130,15 @@
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="安装问题" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
+      <category term="2.安装问题" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/2-%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/4.%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/Ubuntu-Kylin-14-04-%E7%89%88%E6%9C%AC%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8HDMI%E6%97%A0%E5%A3%B0%E9%9F%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%BF%AE%E5%A4%8D/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/</id>
     <published>2019-06-29T03:51:59.000Z</published>
     <updated>2019-09-17T01:51:39.550Z</updated>
     
@@ -157,15 +157,15 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
+      <category term="4.进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/4-%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEUbuntu-Kylin-14-04-%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87-%E6%96%B0%E6%89%8B%E6%8F%90%E7%A4%BA/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/1.基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/</id>
     <published>2019-06-29T03:51:23.000Z</published>
     <updated>2019-09-17T01:48:22.547Z</updated>
     
@@ -183,15 +183,15 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
+      <category term="1.基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/1-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>如何对Ubuntu Kylin 14.04 的登录界面截图 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%AF%B9Ubuntu-Kylin-14-04-%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/1.%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%AF%B9Ubuntu-Kylin-14-04-%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/1.基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/</id>
     <published>2019-06-29T03:50:34.000Z</published>
     <updated>2019-09-16T05:58:49.063Z</updated>
     
@@ -208,15 +208,15 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
+      <category term="1.基础操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/1-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>Master PDF：PDF和XPS文件编辑神器</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/Master-PDF：PDF和XPS文件编辑神器/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2.%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/Master-PDF%EF%BC%9APDF%E5%92%8CXPS%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E7%A5%9E%E5%99%A8/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/2.第三方软件工具/Master-PDF：PDF和XPS文件编辑神器/</id>
     <published>2019-06-29T03:49:24.000Z</published>
     <updated>2019-09-17T02:16:42.850Z</updated>
     
@@ -233,15 +233,15 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+      <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>“优麒麟在线中英文字典”篇</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/“优麒麟在线中英文字典”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2.%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/%E2%80%9C%E4%BC%98%E9%BA%92%E9%BA%9F%E5%9C%A8%E7%BA%BF%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AD%97%E5%85%B8%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/2.第三方软件工具/“优麒麟在线中英文字典”篇/</id>
     <published>2019-06-29T03:49:06.000Z</published>
     <updated>2019-09-17T02:12:56.889Z</updated>
     
@@ -258,15 +258,15 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+      <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>在优麒麟14.04上安装精美的Dalisha图标主题</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F14-04%E4%B8%8A%E5%AE%89%E8%A3%85%E7%B2%BE%E7%BE%8E%E7%9A%84Dalisha%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/4.%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/%E5%9C%A8%E4%BC%98%E9%BA%92%E9%BA%9F14-04%E4%B8%8A%E5%AE%89%E8%A3%85%E7%B2%BE%E7%BE%8E%E7%9A%84Dalisha%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/4.桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/</id>
     <published>2019-06-29T03:48:43.000Z</published>
     <updated>2019-09-16T08:44:37.277Z</updated>
     
@@ -283,15 +283,15 @@
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="桌面风格" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/"/>
+      <category term="4.桌面风格" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/4-%E6%A1%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC/"/>
     
     
   </entry>
   
   <entry>
     <title>快速解决Ubuntu Kylin 14.04文件包下载失败的错误</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/%E5%BF%AB%E9%80%9F%E8%A7%A3%E5%86%B3Ubuntu-Kylin-14-04%E6%96%87%E4%BB%B6%E5%8C%85%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%94%99%E8%AF%AF/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他软件/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2.%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/%E5%BF%AB%E9%80%9F%E8%A7%A3%E5%86%B3Ubuntu-Kylin-14-04%E6%96%87%E4%BB%B6%E5%8C%85%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%94%99%E8%AF%AF/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/2.第三方软件工具/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/</id>
     <published>2019-06-29T03:48:23.000Z</published>
     <updated>2019-09-17T01:41:28.529Z</updated>
     
@@ -311,15 +311,15 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他软件" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6/"/>
+      <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/%E5%9C%A8%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88Windows-8-%E3%80%81Ubuntu-Kylin%EF%BC%89%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BB%8EWindows-8%E5%8D%B8%E8%BD%BDUbuntu-Kylin/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/2.%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/%E5%9C%A8%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88Windows-8-%E3%80%81Ubuntu-Kylin%EF%BC%89%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BB%8EWindows-8%E5%8D%B8%E8%BD%BDUbuntu-Kylin/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/2.安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/</id>
     <published>2019-06-29T03:47:58.000Z</published>
     <updated>2019-09-16T08:29:32.554Z</updated>
     
@@ -337,15 +337,15 @@
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="安装问题" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
+      <category term="2.安装问题" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/2-%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>“Linux U盘助手”篇 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/%E2%80%9CLinux-U%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/“Linux-U盘助手”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2.%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/%E2%80%9CLinux-U%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/2.第三方软件工具/“Linux-U盘助手”篇/</id>
     <published>2019-06-29T03:47:02.000Z</published>
     <updated>2019-09-17T01:39:31.695Z</updated>
     
@@ -363,15 +363,15 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+      <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>“Linux 快速启动工具”篇 </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/%E2%80%9CLinux-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E5%B7%A5%E5%85%B7%E2%80%9D%E7%AF%87/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/“Linux-快速启动工具”篇/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2.%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/%E2%80%9CLinux-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E5%B7%A5%E5%85%B7%E2%80%9D%E7%AF%87/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/2.第三方软件工具/“Linux-快速启动工具”篇/</id>
     <published>2019-06-29T03:46:38.000Z</published>
     <updated>2019-06-29T06:14:23.205Z</updated>
     
@@ -388,15 +388,15 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+      <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux下的Notepad++编辑器——Notepadqq </title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/Linux%E4%B8%8B%E7%9A%84Notepad-%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%94%E2%80%94Notepadqq/"/>
-    <id>https://UbuntuKylin.github.io/wiki/软件应用/其他工具/Linux下的Notepad-编辑器——Notepadqq/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2.%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/Linux%E4%B8%8B%E7%9A%84Notepad-%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%94%E2%80%94Notepadqq/"/>
+    <id>https://UbuntuKylin.github.io/wiki/软件应用/2.第三方软件工具/Linux下的Notepad-编辑器——Notepadqq/</id>
     <published>2019-06-29T03:45:41.000Z</published>
     <updated>2019-09-17T00:58:08.171Z</updated>
     
@@ -413,15 +413,15 @@
     
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
-      <category term="其他工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/"/>
+      <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux新手大礼包：学习Linux你必须知道的那些事儿</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/Linux%E6%96%B0%E6%89%8B%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%9A%E5%AD%A6%E4%B9%A0Linux%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2.%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/Linux%E6%96%B0%E6%89%8B%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%9A%E5%AD%A6%E4%B9%A0Linux%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/2.新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/</id>
     <published>2019-06-24T06:31:49.000Z</published>
     <updated>2019-09-16T06:28:47.913Z</updated>
     
@@ -439,15 +439,15 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="新手必看" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/"/>
+      <category term="2.新手必看" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2-%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/"/>
     
     
   </entry>
   
   <entry>
     <title>特洛伊木马可能已感染Linux系统多年</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%85%B6%E4%BB%96/%E7%89%B9%E6%B4%9B%E4%BC%8A%E6%9C%A8%E9%A9%AC%E5%8F%AF%E8%83%BD%E5%B7%B2%E6%84%9F%E6%9F%93Linux%E7%B3%BB%E7%BB%9F%E5%A4%9A%E5%B9%B4/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/其他/特洛伊木马可能已感染Linux系统多年/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/5.%E5%85%B6%E4%BB%96/%E7%89%B9%E6%B4%9B%E4%BC%8A%E6%9C%A8%E9%A9%AC%E5%8F%AF%E8%83%BD%E5%B7%B2%E6%84%9F%E6%9F%93Linux%E7%B3%BB%E7%BB%9F%E5%A4%9A%E5%B9%B4/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/5.其他/特洛伊木马可能已感染Linux系统多年/</id>
     <published>2019-06-24T06:31:08.000Z</published>
     <updated>2019-09-16T06:23:54.437Z</updated>
     
@@ -464,15 +464,15 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="其他" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E5%85%B6%E4%BB%96/"/>
+      <category term="5.其他" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/5-%E5%85%B6%E4%BB%96/"/>
     
     
   </entry>
   
   <entry>
     <title>Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/U%E7%9B%98%E6%95%99%E7%A8%8B/Windows-8-1-UEFI-%E6%A8%A1%E5%BC%8F%E4%B8%8BU%E7%9B%98%E5%AE%89%E8%A3%85Ubuntu-Kylin-14-10-%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/5.U%E7%9B%98%E6%95%99%E7%A8%8B/Windows-8-1-UEFI-%E6%A8%A1%E5%BC%8F%E4%B8%8BU%E7%9B%98%E5%AE%89%E8%A3%85Ubuntu-Kylin-14-10-%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://UbuntuKylin.github.io/wiki/系统安装/5.U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/</id>
     <published>2019-06-24T06:30:40.000Z</published>
     <updated>2019-09-16T08:06:42.404Z</updated>
     
@@ -490,15 +490,15 @@
     
       <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="U盘教程" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/U%E7%9B%98%E6%95%99%E7%A8%8B/"/>
+      <category term="5.U盘教程" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/5-U%E7%9B%98%E6%95%99%E7%A8%8B/"/>
     
     
   </entry>
   
   <entry>
     <title>如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Aptik%E6%9D%A5%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D-Ubuntu-Ubuntu-Kylin-%E4%B8%AD%E7%9A%84Apps%E5%92%8CPPAs/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/</id>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/4.%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Aptik%E6%9D%A5%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D-Ubuntu-Ubuntu-Kylin-%E4%B8%AD%E7%9A%84Apps%E5%92%8CPPAs/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/</id>
     <published>2019-06-24T06:30:22.000Z</published>
     <updated>2019-09-16T05:48:43.280Z</updated>
     
@@ -516,7 +516,7 @@
     
       <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
     
-      <category term="进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
+      <category term="4.进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/4-%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
