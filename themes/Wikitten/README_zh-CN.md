@@ -2,22 +2,12 @@
 
 [English Page](./README.md)
 
-### 一个仿 [Wikitten](https://wikitten.vizuina.com/) 样式的 Hexo 个人 wiki 系统主题。 >[预览](http://wiki.zthxxx.me/)
-
 一些特性：
 
 - 适用于个人 wiki 知识管理
 - 简洁，双栏，分类
 - 将知识多级分类整理，侧边分级展开，为思维跳转设计
 - 根据文件路径自动为文章添加分类 #4
-
-![Site Preview](./source/images/SitePreview.png)
-
-
-
-![mobile preview](./source/images/mobile1.png) ![mobile preview](./source/images/mobile2.png)
-
-
 
 ## 安装说明
 
