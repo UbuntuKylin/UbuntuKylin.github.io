@@ -2,21 +2,12 @@
 
 [中文版文档](./README_zh-CN.md)
 
-### A personal wiki imitate [Wikitten](https://wikitten.vizuina.com/) style for Hexo. >[Preview](http://wiki.zthxxx.me/)
-
 some features:
 
 - Applicable to personal wiki knowledge management
 - Simple, double column, classified management
 - The knowledge of multi-level sorting, the side can be expand at all levels of classification, easy to jump
 - Categorize article according to file directory  #4
-
-![Site Preview](./source/images/SitePreview.png)
-
-
-
-![mobile preview](./source/images/mobile1.png) ![mobile preview](./source/images/mobile2.png)
-
 
 
 ## Installation
