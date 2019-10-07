@@ -7,7 +7,7 @@ categories:
 ---
 
 
-<img src="http://www.ubuntukylin.com/upload/images/trojan-word-cloud(1).jpg"></img>  
+<img src="https://www.ubuntukylin.com/upload/images/trojan-word-cloud(1).jpg"></img>  
 关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数Linux用户广泛接受，然而这只在一定程度上成立，并非完全如此。
        与其它操作系统一样，Linux同样无法对恶意代码、木马、rootkit、病毒等完全免疫，已知存在几种著名的Linux病毒。但是如果和Windows相比，数量非常有限。既然如此又何必故话重提呢？这是因为一种新的木马已在市场上被探测到，有可能影响Linux系统。
 

@@ -9,7 +9,7 @@ categories:
 
 
 **摘要**：Snap和Flatpak是新一代的Linux打包格式，它们通过将软件和依赖同时安装在一个沙盒中，使得采用snap和flatpak的应用，可以跨越不同的发行版，降低了开发和维护成本，同时大大提高了系统的安全性。本文将通过实例，来介绍如何在优麒麟/银河麒麟社区版上构建这两种跨平台的软件包。 
-![](http://www.ubuntukylin.com/upload/201705/1494379156789730.jpg)
+![](https://www.ubuntukylin.com/upload/201705/1494379156789730.jpg)
 涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？
 
 **首先，我们使用gtk编写一个最简单的“hello world”窗口程序。**
@@ -265,9 +265,9 @@ $ sudo vim /etc/apt/sources.list.d/alexlarsson.list
 
 //往alexlarsson.list添加如下两行:
 
-deb http://ppa.launchpad.net/alexlarsson/flatpak/ubuntu xenial main
+deb https://ppa.launchpad.net/alexlarsson/flatpak/ubuntu xenial main
 
-deb-src http://ppa.launchpad.net/alexlarsson/flatpak/ubuntu xenial main
+deb-src https://ppa.launchpad.net/alexlarsson/flatpak/ubuntu xenial main
 
 $ sudo apt update
 
@@ -351,10 +351,10 @@ $ flatpak build-bundle repo hello.flatpak com.kylin.Hello
 
 $ flatpak install --user --bundle hello.flatpak 
 
-或者托管在仓库里（官方推荐方式），具体见：http://docs.flatpak.org/en/latest/distributing-applications.html
+或者托管在仓库里（官方推荐方式），具体见：https://docs.flatpak.org/en/latest/distributing-applications.html
 
 更多详细信息，可以点击以下链接：
 
 snap:[点击此处](https://www.ubuntu.com/desktop/snappy)    
 
-flatpak:[点击此处](http://flatpak.org/)
+flatpak:[点击此处](https://flatpak.org/)

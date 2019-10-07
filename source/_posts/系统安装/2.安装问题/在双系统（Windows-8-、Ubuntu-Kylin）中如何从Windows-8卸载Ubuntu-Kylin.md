@@ -7,7 +7,7 @@ categories:
 ---
 
 
-![](http://www.ubuntukylin.com/upload/images/q1.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q1.jpg) 
 
 曾几次介绍如何在Windows 8存在的情况下安装Ubuntu Kylin。但是，我们如何从Windows 8中卸载Ubuntu Kylin呢？这篇教程适用于任何Linux操作系统，如Ubuntu Kylin、Linux Mint、Elementary或任何其他Linux的发行版。
 
@@ -25,25 +25,25 @@ categories:
 
 第1步：登录Windows。按Windows+ R，运行diskmgmt.msc命令打开Windows的磁盘管理工具。
 
-![](http://www.ubuntukylin.com/upload/images/q2.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q2.jpg) 
 
  第2步：既然已经安装了Linux，就很容易让您通过它的容量大小识别Linux分区。另一个提示可以通过看分区是否无文件系统和驱动器号来识别Linux分区。 Windows分区都标有一个驱动器号，如通常在NTFS或FAT文件系统C，D，E等。
 
 正如您所看到的，这有三个Linux分区。
 
-![](http://www.ubuntukylin.com/upload/images/q3.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q3.jpg) 
 
 第3步：选择Linux分区（S），右击选择“删除卷”选项。
 
-![](http://www.ubuntukylin.com/upload/images/q4.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q4.jpg) 
 
 它会弹出一个警告，在这里选择“是”。
 
-![](http://www.ubuntukylin.com/upload/images/q5.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q5.jpg) 
 
 第4步：被删除的分区将作为一大块空闲空间。您可以扩展现有分区或创建一个新的Windows分区出来。如果想双启动Linux与Windows，建议创建一个新的驱动器（或卷或分区，随便您怎么称呼它）。
 
-![](http://www.ubuntukylin.com/upload/images/q6.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q6.jpg) 
 
 第二部分：修复Windows启动加载器
 
@@ -51,23 +51,23 @@ categories:
 
 第1步：放入Windows 8安装盘，重启计算机。在开机时按F10或F12键，进入BIOS/ UEFI，从硬盘启动。
 
-![](http://www.ubuntukylin.com/upload/images/q7.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q7.jpg) 
 
 第2步：选择“修复计算机”。
 
-![](http://www.ubuntukylin.com/upload/images/q8.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q8.jpg) 
 
 第3步：进入“故障处理”选项。
 
-![](http://www.ubuntukylin.com/upload/images/q9.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q9.jpg) 
 
 第4步：在“故障处理”页面中，选择“高级选项”。
 
-![](http://www.ubuntukylin.com/upload/images/q10.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q10.jpg) 
 
 第5步：找到”命令提示符”。
 
-![](http://www.ubuntukylin.com/upload/images/q11.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q11.jpg) 
 
 第6步：在命令行中输入以下命令来修复Windows启动加载器。
 
@@ -75,17 +75,17 @@ categories:
 
 通常情况下，它运行的时间很短。您甚至不必等它。
 
-![](http://www.ubuntukylin.com/upload/images/q11.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q11.jpg) 
 
 第7步：一旦完成，重启计算机，这时候从硬盘正常启动，进入Windows。如果您仍看到Grub错误，请尝试以下步骤。
 
 第8步：如果第6步失效，尝试在”高级故障排除”选项中的”自动修复”选项。
 
-![](http://www.ubuntukylin.com/upload/images/q13.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q13.jpg) 
 
 这将需要一点时间来找问题，然后修复它。
 
-![](http://www.ubuntukylin.com/upload/images/q14.jpg) 
+![](https://www.ubuntukylin.com/upload/images/q14.jpg) 
 
 现在，如果您重启，应该在Windows中正常，就不会看到任何的grub救援错误。
 

@@ -14,16 +14,16 @@ categories:
 
  3. 执行gitclone，将项目导入本地。
 
-<img src="http://www.ubuntukylin.com/upload/images/1(2).png"></img>
+<img src="https://www.ubuntukylin.com/upload/images/1(2).png"></img>
 
  
 
  4. 在项目main/目录中执行qmake(qt4)，生成Makefile文件。（建议配置好qt环境变量，或找到qmake的相应路径）
-<img src="http://www.ubuntukylin.com/upload/images/2(2).png"></img>
+<img src="https://www.ubuntukylin.com/upload/images/2(2).png"></img>
 
  5. 执行make命令，编译软件。
 
-<img src="http://www.ubuntukylin.com/upload/images/3(1).png"></img>
+<img src="https://www.ubuntukylin.com/upload/images/3(1).png"></img>
 
 ### 二、软件的执行及功能演示：
 

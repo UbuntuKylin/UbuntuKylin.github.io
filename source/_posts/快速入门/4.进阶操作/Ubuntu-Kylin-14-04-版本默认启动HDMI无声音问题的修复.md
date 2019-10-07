@@ -11,7 +11,7 @@ Ubuntu Kylin 中的声音问题是一个老生常谈的问题。
 
 在这里我们所使用的环境为Ubuntu Kylin 14.04版，安装完之后第一次启动系统没有声音。经过排查发现alsamixer状态怪异:
 
-<img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%8722.jpg"></img>
+<img src="https://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%8722.jpg"></img>
 
 如图所示：alsamixer中默认情况下设置的是HDMI。这意味着默认情况下，声音输出为HDMI，而不是内置扬声器。所以在系统中我们找不到内置扬声器设置。
 
@@ -27,7 +27,7 @@ aplay -l
 
 终端将列出设备，卡号等信息。记下卡号和模拟输出设备号。我的输出结果是这样的：
 
-<img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%8723.jpg"></img>
+<img src="https://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%8723.jpg"></img>
 
 一旦你有需要的卡和设备编号，就可以做出这样一个新的配置文件：
 
