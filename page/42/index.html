@@ -172,7 +172,7 @@
                             &nbsp;
                             4.进阶操作
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限程序</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -451,10 +451,10 @@
                 
                     
                     <p></p><p>本文作者<strong>刘正元</strong>，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ <a href="https://mp.weixin.qq.com/s?__biz=MzAwMDUwNDgxOA==&amp;mid=2652664651&amp;idx=1&amp;sn=3b908b92b4209fd49bac561814369e5a&amp;chksm=810f35d6b678bcc0353c80e744244ab61ca81b93ae4adf18dfdff28ab35b6f97c0e7635f5f46&amp;mpshare=1&amp;scene=1&amp;srcid=0605uHWZBejaZQ1PEIru1IjU#rd" rel="external nofollow noopener noreferrer" target="_blank">Linux阅码场</a>”微信公众平台发表多篇文章，本文也是出自该处。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
 <p>所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一并处理，从而提升IO请求的处理效率。在前面有关通用块层介绍的系列文章当中我们或多或少地提及了IO请求合并的概念，本篇我们从头集中梳理IO请求在block layer的来龙去脉，以此来增强对IO请求合并的理解。</p>
 <p>首先来看一张图，下面的图展示了IO请求数据由用户进程产生，到最终持久化存储到物理存储介质，其间在内核空间所经历的数据流以及IO请求合并可能的触发点。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
 <p>
                 
             

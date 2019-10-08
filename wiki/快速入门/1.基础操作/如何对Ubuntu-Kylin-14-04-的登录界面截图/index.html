@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="UbuntuKylin Wiki">
 <meta property="og:description" content="有时用户需要对登录界面屏幕截图。例如，如果用户想写一篇有关如何在Ubuntu Kylin 14.04 上安装Cinnamon 的技术文章，登陆界面的截图就对初学者有帮助。无论你的原因是什么，如果你想知道如何对Ubuntu  Kylin 14.04 或Linux Mint 17 的登陆界面截图，让下面的技巧来告诉你怎么做吧。 对Ubuntu Kylin和Linux Mint的登录界面截图 这里的方法">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-16T05:58:49.063Z">
+<meta property="og:updated_time" content="2019-10-08T02:08:02.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何对Ubuntu Kylin 14.04 的登录界面截图 ">
 <meta name="twitter:description" content="有时用户需要对登录界面屏幕截图。例如，如果用户想写一篇有关如何在Ubuntu Kylin 14.04 上安装Cinnamon 的技术文章，登陆界面的截图就对初学者有帮助。无论你的原因是什么，如果你想知道如何对Ubuntu  Kylin 14.04 或Linux Mint 17 的登陆界面截图，让下面的技巧来告诉你怎么做吧。 对Ubuntu Kylin和Linux Mint的登录界面截图 这里的方法">
@@ -176,7 +176,7 @@
                             &nbsp;
                             4.进阶操作
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限程序</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -448,7 +448,8 @@
 <p>打开终端，然后使用以下命令安装ImageMagic。</p>
 <p>sudo apt-get install imagemagick</p>
 <p>第2步：准备脚本</p>
-<p>创建一个新的文件，最好在你的home目录下，将它命名为screenshot.sh或任何你喜欢的。在文件中添加以下几行：<br>chvt 7; sleep 5s; DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd; convert ~/screenshot.xwd ~/screenshot.png; rm ~/screenshot.xwd</p>
+<p>创建一个新的文件，最好在你的home目录下，将它命名为screenshot.sh或任何你喜欢的。在文件中添加以下几行： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">chvt 7;</span><br><span class="line">sleep 5s;</span><br><span class="line">DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 </span><br><span class="line">xwd -root -out ~/screenshot.xwd; </span><br><span class="line">convert ~/screenshot.xwd ~/screenshot.png;</span><br><span class="line">rm ~/screenshot.xwd</span><br></pre></td></tr></table></figure>
 <p>在上述中，chvt 7是虚拟控制台的数量。当你运行这个脚本后需要5秒来截图，你可以把它改成任何你想要的数字，会发现命名为screenshot.png的截图保存在你的home目录下。</p>
 <p>第3步：给脚本执行权限</p>
 <p>你必须要给脚本执行权限：</p>

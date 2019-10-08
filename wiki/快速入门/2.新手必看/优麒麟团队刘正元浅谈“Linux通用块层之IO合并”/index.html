@@ -16,29 +16,29 @@
 <meta property="og:site_name" content="UbuntuKylin Wiki">
 <meta property="og:description" content="本文作者刘正元，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ Linux阅码场”微信公众平台发表多篇文章，本文也是出自该处。  所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254005961032.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254017439804.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254026772374.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254037273702.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254048278725.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254084160608.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254095647471.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254105303637.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254118631038.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254143306219.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254164616153.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254202385663.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254236803650.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254245597629.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254255647107.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254265486421.png">
-<meta property="og:image" content="http://www.ubuntukylin.com/upload/201806/1528254276774034.png">
-<meta property="og:updated_time" content="2019-09-16T06:07:54.510Z">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528256784870902.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254005961032.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254017439804.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254026772374.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254037273702.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254048278725.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254084160608.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254095647471.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254105303637.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254118631038.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254143306219.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254164616153.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254202385663.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254236803650.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254245597629.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254255647107.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254265486421.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201806/1528254276774034.png">
+<meta property="og:updated_time" content="2019-10-08T02:08:02.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="优麒麟团队刘正元浅谈“Linux通用块层之IO合并”">
 <meta name="twitter:description" content="本文作者刘正元，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ Linux阅码场”微信公众平台发表多篇文章，本文也是出自该处。  所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一">
-<meta name="twitter:image" content="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg">
+<meta name="twitter:image" content="https://www.ubuntukylin.com/upload/201806/1528256784870902.jpg">
     
 
     
@@ -195,7 +195,7 @@
                             &nbsp;
                             4.进阶操作
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限程序</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -461,10 +461,10 @@
         
         
             <p>本文作者<strong>刘正元</strong>，来自天津麒麟（优麒麟开发团队之一）， linux 内核爱好者，对内核 IO 子系统和内核调试工具这块比较感兴趣，向上游内核贡献过一些 patch，目前在公司负责文件 IO 协议栈的调试调优。在系统开发期间，刘正元也曾在宋宝华“ <a href="https://mp.weixin.qq.com/s?__biz=MzAwMDUwNDgxOA==&amp;mid=2652664651&amp;idx=1&amp;sn=3b908b92b4209fd49bac561814369e5a&amp;chksm=810f35d6b678bcc0353c80e744244ab61ca81b93ae4adf18dfdff28ab35b6f97c0e7635f5f46&amp;mpshare=1&amp;scene=1&amp;srcid=0605uHWZBejaZQ1PEIru1IjU#rd" rel="external nofollow noopener noreferrer" target="_blank">Linux阅码场</a>”微信公众平台发表多篇文章，本文也是出自该处。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528256784870902.jpg" alt></p>
 <p>所谓请求合并就是将进程内或者进程间产生的在物理地址上连续的多个IO请求合并成单个IO请求一并处理，从而提升IO请求的处理效率。在前面有关通用块层介绍的系列文章当中我们或多或少地提及了IO请求合并的概念，本篇我们从头集中梳理IO请求在block layer的来龙去脉，以此来增强对IO请求合并的理解。</p>
 <p>首先来看一张图，下面的图展示了IO请求数据由用户进程产生，到最终持久化存储到物理存储介质，其间在内核空间所经历的数据流以及IO请求合并可能的触发点。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254005961032.png" alt></p>
 <p>从内核的角度而言，进程产生的IO路径主要有图中①②③所示的三条：</p>
 <p>①　缓存IO,对应图中的路径①，系统中绝大部分IO走的这种形式，充分利用filesystem层的page cache所带来的优势， 应用程序产生的IO经系统调用落入page cache之后便可以直接返回，page cache中的缓存数据由内核回写线程在适当时机负责同步到底层的存储介质之上，当然应用程序也可以主动发起回写过程（如fsync系统调用）来确保数据尽快同步到存储介质上，从而避免系统崩溃或者掉电带来的数据不一致性。缓存IO可以带来很多好处，首先应用程序将IO丢给page cache之后就直接返回了，避免了每次IO都将整个IO协议栈走一遍，从而减少了IO的延迟。其次，page cache中的缓存最后以页或块为单位进行回写，并非应用程序向page cache中提交了几次IO,回写的时候就需要往通用块层提交几次IO,这样在提交时间上不连续但在空间上连续的小块IO请求就可以合并到同一个缓存页中一并处理。再次，如果应用程序之前产生的IO已经在page cache中，后续又产生了相同的IO，那么只需要将后到的IO覆盖page cache中的旧IO，这样一来如果应用程序频繁的操作文件的同一个位置，我们只需要向底层存储设备提交最后一次IO就可以了。最后，应用程序写入到page cache中的缓存数据可以为后续的读操作服务，读取数据的时候先搜索page cache，如果命中了则直接返回，如果没命中则从底层读取并保存到page cache中，下次再读的时候便可以从page cache中命中。</p>
 <p>②　非缓存IO（带蓄流），对应图中的路径②，这种IO绕过文件系统层的cache。用户在打开要读写的文件的时候需要加上“O_DIRECT”标志，意为直接IO，不让文件系统的page cache介入。从用户角度而言，应用程序能直接控制的IO形式除了上面提到的“缓存IO”，剩下的IO都走的这种形式，就算文件打开时加上了”O_SYNC”标志，最终产生的IO也会进入蓄流链表（图中的Plug List）。如果应用程序在用户空间自己做了缓存，那么就可以使用这种IO方式，常见的如数据库应用。</p>
@@ -483,17 +483,17 @@
 <p>　　dd if=/dev/zero of=/dev/sdb bs=1k count=16</p>
 <p>通过blktrace观测的结果为：</p>
 <p>　　blktrace -d /dev/sdb -o - | blkparse -i -</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254017439804.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254017439804.png" alt></p>
 <p>bio请求在通用块层的处理情况主要是通过第六列反映出来的，如果对blkparse的输出不太了解，可以man一下blktrace。对照每一行的输出来看看应用程序产生的写IO经由page cache之后是如何派发到通用块层的：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254026772374.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254026772374.png" alt></p>
 <p>现阶段只关注IO是如何从page cache中派发到通用块层的，所以后面的泻流、派发过程没有贴出来。回写线程–kworker以8个扇区（扇区大小为512B, 8个扇区为4K对应一个page大小）为单位将dd程序读写的1K数据块派发给通用块层处理。dd程序写了16次，回写线程只写了4次（对应四次Q），page cache的缓存功能有效的合并了应用程序直接产生的IO数据。</p>
 <p>文件系统层的page cache对读IO也有一定的作用，带缓存的读IO会触发文件系统层的预读机制，所谓预读有专门的预读算法，通过判断用户进程IO趋势，提前将存储介质上的数据块读入page cache中，下次读操作来时可以直接从page cache中命中，而不需要每次都发起对块设备的读请求。还是以dd程序读一个裸设备为例，每次读1K数据，连续读16次：</p>
 <p>　　dd if=/dev/sdb of=/dev/zero bs=1K count=16</p>
 <p>通过blktrace观测的结果为：</p>
 <p>　　blktrace -d /dev/sdb -o - | blkparse -i -</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254037273702.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254037273702.png" alt></p>
 <p>同样只关注IO是如何从上层派发到通用块层的，不关注IO在通用块层的具体情况，先不考虑P，I，U，D，C等操作，那么上面的输出可以简单解析为：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254048278725.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254048278725.png" alt></p>
 <p>读操作是同步的，所以触发读请求的是dd进程本身。dd进程发起了16次读操作，总共读取16K数据，但是预读机制只向底层发送了两次读请求，分别为0+32(16K), 32+64(32K)，总共预读了16 + 32 = 48K数据，并保存到cache中，多预读的数据可以为后续的读操作服务。</p>
 <h3 id="plug-合并"><a href="#plug-合并" class="headerlink" title="plug 合并"></a>plug 合并</h3><p>linuxer公众号中介绍bio和request的系列文章，熟悉IO请求在通用块层的处理，以及蓄流(plug)机制的原理和接口。特别推荐宋宝华老师写的《文件读写（BIO）波澜壮阔的一生》，通俗易懂地介绍了一个文件io的生命周期。</p>
 <p>每个进程都有一个私有的蓄流链表，进程在往通用块层派发IO之前如果开启了蓄流功能，那么IO请求在被发送给IO调度器之前都保存在蓄流链表中，直到泄流(unplug)的时候才批量交给调度器。蓄流的主要目的就是为了增加请求合并的机会，bio在进入蓄流链表之前会尝试与蓄流链表中保存的request进行合并,使用的接口为blk_attempt_plug_merge().本文是基于内核4.17分析的，源码来源于4.17-rc1。</p>
@@ -506,24 +506,24 @@
 <p>＃ ./iotc-d/dev/sdb-s</p>
 <p>-d指定作用的设备sdb，-s指定IO方式为SEQUENCE_IO（顺序），表示顺序发起三个写请求：bio0(0 + 8), bio1(8 + 8), bio2(16 + 8)。通过blktrace来观察iotc派发的bio请求在通用块层蓄流链表中的合并情况：</p>
 <p>blktrace -d /dev/sdb -o - | blkparse -i -</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254084160608.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254084160608.png" alt></p>
 <p>上面的输出可以简单解析为：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254095647471.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254095647471.png" alt></p>
 <p>第一个bio(bio0)进入通用块层时，此时蓄流链表为空，于是申请一个request并用bio0初始化，再将request添加进蓄流链表，同时告诉blktrace蓄流已正式工作。第二个bio(bio1)到来的时候会走blk_attempt_plug_merge的逻辑，尝试调用bio_attempt_back_merge与蓄流链表中的request合并，发现正好能合并到第一个bio所在的request尾部，于是直接返回。第三个bio(bio2)的处理与第二个同理。通过蓄流合并之后，三个IO请求最终合并成了一个request(0 + 24)。用一副图来展示整个合并过程：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254105303637.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254105303637.png" alt></p>
 <h3 id="bio前向合并-ELEVATOR-FRONT-MERGE"><a href="#bio前向合并-ELEVATOR-FRONT-MERGE" class="headerlink" title="bio前向合并 (ELEVATOR_FRONT_MERGE)"></a>bio前向合并 (ELEVATOR_FRONT_MERGE)</h3><p>为验证bio在蓄流阶段的前向合并，使用iotc逆序派发三个写io:</p>
 <p>＃ ./iotc-d/dev/sdb-r</p>
 <p>-r指定IO方式为REVERSE_IO（逆序），表示逆序发起三个写请求：bio0(16 + 8),bio1(8 + 8), bio2(0 + 8)。blktrace的观察结果为：</p>
 <p>blktrace -d /dev/sdb -o - | blkparse -i -</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254118631038.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254118631038.png" alt></p>
 <p>上面的输出可以简单解析为：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254143306219.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254143306219.png" alt></p>
 <p>与前面的后向合并相比，唯一的区别是合并方式由之前的”M”变成了现在的”F”，即在blk_attempt_plug_merge中走的是bio_attempt_front_merge分支。通过下面的图来展示前向合并过程：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254164616153.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254164616153.png" alt></p>
 <p>“plug合并”不会做request与request的进阶合并，蓄流链表中的request之间的合并会在泄流的时候做，即在下面介绍的“elevator合并”中做。</p>
 <h3 id="elevator-合并"><a href="#elevator-合并" class="headerlink" title="elevator 合并"></a>elevator 合并</h3><p>上面讲到的蓄流链表合并是为进程内的IO请求服务的，每个进程只往自己的蓄流链表中提交IO请求，进程间的蓄流链表相互独立，互不干涉。但是，多个进程可以同时对一个设备发起IO请求，那么通用块层还需要提供一个节点，让进程间的IO请求有机会进行合并。一个块设备有且仅有一个请求队列（调度队列），所有对块设备的IO请求都需要经过这个公共节点，因此调度队列（Elevator Queue）是IO请求合并的另一个节点。</p>
 <p>先回顾一下通用块层处理IO请求的核心函数：blk_queue_bio(),上层派发的bio请求都会流经该函数，或将bio蓄流到Plug List，或将bio合并到Elevator Queue,或将bio生成request直接插入到Elevator Queue。blk_queue_bio()的主要处理流程为：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254202385663.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254202385663.png" alt></p>
 <p>其中”A”标识的“合并到蓄流链表的request中”就是上一章介绍的“plug合并”。bio如果不能合并到蓄流链表中接下来会尝试合并到“B”标识的”合并到调度队列的request中”。”合并到调度队列的request中”只是“elevator合并”的第一个点。你可能已经发现了blk_queue_bio()将bio合并到蓄流链表或者将request添加进蓄流链表之后就没管了，从路径①可以发现蓄流链表中的request最终都是要交给电梯调度队列的，这正是”elevator合并”的第二个点，关于泄流的时机请参考我之前写的《Linux通用块层介绍（part1: bio层）》。下面分别介绍这两个合并点：</p>
 <h3 id="bio合并到elevator"><a href="#bio合并到elevator" class="headerlink" title="bio合并到elevator"></a>bio合并到elevator</h3><p>先看B表示的代码段：</p>
 <p>blk_queue_bio:<br>switch (elv_merge(q, &amp;req, bio)) {<br>case ELEVATOR_BACK_MERGE:<br>if (!bio_attempt_back_merge(q, req, bio))<br>break;<br>elv_bio_merged(q, req, bio);<br>free = attempt_back_merge(q, req);<br>if (free)<br><strong>blk_put_request(q, free);<br>else<br>elv_merged_request(q, req, ELEVATOR_BACK_MERGE);<br>goto out_unlock;<br>case ELEVATOR_FRONT_MERGE:<br>if (!bio_attempt_front_merge(q, req, bio))<br>break;<br>elv_bio_merged(q, req, bio);<br>free = attempt_front_merge(q, req);<br>if (free)
@@ -533,14 +533,14 @@
 <li>调用elv_bio_merged,该函数会调用电梯调度器注册的elevator_bio_merged_fn接口来通知调度器做相应的处理，对于deadline调度器而言该接口为NULL。</li>
 </ol>
 <p>2.寻找进阶合并，参考我之前写的《Linux通用块层介绍（part2: request层）》中对进阶合并的描述，如果bio产生了后向合并，则调用attempt_back_merge试图进行后向进阶合并，如果bio产生了前向合并，则调用attempt_front_merge企图进行前向进阶合并。deadline的进阶合并接口为deadline_merged_requests， 被合并的request会从调度队列中删除。通过下面的图示来展示后向进阶合并过程，前向进阶合并同理。</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254236803650.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254236803650.png" alt></p>
 <ol start="3">
 <li>如果产生了进阶合并，则被合并的request可以释放了，参考上图，可调用blk_put_request进行回收。如果只产生了bio合并，合并后的request的长度和扇区地址都会发生变化，需要调用elv_merged_request-&gt;elevator_merged_fn来更新合并后的请求在调度队列的位置。deadline对应的接口为deadline_merged_request，其相应的操作为将合并的request先从调度队列移出再重新插进去。</li>
 </ol>
 <p>“bio合并到elevator”的合并形式只会发生在进程间，即只有一个进程在IO的时候不会产生这种合并形式，原因在于进程在向调度队列派发IO请求或者试图与将bio与调度队列中的请求合并的时候是持有设备的队列锁得，其他进程是不能往调度队列派发请求，这也是通用块层单队列通道窄需要发展多队列的主要原因之一，只有进程在将调度队列中的request逐个派发给驱动层的时候才会将设备队列锁重新打开，即只有当一个进程在将调度队列中request派发给驱动的时候其他进程才有机会将bio合并到还未派发完的request中。所以想通过简单的IO测试程序来捕捉这种形式的合并比较困难，这对两个IO进程的IO产生时序有非常高的要求，故不演示。有兴趣的可以参考上面的github仓库，里面有patch对内核特定的请求派发位置加上延时来改变IO请求本来的时序，从而让测试程序人为的达到这种碰撞效果。</p>
 <p>request在泄流的时候合并到elevator</p>
 <p>通用块层的泄流接口为：blk_flush_plug_list()， 该接口主要的处理逻辑如下图所示</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254245597629.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254245597629.png" alt></p>
 <p>其中请求合并发生的点在__elv_add_request()。blk_flush_plug_list会遍历蓄流链表中的每个request，然后将每个request通过_elv_add_request接口添加到调度队列中，添加的过程中会尝试与调度队列中已有的request进行合并。</p>
 <p>__elv_add_request:<br>case ELEVATOR_INSERT_SORT_MERGE:<br>/*</p>
 <ul>
@@ -555,11 +555,11 @@
 <p>＃ ./iotc-d/dev/sdb-i</p>
 <p>-i指定IO方式为INTERLEAVE_IO（交替），表示按扇区交替的方式发起三个写请求：bio0(16 + 8),bio1(8 + 8), bio2(0 + 8)。blktrace的观察结果为：</p>
 <p>blktrace -d /dev/sdb -o - | blkparse -i -</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254255647107.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254255647107.png" alt></p>
 <p>上面的输出可以简单解析为：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254265486421.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254265486421.png" alt></p>
 <p>bio0(16 + 8)先到达plug list，bio1(0+8)到达时发现不能与plug list中的request合并，于是申请一个request添加到plug list。bio2(8+8)到达时首先与bio1进行后向合并。之后进程触发泄流，泄流接口函数会将plug list中的request排序，因此request(0+16)先派发到调度队列，此时调度队列为空不能进行合并。然后派发request(16+8),派发时调用elv_attempt_insert_merge接口尝试与调度队列中的其他request进行合并，发现可以与request(0+16)进行后向合并，于是两个request合并成一个，最后向设备驱动派发的只有一个request(0+24)。整个过程可以用下面的图来展示：</p>
-<p><img src="http://www.ubuntukylin.com/upload/201806/1528254276774034.png" alt></p>
+<p><img src="https://www.ubuntukylin.com/upload/201806/1528254276774034.png" alt></p>
 <h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>通过cache、plug和elevator自上而下的三层狙击，应用程序产生的IO能最大限度的进行合并，从而提升IO带宽，降低IO延迟，延长设备寿命。page cache打头阵，既做数据缓存又做IO合并，主要是针对小块IO进行合并，因为使用内存页做缓存，所以合并后的最大IO单元为页大小，当然对于大块IO,page cache也会将它拆分成以页为单位下发，这不影响最终的效果，因为后面还有plug和elevator补刀。plug list竭尽全力合并进程内产生的IO,从设备的角度而言进程内产生的IO相关性更强，合并的可能性更大，plug list设计位于elevator queue之上而且又是每个进程私有的，因此plug list既有利于IO合并，又减轻了elevator queue的负担。elevator queue更多的是承担进程间IO的合并，用来弥补plug list对进程间合并的不足，如果是带缓存的IO，这种IO合并基本上不会出现。从实际应用角度出发，IO合并更多的是发生在page cache和plug list中。</p>
 
             </div>
