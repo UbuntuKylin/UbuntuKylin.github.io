@@ -8,7 +8,7 @@ categories:
 
 Numix 可谓是 Linux 桌面上相当棒的一个主题了，本文我们介绍如何在 Ubuntu Kylin 中安装 Numix 主题和图标，同时也介绍下如何更换 Ubuntu Kylin 主题。
 
-![](http://www.ubuntukylin.com/upload/201512/1450063953693392.jpg)
+![](https://www.ubuntukylin.com/upload/201512/1450063953693392.jpg)
 
 **Ubuntu Kylin 安装 Numix 主题和图标**
 
@@ -28,11 +28,11 @@ sudo apt-get install numix-wallpaper-*
 
 分别执行：优客助手-->系统美化-->主题设置｜图标设置-->Numix，如下图所示：
 
-![](http://www.ubuntukylin.com/upload/201512/1450063998995065.jpg)
+![](https://www.ubuntukylin.com/upload/201512/1450063998995065.jpg)
 
-![](http://www.ubuntukylin.com/upload/201512/1450073559147928.jpg)
+![](https://www.ubuntukylin.com/upload/201512/1450073559147928.jpg)
 
 效果显示：
-![](http://www.ubuntukylin.com/upload/201512/1450064096993447.jpg)
+![](https://www.ubuntukylin.com/upload/201512/1450064096993447.jpg)
 
 

@@ -23,7 +23,15 @@ sudo apt-get install imagemagick
 第2步：准备脚本
 
 创建一个新的文件，最好在你的home目录下，将它命名为screenshot.sh或任何你喜欢的。在文件中添加以下几行： 
-chvt 7; sleep 5s; DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd; convert ~/screenshot.xwd ~/screenshot.png; rm ~/screenshot.xwd
+
+```
+chvt 7;
+sleep 5s;
+DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 
+xwd -root -out ~/screenshot.xwd; 
+convert ~/screenshot.xwd ~/screenshot.png;
+rm ~/screenshot.xwd
+```
 
 在上述中，chvt 7是虚拟控制台的数量。当你运行这个脚本后需要5秒来截图，你可以把它改成任何你想要的数字，会发现命名为screenshot.png的截图保存在你的home目录下。
 

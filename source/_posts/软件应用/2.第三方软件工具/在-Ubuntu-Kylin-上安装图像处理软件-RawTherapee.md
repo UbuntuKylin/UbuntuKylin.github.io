@@ -7,7 +7,7 @@ categories:
 ---
 
 
-![](http://www.ubuntukylin.com/upload/201603/1457316823398754.png)
+![](https://www.ubuntukylin.com/upload/201603/1457316823398754.png)
 
 如果你是一名业余摄影爱好者或专业摄影师，你可以使用 Adobe Lightroom 编辑处理数码单反相机RAW图像文件，也可以看看其它运行在 Linux 下的替代软件。事实上，在 Linux 中可以用开源软件 Darktable 或 RawTherapee 来替代 Adobe Lightroom。
 

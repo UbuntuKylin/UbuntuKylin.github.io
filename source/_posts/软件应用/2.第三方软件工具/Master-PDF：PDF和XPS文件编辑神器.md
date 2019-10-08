@@ -25,4 +25,4 @@ PDF表单域创建和编辑
 下载安装Master PDF编辑器  
 您可在Ubuntu软件中心中找到Master PDF，点击安装即可；或从以下地址下载deb文件：http://code-industry.net/public/master-pdf-editor_1.9.25_i386.deb
 
-<img src="http://www.ubuntukylin.com/upload/images/master.png"></img>
+<img src="https://www.ubuntukylin.com/upload/images/master.png"></img>

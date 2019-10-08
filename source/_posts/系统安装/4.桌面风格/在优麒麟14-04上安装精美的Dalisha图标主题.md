@@ -8,7 +8,7 @@ categories:
 
   Dalisha是一套优美的圆角图标，可应用于几乎所有主流的Linux桌面环境，例如Unity、GNOME、KDE、Cinnamon、Mate等。Dalisha拥有超过30,000个图标，目前正处于活跃开发状态。如果您愿意尝试，不妨跟随以下步骤在优麒麟上安装体验。
 
-![](http://www.ubuntukylin.com/upload/images/dalisha-7.jpg) 
+![](https://www.ubuntukylin.com/upload/images/dalisha-7.jpg) 
 
 **通过PPA在优麒麟上安装Dalisha**
   打开终端，执行以下命令（需要大约120MB的磁盘空间）：
@@ -24,10 +24,10 @@ categories:
 **通过优客助手设置试用Dalisha图标主题**
   安装完成之后，打开优客助手，在系统美化标签中选择Dalisha图标主题：
 
-![](http://www.ubuntukylin.com/upload/images/dalisha-2.png) 
+![](https://www.ubuntukylin.com/upload/images/dalisha-2.png) 
   接下来就可以欣赏使用最新的主题风格啦。
 
-![](http://www.ubuntukylin.com/upload/images/dalisha.png) 
+![](https://www.ubuntukylin.com/upload/images/dalisha.png) 
 卸载Dalisha
   打开命令行，执行以下命令：
 

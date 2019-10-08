@@ -7,7 +7,7 @@ categories:
 ---
 
 
-![](http://www.ubuntukylin.com/upload/images/unity8.jpg)
+![](https://www.ubuntukylin.com/upload/images/unity8.jpg)
 
 如果你一直在关注新闻，那么就知道 Ubuntu/Ubuntu Kylin 将会切换到带有 Unity 8 桌面的Mir显示服务器。然而，在尚未确定运行在Mir上的 Unity 8 是否会出现在 Ubuntu 15.10 willy werewolf 之前，有了一个 Unity 8 的预览版本可供你体验和测试。通过官方PPA，可以很容易地在 Ubuntu/Ubuntu Kylin 14.04，14.10和15.04上安装Unity 8。
 
@@ -46,10 +46,10 @@ sudo unity8-lxc-setup
 #### 第3步：选择 Unity 8
 重新启动后，在登录界面，点击登录名旁边的 Ubuntu/Ubuntu Kylin 图标：
 
-![](http://www.ubuntukylin.com/upload/images/unity82.jpg)
+![](https://www.ubuntukylin.com/upload/images/unity82.jpg)
 你应该可以在这里看到 Unity 8 的选项。选择它：
 
-![](http://www.ubuntukylin.com/upload/images/unity83.jpg)
+![](https://www.ubuntukylin.com/upload/images/unity83.jpg)
 
 ### 卸载 Unity 8 LXC
 如果您发现 Unity 8 漏洞太多，或者你不喜欢它，你可以以相同的方式切换回默认的Unity版本。此外，您还可以使用以下命令删除 Unity 8：

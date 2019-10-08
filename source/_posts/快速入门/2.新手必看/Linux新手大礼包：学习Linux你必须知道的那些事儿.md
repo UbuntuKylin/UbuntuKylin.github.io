@@ -34,12 +34,12 @@ Eric Steven Raymond
 
 ### 3. 初学者必读的Linux基础书籍　　
 　　要想学好Linux，你至少需要：一本好入门教材、一本linux指令参考手册、linux系统管理手册、讲解linux系统原理的书。这里我们推荐几部公认的好书：
- [《 鸟哥的Linux私房菜 基础学习篇》](http://book.douban.com/subject/4889838/) 鸟哥 著；人民邮电出版社
- [《 鸟哥的Linux私房菜 服务器架设篇》](http://book.douban.com/subject/10794788/)  鸟哥 著；机械工业出版社
- [《 Linux命令、编辑器与Shell编程》](http://book.douban.com/subject/25750712/) [美]索贝尔(Sobell·M.G.) 著； 清华大学出版社
- [《 Linux设备驱动程序》](http://book.douban.com/subject/1723151/) 科波特 著； 中国电力出版社
- [《 深入理解Linux内核》](http://book.douban.com/subject/2287506/) （美）博韦，西斯特 著； 中国电力出版社
- [《 UNIX环境高级编程》](http://book.douban.com/subject/1788421/)  W.Richard Stevens / Stephen A.Rago 著；人民邮电出版社
+ [《 鸟哥的Linux私房菜 基础学习篇》](https://book.douban.com/subject/4889838/) 鸟哥 著；人民邮电出版社
+ [《 鸟哥的Linux私房菜 服务器架设篇》](https://book.douban.com/subject/10794788/)  鸟哥 著；机械工业出版社
+ [《 Linux命令、编辑器与Shell编程》](https://book.douban.com/subject/25750712/) [美]索贝尔(Sobell·M.G.) 著； 清华大学出版社
+ [《 Linux设备驱动程序》](https://book.douban.com/subject/1723151/) 科波特 著； 中国电力出版社
+ [《 深入理解Linux内核》](https://book.douban.com/subject/2287506/) （美）博韦，西斯特 著； 中国电力出版社
+ [《 UNIX环境高级编程》](https://book.douban.com/subject/1788421/)  W.Richard Stevens / Stephen A.Rago 著；人民邮电出版社
 
 ### 4. 熟悉Linux常用命令
 
@@ -73,12 +73,12 @@ Eric Steven Raymond
 ### 6. 常去逛逛一些Linux社区和网站
 
 国内的专业Linux网站
-　　[ChinaUnix](http://www.chinaunix.net/)： 创办于2001年，是一个以讨论Linux/Unix类操作系统技术、软件开发技术、数据库技术和网络应用技术等为主的开源技术社区网站。 
-　　[LinuxCN](http://linux.cn/)：Linux中国是专注于中文Linux技术、资讯的社区，在这里你可以获得一手的Linux资讯和技术知识。
+　　[ChinaUnix](https://www.chinaunix.net/)： 创办于2001年，是一个以讨论Linux/Unix类操作系统技术、软件开发技术、数据库技术和网络应用技术等为主的开源技术社区网站。 
+　　[LinuxCN](https://linux.cn/)：Linux中国是专注于中文Linux技术、资讯的社区，在这里你可以获得一手的Linux资讯和技术知识。
 
 国外著名Linux网站
-　　[Linux Online](http://www.linux.org/)： 最权威的Linux网站，文章讨论无所不包，软件硬件应有尽有。
-　　[Linux国际协会(Linux International)](http://li.org/)：有大量的Linux资源列表。
-　　[Linux](http://www.linux.com/)：学习Linux的最好网站，也是Linux使用经验的汇聚地。
-　　[Linuxforums](http://www.linuxforums.org/)： 提供Linux的软件资源，Linux论坛，Linux服务器发行版的信息，LINUX文章教程等信息的综合性网站。
+　　[Linux Online](https://www.linux.org/)： 最权威的Linux网站，文章讨论无所不包，软件硬件应有尽有。
+　　[Linux国际协会(Linux International)](https://li.org/)：有大量的Linux资源列表。
+　　[Linux](https://www.linux.com/)：学习Linux的最好网站，也是Linux使用经验的汇聚地。
+　　[Linuxforums](https://www.linuxforums.org/)： 提供Linux的软件资源，Linux论坛，Linux服务器发行版的信息，LINUX文章教程等信息的综合性网站。
 

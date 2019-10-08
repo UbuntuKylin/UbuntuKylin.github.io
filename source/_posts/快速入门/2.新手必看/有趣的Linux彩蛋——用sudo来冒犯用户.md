@@ -21,12 +21,12 @@ categories:
 
 如图所示：　　
 
-![](http://www.ubuntukylin.com/upload/201602/1456191668463393.jpg)
+![](https://www.ubuntukylin.com/upload/201602/1456191668463393.jpg)
 
 接下来，保存并且关闭文件。如果您使用的是nano，按Ctrl+X退出，它会提示您是否想要保存更改。请按Y保存更改。
 
 然后，终端输入sudo -k，清空密码的缓存。最后，在sudo命令里输入错的密码：
 
-![](http://www.ubuntukylin.com/upload/201602/1456192456272768.jpg)
+![](https://www.ubuntukylin.com/upload/201602/1456192456272768.jpg)
 
 看看，它还对我不耐烦呢。现在你也可以向朋友哭诉自家的sudo欺负你了^_^。
