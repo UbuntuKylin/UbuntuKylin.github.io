@@ -19,11 +19,11 @@ Canonical 作为 Ubuntu 的母公司，对于普及 Linux 可算是付出了巨�
 
 Ok，如果下次你有朋友想在安装 Ubuntu 之前试用一下，就把这个网站http://tour.ubuntu.com/en/  发给ta吧～
 
-![](http://www.ubuntukylin.com/upload/201608/1470186070587464.png)
+![](https://www.ubuntukylin.com/upload/201608/1470186070587464.png)
 
-![](http://www.ubuntukylin.com/upload/201608/1470186275498591.png)
+![](https://www.ubuntukylin.com/upload/201608/1470186275498591.png)
 
-![](http://www.ubuntukylin.com/upload/201608/1470186070776406.png)
+![](https://www.ubuntukylin.com/upload/201608/1470186070776406.png)
 
 
 

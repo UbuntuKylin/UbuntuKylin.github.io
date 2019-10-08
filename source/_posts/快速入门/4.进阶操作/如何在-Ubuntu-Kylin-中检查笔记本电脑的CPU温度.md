@@ -7,7 +7,7 @@ categories:
 ---
 
 
-![](http://www.ubuntukylin.com/upload/images/tempreture0.png)
+![](https://www.ubuntukylin.com/upload/images/tempreture0.png)
 
 笔记本电脑过热是这些天大家面临的一个共同问题，监测硬件温度可以帮助您诊断为什么笔记本电脑会越来越烫，在这篇文章中，我们将看到如何在 Ubuntu Kylin 中检查CPU温度。
 
@@ -51,10 +51,10 @@ categories:
 
 安装完成后，可以通过Dash找到并运行Psensor应用程序。第一次运行时需按提示进行简单配置。
 
-![](http://www.ubuntukylin.com/upload/images/tempreture1.png)
+![](https://www.ubuntukylin.com/upload/images/tempreture1.png)
 
 您还可以设置在应用指示器菜单中显示温度：
 
-![](http://www.ubuntukylin.com/upload/images/tempreture2.png)
+![](https://www.ubuntukylin.com/upload/images/tempreture2.png)
 
 赶紧试一下，用Psensor帮您找出哪个进程让计算机过热吧。

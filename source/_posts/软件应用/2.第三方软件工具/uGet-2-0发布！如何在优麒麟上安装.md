@@ -6,7 +6,7 @@ tags:
 categories:
 ---
 
-![](http://www.ubuntukylin.com/upload/images/uget1.jpg)
+![](https://www.ubuntukylin.com/upload/images/uget1.jpg)
 
 ※ 多连接
 

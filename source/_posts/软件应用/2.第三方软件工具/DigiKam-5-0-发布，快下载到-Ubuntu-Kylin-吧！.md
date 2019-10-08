@@ -6,7 +6,7 @@ tags:
 categories:
 ---
 
-![](http://www.ubuntukylin.com/upload/201607/1468466249346617.jpg)
+![](https://www.ubuntukylin.com/upload/201607/1468466249346617.jpg)
 
 Linux 中最好用的照片软件之一“DigiKam”，终于在 2016 发布最新版本 5.0。
 

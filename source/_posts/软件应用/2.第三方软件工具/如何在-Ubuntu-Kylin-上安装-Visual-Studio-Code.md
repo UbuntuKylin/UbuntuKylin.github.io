@@ -28,15 +28,15 @@ Ubuntu Make 的前身为 Ubuntu 开发者工具中心，是一个命令行实用
 
 您将被要求提供安装路径：
 
-![](http://www.ubuntukylin.com/upload/images/stu1.png)
+![](https://www.ubuntukylin.com/upload/images/stu1.png)
 
 在一大堆的条款和条件后，程序会询问您是否允许安装 Visual Studio Code。在以下屏幕按“a”键：
 
-![](http://www.ubuntukylin.com/upload/images/st2.png)
+![](https://www.ubuntukylin.com/upload/images/st2.png)
 
 接受条款之后，程序会自动开始下载并安装 Visual Studio Code。安装完成后，Visual Studio Code 的图标将锁定到启动栏，点击即可运行。下图是V isual Studio Code 的运行截图，整体视觉风格与 Ubuntu Kylin 15.04 完全统一：
 
-![](http://www.ubuntukylin.com/upload/images/st2.png)
+![](https://www.ubuntukylin.com/upload/images/st2.png)
 
 ### 在 Ubuntu Kylin 上卸载 Visual Studio Code
 

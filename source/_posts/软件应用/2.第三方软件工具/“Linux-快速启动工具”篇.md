@@ -18,7 +18,7 @@ categories:
 
 启动的view这块用qml做的,因为对qml不是很熟悉。现在采用的是程序生成qml文件的方式，而且动态更新现在还有问题，配置完之后得重启。这块的话会在下个版本中修复。
 
-![](http://www.ubuntukylin.com/upload/images/destop.png)
+![](https://www.ubuntukylin.com/upload/images/destop.png)
 
  
 

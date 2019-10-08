@@ -14,11 +14,11 @@ Ubuntu Kylin更新时出现错误是很常见的。下面大家将看到的是�
 
 首先让大家试着去了解一下这个错误。运行更新管理器时会看到“文件包下载失败的错误”：
 
-<img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%871(5).jpg"></img>
+<img src="https://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%871(5).jpg"></img>
 
 从这些详细的错误信息大家会发现它无法从访问的URL得到特定的包。复制网址，并试图通过Web浏览器来访问它。正如预料中的那样，文件不存在：
 
-<img src="http://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%872(3).jpg"></img>
+<img src="https://www.ubuntukylin.com/upload/images/%E5%9B%BE%E7%89%872(3).jpg"></img>
 
 为了进一步检查，便查看了同一个包中所有有效的版本，尝试去找出更新管理器无法找到的那个版本：
 

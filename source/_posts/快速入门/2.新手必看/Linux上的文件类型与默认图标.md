@@ -30,7 +30,7 @@ categories:
 
 我们右键文本文件图标，打开属性窗口，可以看到“类型”： 
 
-![](http://www.ubuntukylin.com/upload/201812/1544597804892983.png)
+![](https://www.ubuntukylin.com/upload/201812/1544597804892983.png)
 
 我们可以推测：默认图标的显示是与这个类型属性相关的。
 
@@ -45,30 +45,30 @@ categories:
 
 一般从优麒麟官网上下载的增强版自带了wps，我们打开一个目录，创建一个doc和docx文档： 
 
-![](http://www.ubuntukylin.com/upload/201812/1544597909746823.png)
+![](https://www.ubuntukylin.com/upload/201812/1544597909746823.png)
 
 打开属性窗口： 
-![](http://www.ubuntukylin.com/upload/201812/1544600648905345.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600648905345.png)
 
-![](http://www.ubuntukylin.com/upload/201812/1544600648593032.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600648593032.png)
 
 可以看到它们的文件类型，那么接下来我们打开终端（Ctrl+Alt+T），输入：
 
 sudo apt remove wps-office 
 
-![](http://www.ubuntukylin.com/upload/201812/1544600689772744.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600689772744.png)
 
-![](http://www.ubuntukylin.com/upload/201812/1544600727686021.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600727686021.png)
 
 卸载wps，接下来回到刚才创建的doc和docx所在的目录，刷新一下：
 
-![](http://www.ubuntukylin.com/upload/201812/1544600745317428.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600745317428.png)
 
 这个时候的默认图标类型已经变了，接着再打开属性： 
 
-![](http://www.ubuntukylin.com/upload/201812/1544600761749681.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600761749681.png)
 
-![](http://www.ubuntukylin.com/upload/201812/1544600786228952.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600786228952.png)
 
 同样的文件，文件类型改变的同时图标也跟着改变，所以，之前所提出的推论是对的。 
 
@@ -82,7 +82,7 @@ sudo apt remove wps-office
 
 ‘/usr/share/mime/packages’目录下存放着相关配置文件，其中freedesktop.org.xml 是 Linux 默认的文件类型基准。在这里，我们先找到 wps-office-wps.xml，并打开： 
 
-![](http://www.ubuntukylin.com/upload/201812/1544600831986186.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600831986186.png)
 
 其中，comment、mime-type就是属性窗口中的文件类型；
 
@@ -94,7 +94,7 @@ glob partten，如果文件名中有匹配，则认为是该类型。
 
 在/usr/share/icons目录下存放着默认图标： 
 
-![](http://www.ubuntukylin.com/upload/201812/1544600848817269.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600848817269.png)
 
 Linux的判断文件类型的最优先基准往往是通过文件名中的字段，如果字段和MIME-database匹配，则认为是该文件类型。然而，并非所有文件类型都规定了匹配字段，它们依旧能够确定类型，但是如果重命名后包含了MIME-database的匹配字段，则会优先使用对应类型覆盖原有的类型。
 
@@ -104,7 +104,7 @@ Linux的判断文件类型的最优先基准往往是通过文件名中的字段
 
 小伙伴们也许现在还有点一头雾水，没关系，接下来的干货才是重头戏；前面的看不懂？没关系，自己动手做一次，马上就理解了。
 
-![](http://www.ubuntukylin.com/upload/201812/1544600873149787.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600873149787.png)
 
 可以看到，命名为.so的文件的默认图标已经被小编改成了自己的图案，那么究竟是怎么做到的呢？接下来我们一步一步的完成。
 
@@ -112,15 +112,15 @@ Linux的判断文件类型的最优先基准往往是通过文件名中的字段
 
 首先，我们需要准备自己的文件类型图片，一般使用png格式即可，文件图标可以在网上下载自己喜欢的，也可以使用GIMP自己绘制然后导出，小编这里为了方便，就自己简单的画了一下。GIMP可以在开始菜单中搜索gimp得到：
 
-![](http://www.ubuntukylin.com/upload/201812/1544600900397307.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600900397307.png)
 
-![](http://www.ubuntukylin.com/upload/201812/1544600900866148.png)
+![](https://www.ubuntukylin.com/upload/201812/1544600900866148.png)
 
 关于GIMP的使用，小编也是小白所以就不罗嗦了，大家有兴趣的话自行百度一下吧。
 
 我们打开/usr/share/icons/ukui-icon-theme目录:
 
-![](http://www.ubuntukylin.com/upload/201812/1544604859921343.png)
+![](https://www.ubuntukylin.com/upload/201812/1544604859921343.png)
 
 我们把准备好的图标放进对应尺寸文件夹的mimetypes目录下，比如48x48的png放到/usr/share/icons/ukui-icon-theme/48x48/mimetypes目录下。
 
@@ -138,11 +138,11 @@ sudo peony
 
 我们在/usr/share/mime/packages目录下创建一个文本文件，命名为XXX.xml（这里小编的是sharedlib.xml），输入以下内容。
 
-![](http://www.ubuntukylin.com/upload/201812/1544603156648367.png) 
+![](https://www.ubuntukylin.com/upload/201812/1544603156648367.png) 
 
 最关键的是alias type、generic-icon name和glob pattern三项。保存退出。 
 
-![](http://www.ubuntukylin.com/upload/201812/1544601011883301.png)
+![](https://www.ubuntukylin.com/upload/201812/1544601011883301.png)
 
 **3、更新**
 

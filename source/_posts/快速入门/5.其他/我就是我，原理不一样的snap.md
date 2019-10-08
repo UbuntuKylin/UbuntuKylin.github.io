@@ -53,7 +53,7 @@ snap应用的security policy ID的命名规则为snap.name.command
 
 snap文件系统被划分为具有只读和读写两种不同权限的区域，每个snap应用有其独有的受限文件目录，如下图所示：
 
-![](http://www.ubuntukylin.com/upload/201708/1501752729610536.png)
+![](https://www.ubuntukylin.com/upload/201708/1501752729610536.png)
 
 
 可以通过如下方式查看某应用的文件访问权限：
@@ -124,7 +124,7 @@ pc-kernel     4.4.0-83.106  68    canonical  -
 除去默认安全策略为其提供的资源外，snap应用没有权限访问系统其它资源。若snap应用需要使用系统资源或其它应用程序提供的资源，需通过interfaces机制配置接口。interfaces接口分为两种，slot(服务提供者)和plug(服务使用者)。 
 snap应用访问受限资源的示意如下：
 
-![](http://www.ubuntukylin.com/upload/201708/1501752836565131.png)
+![](https://www.ubuntukylin.com/upload/201708/1501752836565131.png)
 
 注意：操作系统在snap系统中也作为snap应用的形式存在。 
 如图所示，通过配置snap应用的plug和slot即可实现snap应用的互相访问。 
@@ -163,7 +163,7 @@ apps:
 同理，当此应用被安装时，系统将为其分配security policy ID为snap.blue-client.blue-client并包含规则：允许此应用与snap.blue.blue通信。同时，提供slot的安全规则也会改写为：snap.blue.blue允许snap.blue-client.blue-client与其进行通信。 
 下图说明了snap应用与应用之间在严格的分隔限制下的互相通信。
 
-![](http://www.ubuntukylin.com/upload/201708/1501752890346136.png)
+![](https://www.ubuntukylin.com/upload/201708/1501752890346136.png)
 
 
 

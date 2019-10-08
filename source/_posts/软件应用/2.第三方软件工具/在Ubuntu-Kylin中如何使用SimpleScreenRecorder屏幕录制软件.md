@@ -21,7 +21,7 @@ categories:
 
 sudo apt-get install simplescreenrecorder
 
-![](http://www.ubuntukylin.com/upload/images/r2.png)
+![](https://www.ubuntukylin.com/upload/images/r2.png)
 
 如果不在软件源中，则可以使用官方的PPA。在终端运行以下命令：
 
@@ -37,21 +37,21 @@ sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
 
 1.通过Dash或Gnome打开软件中心，搜索并打开SimpleScreenRecorder。
 
-![](http://www.ubuntukylin.com/upload/images/r3.png)
+![](https://www.ubuntukylin.com/upload/images/r3.png)
 
-![](http://www.ubuntukylin.com/upload/images/r4.png)
+![](https://www.ubuntukylin.com/upload/images/r4.png)
 
 2.选项设置。例如可设置录制视频的屏幕大小。如果你想录制固定的区域或跟随鼠标等，也可在对话框中选择。并且可设置是否要录制光标和声音。就个人而言，我的电脑是PC音频插孔耳机，所以我选择“Monitor of 内部音频，模拟立体声”。
 
-![](http://www.ubuntukylin.com/upload/images/r5.png)
+![](https://www.ubuntukylin.com/upload/images/r5.png)
 
 3.点击“继续”。在下一个对话框中，选择要保存视频文件的位置，并将视频的音频保存为比特率。
 
-![](http://www.ubuntukylin.com/upload/images/r6.png)
+![](https://www.ubuntukylin.com/upload/images/r6.png)
 
 4.以上几步设置好后，进入到下一步开始录制。点击"开始录制"按钮，它将开始为你录制屏幕。
 
-![](http://www.ubuntukylin.com/upload/images/r7.png)
+![](https://www.ubuntukylin.com/upload/images/r7.png)
 
 如果你想让它停止录制，只需回到SimpleScreenRecoder应用程序点击“停止录制”按钮。然后您的视频将默认被保存在指定的位置。
 

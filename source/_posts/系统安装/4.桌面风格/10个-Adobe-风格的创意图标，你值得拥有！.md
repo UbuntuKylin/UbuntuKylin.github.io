@@ -13,7 +13,7 @@ categories:
 
 事实上，在四月份的时候，Rohit 就已经把这两个图标发布，他因此得到很多好的反馈。所以，他又为另外8个开源应用设计了相似风格的图标。以下，是目前图标组中的软件：Gimp、Inkscape、Krita、Darktable、Ardour、Audacity、OpenShot、Kdenlive、Blender、Scribus。
 
-![](http://www.ubuntukylin.com/upload/201608/1470636139204717.jpg) 
+![](https://www.ubuntukylin.com/upload/201608/1470636139204717.jpg) 
 
 使用这些图标，并不像直接使用 Ubuntu Kylin 中的图标主题那样。它不会自动变，你需要手动的编辑每个应用的文件，从而得到新图标。这并不是很难哟，相信你可以很轻易完成的！ 
 
@@ -29,28 +29,28 @@ categories:
 
 步骤二：进入“计算机->usr->share->applications”，找到你想要改变图标的应用软件，这里用 Gimp 举例：
 
-![](http://www.ubuntukylin.com/upload/201608/1470636222321372.jpg) 
+![](https://www.ubuntukylin.com/upload/201608/1470636222321372.jpg) 
 
 步骤三：右键 GIMP ，选择“复制”，成功复制 Gimp.desktop 文件的路径。 
 
-![](http://www.ubuntukylin.com/upload/201608/1470636273530817.jpg)
+![](https://www.ubuntukylin.com/upload/201608/1470636273530817.jpg)
 
 步骤四：打开终端，运行命令。
 
-![](http://www.ubuntukylin.com/upload/201608/1470636409218075.jpg) 
+![](https://www.ubuntukylin.com/upload/201608/1470636409218075.jpg) 
 
 步骤五：在这个 gimp.desktop 文件中，找到由 Icon 开头的那一行。 
 
-![](http://www.ubuntukylin.com/upload/201608/1470636601154274.jpg) 
+![](https://www.ubuntukylin.com/upload/201608/1470636601154274.jpg) 
 
 步骤六：进入存放图标的文件夹，右键点击你想要的图标，选择“复制”。这一步就相当于复制这个图标的路径。 
 
-![](http://www.ubuntukylin.com/upload/201608/1470636485588784.jpg) 
+![](https://www.ubuntukylin.com/upload/201608/1470636485588784.jpg) 
 
 步骤七：回到已打开的 gimp.desktop，把复制好的图标路径放入文件如图所示位置。
 
-![](http://www.ubuntukylin.com/upload/201608/1470636428935951.jpg)  
+![](https://www.ubuntukylin.com/upload/201608/1470636428935951.jpg)  
 
 最后，点击“保存”。注销，再登入，你就会发现图标已经替换，同样在 dash 里也变了。 
 
-![](http://www.ubuntukylin.com/upload/201608/1470636808424141.jpg)
+![](https://www.ubuntukylin.com/upload/201608/1470636808424141.jpg)
