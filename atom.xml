@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://UbuntuKylin.github.io/"/>
-  <updated>2019-09-27T03:01:38.969Z</updated>
+  <updated>2019-10-21T08:07:57.874Z</updated>
   <id>https://UbuntuKylin.github.io/</id>
   
   <author>
@@ -17,13 +17,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>优麒麟电源管理浅析</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/3.%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/%E4%BC%98%E9%BA%92%E9%BA%9F%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86%E6%B5%85%E6%9E%90/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/3.系统介绍/优麒麟电源管理浅析/</id>
+    <published>2019-10-21T08:02:14.000Z</published>
+    <updated>2019-10-21T08:07:57.874Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近有研发小哥哥的加持，软文高频产出，目的是能让大家更深入的了解和使用我们的优麒麟操作系统，本期为大家介绍的是优麒麟电源管理工具。</p><p>在优麒麟系统的桌面应用中，电源管理工具(ukui-power-manager)能够监听系统事件和用户偏好设置，用来设置电源选项和屏保选项，比如设置显示器空闲多久进入睡眠和屏保采用的界面，同时还提供了显示电源相关的属性，功率，充放电统计等功能。相比台式机，笔记本电脑增加了电池相关的属性收集和显示，笔记本上的应用界面如图1。</p><p><img src="http://www.ubuntukylin.com/upload/201908/1566218691307271.png" alt><br><img src="http://www.ubuntukylin.com/upload/201908/1566218730905050.png" alt="图1 ukui-power-manager显示界面"></p><p>ukui-power-manager主要包括了三个部分：</p><p><img src="http://www.ubuntukylin.com/upload/201908/1566218904700355.png" alt></p><h3 id="数据来源"><a href="#数据来源" class="headerlink" title="数据来源"></a>数据来源</h3><p>这些界面的内容并不复杂，值得一探究竟的是界面上显示元素的数据来源。当笔记本接上电源电池开始充电，ukui-power-manager的界面能够显示充满电时间。我们就从这个time_to_full值获取的入口出发，来理解整个显示元素的数据来源。这个值是通过一个名称为gpm_stats_update_info_page_details的函数内部调用g_object_get函数获取的。g_object_get则是GObject提供的一个函数。</p><p>ukui-power-manager只是一个前端显示程序，在它后面存在一个程序，提供了诸如充放电时间这样的数据。这个后端程序就是upower，在upower中用来计算time_to_full的公式如下：</p><p>time_to_full = 3600 * ((energy_full - energy) / energy_rate);</p><p>不难理解，公式意思是满时的能量减去当前能量，得到的差值除以功率，再把结果转换成秒单位。那么这几个新引入的变量又从哪里获取的？满时能量按常理在运行时是不会改变的，功率可能有大有小，变化应该也不大。当前能量是通过sysfs_get_double这个函数的返回值获得，在这个函数内部打开了一个文件，然后从文件里获取到了数据。这个文件是由内核进行写操作的。至此，找到了界面上数据time_to_full的源头。</p><h3 id="DBus和GObjec共同的作用"><a href="#DBus和GObjec共同的作用" class="headerlink" title="DBus和GObjec共同的作用"></a>DBus和GObjec共同的作用</h3><p><img src="http://www.ubuntukylin.com/upload/201908/1566218977351183.png" alt="图2 DBus和GObject层次"></p><p>1）基本概念</p><p>DBus是一种进程间进行通信的机制，在桌面程序中大量地应用。它主要的概念就是总线，开发者注册进程到总线，然后就可以通过方法和信号进行通信。DBus底层是socket机制，提供了更高一层的接口，更方便了程序之间进行数据交换。GObject 是GTK+的一个程序库，提供使用 C 语言编写面向对象程序的方法。</p><p>2）作用</p><p>  现在来看一看前端ukui-power-manager和upower的具体源代码，发现都使用了DBus这种通信框架。要想完全理解DBus又是一个不小的专题，这里只是管中窥豹，了解一些基本的用法。d-feet是一个非常有用的工具，可以查看系统里所有的DBus连接。终端敲入命令d-feet，可以看到有一个系统Bus叫做org.freedesktop.UPower，还可以看到一个会话Bus叫做org.ukui.PowerManager。于是这两个程序就可以通过Bus连接进行数据通信。</p><p><img src="http://www.ubuntukylin.com/upload/201908/1566219065137853.jpg" alt="图3 d-feet查看Bus通信"></p><p>打开d-feet界面的org.ukui.PowerManager这个Bus连接，找到它提供的接口org.ukui.PowerManager.Backlight。找到方法SetBrightness并双击弹出输入参数界面，如下图所示，简单的输入79，点击运行发现屏幕背光亮度发生了调整。通过这种简单的方式，调用了DBus服务端提供的一个方法，把亮度调节到了79的百分比。</p><p><img src="http://www.ubuntukylin.com/upload/201908/1566219167968698.png" alt="图4 d-feet中运行方法"></p><p>以上就是对优麒麟电源管理工具和使用的编程技术的一些简单分析，希望可以给初次接触优麒麟桌面的读者带来一点感性认识，欢迎大家进一步探究具体实现的详细过程。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近有研发小哥哥的加持，软文高频产出，目的是能让大家更深入的了解和使用我们的优麒麟操作系统，本期为大家介绍的是优麒麟电源管理工具。&lt;/p&gt;
+&lt;p&gt;在优麒麟系统的桌面应用中，电源管理工具(ukui-power-manager)能够监听系统事件和用户偏好设置，用来设置电源选项和
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="3.系统介绍" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/3-%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>优麒麟系统的无线网络故障排除</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2.%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/%E4%BC%98%E9%BA%92%E9%BA%9F%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/2.新手必看/优麒麟系统的无线网络故障排除/</id>
+    <published>2019-10-21T07:58:53.000Z</published>
+    <updated>2019-10-21T08:01:55.685Z</updated>
+    
+    <content type="html"><![CDATA[<p>上期给大家介绍了在优麒麟19.04系统中如何配置网络，在绝大多数情况下，参照教程都能成功完成网络配置，然而大家在实际操作过程中，可能会遇到一些特殊情况，本期小编就为大家介绍在优麒麟19.04系统中配置无线网络时遇到故障的诊断方法。</p><h3 id="列表中找不到我的无线网络。"><a href="#列表中找不到我的无线网络。" class="headerlink" title="列表中找不到我的无线网络。"></a>列表中找不到我的无线网络。</h3><p><img src="https://www.ubuntukylin.com/upload/201908/1565689247159933.png" alt></p><p>在显示的网络列表中，看不到您的无线网络的原因有很多种：</p><p>1）如果列表中不显示任何网络，则表明您的无线硬件已关闭或工作不正常。确保打开无线硬件，以及通过“麒麟助手-&gt;系统信息-&gt;网卡”确认正确安装网卡驱动。</p><p><img src="https://www.ubuntukylin.com/upload/201908/1565689619360968.png" alt></p><p>2）如果附近有很多无线网络，则您要查找的网络可能未显示在列表的第一页。在此情况下，请滑动鼠标滚轮以显示剩余的无线网络。<br>3）您可能处在网络覆盖范围之外。尝试移至距离无线基站/路由器更近的地方，并在稍后确定网络是否出现在列表中。<br>4）更新无线网络列表需要一段时间。如果刚打开计算机或移至不同的地点，请等待几分钟，然后检查所需网络是否出现在列表中。</p><p>5）网络可能隐藏。如果网络隐藏，您需要以不同的方式连接。临时解决方案：终端输入“nm-applet”打开老版网络设置，在右键菜单栏中选择“连接到隐藏的wifi”。（如果想要永久生效，需要卸载系统里的新版网络管理工具kylin-nm。）</p><p><img src="https://www.ubuntukylin.com/upload/201908/1565689659587304.png" alt></p><h3 id="我输入了正确密码，但仍无法连接。"><a href="#我输入了正确密码，但仍无法连接。" class="headerlink" title="我输入了正确密码，但仍无法连接。"></a>我输入了正确密码，但仍无法连接。</h3><p>如果您确定输入的无线密码正确，但仍无法成功连接到无线网络，请尝试以下某些操作： </p><p>1）检查确认您输入了正确的密码</p><p>密码区分大小写(区分字母大小写)，因此请确保所有字母的大小写都正确。 </p><p>2）尝试使用十六进制或 ASCII 通行码</p><p>您输入的密码也可以其他形式表示，即作为十六进制的字符串(数字 0-9 和字母 a-f)。如果您可访问通行码和密码/口令，请尝试键入通行码。确保在系统询问密码时选择正确的无线安全选项(例如，如果在为WEP 加密连接键入 40 个字符的通行码，则选择WEP 40/128 位密钥)。 </p><p>3）尝试关闭无线适配器，然后再重新打开。</p><p>无线适配器有时会出现故障或者遇到导致无法连接的小问题。关闭网卡再重新打开以进行重置。 </p><p>4）检查您的无线网卡是否被良好支持</p><p>有些无线适配器未得到很好的支持。它们能显示无线连接，但因其驱动程序功能缺失而无法连接到网络。确定您是否可获得替代的无线驱动程序，或者是否需要执行附加设置(如安装不同的固件)。</p><h3 id="我的无线网络经常无故重连。"><a href="#我的无线网络经常无故重连。" class="headerlink" title="我的无线网络经常无故重连。"></a>我的无线网络经常无故重连。</h3><p>您可能会发现您的无线连接经常断开。通常情况下，一旦断开连接，您的计算机就会尝试重新连接到网络(尝试重新连接时，顶部工具栏中的网络图标将旋转)，这可能会对您造成不便。造成无线网络断开状态的原因有很多，其中包括： </p><p>1）弱无线信号 </p><p>从无线网络断开链接的常见原因是信号太弱。无线网络的覆盖范围有限，因此，如果距离无线基站太远，您获得的信号强度可能不足以保持连接。您和基站之间的墙壁或其他物体也会减弱信号。</p><p>底部工具栏中的网络图标显示了无线信号的强度。如果信号较弱，请尝试移至距离无线基站较近的位置。 </p><p><img src="https://www.ubuntukylin.com/upload/201908/1565689771540619.png" alt></p><p>2）无法建立网络连接 </p><p>有时，当您连接到无线网络时，开始时可能显示您已成功连接，但随后又会断开。这种情况通常是因为您的计算机未完全成功连接到网络，它设法建立连接，但因某种原因而无法最终确定连接状态，因此会断开。</p><p>一种可能的原因是您输入了错误的无线密码，或者您的计算机不被允许访问网络(例如，网络可能要求使用用户名进行登录)。 </p><p>3）没有可用的无线硬件驱动程序 </p><p>有些无线网络硬件可能不太可靠。无线网络很复杂，因此无线适配器和基站偶尔会出现小问题并失去连接。这种情况会造成很大不便，但在很多设备上却很常见。如果您经常从无线连接断开，这可能会是一个重要原因。如果频繁发生，您要考虑使用不同的硬件。 </p><p>4）繁忙无线网络 </p><p>流量密集地区(例如大学和咖啡厅的无线网络)通常有很多计算机同时尝试连接到网络。有时，这些网络太繁忙而无法应付所有尝试连接的计算机，因此有些计算机会断开连接。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;上期给大家介绍了在优麒麟19.04系统中如何配置网络，在绝大多数情况下，参照教程都能成功完成网络配置，然而大家在实际操作过程中，可能会遇到一些特殊情况，本期小编就为大家介绍在优麒麟19.04系统中配置无线网络时遇到故障的诊断方法。&lt;/p&gt;
+&lt;h3 id=&quot;列表中找不到我的无
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="2.新手必看" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2-%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>优麒麟系统的网络配置介绍</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2.%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/%E4%BC%98%E9%BA%92%E9%BA%9F%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E4%BB%8B%E7%BB%8D/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/2.新手必看/优麒麟系统的网络配置介绍/</id>
+    <published>2019-10-21T07:54:23.000Z</published>
+    <updated>2019-10-21T07:57:08.428Z</updated>
+    
+    <content type="html"><![CDATA[<p>在优麒麟19.04版本中，添加了全新的网络设置工具（kylin-nm），它针对之前的网络设置进行了简化，使操作步骤更简洁，大家更容易上手，下面小编就介绍一下在优麒麟19.04系统中如何使用它成功配置网络。</p><h3 id="无线网络配置"><a href="#无线网络配置" class="headerlink" title="无线网络配置"></a>无线网络配置</h3><p>如果您的计算机启用了无线，则可在处于无线网线覆盖范围时连接到该网络，以访问 Internet、查看网络上的共享文件以及执行其他操作。<br>1）如果计算机上有无线硬件开关，请确保打开该开关。<br>2）单击底部面板中的网络菜单，然后查找所需的网络。<br>3）如果您的无线网络名称未出现在列表中，请单击更多网络，以查看该网络是否在列表的下方。如果仍未看到该网络，您可能超出了网络覆盖范围或该网络可能已隐藏。<br>4）如果网络受到(密码)保护，请在出现提示时输入密码并单击连接。<br>5）如果不知道密钥，它可能写在无线路由器或基站设备的底部、说明手册中，或者您可向无线网络管理员咨询。<br>6）计算机尝试连接到网络时，网络图标的外观将更改。<br>7）如果连接成功，该图标将更改为类似 wifi 标志的图标。图标上的信号格数越多，表示与网络的连接越强。如果信号格数很少，则表示连接较弱且可能不太稳定。</p><p>如果连接不成功， 也许会要求您再次输入密码 或者它可能会告诉您连接已断开。有很多事情可能会造成这种情况发生，例如：可能是您输错了密码、无线信号太弱或者您计算机的无线网卡出问题了。</p><p>较强的无线网络连接并不一定意味着Internet 连接速度更快，或者您的下载速度更快。无线连接将您的计算机连接到提供Internet 连接的设备(如路由器或调制解调器)，但设备本身所提供无线信号的强度与网速无关。</p><h3 id="有线网络配置"><a href="#有线网络配置" class="headerlink" title="有线网络配置"></a>有线网络配置</h3><p>介绍完无线网络的配置，接下来介绍有线网络的配置。一般电脑在连接网线的时候会自动分配网络，如果您的网络不为计算机自动分配网络设置，则您可能必须手动输入设置，详细配置方法见下一章节。</p><h3 id="手动配置网络"><a href="#手动配置网络" class="headerlink" title="手动配置网络"></a>手动配置网络</h3><p>手动配置网络，需要您了解要使用的正确设置。如果不了解，请咨询网络管理员或查看路由器或交换机的设置。<br>1）左键单击底部面板中的网络图标，确保网络已开启。<br>2）查找您要手动设置的网络连接。例如，如果通过网线接入网络，请查看有线选项卡。</p><p>3）从列表中选择您想要编辑的连接，然后单击设置。</p><p><img src="https://www.ubuntukylin.com/upload/201908/1565140625494908.png" alt></p><p>4）在弹出的网络设置窗口中，更改“编辑IP设置”方式为手动。</p><p><img src="https://www.ubuntukylin.com/upload/201908/1565140681495301.png" alt></p><p>5）在相应栏中输入正确的 IP 地址、子网掩码、默认网关和DNS。</p><p><img src="https://www.ubuntukylin.com/upload/201908/1565140704783685.png" alt></p><p>6）这三个地址必须是IP地址；也就是说，它们必须是分隔开的四段数字 (例如：192.168.70.211) 。</p><p>7）键入您要使用的DNS服务器的IP地址，地址间用英文句号分隔。<br>8）单击保存。如果未连接到网络，请转到底部工具栏中的“网络”图标并重新连接网络。您可以通过访问网站或查看共享文件来检验您的网络设置。</p><p>以上就是简单的网络连接与配置方法，希望能帮助到初次使用优麒麟系统的小伙伴，下期接着为大家介绍无线网络配置时遇到的一些常见问题以及解决办法，我们下期见！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在优麒麟19.04版本中，添加了全新的网络设置工具（kylin-nm），它针对之前的网络设置进行了简化，使操作步骤更简洁，大家更容易上手，下面小编就介绍一下在优麒麟19.04系统中如何使用它成功配置网络。&lt;/p&gt;
+&lt;h3 id=&quot;无线网络配置&quot;&gt;&lt;a href=&quot;#无线网络
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="2.新手必看" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2-%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>优麒麟目录结构</title>
+    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/3.%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/%E4%BC%98%E9%BA%92%E9%BA%9F%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/"/>
+    <id>https://UbuntuKylin.github.io/wiki/快速入门/3.系统介绍/优麒麟目录结构/</id>
+    <published>2019-10-21T06:58:27.000Z</published>
+    <updated>2019-10-21T07:57:54.911Z</updated>
+    
+    <content type="html"><![CDATA[<p>对于Linux爱好者来说，深入了解Linux文件目录结构的标准和每个目录的详细功能，对于我们用好Linux系统至关重要，下面就由小编给大家介绍下优麒麟系统的目录结构，PS: 同样适用于其他Linux发行版。</p><p>查看系统的全部目录：</p><ul><li><p>在终端中进入 / ，执行命令ls。</p></li><li><p>在文件浏览器中，通过左侧导航中的“文件系统”，进入根目录。如图1所示。   </p></li></ul><p><img src="https://www.ubuntukylin.com/upload/201908/1564643220763676.png" alt="图1 系统根目录"></p><h3 id="1-系统目录概述"><a href="#1-系统目录概述" class="headerlink" title="1 系统目录概述"></a>1 系统目录概述</h3><p>Linux目录类似一棵树，以根目录出发，含有多个子目录或文件，子目录中又可含有更下级的子目录或者文件，分层衍生出多个分叉。如图2所示。<br>优麒麟（Ubuntu Kylin）</p><p><img src="https://www.ubuntukylin.com/upload/201908/1564644154149997.png" alt="图2 目录结构"></p><p>一般来说，根目录下只存放目录，除了vmlinuz和initrd.img两个链接文件。其中，vmliuz是Linux内核的镜像文件，initrd.img是RAM disk的镜像文件，都是用于启动Linux系统。</p><p>下面将对每一个目录的用途及内容进行介绍。</p><h3 id="2-目录详解"><a href="#2-目录详解" class="headerlink" title="2 目录详解"></a>2 目录详解</h3><p>2.1 /bin、/sbin、/usr/bin、/usr/sbin</p><p>表1 bin与sbin</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/bin</td><td style="text-align:center">放置一些系统必备的可执行文件，比如bash、cat、chmod、cp、ls、mv等，普通用户和root用户都可以使用。</td></tr><tr><td style="text-align:center">/sbin</td><td style="text-align:center">放置一些系统管理必备的可执行文件，比如e2fsck、ethtool、fdisk、mount等，只有root用户才能使用。</td></tr><tr><td style="text-align:center">/usr/bin</td><td style="text-align:center">放置一些必备应用软件的可执行文件，比如vim、ssh、file、c++等。</td></tr><tr><td style="text-align:center">/usr/sbin</td><td style="text-align:center">放置一些系统管理必备软件的可执行文件，比如gparted、cron、tcpdump等，只有root用户使用。</td></tr></tbody></table><p>可以理解为：如果是用户和管理员必备的命令，则会放在/bin；如果是系统管理员必备的命令，则会放在/sbin。同理，/usr/bin和/usr/sbin对应的是系统额外的应用软件。</p><p><img src="https://www.ubuntukylin.com/upload/201908/1564646117554742.png" alt="图3 /bin目录"></p><p>2.2 /boot</p><p>存放的是系统的内核文件、引导加载程序文件和grub开机管理。根目录下的两个链接（vmlinuz和initrd.img）就是指向/boot目录下对应的文件。在系统安装时，会为boot单独创建一个分区。</p><p><img src="https://www.ubuntukylin.com/upload/201908/1564646196175428.png" alt="图4 /boot目录"></p><p><img src="https://www.ubuntukylin.com/upload/201908/1564646196175428.png" alt="图5 根目录下的启动链接文件"></p><p>2.3 /dev</p><p>在Linux系统中，任何设备都是以文件的形态存在于/dev目录中。访问该目录下某个文件，相当于访问某个设备。比较重要及常用的文件说明如表 2所示。</p><p>表2 /dev子目录介绍</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/dev/sd*</td><td style="text-align:center">SCSI磁盘，sd后面的字母表示第几块磁盘，数字表示该磁盘的第几分区。比如：sda1，表示第一块磁盘的第一个分区。一般来说，系统盘为sda，后续外接的磁盘，则从b开始递增。</td></tr><tr><td style="text-align:center">/dev/tty*</td><td style="text-align:center">TTY（终端）设备。比如：tty0，表示当前虚拟终端；ttyS0，表示当前UART串口；当串口为USB外接的时候，则会有ttyUSB0，表示当前USB串口。</td></tr><tr><td style="text-align:center">/dev/loop*</td><td style="text-align:center">回环设备，通常被用于光盘或是磁盘镜像，以循环挂载的方式来挂载包含文件系统的文件，使得在这个文件系统中的内容得以被访问。比如：loop0，表示第一个回环设备。</td></tr><tr><td style="text-align:center">/dev/null</td><td style="text-align:center">空设备。它会丢弃一切写入其中的数据，并且没有任何可以读取的内容。可当作垃圾站，清除文件中的内容。</td></tr><tr><td style="text-align:center">/dev/zero</td><td style="text-align:center">零流源。与/dev/null相似，任何写入都将被直接丢弃，读取会得到无限多的二进制零流。通常用于创建一个指定长度（大小）、用于初始化的空文件。</td></tr><tr><td style="text-align:center">/dev/random  /dev/urandom</td><td style="text-align:center">随机数设备，提供永不为空的随机字节数据流。差别在于：/dev/random依赖于系统中断，产生的速度比较慢，有时候还会出现较大的停顿，数据随机性更高；/dev/urandom不依赖系统的中断，产生速度很快，相比而言数据随机性低。</td></tr></tbody></table><p>2.4 /etc</p><p>用于存放配置文件，包含系统配置和应用软件的配置。该目录下的文件由root用户使用，普通用户大都只有读取的权限。比较重要的文件说明如表3所示。</p><p>表3 /etc子目录介绍</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/etc/hosts</td><td style="text-align:center">域名解析文件，即ip地址与域名的对应关系，网络访问时，可快速解析。</td></tr><tr><td style="text-align:center">/etc/passwd</td><td style="text-align:center">用户数据库，存放了系统中所有的用户信息，包括系统或服务正常运行所必需的用户（系统用户）。  文件中每一行各字段的含义为——  用户名:密码:UID:GID:用户信息:用户主目录:Shell  其中，用户名在同一系统中是唯一的，限制在8个字符(字长度之内，并且区分大小写；UID是用户标识，也是用于区分用户，常用于系统内部管理进程；GID是组标识，一个用户可以存在多个组；Shell是指用户登录系统时运行的程序名称，通常是一个Shell程序的全路径名。  密码在passwd文件中，一般以一个“x”符号来代替，shadow文件为真正的密码文件，只有root用户才有读取的权限。  </td></tr><tr><td style="text-align:center">/etc/shadow</td><td style="text-align:center">真正的密码文件。文件中每一行各字段的含义为——用户名:加密后的密码:最近改动日期:不可更改天数:需要重设天数:过期提醒天数:过期后的宽限时间:账号失效日期  其中，密码最近的改动日期，是从1970年1月1日算起的天数；不可更改的天数为0表示没有限制；需要重设天数为99999表示没有限制；失效日期也是从1970年1月1日算起的天数。</td></tr><tr><td style="text-align:center">/etc/group</td><td style="text-align:center">系统用户的分组信息。文件中每一行各字段的含义为——组名:组密码:组ID:包含的用户与passwd相似，组密码以“x”代替，gshadow文件为真正的组密码文件；组ID与passwd中的GID是对应的。</td></tr><tr><td style="text-align:center">/etc/gshadow</td><td style="text-align:center">真正的组密码文件。文件中每一行各字段的含义为——组名:组密码:组管理员:组成员组密码字段为空或是“!”号，表示没有密码；若有多个组管理员、组成员，用“,”分隔。</td></tr><tr><td style="text-align:center">/etc/init.d</td><td style="text-align:center">存放系统各种服务的启动和停止脚本。使用该目录下的脚本，需要有root权限。比如需要重启网络，可以使用命令——/etc/init.d/networking  restart  </td></tr><tr><td style="text-align:center">/etc/init</td><td style="text-align:center">存放系统各种服务和应用的配置文件。</td></tr><tr><td style="text-align:center">/etc/rc.d</td><td style="text-align:center">这些目录中，包含了控制进程进行的脚本。以K开头的脚本（存放在*为0-6的目录下）运行在以S开头的脚本（存放在rcS.d目录下）之前。脚本放置的地方，决定开始运行的层级。</td></tr><tr><td style="text-align:center">/etc/rc.local</td><td style="text-align:center">在系统初始化级别脚本运行之后（即系统启动之后）再执行的脚本。</td></tr><tr><td style="text-align:center">/etc/fstab</td><td style="text-align:center">在开机引导时，自动挂载的文件系统。文件中每一行对应一个分区，含义为——实际位置挂载点格式挂载状态 DUMP功能开机检查其中，挂载状态比如是ro（只读）、rw（读写）等；DUMP功能指在系统DUMP时是否需要BACKUP，默认为0；开机检查除了root除了有必要为1，其余可根据需要调整，默认为0。</td></tr><tr><td style="text-align:center">/etc/issue</td><td style="text-align:center">getty在登录提示符前的输出信息，通常包括系统的一段短说明或欢迎信息。</td></tr><tr><td style="text-align:center">/etc/profile</td><td style="text-align:center">设置系统的全局变量。比如——PATH：预设可执行文件或命令的搜索路径；USER：用户登录时使用的用户名；HOSTNAME：所使用的主机名。</td></tr><tr><td style="text-align:center">/etc/profild.d</td><td style="text-align:center">存放的是一些应用程序所需的启动脚本，包括一些命令的附加设置。</td></tr><tr><td style="text-align:center">/etc/X11</td><td style="text-align:center">X_Window系统的配置文件。</td></tr><tr><td style="text-align:center">/etc/skel</td><td style="text-align:center">新建用户时，把该目录下的内容拷贝到用户的家目录下。</td></tr></tbody></table><p>2.5 /home</p><p>用户主目录的位置，每创建一个用户，该目录下就会生成名字为该用户的文件夹，用于存放用户的各种文件、数据。</p><p>2.6 /lib</p><p>库文件目录，包含了所有对系统有用的库文件。在/bin或/sbin目录中的命令的动态库文件，就在此目录中，内核模块同样也在这里。</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/lib32 /lib64</td><td style="text-align:center">这两个目录与/lib是一样的，包含的是特殊架构的库文件。</td></tr><tr><td style="text-align:center">/lib/firmware</td><td style="text-align:center">包含硬件、固件代码。硬件运行在系统中分为两个部分：固件（加载到实际硬件的代码）和驱动程序（用于固件和内核之间的通讯）。</td></tr><tr><td style="text-align:center">/lib/modules</td><td style="text-align:center">包含所有可加载的内核模块，如果有多个内核，则该目录下会有代表每个内核的目录。</td></tr><tr><td style="text-align:center">/lib/modprobe.d</td><td style="text-align:center">modprobe命令的配置。该命令的作用是在linux内核中，添加或删除模块。</td></tr><tr><td style="text-align:center">/lib/hdparm</td><td style="text-align:center">包含 SATA/IDE 硬盘正确运行的参数。</td></tr><tr><td style="text-align:center">/lib/udev</td><td style="text-align:center">udev是一种工具，能够根据系统中硬件设备的状态，动态更新设备文件（创建，删除和刷新）。该目录存放了所有的 udev 相关的文件和文件夹，比如rules.d就设定了udev规范。</td></tr></tbody></table><p>2.7 /media、/mnt</p><p>/media ——可移除的外置设备（比如U盘、光盘等）自动挂载的位置。</p><p>/mnt ——文件系统挂载点。当进行手动挂载移动介质、其它文件系统的分区、可安装文件系统时，挂载点的优先选择。</p><p>2.8 /opt</p><p>存放系统额外软件安装的文件和程序，一般是大型第三方软件，比如WPS办公，Firefox等。</p><p>2.9 /proc</p><p>一个虚拟文件系统，是正在运行的内核信息映射，也是内核和内核模块用来向进程发送消息的机制。它可以让用户和内核内部数据结构进行交互，获取有关进程的信息，并且可以在运行中改变设置。</p><p>/proc运行在内存之中（不占用外部存储空间），以文件的形式向用户空间提供了访问接口。主要包含了进程信息、内存资源信息、磁盘分区信息等。</p><p>2.10 /root</p><p>系统管理员（root）的主目录。</p><p>2.11 /run</p><p>进入/run目录后，执行命令“df -k .”，可以看到它被识别为“tmpfs”，即临时文件系统。与/var/run相同，该目录下是程序或者服务启动后的PID，重启后会重/srv新生成对应的目录数据。</p><p>2.12 /srv</p><p>主要用来存储本机或本服务器提供的服务或数据（用户主动产生的数据、对外提供的服务）。</p><p>2.13 /sys</p><p>/sys是sysfs的挂载点。sysfs是一个虚拟的、基于内存的文件系统，它与/proc相似，可以查看和设定内核参数，并且，还能以更好的方式导出内核数据。</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/sys/devices</td><td style="text-align:center">所有在总线上被发现的物理设备，比如网卡、显卡、ACPI、虚拟设备（tty、bonding等），是内核对系统中所有设备的分层次表达模型。</td></tr><tr><td style="text-align:center">/sys/dev</td><td style="text-align:center">字符设备(block)和块设备(char)，里面均是以主次设备号（major:minor）命名的链接文件，指向/sys/devices。</td></tr><tr><td style="text-align:center">/sys/class</td><td style="text-align:center">包含所有注册在kernel里面的设备类型，每个设备类型表达具有一种功能的设备。每个设备类型子目录下是链接文件，指向/sys/devices/目录下的具体设备。</td></tr><tr><td style="text-align:center">/sys/bus</td><td style="text-align:center">按总线类型分类设备。其中，每个子目录下都包含devices和drivers两个子目录：devices ——该总线类型下的所有设备，均为链接文件，指向(/sys/devices/；drivers ——该总线类型下的驱动，参数可查看和修改。</td></tr><tr><td style="text-align:center">/sys/modules</td><td style="text-align:center">所有被载入内核的模块，包括编译到内核中的模块，和编译为.ko文件的外模块。</td></tr><tr><td style="text-align:center">/sys/fs</td><td style="text-align:center">描述系统中所有文件系统，包括文件系统本身和按文件系统分类存放的已挂载点（一些传统虚拟文件系统控制参数仍然在/proc/sys/fs中）。</td></tr><tr><td style="text-align:center">/sys/kernel</td><td style="text-align:center">内核中所有可调整的参数（一些传统内核可调整参数仍然位于/proc/sys/kernel中）。</td></tr><tr><td style="text-align:center">/sys/firmware</td><td style="text-align:center">对固件对象和属性进行操作和观察的接口，即系统加载固件机制时对用户空间的接口。</td></tr><tr><td style="text-align:center">/sys/power</td><td style="text-align:center">存在一些属性文件，用于控制整个机器的电源状态。</td></tr></tbody></table><p>2.14 /tmp</p><p>用户和程序的临时目录。该目录中的内容会被系统定时自动清空。</p><p>2.15 /usr</p><p>/usr目录下放置的是系统中软件的资源，而不是用户数据（usr≠user）；所有系统默认的软件都会放置到/usr。</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/usr/bin /usr/sbin</td><td style="text-align:center">参考2.1的内容。</td></tr><tr><td style="text-align:center">/usr/include</td><td style="text-align:center">开发和编译应用程序所需要的头文件。编译时，可以通过头文件来使用某些库函数。</td></tr><tr><td style="text-align:center">/usr/lib</td><td style="text-align:center">目标库文件（包括动态连接库），以及通常不是直接调用的可执行文件。</td></tr><tr><td style="text-align:center">/usr/local</td><td style="text-align:center">安装本地程序的默认路径。当下载一个程序源代码进行编译安装时，如果不特别指定安装路径，那么程序相关的文件将会默认放置到这个目录对应的子目录下。</td></tr><tr><td style="text-align:center">/usr/share</td><td style="text-align:center">存放了同一个操作系统在不同构架下工作时，特定应用程序的共享数据，比如背景图、程序文档信息、语言设置等。</td></tr><tr><td style="text-align:center">/usr/src</td><td style="text-align:center">Linux内核源码。</td></tr></tbody></table><p>2.16 /var</p><p>常态性变动的文件，包括缓存、日志信息以及某些运作所产生的文件。</p><table><thead><tr><th style="text-align:center">文件目录</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">/var/cache</td><td style="text-align:center">应用程序运行过程中产生的缓存。</td></tr><tr><td style="text-align:center">/var/lib</td><td style="text-align:center">应用程序运行过程中，需要使用到的文件。</td></tr><tr><td style="text-align:center">/var/local</td><td style="text-align:center">存放/usr/local中安装的程序的可变数据。</td></tr><tr><td style="text-align:center">/var/lock</td><td style="text-align:center">锁定文件。比如，某些资源一次只能被一个应用程序使用时，如果同时被两个及以上程序使用，就会产生错误，于是，就需要对该资源进行锁定操作。</td></tr><tr><td style="text-align:center">/var/log</td><td style="text-align:center">有关于系统的各种日志信息：</td></tr><tr><td style="text-align:center">alternatives.log</td><td style="text-align:center">系统的更新替代信息。</td></tr><tr><td style="text-align:center">auth.log</td><td style="text-align:center">系统授权信息，包括用户登录和使用的权限机制等。</td></tr><tr><td style="text-align:center">boot.log</td><td style="text-align:center">系统在启动引导过程中的日志信息。</td></tr><tr><td style="text-align:center">bootstrap.log</td><td style="text-align:center">构建最小系统的日志信息。</td></tr><tr><td style="text-align:center">btmp wtmp</td><td style="text-align:center">btmp记录所有失败登录信息；wtmp记录了谁正在登录进入系统，使用命令显示这个文件信息等。</td></tr><tr><td style="text-align:center">dmesg</td><td style="text-align:center">包含启动时的内核缓冲，以及与硬件有关的信息。</td></tr><tr><td style="text-align:center">dpkg.log</td><td style="text-align:center">使用dpkg安装或卸载软件的日志。</td></tr><tr><td style="text-align:center">faillog</td><td style="text-align:center">记载用户登录失败的信息，以及错误登录命令。</td></tr><tr><td style="text-align:center">syslog</td><td style="text-align:center">格式说明：日期主机名进程名[PID]: 具体信息其中，日期格式为MM dd hh:mm:ss；进程的PID通常是一个数字，也可以为空。syslog是Linux系统默认的日志守护进程，任何希望生成日志信息的程序都可以通过syslog提供的接口，在该文件中生成信息。它对于系统、软件调试，定位问题有很大作用。</td></tr><tr><td style="text-align:center">Xorg.*.log</td><td style="text-align:center">X显示的日志信息。</td></tr><tr><td style="text-align:center">/var/run</td><td style="text-align:center">存放某些程序或者服务启动后的PID。</td></tr><tr><td style="text-align:center">/var/spool</td><td style="text-align:center">放置一些队列数据，即排队等待其他程序使用的数据。这些数据被使用后，通常都会被删除。比如系统收到新邮件会放置到/var/spool/mail/中，当用户收下后，该邮件就会被删除。除了邮件以外，还有打印队列、周期执行任务队列等。</td></tr></tbody></table><p>2.17 /lost＋found</p><p>在系统修复过程中，恢复的文件所在目录。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;对于Linux爱好者来说，深入了解Linux文件目录结构的标准和每个目录的详细功能，对于我们用好Linux系统至关重要，下面就由小编给大家介绍下优麒麟系统的目录结构，PS: 同样适用于其他Linux发行版。&lt;/p&gt;
+&lt;p&gt;查看系统的全部目录：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p
+      
+    
+    </summary>
+    
+      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="3.系统介绍" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/3-%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>欢迎来到优麒麟百科（内测版）</title>
     <link href="https://UbuntuKylin.github.io/wiki/welcome/"/>
     <id>https://UbuntuKylin.github.io/wiki/welcome/</id>
     <published>2019-09-27T03:01:38.969Z</published>
-    <updated>2019-09-27T03:01:38.969Z</updated>
+    <updated>2019-10-22T01:39:47.571Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="优麒麟介绍"><a href="#优麒麟介绍" class="headerlink" title="优麒麟介绍"></a>优麒麟介绍</h3><p>优麒麟是由中国 CCN 联合实验室支持和主导的开源项目，其宗旨是采用平台国际化与应用本地化融合的设计理念，通过定制本地化的桌面用户环境以及开发满足广大中文用户特定需求的应用软件来提供细腻的中文用户体验，做更有中国特色的操作系统。</p><p>优麒麟以 Ubuntu 为参考，得到来自 Debian、Ubuntu、LUPA 及各地 Linux 用户组等国内外众多社区爱好者的广泛参与和热情支持，其开发贡献者可参见 Ubuntu Kylin <a href="https://launchpad.net/%7Eubuntukylin-members/+members?active_batch=75&amp;active_direction=backwards&amp;active_memo=75" rel="external nofollow noopener noreferrer" target="_blank">开发者团队列表</a></p><p>我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，优麒麟已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将优麒麟应用于日常办公、企业生产和专业开发的人员或团队。优麒麟最新的长期支持版是我们于2019年8月9日发布的18.04.3 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将优麒麟应用于个人娱乐、办公体验或开发学习的人员或团队。优麒麟最新的短期支持版是我们于2019年4月19日发布的19.04版本！ </p>]]></content>
+    <content type="html"><![CDATA[<h3 id="优麒麟介绍"><a href="#优麒麟介绍" class="headerlink" title="优麒麟介绍"></a>优麒麟介绍</h3><p>优麒麟是由中国 CCN 联合实验室支持和主导的开源项目，其宗旨是采用平台国际化与应用本地化融合的设计理念，通过定制本地化的桌面用户环境以及开发满足广大中文用户特定需求的应用软件来提供细腻的中文用户体验，做更有中国特色的操作系统。</p><p>优麒麟以 Ubuntu 为参考，得到来自 Debian、Ubuntu、LUPA 及各地 Linux 用户组等国内外众多社区爱好者的广泛参与和热情支持，其开发贡献者可参见 Ubuntu Kylin <a href="https://launchpad.net/%7Eubuntukylin-members/+members?active_batch=75&amp;active_direction=backwards&amp;active_memo=75" rel="external nofollow noopener noreferrer" target="_blank">开发者团队列表</a></p><p>我们将持续努力为用户提供高品质和一体化的用户体验！从13.04版本开始，优麒麟已成为Ubuntu官方认可的正式成员。目前我们有两种类型的发行版：<br>  长期支持(LTS)版：内核和应用维持稳定，社区技术支持周期为5年，适合于将优麒麟应用于日常办公、企业生产和专业开发的人员或团队。优麒麟最新的长期支持版是我们于2019年8月9日发布的18.04.3 LTS版本！<br>  短期支持(STS)版：内核和应用升级较快，社区技术支持周期为9个月，适合于将优麒麟应用于个人娱乐、办公体验或开发学习的人员或团队。优麒麟最新的短期支持版是我们于2019年10月18日发布的19.10版本！ </p>]]></content>
     
     <summary type="html">
     
@@ -414,109 +520,6 @@
       <category term="软件应用" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
     
       <category term="2.第三方软件工具" scheme="https://UbuntuKylin.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/2-%E7%AC%AC%E4%B8%89%E6%96%B9%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Linux新手大礼包：学习Linux你必须知道的那些事儿</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2.%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/Linux%E6%96%B0%E6%89%8B%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%9A%E5%AD%A6%E4%B9%A0Linux%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/2.新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/</id>
-    <published>2019-06-24T06:31:49.000Z</published>
-    <updated>2019-10-08T02:08:02.883Z</updated>
-    
-    <content type="html"><![CDATA[<p>　<br>　　欢迎加入 Linux 的大家庭！对你来说，这可能还是一个陌生的领域，不过相信随着逐步深入的了解，你会喜欢上 Linux，喜欢上开源的！首先，让我们来看一下，Linux新手应该注意和了解哪些事情吧！</p><h3 id="1-认识几个大牛"><a href="#1-认识几个大牛" class="headerlink" title="1. 认识几个大牛"></a>1. 认识几个大牛</h3><p>Linus Torvalds<br>生于1969年12月28日的芬兰赫尔辛基市，拥有美国国籍。他是 Linux 内核的最早作者，随后发起了这个开源项目，担任 Linux 内核的首席架构师与项目协调者，是当今世界最著名的电脑程序员、黑客之一。他还发起了 Git 这个开源项目，并为主要的开发者。</p><p>Richard Matthew Stallman<br>简称 RMS，生于1953年3月16日，美国自由软件运动的精神领袖、GNU 计划 以及自由软件基金会的创立者。作为一个著名的黑客，他的主要成就包括Emacs及后来的 GNU Emacs，GNU C 编译器及GDB调试器。他所写作的GNU通用公共许可证是世上最广为采用的自由软件许可证，为Copyleft观念开拓出一条崭新的道路。</p><p>Eric Steven Raymond<br>生于1957年12月4日，程序员，《大教堂与市集》的作者、《新黑客词 典》（”Jargon File”）的维护人、著名黑客。作为《新黑客词典》的主要编撰人以及维护者，雷蒙很早就被认为是黑客文化的历史学家以及人类学家。但是在1997年以 后，雷蒙被广泛公认为是开放源代码运动的主要领导者之一，并且是最为大众所知道（并最具争议性）的黑客。</p><h3 id="2-了解Linux家族的明星成员"><a href="#2-了解Linux家族的明星成员" class="headerlink" title="2. 了解Linux家族的明星成员"></a>2. 了解Linux家族的明星成员</h3><p>　　<strong>Red Hat Enterprise Linux</strong>：Red Hat Enterprise Linux 是 Red Hat 公司的 Linux 发行版，面向商业市场，包括大型机。红帽公司从 Red Hat Enterprise Linux 5 开始对企业版 LINUX 的每个版本提供10年的支持，Red Hat Enterprise Linux 常简作 RHEL。Red Hat Enterprise Linux 大约3年发布一个新版本。<br>　　<strong>Fedora Linux</strong>：Fedora Linux 是较具知名度的 Linux 发行版之一。它是一套功能完备、更新快速的免费操作系统。而对赞助者 Red Hat 公司而言，它是许多新技术的测试平台，被认为可用的技术最终会加入到 Red Hat Enterprise Linux 中。<br>　　<strong>Centos</strong>：CentOS 全名为“社区企业操作系统”（Community Enterprise Operating System），是Linux发布版之一，它是来自于 Red Hat Enterprise Linux 依照开放源代码规定发布的源代码所编译而成。由于出自同样的源代码，因此有些要求高度稳定性的服务器以CentOS替代商业版的 Red Hat Enterprise Linux 使用。两者的不同，在于 CentOS 并不包含封闭源代码软件。CentOS 对上游代码的主要修改是为了卸载不能自由使用的商标。<br>　　<strong>Ubuntu</strong>：Ubuntu 是一个以桌面应用为主的 GNU/Linux 操作系统，其名称来自非洲南部祖鲁语或豪萨语的“ Ubuntu ”一词，意思是“人性”。 Ubuntu 基于 Debian 发行版，与 Debian 的不同在于它每6个月会发布一个新版本。<br>　　<strong>SUSE Linux</strong>：SUSE 是 Linux 操作系统其中一个发布版，也是德国的一个发布版。SUSE Linux 目前专注于企业市场。<br>　　<strong>openSUSE</strong>：openSUSE 是一个开放社区的计划，号称“最美丽的 Linux 发行版”。<br>　　<strong>Debian</strong>：Debian 是一种自由操作系统，全称 Debian GNU/Linux，由Debian计划（Debian Project）组织维护，Debian 是一个纯粹由自由软件所组合而成的操作环境。<br>　　<strong>Archlinux</strong>：Arch Linux(或称Arch)是一种以轻量简洁为设计理念的Linux发行版。其开发团队秉承简洁、优雅、正确和代码最小化的设计宗旨。Arch Linux 项目受 CRUX 启发，由 Judd Vinet 于2002年启动。</p><p>更多Linux版本请看这里： <a href="https://code.csdn.net/groups/7587/discources/935281" rel="external nofollow noopener noreferrer" target="_blank">Linux系统家族族谱</a></p><h3 id="3-初学者必读的Linux基础书籍"><a href="#3-初学者必读的Linux基础书籍" class="headerlink" title="3. 初学者必读的Linux基础书籍　　"></a>3. 初学者必读的Linux基础书籍　　</h3><p>　　要想学好Linux，你至少需要：一本好入门教材、一本linux指令参考手册、linux系统管理手册、讲解linux系统原理的书。这里我们推荐几部公认的好书：<br> <a href="https://book.douban.com/subject/4889838/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 基础学习篇》</a> 鸟哥 著；人民邮电出版社<br> <a href="https://book.douban.com/subject/10794788/" rel="external nofollow noopener noreferrer" target="_blank">《 鸟哥的Linux私房菜 服务器架设篇》</a>  鸟哥 著；机械工业出版社<br> <a href="https://book.douban.com/subject/25750712/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux命令、编辑器与Shell编程》</a> [美]索贝尔(Sobell·M.G.) 著； 清华大学出版社<br> <a href="https://book.douban.com/subject/1723151/" rel="external nofollow noopener noreferrer" target="_blank">《 Linux设备驱动程序》</a> 科波特 著； 中国电力出版社<br> <a href="https://book.douban.com/subject/2287506/" rel="external nofollow noopener noreferrer" target="_blank">《 深入理解Linux内核》</a> （美）博韦，西斯特 著； 中国电力出版社<br> <a href="https://book.douban.com/subject/1788421/" rel="external nofollow noopener noreferrer" target="_blank">《 UNIX环境高级编程》</a>  W.Richard Stevens / Stephen A.Rago 著；人民邮电出版社</p><h3 id="4-熟悉Linux常用命令"><a href="#4-熟悉Linux常用命令" class="headerlink" title="4. 熟悉Linux常用命令"></a>4. 熟悉Linux常用命令</h3><ul><li>man ：任何时候你觉得对一个命令行不是很确定，都可以通过输入“man + 命令”来了解这个命令能确切是做什么的。</li><li>ls ：列出目录内容。</li><li>pwd ：在终端中显示当前工作目录的全路径。</li><li>cd ：要变更你当前所在的目录。</li><li>mkdir ：创建一个新的目录。</li><li>cp ：复制文件/重命名文件。</li><li>mv ：移动文件。</li><li>find 和 locate：搜索文件。</li><li>kill ：快速关闭一个进程。</li><li>passwd ：更改密码。</li><li>md5sum ：计算和检验MD5信息签名</li><li>history ：查询历史记录命令。</li><li>sudo ：(super user do)命令允许授权用户执行超级用户或者其它用户的命令。</li><li>touch ：创建一个新文件，或者将文件的访问和修改时间更新为当前时间。</li><li>chmod ：修改文件的访问权限。</li><li>chown ：改变文件拥有者和所在用户组。</li><li>apt ：APT是一个为Debian系列系统（Ubuntu，Kubuntu等等）开发的高级包管理器，在Gnu/Linux系统上，它会为包自动智能地搜索、安装、升级以及解决依赖问题。</li></ul><h3 id="5-小心新手常犯的几个错误"><a href="#5-小心新手常犯的几个错误" class="headerlink" title="5. 小心新手常犯的几个错误　"></a>5. 小心新手常犯的几个错误　</h3><p>　<strong>不要以根用户登录</strong>：这是使用Unix的惯例，除非必须那么不要轻易在根用户下运行任何东西。　<br>　<strong>文件命名混乱</strong>：避免使用美元符（$），括弧和百分号（%）等特殊字符，这些字符对于shell有着特殊意义，可能会引起冲突。避免使用空格，不要使用无效字符，“/”是根目录专用的。　<br>　<strong>所有文件都混在一起</strong>：将Home目录放在一个独立的分区上，可以在你重装系统甚至升级你的整个版本而不会丢失你的数据和个人设置。　<br>　<strong>试图点击运行.exe文件</strong>：除非你安装了WINE，双击那些.exe文件毫无用处。新用户需要知道，无论是Linux还是Windows，都只会运行针对自身系统开发的应用程序。　　<br>　<strong>以默认格式向微软Office用户发送OpenOffice文档</strong>：微软产品对其它操作系统和其它应用程序的友好性并不强，许多新Linux用户在共享文件给朋友时往往会遇到麻烦，因为对方无法阅读他们共享的文件格式，因此新Linux用户要注意存储文件的格式，确保它们能够被微软类似应用所打开。<br>　<strong>忽视更新</strong>：新的更新可以为一些新的漏洞打上补丁。维持更新可以在一个易受损的系统与一个安全的系统之间构造分水岭。Linux的安全来自于不断地维护。　　　　<br>　以上是一些操作习惯方面的错误，还有一些技术类型的错误，你可以查看《 避免UNIX和Linux中的常见错误》</p><h3 id="6-常去逛逛一些Linux社区和网站"><a href="#6-常去逛逛一些Linux社区和网站" class="headerlink" title="6. 常去逛逛一些Linux社区和网站"></a>6. 常去逛逛一些Linux社区和网站</h3><p>国内的专业Linux网站<br>　　<a href="https://www.chinaunix.net/" rel="external nofollow noopener noreferrer" target="_blank">ChinaUnix</a>： 创办于2001年，是一个以讨论Linux/Unix类操作系统技术、软件开发技术、数据库技术和网络应用技术等为主的开源技术社区网站。<br>　　<a href="https://linux.cn/" rel="external nofollow noopener noreferrer" target="_blank">LinuxCN</a>：Linux中国是专注于中文Linux技术、资讯的社区，在这里你可以获得一手的Linux资讯和技术知识。</p><p>国外著名Linux网站<br>　　<a href="https://www.linux.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux Online</a>： 最权威的Linux网站，文章讨论无所不包，软件硬件应有尽有。<br>　　<a href="https://li.org/" rel="external nofollow noopener noreferrer" target="_blank">Linux国际协会(Linux International)</a>：有大量的Linux资源列表。<br>　　<a href="https://www.linux.com/" rel="external nofollow noopener noreferrer" target="_blank">Linux</a>：学习Linux的最好网站，也是Linux使用经验的汇聚地。<br>　　<a href="https://www.linuxforums.org/" rel="external nofollow noopener noreferrer" target="_blank">Linuxforums</a>： 提供Linux的软件资源，Linux论坛，Linux服务器发行版的信息，LINUX文章教程等信息的综合性网站。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;　&lt;br&gt;　　欢迎加入 Linux 的大家庭！对你来说，这可能还是一个陌生的领域，不过相信随着逐步深入的了解，你会喜欢上 Linux，喜欢上开源的！首先，让我们来看一下，Linux新手应该注意和了解哪些事情吧！&lt;/p&gt;
-&lt;h3 id=&quot;1-认识几个大牛&quot;&gt;&lt;a href=&quot;
-      
-    
-    </summary>
-    
-      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="2.新手必看" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/2-%E6%96%B0%E6%89%8B%E5%BF%85%E7%9C%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>特洛伊木马可能已感染Linux系统多年</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/5.%E5%85%B6%E4%BB%96/%E7%89%B9%E6%B4%9B%E4%BC%8A%E6%9C%A8%E9%A9%AC%E5%8F%AF%E8%83%BD%E5%B7%B2%E6%84%9F%E6%9F%93Linux%E7%B3%BB%E7%BB%9F%E5%A4%9A%E5%B9%B4/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/5.其他/特洛伊木马可能已感染Linux系统多年/</id>
-    <published>2019-06-24T06:31:08.000Z</published>
-    <updated>2019-10-08T02:08:02.883Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://www.ubuntukylin.com/upload/images/trojan-word-cloud(1).jpg"><br>关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数Linux用户广泛接受，然而这只在一定程度上成立，并非完全如此。<br>       与其它操作系统一样，Linux同样无法对恶意代码、木马、rootkit、病毒等完全免疫，已知存在几种著名的Linux病毒。但是如果和Windows相比，数量非常有限。既然如此又何必故话重提呢？这是因为一种新的木马已在市场上被探测到，有可能影响Linux系统。</p><p><strong>Turla同样可以感染Linux系统</strong><br>       数月前一款名为Turla的精巧间谍程序被探测到，该病毒被认为源自俄罗斯并且受到俄罗斯政府的支持。间谍程序以欧洲和美国的政府机构为目标已长达四年之久。在最近的报告中，Kaspersky的研究者发现Turla不仅感染Windows系统，同样感染Linux操作系统。Kaspersky研究者将其描述为“Turla迷题的丢失片段”（missing piece of Turla puzzle）。<br><strong>什么是Turla的Linux模块以及该模块有何危险性？</strong><br>       “Linux Turla模块是一个静态编译的C/C++模块，去除了符号信息目的是增加分析的难度。其功能包括隐藏的网络通信、任意地远程命令执行和远程管理。大部分代码来自公开来源”。<br>       报告还提到该木马在执行任意远程命令时不需要提权，无法被常用的管理工具发现。就个人而言，这种说法值得怀疑。因此，作为Linux桌面用户是否会感到担忧呢？在我们经历过ShellShock Linux bug之后，现在就崩溃还为时过早。Turla最初针对的是政府机构而不是普通用户。我们可以等待和观察更多、更详细的消息。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://www.ubuntukylin.com/upload/images/trojan-word-cloud(1).jpg&quot;&gt;&lt;br&gt;关于为什么要转用Linux的论据之一就是Linux是安全的、无病毒的。“Linux对病毒免疫”这一观点被多数L
-      
-    
-    </summary>
-    
-      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="5.其他" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/5-%E5%85%B6%E4%BB%96/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/5.U%E7%9B%98%E6%95%99%E7%A8%8B/Windows-8-1-UEFI-%E6%A8%A1%E5%BC%8F%E4%B8%8BU%E7%9B%98%E5%AE%89%E8%A3%85Ubuntu-Kylin-14-10-%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
-    <id>https://UbuntuKylin.github.io/wiki/系统安装/5.U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/</id>
-    <published>2019-06-24T06:30:40.000Z</published>
-    <updated>2019-09-16T08:06:42.404Z</updated>
-    
-    <content type="html"><![CDATA[<p>因办公需要，Linux 系统是必需的，本文作者是 Windows8.1 系统，笔记本电脑型号是联想 Y400。 由于虚拟机的慢速，所以决定删除一个硬盘然后独立安装 Linux 的操作系统。</p><h3 id="1-Window-8-1-的情况："><a href="#1-Window-8-1-的情况：" class="headerlink" title="1. Window 8.1 的情况："></a>1. Window 8.1 的情况：</h3><p>windows 8.1 系统原装正版，电脑是联想 Y400，进入 Bios（开机出现Logo后按F2），因为UEFI的引导形式，BIOS里面没有U盘启动的选项。只有 UEFI 模式和 Legacy (传统模式)这两个选项。第一个尝试是在 Legacy 模式下进行传统的安装，这个和常规的安装方式没有什么区别。这里以 Ubuntu Kylin 为例。<br>    准备工作：<br>   （1） 第一次安装的是32位 Ubuntu Kylin 14.10，安装方式是U盘安装，因为 Bios 没有从 U 盘引导的选项，所以需要做一些准备工作;<br>   （2） 进入Windows系统，关掉快速启动，（控制面板-&gt;电源选项-&gt;左侧选择电源按钮的功能-&gt;单击选择当前不可用的设置-&gt;在下面的关机设置中关掉快速启动）;<br>   （3） 开机F2（不同机器不一样），进入Bios，关掉Secure Boot（安全启动），设置UEFI模式为Legacy模式，设置Legacy优先;<br>   （4） U 盘格式化，最好格式化成 FAT32 格式的，然后用刻录工具刻盘，比如软通碟（作者第一次用软通碟但是刻录的 U 盘无法正确引导安装，上网查了似乎对 legacy 等支持不好，所以在网上的建议下用了 Win32DiskImager ）就没有问题;<br>   （5） 备份重要的文件，防止安装出问题把系统搞坏了;<br>   （6） 下载 MBRFIX 工具，这个是你要删除 Ubuntu Kylin 时候防止 MBR 破话 Windows 的引导导致不能进入系统;<br>   （7） 防患于为然，最好有个PE系统恢复盘。<br>   （8） 下载 DiskGenius ，这个是因为你的 U 盘做完引导盘后你如果格式化，U 盘只有几百K的容量，你需要用这个软件把 U 盘丢失为分配的内存重新分配上；</p><h3 id="2-Ubuntu-Kylin-14-10-Legacy-U盘安装："><a href="#2-Ubuntu-Kylin-14-10-Legacy-U盘安装：" class="headerlink" title="2. Ubuntu Kylin 14.10 Legacy U盘安装："></a>2. Ubuntu Kylin 14.10 Legacy U盘安装：</h3><p>这个实际上是传统安装方式;<br>   （1） 插入U盘，因为之前已经在 Bios 中设置过 Legacy 和 Legacy 优先了，所以正常情况下应该是可以看到一个安装画面的，这个安装画面是紫色的，下面有个小人和一个图标，看到这个画面说明是传统的安装方式，这里安装的是32位的;<br>   （2） 一路默认就可以了，但是比较重要的是分区这块儿;<br>   （3） 这里分了 swap 交换分区 -2G ，根目录 -70G ，home-120G ，这个其实没那么严格，大家可以参考网上的一些建议，注意这里没有分 boot 分区，因为默认是会将 boot 挂载在全盘上的，所以出来的结果是以 Ubuntu Kylin 引导的（其实实际上不是，后面在详细分析）;<br>   （4） 分区下面的启动加载就保持不变了，默认为全盘;<br>   （5） 好了，一路耐心等待，重启的时候（U盘要拔掉，要不有进入安装界面了），就会看到 Ubuntu Kylin 的选择界面了，可以选 Ubuntu Kylin ，也可以选 Windows 8.1,正常情况下 Ubuntu Kylin 可以进去没有问题，但是 Windows 8.1却进不去了;<br>   （6） 原因是因为 Windows8.1是以UEFI模式安装引导的，而 Ubuntu Kylin 是在传统模式下安装的，所以理论上在前面的安装过程中希望通过 Ubuntu Kylin 引导 Windows，但结果是俩者不协同，导致 Ubuntu Kylin 生成的 windows 启动项是错误的;<br>   （7） 于是问题就来了，怎么进入 windows，很简单，重启进入 Bios，把 Legacy 改回为 UEFI，然后就又可以顺利的进入 Windows 8 了，但这时候没有 Ubuntu Kylin 的进入选项，这意味着你要想进入 Ubuntu Kylin ，就重新把 Legacy 改回为 UEFI 就可以了;如果你能忍受这样的麻烦，到 这里也算是顺利完成了;<br>   （8） 曾经试图想把 Ubuntu Kylin 的 boot 挂载在另外的分区上，然后设置启动项为该分区，然后希望通过 easyBCD 编辑从 Windows 引导，但是根本行不通，因为 UEFI 和 Legacy 两者各自独立，很难完成互相引导，至少我没有办到;<br>   （9） 最后的结果就是，看似是双系统，但是每次进入不同的系统都要重新设置 Bios ，非常麻烦！</p><h3 id="3-Ubuntu-Kylin-14-10-UEFI-U盘安装："><a href="#3-Ubuntu-Kylin-14-10-UEFI-U盘安装：" class="headerlink" title="3. Ubuntu Kylin 14.10 UEFI U盘安装："></a>3. Ubuntu Kylin 14.10 UEFI U盘安装：</h3><p>因为上面不爽，一气之下在Win8下面把 Ubuntu Kylin 的盘全删了，但是手贱造成的结果就是再次试图通过设置Bios为 Legacy 然后U盘安装盘无法引 导，这是因为之前将boot挂在全盘，破坏了MBR启动项，导致系统引导出错，但我还是可以通过更改为UEFI进入win8,所以我觉得也是有一点好的， 两种模式即便传统安装的 Ubuntu Kylin 死掉了，我还是能进入win8系统，于是在win8下重新把MBR用MBRFIX工具修复一下就好了，这个工具就只用 在命令行输入一行命令就可以了;觉得这个不是办法，决定用UEFI模式安装 Ubuntu Kylin 。<br>   （1） U 盘格式化，只有几百K,用 DiskGenius 把U盘的这几百K删了然后把所有未分配的U盘内存重新分配;<br>   （2） 注意U盘要格式化为fat32的;<br>   （3） 下载 Ubuntu Kylin 14.10 一定要是64位的，32位什么情况我就不得知了，我的电脑是64位，这里之针对64位安装的童鞋;<br>   （4） 刻录U盘，插入U盘重启;<br>   （5） 进入 BIOS，设置为 UEFI 模式，你会看到有一个 USB 的启动选项，这是因为U盘里有 .efi 这个文件，所以UEFI模式会自动检测，选择改选项优先启动就可以了;<br>   （6） 重启，Ubuntu Kylin 进入安装界面，这个界面与传统安装有所不同，没有之前的小人和图标了，而是在左上角有三行字，第一行是“Install…”，选择安装就可以了;<br>   （7） 在分配硬盘的时候，我分了四个区 /boot 挂载为 EFI 分区（这里我分了200M），/swap 交换分区，/根目录，/home 家分区;<br>   （8） 下面的启动分区设置为 /boot 所在的分区;<br>   （9） 其实这里你看似分了一个 /boot，以为启动项会挂载到你的这个 /boot 分区上，其实不然，无论有没有这个分区，Ubuntu 都会把 EFI 文件拷贝到一 个专门的EFI启动分区，这个分区是和 WIndow8 共用的，在硬盘设置你列表中你可以明显看到，一般在 Windows OS 分区的前面，sda2，你可以仔细检查一下，因为很明显有标志;<br>   （10） 所以第7步中你也可以不要 /boot，而在下面把启动加载的硬盘设置为 EFI 分区就可以了;<br>   （11） 你可能担心这样会破坏 windows 的引导，或者你以后删除 Ubuntu Kylin 会对 windows 的引导造成问题，其实不然，这样更安全，因为这样安装会在EFI分区新建一个 Ubuntu Kylin 的efi文件夹，专门负责 ubuntu Kylin 的引导，windows 的文件夹专门负责 windows 的引导，所以删除一个另一个也不会出问题，只是删除了后会有启动项的残留项，随便用efi工具清理一下就可以了;<br>  （12） 继续，重启，进入 Bios ，这个会发现多了 Ubuntu Kylin 这一个条目，原来只有( windows boot manager，boot from IPv4，boot from IPv6 )，把 Ubuntu Kylin 的选项调整到最上面，这样每次开机的的时候就会有 Ubuntu Kylin 还有 Ubuntu Kylin 的修复模式还有 Windows 8;<br>  目前支持 EFI 安装的 linux 系统有 Ubuntu、Ubuntu Kylin、Fedora 和 opensuse，比较新的版本支持，64位刻成盘Fat32格式基本上可以被自动检测到，安全启动要在bios里面关闭到，opensuse 支持安全启动模式下的安装，不过不知道效果怎么样，没有试验。大家在安装系统之前最好把准备工作做足，免得系统崩溃又没有PE修复盘欲哭无泪，装系统也是考验人品和耐心的事情，假如 Linux 里面可以看到 Windows 的盘符和其他硬盘，不要乱删。</p><p>原文：<a href="http://forum.ubuntu.org.cn/viewtopic.php?t=466297" rel="external nofollow noopener noreferrer" target="_blank">http://forum.ubuntu.org.cn/viewtopic.php?t=466297</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;因办公需要，Linux 系统是必需的，本文作者是 Windows8.1 系统，笔记本电脑型号是联想 Y400。 由于虚拟机的慢速，所以决定删除一个硬盘然后独立安装 Linux 的操作系统。&lt;/p&gt;
-&lt;h3 id=&quot;1-Window-8-1-的情况：&quot;&gt;&lt;a href=&quot;#1
-      
-    
-    </summary>
-    
-      <category term="系统安装" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
-    
-      <category term="5.U盘教程" scheme="https://UbuntuKylin.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/5-U%E7%9B%98%E6%95%99%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</title>
-    <link href="https://UbuntuKylin.github.io/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/4.%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Aptik%E6%9D%A5%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D-Ubuntu-Ubuntu-Kylin-%E4%B8%AD%E7%9A%84Apps%E5%92%8CPPAs/"/>
-    <id>https://UbuntuKylin.github.io/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/</id>
-    <published>2019-06-24T06:30:22.000Z</published>
-    <updated>2019-10-08T02:08:02.883Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://www.ubuntukylin.com/upload/images/a1(1).png"></p><p>当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其设置会很方便的。此时 Aptik 粉墨登场，它可以帮助你轻松实现。</p><p><strong>Aptik</strong>（自动包备份和恢复）是一个可以用在Ubuntu、Ubuntu Kylin 和其他基于Debian以及Ubuntu的Linux发行版上的应用，它允许你将已经安装过的包括软件库、下载包、安装的应用和主题、用户设置在内的PPAs(个人软件包存档)备份到外部的U盘、网络存储或者类似于Dropbox的云服务上。</p><p>注意：当我们在此文章中说到输入某些东西的时候，如果被输入的内容被引号包裹，请不要将引号一起输入进去，除非我们有特殊说明。</p><p>想要安装Aptik，需要先添加其PPA。使用Ctrl + Alt + T快捷键打开一个新的终端窗口。输入以下文字，并按回车执行。</p><ul><li>sudo apt-add-repository –y ppa:teejee2008/ppa</li></ul><p>当提示输入密码的时候，输入你的密码然后按回车。</p><p><img src="https://www.ubuntukylin.com/upload/images/a2(1).png"></p><p>在命令行提示符输入下边的命令，来确保资源库已经是最新版本。</p><ul><li>sudo apt-get update</li></ul><p><img src="https://www.ubuntukylin.com/upload/images/a3.png" alt></p><p>更新完毕后，你就完成了安装Aptik的准备工作。接下来输入以下命令并按回车：</p><ul><li>sudo apt-get install aptik</li></ul><p>注意：你可能会看到一些有关于获取不到包更新的错误提示。不过别担心，如果这些提示看起来跟下边图片中类似的话，你的Aptik的安装就没有任何问题。</p><p><img src="https://www.ubuntukylin.com/upload/images/a4.png" alt></p><p>安装过程会被显示出来。其中一个被显示出来的消息会提到此次安装会使用掉多少磁盘空间，然后提示你是否要继续，按下“y”再按回车，继续安装。</p><p><img src="https://www.ubuntukylin.com/upload/images/a5.png" alt></p><p>当安装完成后，输入“Exit”并按回车或者按下左上角的“X”按钮，关闭终端窗口。</p><p><img src="https://www.ubuntukylin.com/upload/images/a6.png" alt></p><p>在正式运行Aptik前，你需要设置好备份目录到一个U盘、网络驱动器或者类似于Dropbox和Google Drive的云帐号上。这儿的例子中，我们使用的是Dropbox。</p><p><img src="https://www.ubuntukylin.com/upload/images/a7.png" alt></p><p>一旦设置好备份目录，点击启动栏上方的“Search”按钮。</p><p><img src="https://www.ubuntukylin.com/upload/images/a8.png" alt></p><p>在搜索框中键入 “aptik”。结果会随着你的输入显示出来。当Aptik图标显示出来的时候，点击它打开应用。</p><p><img src="https://www.ubuntukylin.com/upload/images/a9.png" alt></p><p>此时一个对话框会显示出来要求你输入密码。输入你的密码并按“OK”按钮。</p><p><img src="https://www.ubuntukylin.com/upload/images/a10.png" alt></p><p>Aptik的主窗口显示出来了。从“Backup Directory”下拉列表中选择“Other…”。这个操作允许你选择你已经建立好的备份目录。</p><p>注意：在下拉列表的右侧的 “Open” 按钮会在一个文件管理窗口中打开选择目录功能。</p><p><img src="https://www.ubuntukylin.com/upload/images/a11.png" alt></p><p>在 “Backup Directory” 对话窗口中，定位到你的备份目录，然后按“Open”。</p><p>注意：如果此时你尚未建立备份目录或者想在备份目录中新建个子目录，你可以点“Create Folder”来新建目录。</p><p><img src="https://www.ubuntukylin.com/upload/images/a12.png" alt></p><p>点击“Software Sources (PPAs).”右侧的 “Backup”来备份已安装的PPAs。</p><p><img src="https://www.ubuntukylin.com/upload/images/a13.png" alt></p><p>然后“Backup Software Sources”对话窗口显示出来。已安装的包和对应的源（PPA）同时也显示出来了。选择你需要备份的源（PPAs），或者点“Select All”按钮选择所有源。</p><p><img src="https://www.ubuntukylin.com/upload/images/a14.png" alt></p><p>点击 “Backup” 开始备份。</p><p><img src="https://www.ubuntukylin.com/upload/images/a15.png" alt></p><p>备份完成后，一个提示你备份完成的对话窗口会蹦出来。点击 “OK” 关掉。</p><p>一个名为“ppa.list”的文件出现在了备份目录中。</p><p><img src="https://www.ubuntukylin.com/upload/images/a16.png" alt></p><p>接下来，“Downloaded Packages (APT Cache)”的项目只对重装同样版本的Ubuntu有用处。它会备份下你系统缓存(/var/cache/apt/archives)中的包。如果你是升级系统的话，可以跳过这个条目，因为针对新系统的包会比现有系统缓存中的包更加新一些。</p><p>备份和恢复下载过的包，这可以在重装Ubuntu，并且重装包的时候节省时间和网络带宽。因为一旦你把这些包恢复到系统缓存中之后，他们可以重新被利用起来，这样下载过程就免了，包的安装会更加快捷。</p><p>如果你是重装相同版本的Ubuntu系统的话，点击 “Downloaded Packages (APT Cache)” 右侧的 “Backup” 按钮来备份系统缓存中的包。</p><p>注意：当你备份下载过的包的时候是没有二级对话框出现的。你系统缓存 (/var/cache/apt/archives) 中的包会被拷贝到备份目录下一个名叫 “archives” 的文件夹中，当整个过程完成后会出现一个对话框来告诉你备份已经完成。</p><p><img src="https://www.ubuntukylin.com/upload/images/a17.png" alt></p><p>有一些包是你的Ubuntu发行版的一部分。因为安装Ubuntu系统的时候会自动安装它们，所以它们是不会被备份下来的。例如，火狐浏览器在Ubuntu和其他类似Linux发行版上都是默认被安装的，所以默认情况下，它不会被选择备份。</p><p>像<a href="https://www.howtogeek.com/203768" rel="external nofollow noopener noreferrer" target="_blank">package for the Chrome web browser</a>这种系统安装完后才安装的包或者包含 Aptik 的包会默认被选择上。这可以方便你备份这些后安装的包。</p><p>按照需要选择想要备份的包。点击 “Software Selections” 右侧的 “Backup” 按钮备份顶层包。</p><p>注意：依赖包不会出现在这个备份中。</p><p><img src="https://www.ubuntukylin.com/upload/images/a18.png" alt></p><p>备份目录中出现了两个名为 “packages.list” 和“packages-installed.list” 的文件，并且会弹出一个通知你备份完成的对话框。点击 ”OK“关闭它。</p><p>注意：“packages-installed.list”文件包含了所有的包，而 “packages.list” 在包含了所有包的前提下还指出了那些包被选择上了。</p><p><img src="https://www.ubuntukylin.com/upload/images/a19.png" alt></p><p>要备份已安装软件的设置的话，点击 Aptik 主界面 “Application Settings” 右侧的 “Backup” 按钮，选择你要备份的设置，点击“Backup”。</p><p>注意：如果你要选择所有设置，点击“Select All”按钮。</p><p><img src="https://www.ubuntukylin.com/upload/images/a20.png" alt></p><p>被选择的配置文件统一被打包到一个名叫 “app-settings.tar.gz” 的文件中。</p><p><img src="https://www.ubuntukylin.com/upload/images/a21.png" alt></p><p>当打包完成后，打包后的文件被拷贝到备份目录下，另外一个备份成功的对话框出现。点击“OK”关掉。</p><p><img src="https://www.ubuntukylin.com/upload/images/a22.png" alt></p><p>放在 “/usr/share/themes” 目录的主题和放在 “/usr/share/icons” 目录的图标也可以备份。点击 “Themes and Icons” 右侧的 “Backup” 来进行此操作。“Backup Themes” 对话框默认选择了所有的主题和图标。你可以安装需要的、取消一些不要的，然后点击 “Backup” 进行备份。</p><p><img src="https://www.ubuntukylin.com/upload/images/a23.png" alt></p><p>主题被打包拷贝到备份目录下的 “themes” 文件夹中，图标被打包拷贝到备份目录下的 “icons” 文件夹中。然后成功提示对话框出现，点击“OK”关闭它。</p><p><img src="https://www.ubuntukylin.com/upload/images/a24.png" alt></p><p>一旦你完成了需要的备份，点击主界面左上角的“X”关闭 Aptik 。</p><p><img src="https://www.ubuntukylin.com/upload/images/a25.png" alt></p><p>备份过的文件已存在于你选择的备份目录中，可以随时查看。</p><p><img src="https://www.ubuntukylin.com/upload/images/a26.png" alt></p><p>当你重装Ubuntu/Ubuntu Kylin或者安装新版本后，在新的系统中安装 Aptik 并且将备份好的文件置于新系统中使用。运行 Aptik，并使用每个条目的 “Restore” 按钮来恢复你的软件源、应用、包、设置、主题以及图标。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://www.ubuntukylin.com/upload/images/a1(1).png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置
-      
-    
-    </summary>
-    
-      <category term="快速入门" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="4.进阶操作" scheme="https://UbuntuKylin.github.io/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/4-%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
     
     
   </entry>
