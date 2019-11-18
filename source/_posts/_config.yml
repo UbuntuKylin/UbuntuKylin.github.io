@@ -1,4 +1,0 @@
-deploy:
-type: git
-repo: https://github.com/kwwzzz/UbuntuKylin.github.io.git
-branch: master

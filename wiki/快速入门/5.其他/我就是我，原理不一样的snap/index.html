@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    
+    <title>我就是我，原理不一样的snap | UbuntuKylin Wiki</title>
+    
+    
+        <meta name="keywords" content="我就是我，原理不一样的snap">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="引言 snap和flatpak都是新一代跨Linux发行版的软件包管理技术，上一篇我们简单介绍了flatpak的原理（传送门），今天我们接着简要介绍snap的安全机制。 简介snap是Canoncial公司提出的新一代linux包管理工具，致力于将所有linux发行版上的包格式统一，做到“一次打包，到处使用”。目前snap已经可以在包括Ubuntu、Fedora、Mint等多个Linux发行版上使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我就是我，原理不一样的snap">
+<meta property="og:url" content="https://UbuntuKylin.github.io/wiki/快速入门/5.其他/我就是我，原理不一样的snap/index.html">
+<meta property="og:site_name" content="UbuntuKylin Wiki">
+<meta property="og:description" content="引言 snap和flatpak都是新一代跨Linux发行版的软件包管理技术，上一篇我们简单介绍了flatpak的原理（传送门），今天我们接着简要介绍snap的安全机制。 简介snap是Canoncial公司提出的新一代linux包管理工具，致力于将所有linux发行版上的包格式统一，做到“一次打包，到处使用”。目前snap已经可以在包括Ubuntu、Fedora、Mint等多个Linux发行版上使">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201708/1501752729610536.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201708/1501752836565131.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/201708/1501752890346136.png">
+<meta property="og:updated_time" content="2019-11-18T09:28:16.371Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我就是我，原理不一样的snap">
+<meta name="twitter:description" content="引言 snap和flatpak都是新一代跨Linux发行版的软件包管理技术，上一篇我们简单介绍了flatpak的原理（传送门），今天我们接着简要介绍snap的安全机制。 简介snap是Canoncial公司提出的新一代linux包管理工具，致力于将所有linux发行版上的包格式统一，做到“一次打包，到处使用”。目前snap已经可以在包括Ubuntu、Fedora、Mint等多个Linux发行版上使">
+<meta name="twitter:image" content="https://www.ubuntukylin.com/upload/201708/1501752729610536.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="UbuntuKylin Wiki" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href=" / " id="logo">
+                <span class="site-title"> UbuntuKylin Wiki </span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/downloads/">下载</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/news/">新闻</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/comunity/">社区</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/joinus/list-438-cn.html">参与</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/qa/">知识库</a>
+                
+                    <a class="main-nav-link" href="//www.ukui.org/">UKUI</a>
+                
+            </nav>
+            
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/downloads/">下载</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/news/">新闻</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/comunity/">社区</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/joinus/list-438-cn.html">参与</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/qa/">知识库</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ukui.org/">UKUI</a></td>
+                
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                
+<aside id="sidebar" style="margin-top:40px">
+
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>目录</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            快速入门
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.基础操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/1.基础操作/入门介绍（开机桌面关机）/">入门介绍（开机桌面关机）</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/注销、关机、切换用户/">注销、关机、切换用户</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/键盘快捷键设置/">键盘快捷键设置</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/日程事件/">日程事件</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/启动有限制的客人会话/">启动有限制的客人会话</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/关闭无线（飞行模式）/">关闭无线（飞行模式）</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/桌面环境配置/">桌面环境配置</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/">如何对Ubuntu Kylin 14.04 的登录界面截图 </a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/">如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/快速检查电脑是否配备USB-3-0/">快速检查电脑是否配备USB 3.0</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.新手必看
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/2.新手必看/WEP和WPA介绍/">WEP和WPA介绍</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux上的文件类型与默认图标/">Linux上的文件类型与默认图标</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux中，你一定要掌握的网络基本命令/">Linux中，你一定要掌握的网络基本命令! </a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux命令及Linux终端的20个趣事/">Linux命令及Linux终端的20个趣事</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/有趣的Linux彩蛋——用sudo来冒犯用户/">有趣的Linux彩蛋——用sudo来冒犯用户</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/">Linux新手大礼包：学习Linux你必须知道的那些事儿</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/优麒麟系统的网络配置介绍/">优麒麟系统的网络配置介绍</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/优麒麟系统的无线网络故障排除/">优麒麟系统的无线网络故障排除</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.系统介绍
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/3.系统介绍/各版本新特性/">各版本新特性</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/窗口和工作区/">窗口和工作区</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/UKUI/">UKUI</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/优麒麟目录结构/">优麒麟目录结构</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/优麒麟电源管理浅析/">优麒麟电源管理浅析</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            4.进阶操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限程序</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            5.其他
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/wiki/快速入门/5.其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/5.其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/5.其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            系统安装
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.安装教程 
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/1.安装教程 /几种安装UK的方法/">几种安装UK的方法</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /从系统安装盘引导系统/">从系统安装盘引导系统</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /引导系统并准备安装/">引导系统并准备安装</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /选择安装类型并处理分区/">选择安装类型并处理分区</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /设置“安装启动引导器”/">设置“安装启动引导器”</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /UEFI环境安装/">UEFI环境安装</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /如何在-Ubuntu-Ubuntu-Kylin-中安装-Unity-8-桌面预览版/">如何在 Ubuntu/Ubuntu Kylin 中安装 Unity 8 桌面预览版</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /如何在优麒麟（Ubuntu-Kylin）上安装Linux内核4-0/">如何在优麒麟（Ubuntu Kylin）上安装Linux内核4.0 </a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.安装问题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/2.安装问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/2.安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/2.安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.虚拟机安装
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/3.虚拟机安装/优麒麟使用教程第二期：VirtualBox-虚拟机安装/">优麒麟使用教程第二期：VirtualBox 虚拟机安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            4.桌面风格
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/4.桌面风格/10个-Adobe-风格的创意图标，你值得拥有！/">10个 Adobe 风格的创意图标，你值得拥有！</a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">如何在 Ubuntu Kylin 中安装Numix主题和图标 </a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/Ubuntu-Kylin-15-10-如何安装Mac主题/">Ubuntu Kylin 15.10 如何安装Mac主题</a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/">在优麒麟14.04上安装精美的Dalisha图标主题</a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/如何让你的“笨兔”更像苹果？/">如何让你的“笨兔”更像苹果？</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            5.U盘教程
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/5.U盘教程/U盘做WIN7-UK双系统/">U盘做WIN7+UK双系统</a></li>  <li class="file"><a href="/wiki/系统安装/5.U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/">Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/系统安装/优麒麟所有版本下载汇总/">优麒麟所有版本下载汇总</a></li>  <li class="file"><a href="/wiki/系统安装/系统安装盘的制作/">系统安装盘的制作</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            软件应用
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.自带软件工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/优客助手/">优客助手</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/软件中心/">软件中心</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/小企鹅输入法/">小企鹅输入法</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/优客农历/">优客农历</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/优客天气/">优客天气</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/麒麟影音/">麒麟影音</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/生物识别/">生物识别</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/问题反馈程序/">问题反馈程序</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/循序而渐进，熟读而精思——优麒麟文件管理器篇/">循序而渐进，熟读而精思——优麒麟文件管理器篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.第三方软件工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/welcome/">欢迎来到优麒麟百科（内测版）</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+            <section id="main"><article id="post-快速入门/5.其他/我就是我，原理不一样的snap" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/快速入门/">快速入门</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/快速入门/5-其他/">5.其他</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/快速入门/5.其他/我就是我，原理不一样的snap/">
+            <time datetime="2019-06-24T09:03:40.000Z" itemprop="datePublished">2019-06-24</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+</div>
+                            <!--<div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/5.其他/我就是我，原理不一样的snap.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/5.其他/我就是我，原理不一样的snap.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/5.其他/我就是我，原理不一样的snap.md'> History </a>
+                            </div>-->
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            我就是我，原理不一样的snap
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#snap"><span class="toc-number">1.1.</span> <span class="toc-text">snap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#snapd"><span class="toc-number">1.2.</span> <span class="toc-text">snapd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#kernel-snap"><span class="toc-number">1.3.</span> <span class="toc-text">kernel snap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OS-snap"><span class="toc-number">1.4.</span> <span class="toc-text">OS snap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#snapcraft"><span class="toc-number">1.5.</span> <span class="toc-text">snapcraft</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#snappy"><span class="toc-number">1.6.</span> <span class="toc-text">snappy</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安全策略"><span class="toc-number">2.</span> <span class="toc-text">安全策略</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Sandbox"><span class="toc-number">2.1.</span> <span class="toc-text">Sandbox</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#security-policy-ID"><span class="toc-number">2.2.</span> <span class="toc-text">security policy ID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#snap文件系统"><span class="toc-number">2.3.</span> <span class="toc-text">snap文件系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AppArmor"><span class="toc-number">2.4.</span> <span class="toc-text">AppArmor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Seccomp"><span class="toc-number">2.5.</span> <span class="toc-text">Seccomp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#默认安全策略"><span class="toc-number">2.6.</span> <span class="toc-text">默认安全策略</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装模式"><span class="toc-number">2.7.</span> <span class="toc-text">安装模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Interfaces"><span class="toc-number">2.8.</span> <span class="toc-text">Interfaces</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li></ol>
+                </div>
+            
+        
+        
+            <p><strong>引言</strong></p>
+<p>snap和flatpak都是新一代跨Linux发行版的软件包管理技术，上一篇我们简单介绍了flatpak的原理（传送门），今天我们接着简要介绍snap的安全机制。</p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>snap是Canoncial公司提出的新一代linux包管理工具，致力于将所有linux发行版上的包格式统一，做到“一次打包，到处使用”。目前snap已经可以在包括Ubuntu、Fedora、Mint等多个Linux发行版上使用。首先我们来了解下snap相关的各种名词：</p>
+<h4 id="snap"><a href="#snap" class="headerlink" title="snap"></a>snap</h4><p>新一代跨Linux发行版的软件包管理技术，支持各大主流Linux发行版，通过Linux内核安全机制保证用户数据安全，彻底解决包依赖关系相关问题，并大大简化应用软件的打包工序。snap同时为安装及管理snap包的命令行工具。</p>
+<h4 id="snapd"><a href="#snapd" class="headerlink" title="snapd"></a>snapd</h4><p>管理snap软件包的后台服务。</p>
+<h4 id="kernel-snap"><a href="#kernel-snap" class="headerlink" title="kernel snap"></a>kernel snap</h4><p>使用snap格式打包的内核，包含内核镜像及内核模块。</p>
+<h4 id="OS-snap"><a href="#OS-snap" class="headerlink" title="OS snap"></a>OS snap</h4><p>使用snap格式重新打包的rootfs，包含了运行和管理snap的基本资源，当你第一次安装snap时，OS snap 首先被安装。</p>
+<h4 id="snapcraft"><a href="#snapcraft" class="headerlink" title="snapcraft"></a>snapcraft</h4><p>将软件打包成snap格式的打包工具集。</p>
+<h4 id="snappy"><a href="#snappy" class="headerlink" title="snappy"></a>snappy</h4><p>原指完全基于snap构建的系统，此名称已弃用，现统一称为Ubuntu Core，即Ubuntu的全snap操作系统，有别于传统基于deb包的classic Ubuntu。</p>
+<h3 id="安全策略"><a href="#安全策略" class="headerlink" title="安全策略"></a>安全策略</h3><p>snap应用以沙箱的方式运行。系统通过一些机制限制应用访问资源的权限来实现其安全特性，比如通过对内核安全机制AppArmor，Seccomp等的配置实现的沙箱和snap文件系统等。开发者不必过多了解系统安全机制的细节。下面简要说明snap使用的部分安全策略。</p>
+<h4 id="Sandbox"><a href="#Sandbox" class="headerlink" title="Sandbox"></a>Sandbox</h4><p>Linux Sandbox 是根据内核中支持的一些安全机制实现的进程访问控制方式。通常通过为进程分配随机uid，将进程置于chroot环境和为进程uid配置Capability等方式将进程置于严格受限的一种状态下。snap应用使用这种方式运行在系统为其分配的沙箱环境中。</p>
+<h4 id="security-policy-ID"><a href="#security-policy-ID" class="headerlink" title="security policy ID"></a>security policy ID</h4><p>每一个snap应用程序命令都有唯一的security policy ID，系统将此ID与命令绑定，由此可以为同一snap包内的不同程序配置不同的安全策略。作为系统识别命令的标示，当程序安装和运行时，系统会根据其Security Policy ID为其分配资源。在沙箱中运行的snap应用之间的通信控制也通过此ID来进行配置。<br>snap应用的security policy ID的命名规则为snap.name.command<br>例如，hello程序的security policy ID即为snap.hello.hello</p>
+<h4 id="snap文件系统"><a href="#snap文件系统" class="headerlink" title="snap文件系统"></a>snap文件系统</h4><p>snap文件系统被划分为具有只读和读写两种不同权限的区域，每个snap应用有其独有的受限文件目录，如下图所示：</p>
+<p><img src="https://www.ubuntukylin.com/upload/201708/1501752729610536.png" alt></p>
+<p>可以通过如下方式查看某应用的文件访问权限：</p>
+<p>$ snap install hello<br>hello 2.10 from ‘canonical’ installed<br>$ snap run –shell hello.hello</p>
+<p>$ env | grep SNAP<br>SNAP_USER_COMMON=/home/kylin/snap/hello/common<br>＃ 单用户所有版本应用的可写目录<br>SNAP_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/void<br>＃ 增加到LD_LABRARY_PATH的目录<br>SNAP_COMMON=/var/snap/hello/common<br>＃ 所有用户所有版本应用的可写目录<br>SNAP_USER_DATA=/home/kylin/snap/hello/20<br>＃ 单用户指定版本应用的可写目录<br>SNAP_DATA=/var/snap/hello/20<br>＃ 所有用户指定版本应用的可写目录</p>
+<p>由此可见，一个snap应用具有写权限的目录是极其有限的，并且每个snap应用都有其独立的可写目录。snap文件系统对snap应用相关目录的权限配置说明，这种方式实现了应用与应用，应用与系统之间的隔离。<br>同时这种方式对snap应用的升级和回滚提供了很好的支持，升级时只需将确定版本的相关目录复制到更高版本的对应目录，而回退只需删除更高版本的目录。</p>
+<h4 id="AppArmor"><a href="#AppArmor" class="headerlink" title="AppArmor"></a>AppArmor</h4><p>AppArmor是一个强制访问控制系统，在内核层面对进程可访问的资源进行控制。 在snap应用程序安装时，系统会为其中的每一个命令生成其特有的AppArmor配置文件。内核对可执行程序的Capability限制也可以通过Aparmor来配置。当执行应用程序中的命令时，AppArmor机制可保证此命令不会越权访问。 作为一种内核中的安全机制，在ubuntu classic系统中也同时支持AppArmor提供的机制。但与classic系统不同，snap系统对程序的访问控制更加严格，基本做到“只满足程序执行所需的最小权限”。</p>
+<h4 id="Seccomp"><a href="#Seccomp" class="headerlink" title="Seccomp"></a>Seccomp</h4><p>Seccomp是一个内核接口访问过滤器，snap应用程序通过其独有的过滤器访问内核接口。在snap应用程序启动之前会自动配置过滤器。Seccomp在snap系统中的作用类似于AppArmor。都是控制应用程序对系统资源的访问。</p>
+<p>Snap接口调用</p>
+<p>snap应用被严格限制在上面介绍的安全策略下，但snap应用之间也需要进行通信，比如硬件驱动作为一个snap应用肯定要为使用这个硬件的应用提供接口和服务。下面就简单说明一下snap应用之间的通信机制。</p>
+<h4 id="默认安全策略"><a href="#默认安全策略" class="headerlink" title="默认安全策略"></a>默认安全策略</h4><p>在没有特殊配置时，snap应用使用默认的安全策略，其中包含之前提到的snap文件系统中的默认目录访问控制以及以下部分策略：</p>
+<p>· snap应用安装目录的只读权限。</p>
+<p>· 共享内存的读写权限(ie. /dev/shm/snap.SNAP_NAME.*)</p>
+<p>· 相同应用的不同进程之间互相发送signal的权限</p>
+<h4 id="安装模式"><a href="#安装模式" class="headerlink" title="安装模式"></a>安装模式</h4><p>snap通过不同的安装模式提供不同的资源访问控制。</p>
+<p>1) Devmode</p>
+<p>devmode即为开发模式。使用以下命令将应用安装在此模式下：</p>
+<p>$ snap install hello –devmode<br>$ snap list<br>Name         Version       Rev   Developer  Notes<br>core          16-2.26.9     2381  canonical  -<br>hello          2.10          20    canonical  devmode<br>pc            16.04-0.8     9     canonical  -<br>pc-kernel     4.4.0-83.106  68    canonical  -</p>
+<p>此模式为应用程序提供完全的访问权限，但会在日志中记录程序的越权行为。</p>
+<p>在devmode下，snap应用只能访问/snap/下的文件。<br>2) Classic</p>
+<p>此模式将取消所有访问限制，不会在日志中记录越权行为。</p>
+<p>在classic模式下，snap应用可以访问’/’下的文件。</p>
+<h4 id="Interfaces"><a href="#Interfaces" class="headerlink" title="Interfaces"></a>Interfaces</h4><p>除去默认安全策略为其提供的资源外，snap应用没有权限访问系统其它资源。若snap应用需要使用系统资源或其它应用程序提供的资源，需通过interfaces机制配置接口。interfaces接口分为两种，slot(服务提供者)和plug(服务使用者)。<br>snap应用访问受限资源的示意如下：</p>
+<p><img src="https://www.ubuntukylin.com/upload/201708/1501752836565131.png" alt></p>
+<p>注意：操作系统在snap系统中也作为snap应用的形式存在。<br>如图所示，通过配置snap应用的plug和slot即可实现snap应用的互相访问。<br>查看系统上已经存在的plug和slot：</p>
+<p>$ snap interfaces<br>Slot                                              Plug<br>:account-control                             -<br>:alsa                                                -<br>:autopilot-introspection                 -<br>:bluetooth-control                          -<br>:browser-support                            -<br>:camera                                          -<br>:classic-support                         classic<br>:core-support                 core:core-support-plug<br>………<br>下面以一个例子说明plug和slot的使用。</p>
+<p>name: blue<br>…<br>apps:<br>  blue:<br>    command: bin/blue<br>    slots: 【bluez】    </p>
+<p>以上文件可作为一个蓝牙设备驱动程序的snap包打包控制文件。当此应用被安装时，系统将为其分配security policy ID为snap.blue.blue并包含规则：当blue启动时为其创建bluez slot。<br>要在其它应用中使用这个slot提供的功能，则打包控制文件如下所示：</p>
+<p>name: blue-client<br>…<br>apps:<br>  blue-client:<br>    command: bin/blue-client<br>    plugs: 【bluez】</p>
+<p>同理，当此应用被安装时，系统将为其分配security policy ID为snap.blue-client.blue-client并包含规则：允许此应用与snap.blue.blue通信。同时，提供slot的安全规则也会改写为：snap.blue.blue允许snap.blue-client.blue-client与其进行通信。<br>下图说明了snap应用与应用之间在严格的分隔限制下的互相通信。</p>
+<p><img src="https://www.ubuntukylin.com/upload/201708/1501752890346136.png" alt></p>
+<p>snap系统由snap应用组成，包括系统和内核都以snap包的形式出现在系统中。各个snap包之间通过interfaces互相提供服务来完成协同工作，同时各个应用又不失自身的独立性。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>snap系统提供了强大的安全系统。与传统linux发行版相比，snap系统中的应用更加独立、安全，同时对snap应用权限的配置也更加简单。在日益增长的嵌入式和物联网需求与日益严峻的系统安全形势下，snap系统表现出了比传统linux发行版更突出的优势。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+<!--
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/快速入门/5.其他/震惊！没想到你是这样的flatpak/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    震惊！没想到你是这样的flatpak...
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/快速入门/2.新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>    
+ -->
+
+
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Copyright©2013-2019 Ubuntu Kylin 版权所有
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277082673'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277082673%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> 
+            <!--<br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            -->
+        </div>
+    </div>
+
+    
+
+
+
+</footer>
+
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>

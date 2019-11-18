@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    
+    <title>如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs | UbuntuKylin Wiki</title>
+    
+    
+        <meta name="keywords" content="如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其设置会很方便的。此时 Aptik 粉墨登场，它可以帮助你轻松实现。 Aptik（自动包备份和恢复）是一个可以用在Ubuntu、Ubuntu Kylin 和其他基于Debian以及Ubuntu的Linux发行版上的应用，它允许你将已经安装过的包括软件库、下载包、安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用Aptik来备份和恢复 Ubuntu&#x2F;Ubuntu Kylin 中的Apps和PPAs">
+<meta property="og:url" content="https://UbuntuKylin.github.io/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/index.html">
+<meta property="og:site_name" content="UbuntuKylin Wiki">
+<meta property="og:description" content="当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其设置会很方便的。此时 Aptik 粉墨登场，它可以帮助你轻松实现。 Aptik（自动包备份和恢复）是一个可以用在Ubuntu、Ubuntu Kylin 和其他基于Debian以及Ubuntu的Linux发行版上的应用，它允许你将已经安装过的包括软件库、下载包、安装">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a1(1).png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a2(1).png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a3.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a4.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a5.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a6.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a7.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a8.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a9.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a10.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a11.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a12.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a13.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a14.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a15.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a16.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a17.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a18.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a19.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a20.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a21.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a22.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a23.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a24.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a25.png">
+<meta property="og:image" content="https://www.ubuntukylin.com/upload/images/a26.png">
+<meta property="og:updated_time" content="2019-11-18T09:28:16.371Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何使用Aptik来备份和恢复 Ubuntu&#x2F;Ubuntu Kylin 中的Apps和PPAs">
+<meta name="twitter:description" content="当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其设置会很方便的。此时 Aptik 粉墨登场，它可以帮助你轻松实现。 Aptik（自动包备份和恢复）是一个可以用在Ubuntu、Ubuntu Kylin 和其他基于Debian以及Ubuntu的Linux发行版上的应用，它允许你将已经安装过的包括软件库、下载包、安装">
+<meta name="twitter:image" content="https://www.ubuntukylin.com/upload/images/a1(1).png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="UbuntuKylin Wiki" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href=" / " id="logo">
+                <span class="site-title"> UbuntuKylin Wiki </span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/downloads/">下载</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/news/">新闻</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/comunity/">社区</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/joinus/list-438-cn.html">参与</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/qa/">知识库</a>
+                
+                    <a class="main-nav-link" href="//www.ukui.org/">UKUI</a>
+                
+            </nav>
+            
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/downloads/">下载</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/news/">新闻</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/comunity/">社区</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/joinus/list-438-cn.html">参与</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/qa/">知识库</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ukui.org/">UKUI</a></td>
+                
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                
+<aside id="sidebar" style="margin-top:40px">
+
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>目录</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            快速入门
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.基础操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/1.基础操作/入门介绍（开机桌面关机）/">入门介绍（开机桌面关机）</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/注销、关机、切换用户/">注销、关机、切换用户</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/键盘快捷键设置/">键盘快捷键设置</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/日程事件/">日程事件</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/启动有限制的客人会话/">启动有限制的客人会话</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/关闭无线（飞行模式）/">关闭无线（飞行模式）</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/桌面环境配置/">桌面环境配置</a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/">如何对Ubuntu Kylin 14.04 的登录界面截图 </a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/">如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </a></li>  <li class="file"><a href="/wiki/快速入门/1.基础操作/快速检查电脑是否配备USB-3-0/">快速检查电脑是否配备USB 3.0</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.新手必看
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/2.新手必看/WEP和WPA介绍/">WEP和WPA介绍</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux上的文件类型与默认图标/">Linux上的文件类型与默认图标</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux中，你一定要掌握的网络基本命令/">Linux中，你一定要掌握的网络基本命令! </a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux命令及Linux终端的20个趣事/">Linux命令及Linux终端的20个趣事</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/有趣的Linux彩蛋——用sudo来冒犯用户/">有趣的Linux彩蛋——用sudo来冒犯用户</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/">Linux新手大礼包：学习Linux你必须知道的那些事儿</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/优麒麟系统的网络配置介绍/">优麒麟系统的网络配置介绍</a></li>  <li class="file"><a href="/wiki/快速入门/2.新手必看/优麒麟系统的无线网络故障排除/">优麒麟系统的无线网络故障排除</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.系统介绍
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/3.系统介绍/各版本新特性/">各版本新特性</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/窗口和工作区/">窗口和工作区</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/UKUI/">UKUI</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/优麒麟目录结构/">优麒麟目录结构</a></li>  <li class="file"><a href="/wiki/快速入门/3.系统介绍/优麒麟电源管理浅析/">优麒麟电源管理浅析</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            4.进阶操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限程序</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file active"><a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/4.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            5.其他
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/5.其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/5.其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/5.其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            系统安装
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.安装教程 
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/1.安装教程 /几种安装UK的方法/">几种安装UK的方法</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /从系统安装盘引导系统/">从系统安装盘引导系统</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /引导系统并准备安装/">引导系统并准备安装</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /选择安装类型并处理分区/">选择安装类型并处理分区</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /设置“安装启动引导器”/">设置“安装启动引导器”</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /UEFI环境安装/">UEFI环境安装</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /如何在-Ubuntu-Ubuntu-Kylin-中安装-Unity-8-桌面预览版/">如何在 Ubuntu/Ubuntu Kylin 中安装 Unity 8 桌面预览版</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装教程 /如何在优麒麟（Ubuntu-Kylin）上安装Linux内核4-0/">如何在优麒麟（Ubuntu Kylin）上安装Linux内核4.0 </a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.安装问题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/2.安装问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/2.安装问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/2.安装问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.虚拟机安装
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/3.虚拟机安装/优麒麟使用教程第二期：VirtualBox-虚拟机安装/">优麒麟使用教程第二期：VirtualBox 虚拟机安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            4.桌面风格
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/4.桌面风格/10个-Adobe-风格的创意图标，你值得拥有！/">10个 Adobe 风格的创意图标，你值得拥有！</a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">如何在 Ubuntu Kylin 中安装Numix主题和图标 </a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/Ubuntu-Kylin-15-10-如何安装Mac主题/">Ubuntu Kylin 15.10 如何安装Mac主题</a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/在优麒麟14-04上安装精美的Dalisha图标主题/">在优麒麟14.04上安装精美的Dalisha图标主题</a></li>  <li class="file"><a href="/wiki/系统安装/4.桌面风格/如何让你的“笨兔”更像苹果？/">如何让你的“笨兔”更像苹果？</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            5.U盘教程
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/5.U盘教程/U盘做WIN7-UK双系统/">U盘做WIN7+UK双系统</a></li>  <li class="file"><a href="/wiki/系统安装/5.U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/">Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/系统安装/优麒麟所有版本下载汇总/">优麒麟所有版本下载汇总</a></li>  <li class="file"><a href="/wiki/系统安装/系统安装盘的制作/">系统安装盘的制作</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            软件应用
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.自带软件工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/优客助手/">优客助手</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/软件中心/">软件中心</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/小企鹅输入法/">小企鹅输入法</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/优客农历/">优客农历</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/优客天气/">优客天气</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/麒麟影音/">麒麟影音</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/生物识别/">生物识别</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/问题反馈程序/">问题反馈程序</a></li>  <li class="file"><a href="/wiki/软件应用/1.自带软件工具/循序而渐进，熟读而精思——优麒麟文件管理器篇/">循序而渐进，熟读而精思——优麒麟文件管理器篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.第三方软件工具
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件工具/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/welcome/">欢迎来到优麒麟百科（内测版）</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+            <section id="main"><article id="post-快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/快速入门/">快速入门</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/快速入门/4-进阶操作/">4.进阶操作</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">
+            <time datetime="2019-06-24T14:30:22.000Z" itemprop="datePublished">2019-06-24</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+</div>
+                            <!--<div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/快速入门/4.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs.md'> History </a>
+                            </div>-->
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                
+                    
+                </div>
+            
+        
+        
+            <p><img src="https://www.ubuntukylin.com/upload/images/a1(1).png"></p>
+<p>当你想重装Ubuntu/Ubuntu Kylin或者仅仅是想安装它的一个新版本的时候，如果有个便捷的方法来重新安装之前的应用并且重置其设置会很方便的。此时 Aptik 粉墨登场，它可以帮助你轻松实现。</p>
+<p><strong>Aptik</strong>（自动包备份和恢复）是一个可以用在Ubuntu、Ubuntu Kylin 和其他基于Debian以及Ubuntu的Linux发行版上的应用，它允许你将已经安装过的包括软件库、下载包、安装的应用和主题、用户设置在内的PPAs(个人软件包存档)备份到外部的U盘、网络存储或者类似于Dropbox的云服务上。</p>
+<p>注意：当我们在此文章中说到输入某些东西的时候，如果被输入的内容被引号包裹，请不要将引号一起输入进去，除非我们有特殊说明。</p>
+<p>想要安装Aptik，需要先添加其PPA。使用Ctrl + Alt + T快捷键打开一个新的终端窗口。输入以下文字，并按回车执行。</p>
+<ul>
+<li>sudo apt-add-repository –y ppa:teejee2008/ppa</li>
+</ul>
+<p>当提示输入密码的时候，输入你的密码然后按回车。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a2(1).png"></p>
+<p>在命令行提示符输入下边的命令，来确保资源库已经是最新版本。</p>
+<ul>
+<li>sudo apt-get update</li>
+</ul>
+<p><img src="https://www.ubuntukylin.com/upload/images/a3.png" alt></p>
+<p>更新完毕后，你就完成了安装Aptik的准备工作。接下来输入以下命令并按回车：</p>
+<ul>
+<li>sudo apt-get install aptik</li>
+</ul>
+<p>注意：你可能会看到一些有关于获取不到包更新的错误提示。不过别担心，如果这些提示看起来跟下边图片中类似的话，你的Aptik的安装就没有任何问题。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a4.png" alt></p>
+<p>安装过程会被显示出来。其中一个被显示出来的消息会提到此次安装会使用掉多少磁盘空间，然后提示你是否要继续，按下“y”再按回车，继续安装。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a5.png" alt></p>
+<p>当安装完成后，输入“Exit”并按回车或者按下左上角的“X”按钮，关闭终端窗口。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a6.png" alt></p>
+<p>在正式运行Aptik前，你需要设置好备份目录到一个U盘、网络驱动器或者类似于Dropbox和Google Drive的云帐号上。这儿的例子中，我们使用的是Dropbox。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a7.png" alt></p>
+<p>一旦设置好备份目录，点击启动栏上方的“Search”按钮。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a8.png" alt></p>
+<p>在搜索框中键入 “aptik”。结果会随着你的输入显示出来。当Aptik图标显示出来的时候，点击它打开应用。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a9.png" alt></p>
+<p>此时一个对话框会显示出来要求你输入密码。输入你的密码并按“OK”按钮。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a10.png" alt></p>
+<p>Aptik的主窗口显示出来了。从“Backup Directory”下拉列表中选择“Other…”。这个操作允许你选择你已经建立好的备份目录。</p>
+<p>注意：在下拉列表的右侧的 “Open” 按钮会在一个文件管理窗口中打开选择目录功能。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a11.png" alt></p>
+<p>在 “Backup Directory” 对话窗口中，定位到你的备份目录，然后按“Open”。</p>
+<p>注意：如果此时你尚未建立备份目录或者想在备份目录中新建个子目录，你可以点“Create Folder”来新建目录。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a12.png" alt></p>
+<p>点击“Software Sources (PPAs).”右侧的 “Backup”来备份已安装的PPAs。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a13.png" alt></p>
+<p>然后“Backup Software Sources”对话窗口显示出来。已安装的包和对应的源（PPA）同时也显示出来了。选择你需要备份的源（PPAs），或者点“Select All”按钮选择所有源。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a14.png" alt></p>
+<p>点击 “Backup” 开始备份。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a15.png" alt></p>
+<p>备份完成后，一个提示你备份完成的对话窗口会蹦出来。点击 “OK” 关掉。</p>
+<p>一个名为“ppa.list”的文件出现在了备份目录中。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a16.png" alt></p>
+<p>接下来，“Downloaded Packages (APT Cache)”的项目只对重装同样版本的Ubuntu有用处。它会备份下你系统缓存(/var/cache/apt/archives)中的包。如果你是升级系统的话，可以跳过这个条目，因为针对新系统的包会比现有系统缓存中的包更加新一些。</p>
+<p>备份和恢复下载过的包，这可以在重装Ubuntu，并且重装包的时候节省时间和网络带宽。因为一旦你把这些包恢复到系统缓存中之后，他们可以重新被利用起来，这样下载过程就免了，包的安装会更加快捷。</p>
+<p>如果你是重装相同版本的Ubuntu系统的话，点击 “Downloaded Packages (APT Cache)” 右侧的 “Backup” 按钮来备份系统缓存中的包。</p>
+<p>注意：当你备份下载过的包的时候是没有二级对话框出现的。你系统缓存 (/var/cache/apt/archives) 中的包会被拷贝到备份目录下一个名叫 “archives” 的文件夹中，当整个过程完成后会出现一个对话框来告诉你备份已经完成。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a17.png" alt></p>
+<p>有一些包是你的Ubuntu发行版的一部分。因为安装Ubuntu系统的时候会自动安装它们，所以它们是不会被备份下来的。例如，火狐浏览器在Ubuntu和其他类似Linux发行版上都是默认被安装的，所以默认情况下，它不会被选择备份。</p>
+<p>像<a href="https://www.howtogeek.com/203768" rel="external nofollow noopener noreferrer" target="_blank">package for the Chrome web browser</a>这种系统安装完后才安装的包或者包含 Aptik 的包会默认被选择上。这可以方便你备份这些后安装的包。</p>
+<p>按照需要选择想要备份的包。点击 “Software Selections” 右侧的 “Backup” 按钮备份顶层包。</p>
+<p>注意：依赖包不会出现在这个备份中。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a18.png" alt></p>
+<p>备份目录中出现了两个名为 “packages.list” 和“packages-installed.list” 的文件，并且会弹出一个通知你备份完成的对话框。点击 ”OK“关闭它。</p>
+<p>注意：“packages-installed.list”文件包含了所有的包，而 “packages.list” 在包含了所有包的前提下还指出了那些包被选择上了。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a19.png" alt></p>
+<p>要备份已安装软件的设置的话，点击 Aptik 主界面 “Application Settings” 右侧的 “Backup” 按钮，选择你要备份的设置，点击“Backup”。</p>
+<p>注意：如果你要选择所有设置，点击“Select All”按钮。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a20.png" alt></p>
+<p>被选择的配置文件统一被打包到一个名叫 “app-settings.tar.gz” 的文件中。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a21.png" alt></p>
+<p>当打包完成后，打包后的文件被拷贝到备份目录下，另外一个备份成功的对话框出现。点击“OK”关掉。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a22.png" alt></p>
+<p>放在 “/usr/share/themes” 目录的主题和放在 “/usr/share/icons” 目录的图标也可以备份。点击 “Themes and Icons” 右侧的 “Backup” 来进行此操作。“Backup Themes” 对话框默认选择了所有的主题和图标。你可以安装需要的、取消一些不要的，然后点击 “Backup” 进行备份。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a23.png" alt></p>
+<p>主题被打包拷贝到备份目录下的 “themes” 文件夹中，图标被打包拷贝到备份目录下的 “icons” 文件夹中。然后成功提示对话框出现，点击“OK”关闭它。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a24.png" alt></p>
+<p>一旦你完成了需要的备份，点击主界面左上角的“X”关闭 Aptik 。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a25.png" alt></p>
+<p>备份过的文件已存在于你选择的备份目录中，可以随时查看。</p>
+<p><img src="https://www.ubuntukylin.com/upload/images/a26.png" alt></p>
+<p>当你重装Ubuntu/Ubuntu Kylin或者安装新版本后，在新的系统中安装 Aptik 并且将备份好的文件置于新系统中使用。运行 Aptik，并使用每个条目的 “Restore” 按钮来恢复你的软件源、应用、包、设置、主题以及图标。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+<!--
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/系统安装/5.U盘教程/Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/软件应用/2.第三方软件工具/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">如何在 Ubuntu Kylin 上安装 Visual Studio Code</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>    
+ -->
+
+
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Copyright©2013-2019 Ubuntu Kylin 版权所有
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277082673'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277082673%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> 
+            <!--<br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            -->
+        </div>
+    </div>
+
+    
+
+
+
+</footer>
+
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
