@@ -1,10 +1,8 @@
 # Hexo Configuration
 # URL
 title: UbuntuKylin Wiki
-subtitle: 自主桌面操作系统
+subtitle: 开源桌面操作系统
 url: https://UbuntuKylin.github.io/
-
-
 
 permalink: wiki/:title/
 
