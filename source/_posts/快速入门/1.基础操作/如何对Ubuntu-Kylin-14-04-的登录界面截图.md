@@ -27,7 +27,8 @@ sudo apt-get install imagemagick
 ```
 chvt 7;
 sleep 5s;
-DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 
+DISPLAY=:0 
+XAUTHORITY=/var/run/lightdm/root/:0 
 xwd -root -out ~/screenshot.xwd; 
 convert ~/screenshot.xwd ~/screenshot.png;
 rm ~/screenshot.xwd
