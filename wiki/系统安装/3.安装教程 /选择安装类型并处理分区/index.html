@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    
+    <title>选择安装类型并处理分区 | UbuntuKylin Wiki</title>
+    
+    
+        <meta name="keywords" content="选择安装类型并处理分区">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="选择安装类型这一步的界面会随着硬盘状况的不同而不同。（一）若电脑硬盘是全新的，或者之前处理过，没有任何数据，界面如下（图1）：（图1）    （二）若硬盘有数据，通常是别的操作系统，其界面可能如下（图2、图3）：（图2）（图3）    上面的 3 张图中，“清除整个磁盘并安装Ubuntu Kylin”、“将 Windows … 替换为 Ubunut Kylin”和“卸载 Ubuntu ……并重新安">
+<meta property="og:type" content="article">
+<meta property="og:title" content="选择安装类型并处理分区">
+<meta property="og:url" content="https://UbuntuKylin.github.io/wiki/系统安装/3.安装教程 /选择安装类型并处理分区/index.html">
+<meta property="og:site_name" content="UbuntuKylin Wiki">
+<meta property="og:description" content="选择安装类型这一步的界面会随着硬盘状况的不同而不同。（一）若电脑硬盘是全新的，或者之前处理过，没有任何数据，界面如下（图1）：（图1）    （二）若硬盘有数据，通常是别的操作系统，其界面可能如下（图2、图3）：（图2）（图3）    上面的 3 张图中，“清除整个磁盘并安装Ubuntu Kylin”、“将 Windows … 替换为 Ubunut Kylin”和“卸载 Ubuntu ……并重新安">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024120npaffb6app69bzsa.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024228ohqkkrtqqoreeo1z.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024254au6a245g5m9uua6i.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024531mqzyqxnqxie7ydps.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024557fe215kpbbi311ozo.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024701ym3g3633md66dvjm.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024732f1rz1w1qf4hhh1w8.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024758wabitxi6dmmoibiz.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024920bswuyzujnjkbb4mw.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025121az7sjj7ppz7jzj79.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025254svk8o8q2zrrrrr81.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025345s3mu3zrsumskowa8.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025409x6hffrgg98h6aran.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025450cmbhjrn1ll1ljl6l.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025531xv49q655iptwma9d.jpg">
+<meta property="og:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025613l44888yqjdohmdh4.jpg">
+<meta property="og:updated_time" content="2019-12-16T07:15:28.772Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="选择安装类型并处理分区">
+<meta name="twitter:description" content="选择安装类型这一步的界面会随着硬盘状况的不同而不同。（一）若电脑硬盘是全新的，或者之前处理过，没有任何数据，界面如下（图1）：（图1）    （二）若硬盘有数据，通常是别的操作系统，其界面可能如下（图2、图3）：（图2）（图3）    上面的 3 张图中，“清除整个磁盘并安装Ubuntu Kylin”、“将 Windows … 替换为 Ubunut Kylin”和“卸载 Ubuntu ……并重新安">
+<meta name="twitter:image" content="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024120npaffb6app69bzsa.jpg">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="UbuntuKylin Wiki" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href=" / " id="logo">
+                <span class="site-title"> UbuntuKylin Wiki </span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/downloads/">下载</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/news/">新闻</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/comunity/">社区</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/joinus/list-438-cn.html">参与</a>
+                
+                    <a class="main-nav-link" href="//www.ubuntukylin.com/qa/">知识库</a>
+                
+                    <a class="main-nav-link" href="//www.ukui.org/">UKUI</a>
+                
+            </nav>
+            
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/downloads/">下载</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/news/">新闻</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/comunity/">社区</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/joinus/list-438-cn.html">参与</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ubuntukylin.com/qa/">知识库</a></td>
+                
+                    <td><a class="main-nav-link" href="//www.ukui.org/">UKUI</a></td>
+                
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                
+<aside id="sidebar" style="margin-top:40px">
+
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>目录</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Q&A
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/Q&A/问答天地/">问答天地</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            快速入门
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.新手必看
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/1.新手必看/各版本新特性/">各版本新特性</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/窗口和工作区/">窗口和工作区</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/WEP和WPA介绍/">WEP和WPA介绍</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/UKUI/">UKUI</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/Linux上的文件类型与默认图标/">Linux上的文件类型与默认图标</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/Linux中，你一定要掌握的网络基本命令/">Linux中，你一定要掌握的网络基本命令! </a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/Linux命令及Linux终端的20个趣事/">Linux命令及Linux终端的20个趣事</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/有趣的Linux彩蛋——用sudo来冒犯用户/">有趣的Linux彩蛋——用sudo来冒犯用户</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/Linux新手大礼包：学习Linux你必须知道的那些事儿/">Linux新手大礼包：学习Linux你必须知道的那些事儿</a></li>  <li class="file"><a href="/wiki/快速入门/1.新手必看/优麒麟目录结构/">优麒麟目录结构</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.基础操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/2.基础操作/入门介绍（开机桌面关机）/">入门介绍（开机桌面关机）</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/注销、关机、切换用户/">注销、关机、切换用户</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/键盘快捷键设置/">键盘快捷键设置</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/日程事件/">日程事件</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/关闭无线（飞行模式）/">关闭无线（飞行模式）</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/桌面环境配置/">桌面环境配置</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/如何对Ubuntu-Kylin-14-04-的登录界面截图/">如何对Ubuntu Kylin 14.04 的登录界面截图 </a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/如何快速设置Ubuntu-Kylin-14-04-系统更新频率-新手提示/">如何快速设置Ubuntu Kylin 14.04 系统更新频率[新手提示] </a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/快速检查电脑是否配备USB-3-0/">快速检查电脑是否配备USB 3.0</a></li>  <li class="file"><a href="/wiki/快速入门/2.基础操作/优麒麟系统的网络配置介绍/">优麒麟系统的网络配置介绍</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.进阶操作
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/3.进阶操作/启动有限制的客人会话/">启动有限制的客人会话</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/软件源配置和包管理工具/">软件源配置和包管理工具</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/语言支持和输入法配置/">语言支持和输入法配置</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/更新系统并安装版权受限/">更新系统并安装版权受限程序</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/优麒麟团队刘正元浅谈“Linux通用块层之IO合并”/">优麒麟团队刘正元浅谈“Linux通用块层之IO合并”</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/如何在-Ubuntu-Kylin-中检查笔记本电脑的CPU温度/">如何在 Ubuntu Kylin 中检查笔记本电脑的CPU温度</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/如何解决-Ubuntu-Kylin-下不能记住亮度设置的问题/">如何解决 Ubuntu Kylin 下不能记住亮度设置的问题</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/如何使用Aptik来备份和恢复-Ubuntu-Ubuntu-Kylin-中的Apps和PPAs/">如何使用Aptik来备份和恢复 Ubuntu/Ubuntu Kylin 中的Apps和PPAs</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/Ubuntu-Kylin-14-04-版本默认启动HDMI无声音问题的修复/">Ubuntu Kylin 14.04 版本默认启动HDMI无声音问题的修复</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/优麒麟系统的无线网络故障排除/">优麒麟系统的无线网络故障排除</a></li>  <li class="file"><a href="/wiki/快速入门/3.进阶操作/优麒麟电源管理浅析/">优麒麟电源管理浅析</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            4.其他
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            玩转优麒麟
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.主题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/玩转优麒麟/1.主题/10个-Adobe-风格的创意图标，你值得拥有！/">10个 Adobe 风格的创意图标，你值得拥有！</a></li>  <li class="file"><a href="/wiki/玩转优麒麟/1.主题/如何在-Ubuntu-Kylin-中安装Numix主题和图标/">如何在 Ubuntu Kylin 中安装Numix主题和图标 </a></li>  <li class="file"><a href="/wiki/玩转优麒麟/1.主题/Ubuntu-Kylin-15-10-如何安装Mac主题/">Ubuntu Kylin 15.10 如何安装Mac主题</a></li>  <li class="file"><a href="/wiki/玩转优麒麟/1.主题/在优麒麟14-04上安装精美的Dalisha图标主题/">在优麒麟14.04上安装精美的Dalisha图标主题</a></li>  <li class="file"><a href="/wiki/玩转优麒麟/1.主题/如何让你的“笨兔”更像苹果？/">如何让你的“笨兔”更像苹果？</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.桌面环境
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/玩转优麒麟/2.桌面环境/如何在-Ubuntu-Ubuntu-Kylin-中安装-Unity-8-桌面预览版/">如何在 Ubuntu/Ubuntu Kylin 中安装 Unity 8 桌面预览版</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.内核
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/玩转优麒麟/3.内核/如何在优麒麟（Ubuntu-Kylin）上安装Linux内核4-0/">如何在优麒麟（Ubuntu Kylin）上安装Linux内核4.0 </a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            系统安装
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.安装前准备
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/1.安装前准备/优麒麟所有版本下载汇总/">优麒麟所有版本下载汇总</a></li>  <li class="file"><a href="/wiki/系统安装/1.安装前准备/系统安装盘的制作/">系统安装盘的制作</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2. 安装引导
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/2. 安装引导/从系统安装盘引导系统/">从系统安装盘引导系统</a></li>  <li class="file"><a href="/wiki/系统安装/2. 安装引导/引导系统并准备安装/">引导系统并准备安装</a></li>  <li class="file"><a href="/wiki/系统安装/2. 安装引导/UEFI环境安装/">UEFI环境安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            3.安装教程 
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/3.安装教程 /U盘做WIN7-UK双系统/">U盘做WIN7+UK双系统</a></li>  <li class="file"><a href="/wiki/系统安装/3.安装教程 /几种安装UK的方法/">几种安装UK的方法</a></li>  <li class="file active"><a href="/wiki/系统安装/3.安装教程 /选择安装类型并处理分区/">选择安装类型并处理分区</a></li>  <li class="file"><a href="/wiki/系统安装/3.安装教程 /设置“安装启动引导器”/">设置“安装启动引导器”</a></li>  <li class="file"><a href="/wiki/系统安装/3.安装教程 /Windows-8-1-UEFI-模式下U盘安装Ubuntu-Kylin-14-10-双系统/">Windows 8.1, UEFI 模式下U盘安装Ubuntu Kylin 14.10 双系统</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            4.虚拟机安装
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/4.虚拟机安装/优麒麟使用教程第二期：VirtualBox-虚拟机安装/">优麒麟使用教程第二期：VirtualBox 虚拟机安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            5.常见问题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/5.常见问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            软件应用
+                        </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            1.自研软件
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/1.自研软件/优客助手/">优客助手</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/软件中心/">软件中心</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/小企鹅输入法/">小企鹅输入法</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/优客农历/">优客农历</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/优客天气/">优客天气</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/麒麟影音/">麒麟影音</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/生物识别/">生物识别</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/问题反馈程序/">问题反馈程序</a></li>  <li class="file"><a href="/wiki/软件应用/1.自研软件/循序而渐进，熟读而精思——优麒麟文件管理器篇/">循序而渐进，熟读而精思——优麒麟文件管理器篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            2.第三方软件
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/2.第三方软件/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3.常见问题
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/3.常见问题/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/welcome/">欢迎来到优麒麟百科（内测版）</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+            <section id="main"><article id="post-系统安装/3.安装教程 /选择安装类型并处理分区" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/系统安装/">系统安装</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/系统安装/3-安装教程/">3.安装教程 </a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/系统安装/3.安装教程 /选择安装类型并处理分区/">
+            <time datetime="2019-05-17T14:14:52.000Z" itemprop="datePublished">2019-05-17</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+</div>
+                            <!--<div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/3.安装教程 /选择安装类型并处理分区.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/3.安装教程 /选择安装类型并处理分区.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/3.安装教程 /选择安装类型并处理分区.md'> History </a>
+                            </div>-->
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            选择安装类型并处理分区
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择安装类型"><span class="toc-number">1.</span> <span class="toc-text">选择安装类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于硬盘分区的基本知识"><span class="toc-number">2.</span> <span class="toc-text">关于硬盘分区的基本知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#处理硬盘分区"><span class="toc-number">3.</span> <span class="toc-text">处理硬盘分区</span></a></li></ol>
+                </div>
+            
+        
+        
+            <h3 id="选择安装类型"><a href="#选择安装类型" class="headerlink" title="选择安装类型"></a>选择安装类型</h3><p>这一步的界面会随着硬盘状况的不同而不同。<br>（一）若电脑硬盘是全新的，或者之前处理过，没有任何数据，界面如下（图1）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024120npaffb6app69bzsa.jpg" alt><br>（图1）   </p>
+<p>（二）若硬盘有数据，通常是别的操作系统，其界面可能如下（图2、图3）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024228ohqkkrtqqoreeo1z.jpg" alt><br>（图2）<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024254au6a245g5m9uua6i.jpg" alt><br>（图3）   </p>
+<p>上面的 3 张图中，“清除整个磁盘并安装Ubuntu Kylin”、“将 Windows … 替换为 Ubunut Kylin”和“卸载 Ubuntu ……并重新安装”选项是最简单的操作，几乎不用做任何事，一切交给系统去做；注意图中红色的“注意”的提示。<br>我们这里不管其界面如何，都选择“其他选项”，自己来处理硬盘分区。点击“继续”，进入下一步，处理硬盘分区。</p>
+<h3 id="关于硬盘分区的基本知识"><a href="#关于硬盘分区的基本知识" class="headerlink" title="关于硬盘分区的基本知识"></a>关于硬盘分区的基本知识</h3><p>硬盘分区是硬盘使用之前必须处理的工作。若将硬盘比作书房里的书架，那么，分区就是给这个“书架”分“格子”，其目的是便于分门别类地存放资料。而 格子的多少是由实际需要和个人习惯来决定的，你甚至可以将整个书架只分一个格子，当然，最少也必须有一个格子。<br>（一）硬盘分区模式   </p>
+<ol>
+<li>MBR（主引导记录）模式<br>这种模式是传统的硬盘分区模式，也是现在用得最多的模式。最大支持 2TB 的硬盘容量。   </li>
+<li>GPT（GUID 分区表）模式<br>这种模式是新型的硬盘分区模式，主要是为了突破硬盘的 2TB 容量限制而出现的。最大支持 1024×1024TB 的硬盘容量。<br>（二）MBR 分区类型<br>现在个人电脑的硬盘容量超过 2TB 还不是太多，所以这里我们重点介绍 MBR 分区模式。<br>这种分区模式有三种分区类型：主分区、扩展分区和逻辑分区，另外还有个活动分区的概念。一块硬盘最多只能有 4 个主分区，扩展分区算是一个主分区，但其不是真正的分区，它是逻辑分区的容器，即扩展分区里可以划分出若干个逻辑分区；活动分区指的是用来启动系统的分区。<br>因此，若硬盘要划分的分区在 4 个或 4 个以下，则可以全部是主分区，也可以是 n (n&lt;4)个主分区加 4-n 个逻辑分区（放在扩展分区中）；若分区超过 4 个，则最多只能有 3 个主分区，剩下的分区再在扩展分区中去划分逻辑分区。<br>GPT分区没有这种限制。<br>（三）Windows 分区表示方法<br>在 Windows 的文件系统中，用 26 个拉丁字母表示不同的分区，称之为“盘符”。其中“A、B”被分配给现在已经淘汰的软驱，所以其他存储设备的盘符从“C”开始。<br>需要注意的是，尽管大多数情况下，分区的顺序及它们所分配到盘符总是和字母的顺序相同，但这却不是必然的结果；第一个分区大多数情况下是“C”盘，但也可以是其他字母。所以，要确认一个分区的位置，最好还是看看它是第几个分区，而不是看它的盘符。<br>（四）Linux 分区表示方法<br>在 Linux 的文件系统中，没有盘符的概念，所有的分区都被“挂载”为一个“目录”，这个目录看起来跟一般的目录没有什么区别，因此也无法据此来确认分区的位置。<br>要区分分区，需要搞清楚存储设备在系统中的信息。老式的 IDE 存储设备用“hd”表示，老式的 SCSI 存储设备和现在主流的 SATA 存储设备用“sd”表示，系统中的多个存储设备则按顺序用拉丁字母表示，如第一块 SATA 硬盘就表示为 “sda”，第二块 SATA 硬盘就表示为 “sdb”，而分区则按一定的顺序（注意：不一定是物理上的先后顺序）用数字表示，如 sda 的第一个分区就是“sda1”，第二个分区就是“sda2”。不过，对于 MBR 模式的分区来说，若有逻辑分区，其数字总是从“5”开始。<br>（五）分区的文件系统<br>“文件系统”指的是操作系统在存储设备上存储文件的格式，由“高级格式化”（一般就说是“格式化”）操作来完成。不同的操作系统所采用的文件系统是 不同的，比如 Windows 操作系统采用的是 FAT16、FAT32、NTFS 等格式，Linux 操作系统采用的是 Ext2、Ext3、Ext4 等格式。一般说来，不同的文件系统在不同的操作系统中支持是不一样的，比如较老的 Windows 98 就不能识别 NTFS 格式，所有的 Windows 操作系统都不能识别 Ext4 格式；不过现在的 Linux 已经能够全部或部分支持 FAT、NTFS 格式了。   <h3 id="处理硬盘分区"><a href="#处理硬盘分区" class="headerlink" title="处理硬盘分区"></a>处理硬盘分区</h3>处理硬盘分区有很多种方法，无论是 Windows 还是 Linux，都有许多工具软件可以使用。但一般系统安装盘都带有硬盘分区工具，都可以在安装系统的过程中对硬盘的分区进行处理。<br>（一）全新分区<br>若硬盘为全新硬盘，或硬盘上所有的数据都不需保留，可以用这种方法来处理。全新安装 UB14 就可以用这种方法。<br>见下面的两张图：<br>全新硬盘的（图4）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024531mqzyqxnqxie7ydps.jpg" alt><br>（图4）<br>硬盘上已有分区的（图5）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024557fe215kpbbi311ozo.jpg" alt><br>（图5）<br>（图4）和（图5）中列表里列出了电脑上安装的存储设备（含硬盘、优盘、存储卡、移动硬盘等），这里的“/dev/sda”中的“dev”代表的是 设备，“sda”代表的就是电脑上的第一块硬盘，点选它，然后点击“新建分区表…”，弹出确认对话框，如下（图6）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024701ym3g3633md66dvjm.jpg" alt><br>（图6）<br>看清（图6）对话框中的提示，点击“继续”，开始分区，如下（图7）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024732f1rz1w1qf4hhh1w8.jpg" alt><br>（图7）<br>（图7）中设备“sda”下方出现“空闲”，大小为“268435MB”，即显示这块硬盘的总大小约 250GB。<br>按（图7）所示操作，弹出“创建分区”对话框，如下（图8）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024758wabitxi6dmmoibiz.jpg" alt><br>（图8）<br>这里先对（图8）中的各项内容做一简单介绍。　　　　<br>“大小”指的是当前硬盘上的可用空间，没有分区时是整个硬盘的空间，有分区时是指除了已有分区占用的空间之外剩下的可用空间。　　　<br>“新分区的类型”前面已经介绍了，此处没看到“扩展分区”，这是因为只要选择了“逻辑分区”，系统会自动创建扩展分区，然后再在扩展分区里去分逻辑分区。　　　<br>“新分区的位置”指分区是从硬盘可用空间的什么位置开始划分，一般都是从“起始位置”即开头开始划分。　　　<br>“用于”列表里是可以支持的“文件系统”，指新分区格式化成哪种文件系统。　　　<br>“挂载点”指的是 Linux 将分区加载到文件系统中的哪个目录下面。　　　<br>下面来创建第一个分区，也是必不可少的一个分区，即“根分区”。在（图8）中操作步骤如下：　　　</li>
+<li>　设置“大小”为 “15000 MB”，即约 15GB，可直接在“大小”文本框中输入，也可通过旁边的“+”和“-”来完成操作；　　　<br>２.　“新分区的类型”保持默认的“主分区”不变；　　　<br>３．　“新分区的位置”保持默认的“空间起始位置”不变；　　　<br>４．　“用于”保持默认的“Ext4 日志文件系统”不变；　　　<br>５．　“挂载点”选择第一个“/”，即“根分区”。　　　<br>设置好后点击“确定”，返回到分区的主界面，如下（图9）：</li>
+</ol>
+<p>（图9）<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/024920bswuyzujnjkbb4mw.jpg" alt><br>        （图9）中，列表里“/dev/sda”下方出现了“/dev/sda1”，“sda1”的“1”即代表“sda”这个设备的第一个分区；“空闲”是剩下的未分区的空间。　　　<br>        “根分区”是必不可少的分区，其实就算将整块硬盘只分一个区并挂载为“/”也是可以的。不过为了管理的方便，我们还会再分一个“/home”分区， 这个分区主要用来存放系统登录用户的个人数据，比如用户的各种个人配置、文档、音频、视频、图片、下载的东西等等，所以这个分区通常要求比较大。　　　<br>        下面来创建第二个分区，操作步骤跟第一步类似，在（图9）中选中“空闲”，然后点左下“+”，弹出“创建分区”对话框，在（图8）界面中按下面的步骤设置：　　　<br>        １．　设置“大小”为 “250000 MB”，即留下约 5000 MB，等会儿有其他用途；　　　<br>        ２．　“新分区的类型”改为“主分区”（可以看到系统将这个分区默认改成了“逻辑分区”）；　　　<br>        ３．　“新分区的位置”保持默认的“空间起始位置”不变；　　　<br>        ４．　“用于”保持默认的“Ext4日志文件系统”不变；　　　<br>        ５．　“挂载点”选择“/home”。　　　<br>        设置好后点击“确定”，返回到分区的主界面，可以看到列表中出现了“/dev/sda2”，“2”即代表第二个分区。　　　<br>         Linux 系统下还有个特殊的分区叫“交换分区”，是用来处理系统中的页面交换文件的。这点也跟 Windows 不同，Windows 下的页面交换文件表现为一个文件，文件名叫做 pagefile.sys，默认在 Windows 的系统盘根目录下；Linux 则以一个分区来处理。不过，若电脑的内存足够大，比如达到 4G 以上，并且不打算使用系统休眠功能，则这个交换分区可以没有。不过为了稳妥起见，我们还是来创建一个这样的分区，其大小比系统物理内存稍大一些（比如物理 内存 4G ，交换分区可设为约 5 G）就可以了。我们在分第二个区时特别留下了约 5000 MB 就是为交换分区准备的。　　　<br>         下面来创建交换分区，方法基本同前。选中“空闲”点击“+”，弹出“创建分区”对话框，在（图8）界面上按下面的步骤设置：　　　<br>         １．　设置“大小”为剩下的全部（即不用动了）；　　　<br>         ２．　“新分区的类型”改为“主分区”（可以看到系统也将这个分区默认改成了“逻辑分区”）；　　　<br>         ３．　“新分区的位置”保持默认的“空间起始位置”不变；　　　<br>         ４．　“用于”选择“交换分区”；　　　<br>         ５．　“挂载点”看不到了，因为“交换分区”是不需要挂载点的。<br>        设置好后点击“确定”返回主界面，最终分好区的界面如下（图10）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025121az7sjj7ppz7jzj79.jpg" alt><br>（图10）<br>注：（图10）中交换分区显示的大小适合物理内存 2G 的电脑。<br>         其实，上面分区的操作只是在做“规划”，并没有真的进行分区，此时若发现分区不对，或想改变调整分区，还可以点选界面右边的“还原”按钮将分区还原 到硬盘原来的样子。这点和 Windows 比要好得多；Windows 安装过程中若对硬盘进行分区，那可都是“即时”的，分好了就没法后悔的。<br>         （二）保留数据分区<br>        若硬盘上已经有一些分区，某些分区的数据还需要保留，则使用这种方法。如安装多系统，覆盖安装系统等都可以用这种方法。<br>        下面举例说明。<br>        例一：一台安装有 Windows 7 的电脑，需要再安装 UK14，构成双系统。<br>         要安装双系统，必须先启动到 Windows 7 系统中，将某个存放数据的分区中有用的文件备份好（当然不能是 Windows 7 的系统分区和安装有要用到的程序的分区），这个分区的容量能有 10G  以上就可以了，当然，最好能有 20G 以上，我这里准备了 70 多G。并请一定要记住这个分区是硬盘上的第几个分区（记盘符是没用的，可到 Windows 的磁盘管理中查看；记错了结果将是灾难性的），我这里准备的是最后一个分区（好记）。<br>        先来看下面这张图（图11）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025254svk8o8q2zrrrrr81.jpg" alt><br>（图11）<br>（图11）中对硬盘的分区作了详细说明。最后一个分区 /dev/sda6 就是准备用来安装 UK14 的。<br>        这次我们因为要保留 Windows 7 下的前 4 个分区的数据，所以，千万不能再点“新建分区表…”，那样结果会是灾难性的！（哦，差点忘了，旁边还有个“还原”按钮可以让你吃后悔药）前 4 个分区都不要动，选中最后一个分区 /dev/sda6，然后点击下方的减号“-”，就会删除分区 /dev/sda6，这里会变成“空闲”，见下图（图12）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025345s3mu3zrsumskowa8.jpg" alt><br>（图12）<br>在（图12）中，选中“空闲”，然后像前面介绍的那样，依次添加 “/”分区（约 15G）、“/home”分区（约 55G）和“swap”分区（约 3.5G）三个分区。因为方法一样，此处就不赘述了。分好区后见下图（图13）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025409x6hffrgg98h6aran.jpg" alt><br>（图13）<br>注：硬盘的前 4 个 Windows 分区这里不用考虑，UK14 装好启动后可以随时手动或自动挂载它们。<br> 例二：一台安装有 UK14 （或 Ubuntu 的其他版本）的电脑，需要重新安装 UK14，即可“覆盖安装”。<br>覆盖安装可以保留原来系统的许多个人的系统设置、软件设置及用户文件。<br>先看下面这张图（图14）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025450cmbhjrn1ll1ljl6l.jpg" alt><br>（图14）<br>（图14）中是原有系统的分区，这里覆盖安装，这个分区是不用再重新划分的，所要做的只是设置分区的挂载方式和是否需要格式化。当然要记得原有系统中的分区是怎么划分的，那个是“/”分区，哪个是“/home”分区，或者还有别的分区，都要记清楚。<br>（图14）中 /dev/sda1 原来是系统的“/”分区，这里处理方式如下图（图15）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025531xv49q655iptwma9d.jpg" alt><br>（图15）</p>
+<p>顺便说一下，（图15）中那个“Change…”就是“更改…”，整个界面就这个没有翻译过来，真的很奇怪！按（图15）中所示设置好后，点击对话框的“确定”就设置好了“/”根分区。<br>        /dev/sda5 （从数字 5 上可看出这是个逻辑分区）是原有系统的交换分区（swap），这个不用做更改。<br>        /dev/sda3（从数字 3 上可看出这是个主分区）是原有系统的 /home 分区，这个分区是需要保留数据的，操作时请小心些。处理方式如下图（图16）：<br><img src="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201406/21/025613l44888yqjdohmdh4.jpg" alt><br>（图16）</p>
+<p>如（图16）所示操作，再次强调，千万别勾选“格式化此分区”，否则，想保留的文件就全没了！另外，文件系统的设置也要和原来的一样。设置好后，点“确定”就处理好了。<br>        上面举了两个具体的例子来说明“保留数据分区”的操作。每台电脑硬盘的具体情况可能跟例子不尽相同，但原理都是一样的，即：要保留的分区都不能删除 （即不能“新建分区表…”，不能点减号“-”），要保留数据的分区都不能格式化，也不能更改原来的文件系统；操作时一定要记得原来的分区情况，要细心。<br>        最保险的做法是将原来硬盘上需要的文件备份好，那样你想怎么搞就怎么搞，顶多重来一遍，数据重新拷贝一遍，耽误些时间而已。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+<!--
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/系统安装/3.安装教程 /设置“安装启动引导器”/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    设置“安装启动引导器”
+                
+            </div>
+        </a>
+    
+    
+        <a href="/wiki/系统安装/2. 安装引导/引导系统并准备安装/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">引导系统并准备安装</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>    
+ -->
+
+
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Copyright©2013-2019 Ubuntu Kylin 版权所有
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277082673'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277082673%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> 
+            <!--<br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            -->
+        </div>
+    </div>
+
+    
+
+
+
+</footer>
+
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
