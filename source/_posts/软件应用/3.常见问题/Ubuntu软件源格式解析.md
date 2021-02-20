@@ -5,8 +5,7 @@ date: 2021-02-20 14:08:43
 tags:
 categories:
 ---
-1. Ubuntu的包管理工具是apt，由于官方的软件源一般都在国外所以有时候源会很慢，所以有时候会替换成国内的镜像站，但是需要我们修改软件仓库的配置
-Ubuntu的软件软分为两部分官方源和ppa，ppa其实是一个网站，即－launchpad.net。Launchpad 是 Ubuntu 母公司 Canonical 有限公司所架设的网站，是一个提供维护、支援或联络 Ubuntu 开发者的平台。由于不是所有的软件都能进入 Ubuntu 的官方的软件库，launchpad.net 提供了 PPA，允许开发者建立自己的软件仓库，自由的上传软件。供用户安装和查看更新。官方的源在/etc/apt/sources.list,ppa在/etc/apt/sources.list.d/这个文件夹里,我们说的换源是换的官方源,打开官方源的文件能看到很多链接.
+1. Ubuntu的包管理工具是apt，由于官方的软件源一般都在国外所以有时候源会很慢，所以有时候会替换成国内的镜像站，但是需要我们修改软件仓库的配置。Ubuntu的软件软分为两部分官方源和ppa，ppa其实是一个网站，即－launchpad.net。Launchpad 是 Ubuntu 母公司 Canonical 有限公司所架设的网站，是一个提供维护、支援或联络 Ubuntu 开发者的平台。由于不是所有的软件都能进入 Ubuntu 的官方的软件库，launchpad.net 提供了 PPA，允许开发者建立自己的软件仓库，自由的上传软件。供用户安装和查看更新。官方的源在/etc/apt/sources.list,ppa在/etc/apt/sources.list.d/这个文件夹里,我们说的换源是换的官方源,打开官方源的文件能看到很多链接.
 
 deb http://mirrors.aliyun.com/ubuntu/       xenial main restricted universe multiverse
 
@@ -60,7 +59,7 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial main universe restricted multiverse
 
 总共五条
 
-另外为了防止运营商劫持大家可以使用https，但是要求镜像站支持https，一般现在大型镜像站都是支持https的，比如清华镜像站，阿里镜像站，163等等。
+另外为了防止运营商劫持大家可以使用https，但是要求镜像站支持https，一般现在大型镜像站都是支持https的，比如清华镜像站，阿里镜像站，163等。
 
 
 
