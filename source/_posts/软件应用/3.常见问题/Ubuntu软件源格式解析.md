@@ -61,5 +61,6 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial main universe restricted multiverse
 
 另外为了防止运营商劫持大家可以使用https，但是要求镜像站支持https，一般现在大型镜像站都是支持https的，比如清华镜像站，阿里镜像站，163等。
 
-
+本文在撰写过程中参考了以下文章
+[https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=191480](https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=191480)
 

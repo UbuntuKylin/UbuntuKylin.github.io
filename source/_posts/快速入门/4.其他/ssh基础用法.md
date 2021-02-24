@@ -29,7 +29,9 @@ categories:
 
 
 
-
+本文撰写过程中参考了以下文章：
+[https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=193097](https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=193097)
+[https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=193211](https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=193211)
 
 
 
