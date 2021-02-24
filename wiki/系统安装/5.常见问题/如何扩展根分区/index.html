@@ -3,19 +3,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     
-    <title>Archive: 2020/8 | UbuntuKylin Wiki</title>
+    <title>如何扩展根分区 | UbuntuKylin Wiki</title>
     
     
-        <meta name="keywords" content="UbuntuKylin Wiki">
+        <meta name="keywords" content="如何扩展根分区">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="UbuntuKylin Wiki">
-<meta property="og:url" content="https://UbuntuKylin.github.io/archives/2020/08/page/6/index.html">
+    <meta name="description" content="说明 修改根分区其实不难，只是时间可能比较长，最主要的修改有两个，/etc/fstab和引导，引导可以用 sudo update-grub 来更新，fstab则需要自己根据情况来修复，截图我会用16.04修改17.04的根分区，修改16.04的根分区时间太长，需要用麒麟的启动盘，版本无所谓，启动电脑，这里是把16.04当做启动盘启动之后的系统来用,需要说明的一点是，有的设备文件是不同的比如，这里是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何扩展根分区">
+<meta property="og:url" content="https://UbuntuKylin.github.io/wiki/系统安装/5.常见问题/如何扩展根分区/index.html">
 <meta property="og:site_name" content="UbuntuKylin Wiki">
+<meta property="og:description" content="说明 修改根分区其实不难，只是时间可能比较长，最主要的修改有两个，/etc/fstab和引导，引导可以用 sudo update-grub 来更新，fstab则需要自己根据情况来修复，截图我会用16.04修改17.04的根分区，修改16.04的根分区时间太长，需要用麒麟的启动盘，版本无所谓，启动电脑，这里是把16.04当做启动盘启动之后的系统来用,需要说明的一点是，有的设备文件是不同的比如，这里是">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2021-02-24T04:06:02.361Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UbuntuKylin Wiki">
+<meta name="twitter:title" content="如何扩展根分区">
+<meta name="twitter:description" content="说明 修改根分区其实不难，只是时间可能比较长，最主要的修改有两个，/etc/fstab和引导，引导可以用 sudo update-grub 来更新，fstab则需要自己根据情况来修复，截图我会用16.04修改17.04的根分区，修改16.04的根分区时间太长，需要用麒麟的启动盘，版本无所谓，启动电脑，这里是把16.04当做启动盘启动之后的系统来用,需要说明的一点是，有的设备文件是不同的比如，这里是">
     
 
     
@@ -172,7 +176,7 @@
                             &nbsp;
                             4.其他
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/快速入门/4.其他/我就是我，原理不一样的snap/">我就是我，原理不一样的snap</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/震惊！没想到你是这样的flatpak/">震惊！没想到你是这样的flatpak...</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap-flatpak包？/">涨知识：如何在优麒麟和银河麒麟社区版上构建Linux跨平台的snap/flatpak包？</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/Ubuntu-Kylin-下常用应用使用-snap-包推荐/">Ubuntu Kylin 下常用应用使用 snap 包推荐</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/什么？在网页浏览器上也可以体验Ubuntu啦？/">什么？在网页浏览器上也可以体验Ubuntu啦？</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/snappy-简介之桌面篇/">snappy 简介之桌面篇</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/特洛伊木马可能已感染Linux系统多年/">特洛伊木马可能已感染Linux系统多年</a></li>  <li class="file"><a href="/wiki/快速入门/4.其他/ssh基础用法/">ssh基础用法</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -213,9 +217,9 @@
                      </ul> 
                     </li> 
                     
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             系统安装
                         </a>
@@ -256,13 +260,13 @@
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/4.虚拟机安装/优麒麟使用教程第二期：VirtualBox-虚拟机安装/">优麒麟使用教程第二期：VirtualBox 虚拟机安装</a></li>  </ul> 
                     </li> 
                     
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             5.常见问题
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/5.常见问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/如何在grub添加启动参数/">如何在grub添加启动参数</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/系统安装/5.常见问题/常见问题及处理办法/">常见问题及处理办法</a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/在双系统（Windows-8-、Ubuntu-Kylin）中如何从Windows-8卸载Ubuntu-Kylin/">在双系统（Windows 8 、Ubuntu Kylin）中如何从Windows 8卸载Ubuntu Kylin </a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/如何修复Ubuntu-Kylin-14-04丢失系统设置问题/">如何修复Ubuntu Kylin 14.04丢失系统设置问题</a></li>  <li class="file"><a href="/wiki/系统安装/5.常见问题/如何在grub添加启动参数/">如何在grub添加启动参数</a></li>  <li class="file active"><a href="/wiki/系统安装/5.常见问题/如何扩展根分区/">如何扩展根分区</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -289,7 +293,7 @@
                             &nbsp;
                             2.第三方软件
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/2.第三方软件/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/2.第三方软件/金山快盘/">金山快盘</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/WPS办公套件/">WPS办公套件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/WINE-QQ/">WINE QQ</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Linux游戏/">Linux游戏</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/如何在优麒麟上安装钉钉（DingTalk）软件/">如何在优麒麟上安装钉钉（DingTalk）软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/百度网盘-Linux-版发布，搭配优麒麟运行更完美/">百度网盘 Linux 版发布，搭配优麒麟运行更完美!</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/DigiKam-5-0-发布，快下载到-Ubuntu-Kylin-吧！/">DigiKam 5.0 发布，快下载到 Ubuntu Kylin 吧！</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/在Ubuntu-Kylin中如何使用SimpleScreenRecorder屏幕录制软件/">在Ubuntu Kylin中如何使用SimpleScreenRecorder屏幕录制软件</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/在-Ubuntu-Kylin-上安装图像处理软件-RawTherapee/">在 Ubuntu Kylin 上安装图像处理软件 RawTherapee</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/uGet-2-0发布！如何在优麒麟上安装/">uGet 2.0发布！如何在优麒麟上安装</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/如何在-Ubuntu-Kylin-上安装-Visual-Studio-Code/">如何在 Ubuntu Kylin 上安装 Visual Studio Code</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Linux下的Notepad-编辑器——Notepadqq/">Linux下的Notepad++编辑器——Notepadqq </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“Linux-快速启动工具”篇/">“Linux 快速启动工具”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“Linux-U盘助手”篇/">“Linux U盘助手”篇 </a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/“优麒麟在线中英文字典”篇/">“优麒麟在线中英文字典”篇</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/Master-PDF：PDF和XPS文件编辑神器/">Master PDF：PDF和XPS文件编辑神器</a></li>  <li class="file"><a href="/wiki/软件应用/2.第三方软件/声卡内录/">声卡内录</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -298,7 +302,7 @@
                             &nbsp;
                             3.常见问题
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/3.常见问题/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  <li class="file"><a href="/wiki/软件应用/3.常见问题/如何安装微信，修复安装失败问题/">如何安装微信，修复安装失败问题</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/软件应用/3.常见问题/快速解决Ubuntu-Kylin-14-04文件包下载失败的错误/">快速解决Ubuntu Kylin 14.04文件包下载失败的错误</a></li>  <li class="file"><a href="/wiki/软件应用/3.常见问题/如何安装微信，修复安装失败问题/">如何安装微信，修复安装失败问题</a></li>  <li class="file"><a href="/wiki/软件应用/3.常见问题/Ubuntu软件源格式解析/">Ubuntu软件源格式解析</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -374,56 +378,179 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar-o"></i></span>
-                <h1 class="title"><a href="/archives/2020/">2020</a></h1>
-            </div>
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title"><a href="/archives/2020/08/">2020-08</a><span class="archive-list-count">1</span></h1>
-            </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-系统安装/5.常见问题/如何扩展根分区" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/wiki/快速入门/1.新手必看/文件路径的解释/">文件路径的解释</a>
-        </h1>
-    
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/系统安装/">系统安装</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/系统安装/5-常见问题/">5.常见问题</a>
+    </div>
 
-                
-                <div class="article-meta">
-                    
+                        
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/快速入门/1.新手必看/文件路径的解释/">
-            <time datetime="2020-08-06T22:57:23.000Z" itemprop="datePublished">2020-08-06</time>
+        <a href="/wiki/系统安装/5.常见问题/如何扩展根分区/">
+            <time datetime="2021-02-20T11:30:42.000Z" itemprop="datePublished">2021-02-20</time>
         </a>
     </div>
 
 
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/快速入门/">快速入门</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/快速入门/1-新手必看/">1.新手必看</a>
-    </div>
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div id="search-form-wrap">
 
-                    
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+</div>
+                            <!--<div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/raw/writing/source/_posts/系统安装/5.常见问题/如何扩展根分区.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/edit/writing/source/_posts/系统安装/5.常见问题/如何扩展根分区.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/ukui/ukui.github.io/commits/writing/source/_posts/系统安装/5.常见问题/如何扩展根分区.md'> History </a>
+                            </div>-->
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            如何扩展根分区
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#说明"><span class="toc-number">1.</span> <span class="toc-text">说明</span></a></li></ol>
                 </div>
+            
+        
+        
+            <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p> 修改根分区其实不难，只是时间可能比较长，最主要的修改有两个，/etc/fstab和引导，引导可以用 sudo update-grub 来更新，fstab则需要自己根据情况来修复，截图我会用16.04修改17.04的根分区，修改16.04的根分区时间太长，需要用麒麟的启动盘，版本无所谓，启动电脑，这里是把16.04当做启动盘启动之后的系统来用,需要说明的一点是，有的设备文件是不同的比如，这里是单硬盘双系统，你的可能是双硬盘双系统，不要全按照文中设备文件来写，文章尽量的描述应该找的分区特征，大家根据实际情况修改，文章会尽量啰嗦的写清楚，宁可多说不能漏说，在这里漏了你的电脑可能就开不了机，所以最好把这个读完再操作.</p>
+<ol>
+<li><p>首先查看自己的根分区在哪个分区上，打开gparted就可以看到了，这是我在17.04下截的图 [图1] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832fjg2dqvxgedddg8d.png),可以看到根分区所在的地方时/dev/sda7，那么sda7就是我们要扩大的分区，记住分区号码就可以了，因为sda可能会更改。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832fjg2dqvxgedddg8d.png),可以看到根分区所在的地方时/dev/sda7，那么sda7就是我们要扩大的分区，记住分区号码就可以了，因为sda可能会更改。</a> 然后双系统的换到另一个Linux，或者用麒麟启动盘启动电脑，然后打开gparted，如果发现打开的磁盘没有自己要修改的分区，可以点击右上角切换磁盘，但是切换磁盘找到自己的分区号以后下边所有的分区操作都是以你新找到的分区进行操作的，你只要把sda7替换成你自己的分区就可以。[图2] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832r3yqn8cq2cwq7ccv.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832r3yqn8cq2cwq7ccv.png</a>)</p>
+</li>
+<li><p>如图，17.04装在了/dev/sda7,所以我可以切sda12或者sda8，我选择把/dev/sda12的分区切出来5G，这里是实验，大家可以根据自己的需要修改，切前边还是切后边，都可以。这是无损的，切记要修改的分区不能挂载。<br>注意：所有要修改的分区都不能挂载，已经挂载的可以在分区上右键选择卸载，不修改分区的是无所谓的，已挂载的分区前会出现一个钥匙，就像我的/dev/sda1那个一样。<br>首先从/dev/sda7前边或者后边的分区切出来一部分，我切的是前边的sda12。[图3] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832sv6vdz4c3ndnkgrt.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832sv6vdz4c3ndnkgrt.png</a>)<br>[图4] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832q0oubktydhmtthdd.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832q0oubktydhmtthdd.png</a>) [图5] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832wx6xv6xc6zvf5w5e.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832wx6xv6xc6zvf5w5e.png)。</a></p>
+</li>
+<li><p>因为我要在分区之后切出来5GB的空间，所以在之后的空余空间输入5120，如果希望在分区前边切出来空余的空间就只修改之前的空余空间，但是不推荐修改之前的空余空间，分区数据少的话还好，数据多的话最后修改大小的时候会很耗时间，输入完毕后回车之后点击调整按钮，会变成下边这样。[图6] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832gf96nc1ktqzne79t.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114832gf96nc1ktqzne79t.png)。</a></p>
+</li>
+<li><p>gparted不会直接操作，他会等你点击应用后把你的操作按照顺序执行，这是如果执行修改的分区分布，下边则是执行的步骤顺序，然后同样的方式，把sda7扩大，这是选择调整sda7之后显示的窗口。[图7] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833wjjofhhujzf22hya.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833wjjofhhujzf22hya.png</a>).</p>
+</li>
+<li><p>我们可以拖动前边的箭头拖动到最前边，之后点击修改，然后会弹出一个窗口，提示可能无法启动，这个没事，但是Windows我好像没试过，点击确定之后是这样的 [图8] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833avyh9wffjd9wwify.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833avyh9wffjd9wwify.png)。</a></p>
+</li>
+<li><p>然后点击上边的应用，就会按照你的步骤顺序来执行操作，有的操作是比较浪费时间的，所以有时候是需要等待的，在应用前边的是撤销，做错了可以用这个撤销掉，所以最好在应用前检查下 [图9] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833i5njn1nnn2kqk9ya.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833i5njn1nnn2kqk9ya.png)。</a></p>
+</li>
+<li><p>点击应用后会出现个应用操作到设备，点击应用即可，然后会出现具体的操作步骤 [图10] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833x15pvso2ja92c9cf.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833x15pvso2ja92c9cf.png</a>).</p>
+</li>
+<li><p>在分区后边缩小分区比较快，如果在分区前边缩小，会移动整个分区的数据，速度的话，你自己想想，扩大分区倒是不用太长时间，这是我扩大之后的分区 [图11] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833wajhlg5d53uml3o3.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833wajhlg5d53uml3o3.png)。</a></p>
+</li>
+<li><p>然后打开文件管理，进入sda7所在的挂载目录，右键在此打开终端（表述可能不同，意思就是在这个地方打开一个终端），这是我的终端 [图12] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833o5cco0xtlcb5ztlc.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833o5cco0xtlcb5ztlc.png)。</a></p>
+</li>
+<li><p>终端默认都会显示当前的所在路径比如现在我的终端是在/media/root/17.04打开的，这个路径如果是用绝对路径挂载的话需要用到，具体的路径可以在自己的终端上查看，这里是相对路径是用不到的然后执行三条类似于新建挂载点的命令。<br>sudo  mount  –rbind  /dev  dev<br>sudo  mount  –rbind  /proc  proc<br>sudo  mount  –rbind  /sys  sys<br>注意：这是boot没有单独分区的情况，如果单独分区了还需要再挂载boot分区到boot目录<br>假设boot分区在/dev/sda3<br>sudo  mount  /dev/sda3  boot<br>如果是efi还需要再挂载efi分区，假设efi分区在/dev/sda2<br>sudo  mount  /dev/sda2  boot/efi<br>然后执行<br>sudo  chroot  .<br>注意：最后是有一个英文状态下的点的。<br>此时你的用户会变成root，目录会变成根目录也就是/ [图13] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833wmpko7a72mpqyohm.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833wmpko7a72mpqyohm.png</a>)</p>
+</li>
+<li><p>然后在这个终端执行 update-grub [图14] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833i6ufr1bs6pussrs3.png" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833i6ufr1bs6pussrs3.png</a>)</p>
+</li>
+<li><p>这样引导就修复完成了<br>注意：此处针对的是单系统的引导，多Linux系统的引导最好再用主引导来修复，第三方引导就只能自己修复了，之后还有最最重要的一步修改fstab，不修改fstab的话，虽然能启动内核但是是不能挂载根分区的，也就不能顺利启动系统。<br>进入17.04所在分区的etc目录，然后打开终端，用管理员权限编辑fstab，注意：不是你现在使用的系统，是之前调整的分区那里的目录<br>输入 sudo  gedit  fstab<br>我们主要修改的是圈住的部分，那里是根分区的UUID，因为我们修改了分区，所以这里可能会被改变，我们需要手动修改下，如果对比没有变化的话，就可以不用修改 [图15] (<a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833p99llub5l542br2b.png)。" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833p99llub5l542br2b.png)。</a></p>
+</li>
+<li><p>打开gparted<br>在17.04所在的分区右键，选择最底下的“信息”，弹出来这个，我们只要复制圈住的部分，就是UUID那里就可以了，快捷键Ctrl+C，如果右键没有复制的话。 <a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833brgaojpzaj8xgjko.png" rel="external nofollow noopener noreferrer" target="_blank">图16</a>。 这里分区的UUID没有被改变，我们可以不修改，如果发现gparted的UUID和fstab里边的不同，那么就把gparted里边的UUID替换到fstab里保存一下，然后就可以开机了。</p>
+</li>
+</ol>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+<!--
+    
+<nav id="article-nav">
+    
+        <a href="/wiki/软件应用/3.常见问题/Ubuntu软件源格式解析/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Ubuntu软件源格式解析
                 
             </div>
-        </div>
+        </a>
     
-</div>
+    
+        <a href="/wiki/玩转优麒麟/3.硬件支持/无线网卡支持/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">无线网卡支持</div>
+        </a>
+    
+</nav>
 
-    <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2020/08/page/5/">&laquo; Prev</a><a class="page-number" href="/archives/2020/08/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/08/page/4/">4</a><a class="page-number" href="/archives/2020/08/page/5/">5</a><span class="page-number current">6</span>
-    </nav>
+
+
+
+
+    
+    
+
+
+
+
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>    
+ -->
+
+
 </section>
         </div>
         <footer id="footer">
