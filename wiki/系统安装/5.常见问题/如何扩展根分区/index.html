@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="UbuntuKylin Wiki">
 <meta property="og:description" content="说明 修改根分区其实不难，只是时间可能比较长，最主要的修改有两个，/etc/fstab和引导，引导可以用 sudo update-grub 来更新，fstab则需要自己根据情况来修复，截图我会用16.04修改17.04的根分区，修改16.04的根分区时间太长，需要用麒麟的启动盘，版本无所谓，启动电脑，这里是把16.04当做启动盘启动之后的系统来用,需要说明的一点是，有的设备文件是不同的比如，这里是">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-02-24T04:06:02.361Z">
+<meta property="og:updated_time" content="2021-02-24T06:32:53.136Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何扩展根分区">
 <meta name="twitter:description" content="说明 修改根分区其实不难，只是时间可能比较长，最主要的修改有两个，/etc/fstab和引导，引导可以用 sudo update-grub 来更新，fstab则需要自己根据情况来修复，截图我会用16.04修改17.04的根分区，修改16.04的根分区时间太长，需要用麒麟的启动盘，版本无所谓，启动电脑，这里是把16.04当做启动盘启动之后的系统来用,需要说明的一点是，有的设备文件是不同的比如，这里是">
@@ -506,6 +506,7 @@
 <li><p>打开gparted<br>在17.04所在的分区右键，选择最底下的“信息”，弹出来这个，我们只要复制圈住的部分，就是UUID那里就可以了，快捷键Ctrl+C，如果右键没有复制的话。 <a href="https://www.ubuntukylin.com/ukylin/data/attachment/forum/201912/27/114833brgaojpzaj8xgjko.png" rel="external nofollow noopener noreferrer" target="_blank">图16</a>。 这里分区的UUID没有被改变，我们可以不修改，如果发现gparted的UUID和fstab里边的不同，那么就把gparted里边的UUID替换到fstab里保存一下，然后就可以开机了。</p>
 </li>
 </ol>
+<p>本文撰写过程中参考了以下文章：<br><a href="https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=191476" rel="external nofollow noopener noreferrer" target="_blank">https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&amp;tid=191476</a></p>
 
             </div>
         
